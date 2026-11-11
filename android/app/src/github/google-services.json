@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "504486613721",
-    "project_id": "bulwark-mobile",
-    "storage_bucket": "bulwark-mobile.firebasestorage.app"
+    "project_number": "739029769575",
+    "project_id": "nordible-mail",
+    "storage_bucket": "nordible-mail.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:504486613721:android:69a5d7ba9148fb14cb24c8",
+        "mobilesdk_app_id": "1:739029769575:android:1af61841e5b9b7897863c2",
         "android_client_info": {
           "package_name": "co.nordible.mail"
         }
@@ -15,26 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyD4Zyu1BU4YNYy4SOK5te3EhSRHRGoMZno"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:504486613721:android:14c6a69aa49cac3ecb24c8",
-        "android_client_info": {
-          "package_name": "com.bulwark.bulwarkmobile"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyD4Zyu1BU4YNYy4SOK5te3EhSRHRGoMZno"
+          "current_key": "AIzaSyBPN9hLP3hsxXsnA7xLZbfegrjtYn3_f2w"
         }
       ],
       "services": {
