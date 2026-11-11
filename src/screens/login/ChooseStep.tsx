@@ -1,6 +1,6 @@
 import React from 'react';
-import { View, Text, Pressable, StyleSheet, Image } from 'react-native';
-import { ClipboardPaste, QrCode, Mail, Plus, Server } from '../../components/icons';
+import { View, Text, StyleSheet, Image } from 'react-native';
+import { Mail, Plus } from '../../components/icons';
 import { spacing, radius, typography, type ThemePalette } from '../../theme/tokens';
 import { useColors, useResolvedTheme } from '../../theme/colors';
 import type { AccountEntry } from '../../stores/account-store';
@@ -24,12 +24,12 @@ interface ChooseStepProps {
    * offered as a shortcut in add mode.
    */
   knownServerUrls: string[];
-  onScan: () => void;
+  onScan?: () => void;
   /** Paste the sign-in link instead of scanning its code. */
-  onPaste: () => void;
+  onPaste?: () => void;
   onUseEmail: () => void;
   onUseKnownServer: (serverUrl: string) => void;
-  onManualSetup: () => void;
+  onManualSetup?: () => void;
   notice?: { title: string; detail?: string } | null;
   disabled?: boolean;
 }
@@ -39,18 +39,14 @@ function initialsOf(account: AccountEntry): string {
 }
 
 /**
- * The entry point. Leads with the two routes that don't require knowing a
- * server address; manual setup stays one tap away for people who do.
+ * The entry point.
  */
 export default function ChooseStep({
   isAddMode,
   accounts,
   knownServerUrls,
-  onScan,
-  onPaste,
   onUseEmail,
   onUseKnownServer,
-  onManualSetup,
   notice,
   disabled = false,
 }: ChooseStepProps) {
@@ -59,16 +55,6 @@ export default function ChooseStep({
   const styles = React.useMemo(() => makeStyles(c), [c]);
   const t = useLocaleStore((s) => s.t);
   const hasKnownServer = isAddMode && knownServerUrls.length > 0;
-
-  // Sits right under the scan tile, wherever that is.
-  const pasteTile = (
-    <OptionTile
-      title={t('login.mobile.paste_title', 'Paste sign-in link')}
-      renderIcon={(color, size) => <ClipboardPaste size={size} color={color} />}
-      onPress={onPaste}
-      disabled={disabled}
-    />
-  );
 
   return (
     <View style={styles.root}>
@@ -86,8 +72,8 @@ export default function ChooseStep({
             style={styles.logo}
             resizeMode="contain"
           />
-          <Text style={styles.title}>Bulwark Mail</Text>
-          <Text style={styles.subtitle}>{t('login.mobile.choose_subtitle', "Choose how you'd like to sign in.")}</Text>
+          <Text style={styles.title}>Nordible Email</Text>
+          <Text style={styles.subtitle}>{t('login.mobile.choose_subtitle', 'Sign in to your account.')}</Text>
         </View>
       )}
 
@@ -144,45 +130,17 @@ export default function ChooseStep({
               disabled={disabled}
             />
           ))
-        ) : (
-          <>
-            <OptionTile
-              emphasis="primary"
-              title={t('login.mobile.scan_title', 'Scan a sign-in code')}
-              description={t('login.mobile.scan_desc', "The fastest way in if you're signed in on the web")}
-              renderIcon={(color, size) => <QrCode size={size} color={color} />}
-              onPress={onScan}
-              disabled={disabled}
-            />
-            {pasteTile}
-          </>
-        )}
+        ) : null}
 
         <OptionTile
-          title={isAddMode ? t('login.mobile.elsewhere_title', 'An account somewhere else') : t('login.mobile.email_title', 'Use my email address')}
+          emphasis="primary"
+          title={isAddMode ? t('login.mobile.elsewhere_title', 'An account somewhere else') : t('login.mobile.email_title', 'Sign in with email')}
           description={t('login.mobile.email_desc', "We'll find your mail server")}
           renderIcon={(color, size) => <Mail size={size} color={color} />}
           onPress={onUseEmail}
           disabled={disabled}
         />
-
-        {hasKnownServer ? (
-          <>
-            <OptionTile
-              title={t('login.mobile.scan_title', 'Scan a sign-in code')}
-              renderIcon={(color, size) => <QrCode size={size} color={color} />}
-              onPress={onScan}
-              disabled={disabled}
-            />
-            {pasteTile}
-          </>
-        ) : null}
       </View>
-
-      <Pressable onPress={onManualSetup} disabled={disabled} hitSlop={8} style={styles.manual}>
-        <Server size={14} color={c.textMuted} />
-        <Text style={styles.manualText}>{t('login.mobile.manual', 'Enter server details manually')}</Text>
-      </Pressable>
     </View>
   );
 }
@@ -207,14 +165,5 @@ function makeStyles(c: ThemePalette) {
 
     notice: { marginTop: -spacing.xs },
     options: { gap: spacing.md },
-
-    manual: {
-      flexDirection: 'row',
-      alignItems: 'center',
-      justifyContent: 'center',
-      gap: spacing.sm,
-      paddingVertical: spacing.sm,
-    },
-    manualText: { ...typography.body, color: c.textMuted },
   });
 }

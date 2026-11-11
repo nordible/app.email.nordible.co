@@ -7,7 +7,7 @@ import android.content.Context
 import android.os.Bundle
 import android.provider.CalendarContract
 import android.provider.ContactsContract
-import com.anonymous.bulwarkmobile.R
+import co.nordible.mail.R
 
 /**
  * The Android accounts of device sync (#34) and their sync settings. One

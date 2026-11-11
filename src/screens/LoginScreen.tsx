@@ -104,7 +104,8 @@ export default function LoginScreen({ onLogin, isAddMode = false, onCancel }: Lo
   React.useEffect(() => () => {
     if (reauth && useAuthStore.getState().reauth === reauth) useAuthStore.getState().clearReauth();
   }, [reauth]);
-  const [step, setStep] = React.useState<StepName>(start.step);
+  const initialStep: StepName = !isAddMode && start.step === 'choose' ? 'email' : start.step;
+  const [step, setStep] = React.useState<StepName>(initialStep);
   const [history, setHistory] = React.useState<StepName[]>([]);
   const [email, setEmail] = React.useState(start.email);
   const [serverInput, setServerInput] = React.useState(start.serverUrl);
@@ -375,18 +376,14 @@ export default function LoginScreen({ onLogin, isAddMode = false, onCancel }: Lo
     setSearching(true);
     rememberEmail(value);
     try {
-      const found = await discoverServerForEmail(value, { knownServerUrls, signal: attempt.signal });
+      const defaultHost = process.env.EXPO_PUBLIC_DEFAULT_HOST;
+      const defaultServer = (defaultHost ? normalizeServerUrl(defaultHost) : null) ?? 'https://mail1.nordible.co';
+      const found = (await discoverServerForEmail(value, { knownServerUrls, signal: attempt.signal })) || defaultServer;
       if (!isLive(attempt)) return;
-      if (found) {
-        setServerUrl(found);
-        setServerInput(found);
-        setServerDiscovered(true);
-        goTo('confirm');
-      } else {
-        setFailedDomain(emailDomain(value));
-        setServerInput('');
-        goTo('server');
-      }
+      setServerUrl(found);
+      setServerInput(found);
+      setServerDiscovered(true);
+      goTo('password');
     } finally {
       if (endAttempt(attempt)) setSearching(false);
     }
@@ -697,10 +694,6 @@ export default function LoginScreen({ onLogin, isAddMode = false, onCancel }: Lo
               setEmail(value);
             }}
             onSubmit={() => void handleEmailContinue()}
-            onKnowServer={() => {
-              setFailedDomain(null);
-              goTo('server');
-            }}
             isSearching={searching}
             notice={notice}
             suggestions={emailSuggestions}

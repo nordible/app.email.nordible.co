@@ -1,5 +1,6 @@
 package com.anonymous.bulwarkmobile
 
+import co.nordible.mail.BuildConfig
 import android.app.Application
 import android.content.res.Configuration
 

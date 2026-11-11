@@ -12,7 +12,7 @@ interface EmailStepProps {
   value: string;
   onChange: (value: string) => void;
   onSubmit: () => void;
-  onKnowServer: () => void;
+  onKnowServer?: () => void;
   isSearching: boolean;
   notice?: { title: string; detail?: string } | null;
   /** Addresses used before on this device, offered as one-tap fills. */
@@ -90,9 +90,11 @@ export default function EmailStep({
         {isSearching ? t('login.mobile.looking_up', 'Looking up your server…') : t('login.mobile.continue', 'Continue')}
       </Button>
 
-      <Pressable onPress={onKnowServer} disabled={isSearching} hitSlop={8} style={styles.link}>
-        <Text style={styles.linkText}>{t('login.mobile.know_server', 'I know my server address')}</Text>
-      </Pressable>
+      {onKnowServer ? (
+        <Pressable onPress={onKnowServer} disabled={isSearching} hitSlop={8} style={styles.link}>
+          <Text style={styles.linkText}>{t('login.mobile.know_server', 'I know my server address')}</Text>
+        </Pressable>
+      ) : null}
     </View>
   );
 }

@@ -19,7 +19,7 @@ const TRANSLATED_FILES: Record<string, string[]> = {
   'components/RichTextEditor.tsx': [],
   'screens/LoginScreen.tsx': [],
   // Product name and example host.
-  'screens/login/ChooseStep.tsx': ['Bulwark Mail'],
+  'screens/login/ChooseStep.tsx': ['Bulwark Mail', 'Nordible Email'],
   'screens/login/ConfirmStep.tsx': [],
   'screens/login/EmailStep.tsx': [],
   'screens/login/LoginNotice.tsx': [],

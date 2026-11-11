@@ -1,5 +1,6 @@
 package com.anonymous.bulwarkmobile
 
+import co.nordible.mail.BuildConfig
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.bridge.ReactContextBaseJavaModule
 

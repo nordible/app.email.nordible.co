@@ -31,14 +31,11 @@ const APS_ENVIRONMENT = process.env.APS_ENVIRONMENT === 'development' ? 'develop
 
 module.exports = {
   expo: {
-    name: 'Bulwark Mobile',
-    slug: 'bulwark-mobile',
+    name: 'Nordible Email',
+    slug: 'nordible-email',
     // mailto: lets Android/iOS offer the app for mail links in other apps;
-    // bulwarkmail: is the webmail's sign-in link (bulwarkmail://pair?...).
-    // org.bulwarkmail.mobile: is where Stalwart 1.0 sends the browser sign-in
-    // back: it registers public clients only with a scheme that has a dot.
-    // Android's manifest is maintained by hand and lists the same schemes.
-    scheme: ['bulwarkmobile', 'bulwarkmail', 'mailto', 'org.bulwarkmail.mobile'],
+    // nordiblemail / bulwarkmail: webmail's sign-in link (nordiblemail://pair?...).
+    scheme: ['nordiblemobile', 'nordiblemail', 'bulwarkmobile', 'bulwarkmail', 'mailto', 'co.nordible.mail'],
     version: VERSION,
     orientation: 'default',
     icon: './assets/icon.png',
@@ -55,28 +52,17 @@ module.exports = {
     },
     ios: {
       supportsTablet: true,
-      bundleIdentifier: 'org.bulwarkmail.mobile',
+      bundleIdentifier: 'co.nordible.mail',
       buildNumber: IOS_BUILD_NUMBER,
-      // No usesNonExemptEncryption here. PGP and S/MIME (#58) are non-exempt
-      // encryption, but only standard algorithms from open-source libraries
-      // and the app is not on the French store, so App Store Connect keeps no
-      // declaration and has no ITSEncryptionExportComplianceCode to give. An
-      // Info.plist saying YES without that code fails upload validation
-      // (90592), so the key stays out and scripts/testflight-public.mjs
-      // answers the question for each build through the API.
     },
     android: {
       adaptiveIcon: {
         foregroundImage: './assets/adaptive-icon.png',
-        backgroundColor: '#db2d54',
+        backgroundColor: '#145BFF',
       },
       edgeToEdgeEnabled: true,
       predictiveBackGestureEnabled: false,
-      package: 'com.anonymous.bulwarkmobile',
-      // The AsyncStorage database holds cached message bodies, the outbox and
-      // the account registry; the platform backup would ship all of it to the
-      // user's Google account. Credentials live in SecureStore (excluded by
-      // its own rules) but the mail cache must not leave the device either.
+      package: 'co.nordible.mail',
       allowBackup: false,
     },
     web: {
@@ -84,9 +70,6 @@ module.exports = {
     },
     plugins: [
       'expo-secure-store',
-      // WebCrypto for PGP and S/MIME (#58). On iOS it raises the deployment
-      // target (app and pods) to 16.4, the minimum Nitro modules build for;
-      // Android has nothing to set.
       'react-native-quick-crypto',
       '@react-native-community/datetimepicker',
       'expo-localization',
@@ -94,9 +77,7 @@ module.exports = {
         'expo-camera',
         {
           cameraPermission:
-            'Bulwark Mail uses the camera to scan sign-in QR codes shown in webmail.',
-          // QR scanning never records audio; leaving the mic entry in would be
-          // an unexplained permission in App Review.
+            'Nordible Email uses the camera to scan sign-in QR codes shown in webmail.',
           microphonePermission: false,
         },
       ],
@@ -104,8 +85,7 @@ module.exports = {
         'expo-image-picker',
         {
           photosPermission:
-            'Bulwark Mail needs access to your photos so you can attach them to emails and set contact photos.',
-          // Only launchImageLibraryAsync is used - no in-app capture.
+            'Nordible Email needs access to your photos so you can attach them to emails and set contact photos.',
           cameraPermission: false,
           microphonePermission: false,
         },
@@ -148,12 +128,10 @@ module.exports = {
     ],
     extra: {
       commit: COMMIT,
-      // Settings → About → Source code. A modified build sets SOURCE_CODE_URL
-      // to where its own source is (AGPL §13); the default is upstream.
-      sourceCodeUrl: process.env.SOURCE_CODE_URL || 'https://github.com/bulwarkmail/native',
-      // src/lib/ios-push-shared.ts
-      iosSharedKeychainGroup: `${APPLE_TEAM_ID}.org.bulwarkmail.shared`,
-      iosAppKeychainGroup: `${APPLE_TEAM_ID}.org.bulwarkmail.mobile`,
+      sourceCodeUrl: process.env.SOURCE_CODE_URL || 'https://github.com/nordible/app.email.nordible.co',
+      iosSharedKeychainGroup: `${APPLE_TEAM_ID}.co.nordible.shared`,
+      iosAppKeychainGroup: `${APPLE_TEAM_ID}.co.nordible.mail`,
+      relayBaseUrl: process.env.EXPO_PUBLIC_RELAY_BASE_URL || 'https://email-notifications.nordible.co',
       apnsEnvironment: APS_ENVIRONMENT === 'development' ? 'sandbox' : 'production',
     },
   },

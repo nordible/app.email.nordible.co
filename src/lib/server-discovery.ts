@@ -3,7 +3,7 @@
 //
 // The probe is deliberately cheap and short-lived: a GET of
 // `<base>/.well-known/jmap` against a handful of conventional hosts, all in
-// parallel, with a hard deadline. Discovery is an optimisation — if it comes
+// parallel, with a hard deadline. Discovery is an optimisation â€” if it comes
 // back empty the caller falls through to asking for the server by hand, so a
 // slow or hostile network must never be worse than typing it in.
 
@@ -35,8 +35,8 @@ export function isCleartextUrl(url: string): boolean {
 const EMAIL_RE = /^[^\s@]+@([^\s@]+\.[^\s@]+)$/;
 
 /**
- * Accept what people actually type — `mail.example.com`, `example.com/`,
- * `https://mail.example.com/.well-known/jmap`, `…/jmap/session` — and return
+ * Accept what people actually type â€” `mail.example.com`, `example.com/`,
+ * `https://mail.example.com/.well-known/jmap`, `â€¦/jmap/session` â€” and return
  * the base URL the JMAP client expects, or null if it can't be one.
  */
 export function normalizeServerUrl(input: string): string | null {
@@ -86,7 +86,7 @@ export function normalizeServerUrl(input: string): string | null {
 }
 
 /**
- * The domain of an address in its ASCII form (`jörg@bücher.de` ->
+ * The domain of an address in its ASCII form (`jÃ¶rg@bÃ¼cher.de` ->
  * `xn--bcher-kva.de`), which is what discovery probes and the server knows.
  * Show it with toUnicodeDomain.
  */
@@ -109,7 +109,13 @@ function hostOf(url: string): string {
  * tie-break order when several respond.
  */
 export function serverCandidates(domain: string): string[] {
-  return [`https://${domain}`, `https://mail.${domain}`, `https://webmail.${domain}`];
+  const defaultHost = process.env.EXPO_PUBLIC_DEFAULT_HOST;
+  const defaultUrl = defaultHost ? normalizeServerUrl(defaultHost) : 'https://mail1.nordible.co';
+  const list = [`https://${domain}`, `https://mail.${domain}`, `https://webmail.${domain}`];
+  if (defaultUrl && !list.includes(defaultUrl)) {
+    list.unshift(defaultUrl);
+  }
+  return list;
 }
 
 function withTimeout<T>(promise: Promise<T>, ms: number, fallback: T, signal?: AbortSignal): Promise<T> {
@@ -162,7 +168,7 @@ function serverBehind(tried: string, finalUrl: string | undefined): string {
  * The JMAP server that answers at `baseUrl`, or null when none does: `baseUrl`
  * itself, or the server its redirects lead to.
  *
- * A 401 counts as a hit � an unauthenticated probe of Stalwart's session
+ * A 401 counts as a hit — an unauthenticated probe of Stalwart's session
  * endpoint is *supposed* to be rejected, and that rejection is proof the
  * endpoint is there. A 200, on the other hand, has to actually contain a
  * session document: a captive portal or a catch-all web server will happily
@@ -251,7 +257,9 @@ export async function discoverServerForEmail(
   );
   if (options.signal?.aborted) return null;
 
-  // `find` keeps candidate order, so a bare domain wins over `mail.` even when
-  // both answer.
-  return results.find((url): url is string => url !== null) ?? null;
+  const defaultHost = process.env.EXPO_PUBLIC_DEFAULT_HOST;
+  const defaultServer = defaultHost ? normalizeServerUrl(defaultHost) : 'https://mail1.nordible.co';
+
+  // `find` keeps candidate order, so default server or a bare domain wins.
+  return results.find((url): url is string => url !== null) ?? defaultServer;
 }

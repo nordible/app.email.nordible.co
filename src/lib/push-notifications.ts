@@ -202,7 +202,8 @@ export async function migrateLegacyPushKeys(): Promise<void> {
 // Hosted relay so users don't need to run their own Firebase project. The
 // relay only ever sees FCM tokens + JMAP state-id hashes - no mail content.
 // Power users can override this from the settings screen.
-export const DEFAULT_RELAY_BASE_URL = 'https://notifications.relay.bulwarkmail.org';
+export const DEFAULT_RELAY_BASE_URL =
+  process.env.EXPO_PUBLIC_RELAY_BASE_URL || 'https://email-notifications.nordible.co';
 
 /**
  * A relay must be reachable over TLS: the registration carries the FCM token

@@ -450,7 +450,7 @@ export type QrLoginPayload =
 
 // `bulwarkmail://pair?…` and `bulwarkmail://pair/?…` (Android and some QR
 // readers add the slash after the host).
-const SIGN_IN_LINK_RE = /^bulwarkmail:\/\/(connect|pair)\/?\?([^#]*)(?:#.*)?$/i;
+const SIGN_IN_LINK_RE = /^(?:bulwarkmail|nordiblemail|nordiblemobile):\/\/(connect|pair)\/?\?([^#]*)(?:#.*)?$/i;
 // The webmail mints 64 hex characters; accept any URL-safe token of sane
 // length so a future format does not break older apps.
 const PAIRING_CODE_RE = /^[A-Za-z0-9_-]{8,512}$/;
@@ -513,7 +513,7 @@ export function signInLinkHost(url: string): string {
  * pasted text around it; null for anything else.
  */
 export function insecurePairingLinkError(text: string): PairingError | null {
-  const link = (/bulwarkmail:\/\/\S+/i.exec(text)?.[0] ?? '').replace(/[)\]>.,;'"]+$/, '');
+  const link = (/(?:bulwarkmail|nordiblemail|nordiblemobile):\/\/\S+/i.exec(text)?.[0] ?? '').replace(/[)\]>.,;'"]+$/, '');
   const match = SIGN_IN_LINK_RE.exec(link);
   if (!match || match[1].toLowerCase() !== 'pair') return null;
   const params = new URLSearchParams(match[2]);

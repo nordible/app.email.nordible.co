@@ -9,7 +9,7 @@ import android.net.Uri
 import android.os.Build
 import androidx.core.app.NotificationCompat
 import com.anonymous.bulwarkmobile.MainActivity
-import com.anonymous.bulwarkmobile.R
+import co.nordible.mail.R
 
 /**
  * The one notification per Android account that device sync needs the user
