@@ -1,11 +1,14 @@
 import React from 'react';
-import { View, Text, Pressable, StyleSheet } from 'react-native';
+import { View, Text, Pressable, StyleSheet, Image } from 'react-native';
 import { Mail } from '../../components/icons';
 import { spacing, typography, type ThemePalette } from '../../theme/tokens';
-import { useColors } from '../../theme/colors';
+import { useColors, useResolvedTheme } from '../../theme/colors';
 import { Button, Input } from '../../components';
 import LoginNotice from './LoginNotice';
 import { useLocaleStore } from '../../stores/locale-store';
+
+const LOGO_LIGHT = require('../../../assets/logos/Bulwark Logo Dark.png');
+const LOGO_DARK = require('../../../assets/logos/Bulwark Logo White.png');
 
 interface EmailStepProps {
   isAddMode: boolean;
@@ -34,11 +37,23 @@ export default function EmailStep({
   suggestions = [],
 }: EmailStepProps) {
   const c = useColors();
+  const theme = useResolvedTheme();
   const styles = React.useMemo(() => makeStyles(c), [c]);
   const t = useLocaleStore((s) => s.t);
 
   return (
     <View style={styles.root}>
+      {!isAddMode ? (
+        <View style={styles.branding}>
+          <Image
+            source={theme === 'light' ? LOGO_LIGHT : LOGO_DARK}
+            style={styles.logo}
+            resizeMode="contain"
+          />
+          <Text style={styles.brandTitle}>Nordible Email</Text>
+        </View>
+      ) : null}
+
       <View style={styles.heading}>
         <Text style={styles.title}>
           {isAddMode ? t('login.mobile.email_step_title_add', "What's the other address?") : t('login.mobile.email_step_title', "What's your email address?")}
@@ -64,8 +79,6 @@ export default function EmailStep({
         onSubmitEditing={onSubmit}
         leftIcon={<Mail size={17} color={c.textMuted} />}
       />
-
-      <Text style={styles.hint}>{t('login.mobile.email_step_hint', 'Works with Stalwart and any other JMAP mail server.')}</Text>
 
       {suggestions.length > 0 && !value ? (
         <View style={styles.suggestions}>
@@ -102,6 +115,9 @@ export default function EmailStep({
 function makeStyles(c: ThemePalette) {
   return StyleSheet.create({
     root: { gap: spacing.lg },
+    branding: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm, marginBottom: spacing.xs },
+    logo: { width: 32, height: 32 },
+    brandTitle: { ...typography.h3, color: c.text },
     heading: { gap: spacing.sm },
     title: { ...typography.h1, color: c.text },
     subtitle: { ...typography.body, color: c.textSecondary },

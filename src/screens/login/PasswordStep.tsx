@@ -1,11 +1,14 @@
 import React from 'react';
-import { View, Text, Pressable, StyleSheet, type TextInput } from 'react-native';
-import { Eye, EyeOff, KeyRound } from '../../components/icons';
+import { View, Text, Pressable, StyleSheet, Image, type TextInput } from 'react-native';
+import { Eye, EyeOff } from '../../components/icons';
 import { spacing, typography, type ThemePalette } from '../../theme/tokens';
-import { useColors } from '../../theme/colors';
+import { useColors, useResolvedTheme } from '../../theme/colors';
 import { Button, Input } from '../../components';
 import LoginNotice from './LoginNotice';
 import { useLocaleStore } from '../../stores/locale-store';
+
+const LOGO_LIGHT = require('../../../assets/logos/Bulwark Logo Dark.png');
+const LOGO_DARK = require('../../../assets/logos/Bulwark Logo White.png');
 
 interface PasswordStepProps {
   serverUrl: string;
@@ -49,6 +52,7 @@ export default function PasswordStep({
   onToggleTokenMode,
 }: PasswordStepProps) {
   const c = useColors();
+  const theme = useResolvedTheme();
   const styles = React.useMemo(() => makeStyles(c), [c]);
   const t = useLocaleStore((s) => s.t);
   const [showPassword, setShowPassword] = React.useState(false);
@@ -58,6 +62,15 @@ export default function PasswordStep({
 
   return (
     <View style={styles.root}>
+      <View style={styles.branding}>
+        <Image
+          source={theme === 'light' ? LOGO_LIGHT : LOGO_DARK}
+          style={styles.logo}
+          resizeMode="contain"
+        />
+        <Text style={styles.brandTitle}>Nordible Email</Text>
+      </View>
+
       <View style={styles.heading}>
         <Text style={styles.title}>{t('login.mobile.password_title', 'Sign in to {host}', { host: hostOf(serverUrl) })}</Text>
         <Text style={styles.subtitle}>
@@ -153,15 +166,6 @@ export default function PasswordStep({
       <Button variant="default" size="md" onPress={onSubmit}>
         {t('login.sign_in', 'Sign in')}
       </Button>
-
-      {onToggleTokenMode ? (
-        <Pressable onPress={onToggleTokenMode} hitSlop={8} style={styles.toggle} accessibilityRole="button" testID="login-token-toggle">
-          <KeyRound size={16} color={c.textLink} />
-          <Text style={styles.link}>
-            {tokenMode ? t('login.password_toggle', 'Sign in with a password') : t('login.token_toggle', 'Sign in with an access token')}
-          </Text>
-        </Pressable>
-      ) : null}
     </View>
   );
 }
@@ -169,6 +173,9 @@ export default function PasswordStep({
 function makeStyles(c: ThemePalette) {
   return StyleSheet.create({
     root: { gap: spacing.lg },
+    branding: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm, marginBottom: spacing.xs },
+    logo: { width: 32, height: 32 },
+    brandTitle: { ...typography.h3, color: c.text },
     heading: { gap: spacing.sm },
     title: { ...typography.h1, color: c.text },
     subtitle: { ...typography.body, color: c.textSecondary },
