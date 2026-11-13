@@ -419,8 +419,8 @@ jobs:
             exit 1
           fi
           MANIFEST=$(unzip -p "$AAB" base/manifest/AndroidManifest.xml | tr -c '[:print:]' '\n')
-          if ! grep -q 'org.bulwarkmail.mobile' <<< "$MANIFEST"; then
-            echo "::error title=Wrong package::The bundle is not org.bulwarkmail.mobile."
+          if ! grep -q 'co.nordible.mail' <<< "$MANIFEST"; then
+            echo "::error title=Wrong package::The bundle is not co.nordible.mail."
             exit 1
           fi
           for permission in REQUEST_INSTALL_PACKAGES READ_MEDIA_IMAGES READ_MEDIA_VIDEO RECORD_AUDIO; do
@@ -460,7 +460,7 @@ jobs:
         uses: r0adkll/upload-google-play@v1
         with:
           serviceAccountJsonPlainText: ${{ secrets.PLAY_SERVICE_ACCOUNT_JSON }}
-          packageName: org.bulwarkmail.mobile
+          packageName: co.nordible.mail
           releaseFiles: ${{ steps.artifact.outputs.aab }}
           mappingFile: ${{ steps.artifact.outputs.mapping }}
           releaseName: ${{ steps.artifact.outputs.version }}

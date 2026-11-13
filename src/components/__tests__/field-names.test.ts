@@ -26,7 +26,7 @@ function elementEnd(source: string, from: number): number {
 function unnamedFields(file: string): string[] {
   const source = readFileSync(join(SRC, file), 'utf8');
   const out: string[] = [];
-  for (const m of source.matchAll(/<(TextInput|Input)\b/g)) {
+  for (const m of source.matchAll(/<(TextInput|Input)\s/g)) {
     const element = source.slice(m.index!, elementEnd(source, m.index! + m[0].length));
     if (/\baccessibilityLabel=/.test(element)) continue;
     if (m[1] === 'Input' && /\blabel=/.test(element)) continue;
