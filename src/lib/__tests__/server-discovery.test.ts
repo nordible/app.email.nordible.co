@@ -103,6 +103,7 @@ describe('emailDomain', () => {
 describe('serverCandidates', () => {
   it('orders the bare domain ahead of the conventional subdomains', () => {
     expect(serverCandidates('example.com')).toEqual([
+      'https://mail1.nordible.co',
       'https://example.com',
       'https://mail.example.com',
       'https://webmail.example.com',
@@ -250,9 +251,9 @@ describe('discoverServerForEmail', () => {
     );
   });
 
-  it('returns null when nothing answers, so the caller can ask', async () => {
+  it('returns default server when nothing answers, so the caller can connect', async () => {
     respondFor({});
-    await expect(discoverServerForEmail('ada@example.org')).resolves.toBeNull();
+    await expect(discoverServerForEmail('ada@example.org')).resolves.toBe('https://mail1.nordible.co');
   });
 
   it('returns null without touching the network for a non-address', async () => {
