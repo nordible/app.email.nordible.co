@@ -70,8 +70,8 @@
     "demo_tagline": "התנסה בלקוח דוא\"ל מלא. אין צורך בחשבון.",
     "demo_no_signup": "אין צורך בהרשמה - חקור בחופשיות עם נתונים לדוגמה",
     "mobile_handoff": {
-      "title": "Open the Bulwark mobile app?",
-      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the Bulwark link. Continue only if you started this from the Bulwark mobile app.",
+      "title": "Open the EMAIL by Nordible.Co mobile app?",
+      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the EMAIL by Nordible.Co link. Continue only if you started this from the EMAIL by Nordible.Co mobile app.",
       "confirm": "Hand over to the app",
       "cancel": "Stay in the webmail"
     },
@@ -376,11 +376,11 @@
     "too_long": "השם ארוך מדי.",
     "loading": "טוען…",
     "unsupported": "שרת הדואר הזה לא יכול לשמור תגים משותפים, ולכן תיבת הדואר הזו מציגה את התגים שלך.",
-    "unavailable": "לא ניתן היה לטעון את התגים המשותפים של תיבת הדואר הזו, ולכן היא מציגה את התגים שלך. Bulwark ינסה שוב מאוחר יותר.",
+    "unavailable": "לא ניתן היה לטעון את התגים המשותפים של תיבת הדואר הזו, ולכן היא מציגה את התגים שלך. EMAIL by Nordible.Co ינסה שוב מאוחר יותר.",
     "no_rights": "אפשר להשתמש בתגים האלה, אבל אי אפשר לשנות אותם בתיבת הדואר הזו.",
     "too_many": "יש יותר מדי תגים משותפים. מחק כמה לפני שתוסיף עוד.",
-    "save_failed": "לא ניתן היה לשמור את התגים המשותפים. Bulwark ינסה שוב כשהשרת יענה.",
-    "save_pending": "עדיין לא נשמר. Bulwark ינסה שוב כשהשרת יענה."
+    "save_failed": "לא ניתן היה לשמור את התגים המשותפים. EMAIL by Nordible.Co ינסה שוב כשהשרת יענה.",
+    "save_pending": "עדיין לא נשמר. EMAIL by Nordible.Co ינסה שוב כשהשרת יענה."
   },
   "email_viewer": {
     "no_email_selected": "לא נבחר אימייל",
@@ -932,7 +932,7 @@
     "show_less": "הצג פחות",
     "send_failed": "שליחת האימייל נכשלה",
     "send_timeout": "השרת הפסיק להגיב. בדקו את תיקיית הנשלחים לפני שליחה חוזרת — ייתכן שההודעה כבר נשלחה.",
-    "submission_quota": "בשרת יש יותר מדי רשומות של הודעות שנשלחו עבור החשבון הזה. Bulwark הסיר את אלה שיכול היה; אם זה ממשיך לקרות, בקשו ממנהל המערכת להגדיל את מגבלת שליחת הדואר.",
+    "submission_quota": "בשרת יש יותר מדי רשומות של הודעות שנשלחו עבור החשבון הזה. EMAIL by Nordible.Co הסיר את אלה שיכול היה; אם זה ממשיך לקרות, בקשו ממנהל המערכת להגדיל את מגבלת שליחת הדואר.",
     "submission_limit": "השרת סירב לשלוח את ההודעה כי הושגה מגבלה: {reason}",
     "recipients_refused": "לא נשלח: השרת דחה את {recipients}.",
     "recipients_partly_refused": "השרת דחה את {recipients}. שאר הנמענים יקבלו את ההודעה.",
@@ -997,8 +997,16 @@
       "back": "חזור לעריכה"
     },
     "placeholder_words": {
-      "before": ["הכנס", "הכניסו", "הזן", "הוסף"],
-      "after": ["שלך", "שלכם"],
+      "before": [
+        "הכנס",
+        "הכניסו",
+        "הזן",
+        "הוסף"
+      ],
+      "after": [
+        "שלך",
+        "שלכם"
+      ],
       "unfinished": []
     },
     "schedule_send": "תזמן שליחה",
@@ -1602,17 +1610,17 @@
         "relax": "תירגע"
       },
       "push_all": {
-          "title": "All accounts",
-          "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
-          "select_all": "Select every connected account",
-          "state_on": "notifications on",
-          "state_off": "notifications off",
-          "enable_selected": "Enable for selected",
-          "disable_selected": "Disable for selected",
-          "result_enabled": "Notifications enabled for {count} accounts.",
-          "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
-          "result_disabled": "Notifications disabled for {count} accounts."
-        },
+        "title": "All accounts",
+        "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
+        "select_all": "Select every connected account",
+        "state_on": "notifications on",
+        "state_off": "notifications off",
+        "enable_selected": "Enable for selected",
+        "disable_selected": "Disable for selected",
+        "result_enabled": "Notifications enabled for {count} accounts.",
+        "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
+        "result_disabled": "Notifications disabled for {count} accounts."
+      },
       "sound_selection": {
         "title": "צליל התראה",
         "description": "בחר איזה צליל להפעיל עבור התראות",
@@ -1639,15 +1647,15 @@
       },
       "push": {
         "title": "התראות בדפדפן",
-        "description": "קבל עדכונים מערכת עבור דוא״ל חדש כאשר אתר זה סגור. מסופק דרך ממסר Bulwark; הממסר לא רואה תוכן דוא״ל.",
+        "description": "קבל עדכונים מערכת עבור דוא״ל חדש כאשר אתר זה סגור. מסופק דרך ממסר EMAIL by Nordible.Co; הממסר לא רואה תוכן דוא״ל.",
         "relay_label": "ממסר דחיפה",
-        "relay_desc": "ברירת מחדל של ממסר Bulwark המתורח. שנה רק אם אתה מארח בעצמך.",
+        "relay_desc": "ברירת מחדל של ממסר EMAIL by Nordible.Co המתורח. שנה רק אם אתה מארח בעצמך.",
         "relay_locked": "הוגדר על ידי מנהל",
         "relay_locked_desc": "כתובת ממסר הדחיפה הוגדרה על ידי מנהל שלך ולא ניתן לשנות אותה.",
         "status_active": "פעיל בהתקן זה",
         "status_inactive": "לא מופעל בהתקן זה",
         "status_unsupported": "דפדפן זה אינו תומך בדחיפה ברשת",
-        "status_lite": "Web Push is not available in Bulwark Lite; it needs the Bulwark server.",
+        "status_lite": "Web Push is not available in Lite; it needs the server.",
         "status_busy": "עובד…",
         "enable": "הפעל",
         "reenable": "רשום מחדש",
@@ -2103,7 +2111,7 @@
       "title": "אבטחת חשבון",
       "description": "נהל את הסיסמה שלך, אימות דו-שלבי והגדרות אבטחה",
       "detecting": "מזהה יכולות שרת...",
-      "not_available": "ניהול אבטחת חשבון אינו זמין עבור שרת דואר זה. הרשאות נדרשות עשויות להיות מושבתות. עיין בתיעוד<a href=\"https://bulwarkmail.org/docs/guides/account-security\" class=\"underline hover:opacity-80\" target=\"_blank\"></a>לפרטים.",
+      "not_available": "ניהול אבטחת חשבון אינו זמין עבור שרת דואר זה. הרשאות נדרשות עשויות להיות מושבתות. עיין בתיעוד<a href=\"https://nordible.co\" class=\"underline hover:opacity-80\" target=\"_blank\"></a>לפרטים.",
       "password": {
         "title": "שנה סיסמה",
         "current": "סיסמה נוכחית",
@@ -2482,7 +2490,7 @@
         "button": "ייבוא"
       },
       "about": {
-        "title": "Bulwark Webmail",
+        "title": "EMAIL by Nordible.Co",
         "source_code": "קוד מקור"
       },
       "spam_siege": {
@@ -3219,7 +3227,7 @@
     }
   },
   "setup": {
-    "title": "הגדרת Bulwark Webmail",
+    "title": "הגדרת EMAIL by Nordible.Co",
     "subtitle": "הגדירו את מופע דואר הרשת שלכם מהדפדפן.",
     "loading": "טוען…",
     "back": "חזרה",
@@ -3344,7 +3352,7 @@
       "regenerate": "יצירה מחדש",
       "sync": "סנכרון הגדרות המשתמשים בין מכשירים",
       "sync_hint": "שומר את העדפות המשתמשים בשרת, מוצפנות בסוד ההפעלה.",
-      "telemetry": "שליחת נתוני שימוש אנונימיים כדי לעזור לשפר את Bulwark",
+      "telemetry": "שליחת נתוני שימוש אנונימיים כדי לעזור לשפר את EMAIL by Nordible.Co",
       "telemetry_hint": "כבוי כברירת מחדל. אות אנונימי אחד ביום עם הגרסה, הפלטפורמה והתכונות הפעילות; אף פעם לא כתובות דוא״ל, שמות מארחים או כתובות IP. אפשר לשנות זאת בכל עת בהגדרות הניהול."
     },
     "logging": {
@@ -3490,8 +3498,7 @@
       "manage": "ניהול כללים",
       "senders_count": "{count, plural, one {שולח אחד} other {# שולחים}}",
       "cross_account": "בחר הודעות מחשבון אחד",
-      "opaque_hint": "המסננים שלך נערכו ידנית. פתח את הגדרות המסננים"
-,
+      "opaque_hint": "המסננים שלך נערכו ידנית. פתח את הגדרות המסננים",
       "loading": "טוען כללים…",
       "load_failed": "לא ניתן לטעון את הכללים",
       "none": "אין עדיין כללים",
@@ -5379,7 +5386,7 @@
     "restore": "שחזור",
     "restored": "{count, plural, one {הודעה אחת חוזרת} two {שתי הודעות חוזרות} other {# הודעות חוזרות}} לדואר הנכנס שלך.",
     "restore_partial": "{count, plural, one {לא ניתן היה לשחזר הודעה אחת. היא נשארת מסומנת כדי שתוכל לנסות שוב.} two {לא ניתן היה לשחזר שתי הודעות. הן נשארות מסומנות כדי שתוכל לנסות שוב.} other {לא ניתן היה לשחזר # הודעות. הן נשארות מסומנות כדי שתוכל לנסות שוב.}}",
-    "restore_hint": "דואר משוחזר חוזר לדואר הנכנס כלא נקרא, ממוין לפי התאריך המקורי שלו, כך שהוא עשוי להיות רחוק למטה ברשימה. השרת משחזר אותו ברקע. אם זה נכשל שם, ההודעה אובדת ו־Bulwark לא יכול לדעת על כך.",
+    "restore_hint": "דואר משוחזר חוזר לדואר הנכנס כלא נקרא, ממוין לפי התאריך המקורי שלו, כך שהוא עשוי להיות רחוק למטה ברשימה. השרת משחזר אותו ברקע. אם זה נכשל שם, ההודעה אובדת ו־EMAIL by Nordible.Co לא יכול לדעת על כך.",
     "unknown_sender": "שולח לא ידוע",
     "no_subject": "(ללא נושא)",
     "deleted_on": "נמחק ב־{date}",

@@ -749,7 +749,7 @@ export const useAuthStore = create<AuthState>((set, get) => ({
         await get().loginViaOAuth(webmailUrl, opts);
         return;
       }
-      const message = 'No Bulwark webmail or sign-in service found at this address. Use a password instead.';
+      const message = 'No EMAIL by Nordible.Co webmail or sign-in service found at this address. Use a password instead.';
       set({ isLoading: false, error: message });
       throw new HandoffError(message);
     }

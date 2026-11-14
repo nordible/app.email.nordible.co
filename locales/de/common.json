@@ -411,11 +411,11 @@
     "too_long": "Dieser Name ist zu lang.",
     "loading": "Wird geladen…",
     "unsupported": "Dieser Mailserver kann keine geteilten Labels speichern, daher zeigt dieses Postfach Ihre eigenen Labels.",
-    "unavailable": "Die geteilten Labels dieses Postfachs konnten nicht geladen werden, daher zeigt es Ihre eigenen Labels. Bulwark versucht es später erneut.",
+    "unavailable": "Die geteilten Labels dieses Postfachs konnten nicht geladen werden, daher zeigt es Ihre eigenen Labels. EMAIL by Nordible.Co versucht es später erneut.",
     "no_rights": "Sie können diese Labels verwenden, aber in diesem Postfach nicht ändern.",
     "too_many": "Es gibt zu viele geteilte Labels. Löschen Sie einige, bevor Sie weitere hinzufügen.",
-    "save_failed": "Die geteilten Labels konnten nicht gespeichert werden. Bulwark versucht es erneut, sobald der Server antwortet.",
-    "save_pending": "Noch nicht gespeichert. Bulwark versucht es erneut, sobald der Server antwortet."
+    "save_failed": "Die geteilten Labels konnten nicht gespeichert werden. EMAIL by Nordible.Co versucht es erneut, sobald der Server antwortet.",
+    "save_pending": "Noch nicht gespeichert. EMAIL by Nordible.Co versucht es erneut, sobald der Server antwortet."
   },
   "email_viewer": {
     "read_receipt": {
@@ -992,7 +992,7 @@
     "smime_unlock_button": "Entsperren",
     "smime_passphrase_placeholder": "S/MIME-Passphrase",
     "send_timeout": "Der Server antwortet nicht mehr. Prüfen Sie den Ordner „Gesendet“, bevor Sie erneut senden – die Nachricht wurde möglicherweise bereits verschickt.",
-    "submission_quota": "Der Server hat für dieses Konto zu viele Einträge zu gesendeten Nachrichten. Bulwark hat entfernt, was möglich war; wenn das weiterhin vorkommt, bitten Sie Ihren Administrator, das Limit für E-Mail-Übermittlungen zu erhöhen.",
+    "submission_quota": "Der Server hat für dieses Konto zu viele Einträge zu gesendeten Nachrichten. EMAIL by Nordible.Co hat entfernt, was möglich war; wenn das weiterhin vorkommt, bitten Sie Ihren Administrator, das Limit für E-Mail-Übermittlungen zu erhöhen.",
     "submission_limit": "Der Server hat das Senden abgelehnt, weil ein Limit erreicht ist: {reason}",
     "recipients_refused": "Nicht gesendet: Der Server hat {recipients} abgelehnt.",
     "recipients_partly_refused": "Der Server hat {recipients} abgelehnt. Die anderen Empfänger erhalten die Nachricht.",
@@ -1029,8 +1029,19 @@
       "back": "Zurück zur Bearbeitung"
     },
     "placeholder_words": {
-      "before": ["ihr", "ihre", "ihren", "dein", "deine", "deinen"],
-      "after": ["einfügen", "eintragen", "ergänzen"],
+      "before": [
+        "ihr",
+        "ihre",
+        "ihren",
+        "dein",
+        "deine",
+        "deinen"
+      ],
+      "after": [
+        "einfügen",
+        "eintragen",
+        "ergänzen"
+      ],
       "unfinished": []
     },
     "add_link": "Link hinzufügen",
@@ -1637,17 +1648,17 @@
         "relax": "Entspannt"
       },
       "push_all": {
-          "title": "Alle Konten",
-          "description": "Push-Benachrichtigungen für mehrere Konten auf einmal ein- oder ausschalten. Ein einziges Browser-Abonnement gilt für alle.",
-          "select_all": "Alle verbundenen Konten auswählen",
-          "state_on": "Benachrichtigungen an",
-          "state_off": "Benachrichtigungen aus",
-          "enable_selected": "Für ausgewählte aktivieren",
-          "disable_selected": "Für ausgewählte deaktivieren",
-          "result_enabled": "Benachrichtigungen für {count} Konten aktiviert.",
-          "result_partial": "Für {enabled} Konten aktiviert; {failed} konnten nicht aktiviert werden.",
-          "result_disabled": "Benachrichtigungen für {count} Konten deaktiviert."
-        },
+        "title": "Alle Konten",
+        "description": "Push-Benachrichtigungen für mehrere Konten auf einmal ein- oder ausschalten. Ein einziges Browser-Abonnement gilt für alle.",
+        "select_all": "Alle verbundenen Konten auswählen",
+        "state_on": "Benachrichtigungen an",
+        "state_off": "Benachrichtigungen aus",
+        "enable_selected": "Für ausgewählte aktivieren",
+        "disable_selected": "Für ausgewählte deaktivieren",
+        "result_enabled": "Benachrichtigungen für {count} Konten aktiviert.",
+        "result_partial": "Für {enabled} Konten aktiviert; {failed} konnten nicht aktiviert werden.",
+        "result_disabled": "Benachrichtigungen für {count} Konten deaktiviert."
+      },
       "sound_selection": {
         "title": "Benachrichtigungston",
         "description": "Wählen Sie den Ton für Benachrichtigungen",
@@ -1675,13 +1686,13 @@
       "push": {
         "confirm_disable_message": "Dieses Gerät erhält keine Benachrichtigungen mehr, wenn die Seite geschlossen ist.",
         "confirm_disable_title": "Hintergrundbenachrichtigungen deaktivieren?",
-        "description": "Systembenachrichtigungen für neue E-Mails empfangen, wenn diese Seite geschlossen ist. Zustellung über das Bulwark Push-Relay; das Relay sieht niemals E-Mail-Inhalte.",
+        "description": "Systembenachrichtigungen für neue E-Mails empfangen, wenn diese Seite geschlossen ist. Zustellung über das Nordible Push-Relay; das Relay sieht niemals E-Mail-Inhalte.",
         "disable": "Deaktivieren",
         "enable": "Aktivieren",
         "dismiss_aria": "Benachrichtigungshinweis schließen",
         "ios_hint": "Installieren Sie die Seite unter iOS zuerst auf dem Startbildschirm – Safari liefert Web Push nur an installierte PWAs.",
         "reenable": "Neu registrieren",
-        "relay_desc": "Standardmäßig wird das gehostete Bulwark-Relay verwendet. Nur ändern, wenn Sie selbst hosten.",
+        "relay_desc": "Standardmäßig wird das gehostete Nordible-Relay verwendet. Nur ändern, wenn Sie selbst hosten.",
         "relay_label": "Push-Relay",
         "relay_locked": "Vom Administrator festgelegt",
         "relay_locked_desc": "Die Push-Relay-URL wurde von Ihrem Administrator festgelegt und kann nicht geändert werden.",
@@ -1689,7 +1700,7 @@
         "status_busy": "Wird verarbeitet…",
         "status_inactive": "Auf diesem Gerät nicht aktiviert",
         "status_unsupported": "Dieser Browser unterstützt Web Push nicht",
-        "status_lite": "Web Push ist in Bulwark Lite nicht verfügbar; es benötigt den Bulwark-Server.",
+        "status_lite": "Web Push ist in Lite nicht verfügbar; es benötigt den Server.",
         "title": "Hintergrundbenachrichtigungen",
         "devices_title": "Registrierte Geräte",
         "devices_desc": "Alle Geräte, die Hintergrundbenachrichtigungen für dieses Konto erhalten. Wird eines widerrufen, empfängt es sofort keine mehr.",
@@ -2138,7 +2149,7 @@
       "title": "Kontosicherheit",
       "description": "Verwalten Sie Ihr Passwort, Zwei-Faktor-Authentifizierung und Sicherheitseinstellungen",
       "detecting": "Serverfunktionen werden erkannt...",
-      "not_available": "Kontosicherheitsverwaltung ist für diesen Mailserver nicht verfügbar. Erforderliche Berechtigungen könnten deaktiviert sein. Siehe die <a href=\"https://bulwarkmail.org/docs/guides/account-security\" class=\"underline hover:opacity-80\" target=\"_blank\">Dokumentation</a> für Details.",
+      "not_available": "Kontosicherheitsverwaltung ist für diesen Mailserver nicht verfügbar. Erforderliche Berechtigungen könnten deaktiviert sein. Siehe die <a href=\"https://nordible.co\" class=\"underline hover:opacity-80\" target=\"_blank\">Dokumentation</a> für Details.",
       "password": {
         "title": "Passwort ändern",
         "current": "Aktuelles Passwort",
@@ -2520,7 +2531,7 @@
         "button": "Importieren"
       },
       "about": {
-        "title": "Bulwark Webmail",
+        "title": "EMAIL by Nordible.Co",
         "source_code": "Quellcode"
       },
       "spam_siege": {
@@ -3253,7 +3264,7 @@
     }
   },
   "setup": {
-    "title": "Einrichtung von Bulwark Webmail",
+    "title": "Einrichtung von EMAIL by Nordible.Co",
     "subtitle": "Richten Sie Ihre Webmail-Instanz im Browser ein.",
     "loading": "Wird geladen…",
     "back": "Zurück",
@@ -3378,7 +3389,7 @@
       "regenerate": "Neu erzeugen",
       "sync": "Benutzereinstellungen geräteübergreifend synchronisieren",
       "sync_hint": "Speichert die Einstellungen der Benutzer auf dem Server, verschlüsselt mit dem Sitzungsgeheimnis.",
-      "telemetry": "Anonyme Nutzungsstatistiken senden, um Bulwark zu verbessern",
+      "telemetry": "Anonyme Nutzungsstatistiken senden, um die App zu verbessern",
       "telemetry_hint": "Standardmäßig aus. Ein anonymes Lebenszeichen pro Tag mit Version, Plattform und den aktivierten Funktionen; niemals E-Mail-Adressen, Hostnamen oder IP-Adressen. Sie können das jederzeit in den Admin-Einstellungen ändern."
     },
     "logging": {
@@ -5247,7 +5258,7 @@
     "restore": "Wiederherstellen",
     "restored": "{count, plural, one {# Nachricht wird} other {# Nachrichten werden}} in Ihren Posteingang zurückgelegt.",
     "restore_partial": "{count, plural, one {# Nachricht konnte nicht wiederhergestellt werden. Sie bleibt ausgewählt, damit Sie es erneut versuchen können.} other {# Nachrichten konnten nicht wiederhergestellt werden. Sie bleiben ausgewählt, damit Sie es erneut versuchen können.}}",
-    "restore_hint": "Wiederhergestellte E-Mails kommen ungelesen in Ihren Posteingang und stehen dort nach ihrem ursprünglichen Datum, also möglicherweise weit unten. Der Server stellt sie im Hintergrund wieder her. Schlägt das dort fehl, ist die Nachricht verloren, und Bulwark kann das nicht erkennen.",
+    "restore_hint": "Wiederhergestellte E-Mails kommen ungelesen in Ihren Posteingang und stehen dort nach ihrem ursprünglichen Datum, also möglicherweise weit unten. Der Server stellt sie im Hintergrund wieder her. Schlägt das dort fehl, ist die Nachricht verloren, und EMAIL by Nordible.Co kann das nicht erkennen.",
     "unknown_sender": "Unbekannter Absender",
     "no_subject": "(kein Betreff)",
     "deleted_on": "Gelöscht am {date}",

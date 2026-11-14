@@ -81,7 +81,7 @@ vi.mock('../../device-sync/app/reminders', () => ({
 }));
 
 const NOW = new Date('2026-09-24T08:00:00Z').getTime();
-const TAG = 'bulwark-calendar-alert';
+const TAG = 'nordible-calendar-alert';
 
 const upcoming = {
   id: 'ev1',

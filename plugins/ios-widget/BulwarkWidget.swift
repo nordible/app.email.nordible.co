@@ -183,7 +183,7 @@ struct InboxWidgetView: View {
     content(palette)
       .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
       .widgetBackground(palette.background)
-      .widgetURL(URL(string: entry.snapshot?.inboxUrl ?? "bulwarkmobile://mail/folder/inbox"))
+      .widgetURL(URL(string: entry.snapshot?.inboxUrl ?? "nordiblemobile://mail/folder/inbox"))
   }
 
   @ViewBuilder private func content(_ palette: Palette) -> some View {
@@ -218,7 +218,7 @@ struct InboxWidgetView: View {
         Text("EMAIL by Nordible.Co")
           .font(.system(size: 15, weight: .semibold))
           .foregroundColor(palette.foreground)
-        Text(entry.snapshot?.strings.signedOut ?? "Open Bulwark to load your inbox.")
+        Text(entry.snapshot?.strings.signedOut ?? "Open EMAIL by Nordible.Co to load your inbox.")
           .font(.system(size: 13))
           .foregroundColor(palette.muted)
       }

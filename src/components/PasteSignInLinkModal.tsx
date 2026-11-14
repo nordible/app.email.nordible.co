@@ -113,7 +113,7 @@ export function PasteSignInLinkModal({ visible, onClose, onSubmit }: PasteSignIn
                 setText(value);
                 setError(null);
               }}
-              placeholder="bulwarkmail://pair?server=…&code=…"
+              placeholder="nordiblemail://pair?server=…&code=…"
               placeholderTextColor={c.textMuted}
               accessibilityLabel={t('login.mobile.paste_label', 'Sign-in link')}
               multiline

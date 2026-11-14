@@ -66,7 +66,7 @@ function fakeServer(
         return json({ error: 'invalid_client', description: 'Unknown client id', redirect: false });
       }
       return json(allows(clientId, params.get('scope'))
-        ? { name: 'Bulwark Mobile' }
+        ? { name: 'EMAIL by Nordible.Co' }
         : { error: 'invalid_request', redirect: true, location: scopeRefused(params.get('redirect_uri')) });
     }
     if (path === '/auth/register') {

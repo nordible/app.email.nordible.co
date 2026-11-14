@@ -197,7 +197,7 @@ async function registerPublicClient(
       method: 'POST',
       headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
       body: JSON.stringify({
-        client_name: 'Bulwark Mobile',
+        client_name: 'EMAIL by Nordible.Co',
         redirect_uris: [REGISTERED_REDIRECT_URI],
         post_logout_redirect_uris: [REGISTERED_LOGOUT_REDIRECT_URI],
         token_endpoint_auth_method: 'none',

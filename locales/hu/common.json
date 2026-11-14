@@ -73,8 +73,8 @@
     "demo_tagline": "Tapasztalj meg egy teljes értékű e-mail klienst. Nincs szükség fiókra.",
     "demo_no_signup": "Nincs szükség regisztrációra - fedezd fel szabadon mintaadatokkal",
     "mobile_handoff": {
-      "title": "Open the Bulwark mobile app?",
-      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the Bulwark link. Continue only if you started this from the Bulwark mobile app.",
+      "title": "Open the EMAIL by Nordible.Co mobile app?",
+      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the EMAIL by Nordible.Co link. Continue only if you started this from the EMAIL by Nordible.Co mobile app.",
       "confirm": "Hand over to the app",
       "cancel": "Stay in the webmail"
     },
@@ -411,11 +411,11 @@
     "too_long": "Ez a név túl hosszú.",
     "loading": "Betöltés…",
     "unsupported": "Ez a levelezőszerver nem tud megosztott címkéket tárolni, ezért ez a postafiók a saját címkéidet mutatja.",
-    "unavailable": "Nem sikerült betölteni a postafiók megosztott címkéit, ezért a saját címkéidet mutatja. A Bulwark később újra próbálkozik.",
+    "unavailable": "Nem sikerült betölteni a postafiók megosztott címkéit, ezért a saját címkéidet mutatja. A EMAIL by Nordible.Co később újra próbálkozik.",
     "no_rights": "Használhatod ezeket a címkéket, de ebben a postafiókban nem módosíthatod őket.",
     "too_many": "Túl sok a megosztott címke. Törölj néhányat, mielőtt újakat adsz hozzá.",
-    "save_failed": "Nem sikerült menteni a megosztott címkéket. A Bulwark újra próbálkozik, amikor a szerver válaszol.",
-    "save_pending": "Még nincs mentve. A Bulwark újra próbálkozik, amikor a szerver válaszol."
+    "save_failed": "Nem sikerült menteni a megosztott címkéket. A EMAIL by Nordible.Co újra próbálkozik, amikor a szerver válaszol.",
+    "save_pending": "Még nincs mentve. A EMAIL by Nordible.Co újra próbálkozik, amikor a szerver válaszol."
   },
   "email_viewer": {
     "read_receipt": {
@@ -988,7 +988,7 @@
     "show_less": "Kevesebb mutatása",
     "send_failed": "Nem sikerült elküldeni az e-mailt",
     "send_timeout": "A kiszolgáló nem válaszol többé. Újraküldés előtt ellenőrizze az Elküldött mappát – az üzenet lehet, hogy már kiment.",
-    "submission_quota": "A kiszolgáló túl sok elküldött üzenetről szóló bejegyzést tárol ehhez a fiókhoz. A Bulwark eltávolította, amit tudott; ha ez továbbra is előfordul, kérje meg a rendszergazdát, hogy emelje meg az e-mail-küldési korlátot.",
+    "submission_quota": "A kiszolgáló túl sok elküldött üzenetről szóló bejegyzést tárol ehhez a fiókhoz. A EMAIL by Nordible.Co eltávolította, amit tudott; ha ez továbbra is előfordul, kérje meg a rendszergazdát, hogy emelje meg az e-mail-küldési korlátot.",
     "submission_limit": "A kiszolgáló elutasította az üzenet küldését, mert elért egy korlátot: {reason}",
     "recipients_refused": "Nincs elküldve: a kiszolgáló elutasította a következőt: {recipients}.",
     "recipients_partly_refused": "A kiszolgáló elutasította a következőt: {recipients}. A többi címzett megkapja az üzenetet.",
@@ -1032,7 +1032,13 @@
       "back": "Vissza a szerkesztéshez"
     },
     "placeholder_words": {
-      "before": ["az ön", "a te", "írja be", "illessze be", "adja meg"],
+      "before": [
+        "az ön",
+        "a te",
+        "írja be",
+        "illessze be",
+        "adja meg"
+      ],
       "after": [],
       "unfinished": []
     },
@@ -1641,15 +1647,15 @@
       },
       "push": {
         "title": "Háttérértesítések",
-        "description": "Rendszerértesítések fogadása új levelekről, amikor ez az oldal be van zárva. A Bulwark push relén keresztül kézbesítve; a relay soha nem látja a levél tartalmát.",
+        "description": "Rendszerértesítések fogadása új levelekről, amikor ez az oldal be van zárva. A EMAIL by Nordible.Co push relén keresztül kézbesítve; a relay soha nem látja a levél tartalmát.",
         "relay_label": "Push relé",
-        "relay_desc": "Alapértelmezés szerint a tárolt Bulwark relay. Csak akkor módosítsd, ha sajátot üzemeltetsz.",
+        "relay_desc": "Alapértelmezés szerint a tárolt Nordible relay. Csak akkor módosítsd, ha sajátot üzemeltetsz.",
         "relay_locked": "Rendszergazda által beállítva",
         "relay_locked_desc": "A push relay URL-t a rendszergazda állította be, és nem módosítható.",
         "status_active": "Aktív ezen az eszközön",
         "status_inactive": "Nincs engedélyezve ezen az eszközön",
         "status_unsupported": "Ez a böngésző nem támogatja a Web Push-t",
-        "status_lite": "Web Push is not available in Bulwark Lite; it needs the Bulwark server.",
+        "status_lite": "Web Push is not available in Lite; it needs the server.",
         "status_busy": "Munka...",
         "enable": "Engedélyezés",
         "reenable": "Újraregisztráció",
@@ -1679,17 +1685,17 @@
         "error_over_quota": "Ennek a fióknak túl sok push-regisztrációja van a levelezőszerveren (a korlát általában 15). Az értesítési beállításokban vonja vissza a már nem használt eszközöket, majd próbálja újra."
       },
       "push_all": {
-          "title": "All accounts",
-          "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
-          "select_all": "Select every connected account",
-          "state_on": "notifications on",
-          "state_off": "notifications off",
-          "enable_selected": "Enable for selected",
-          "disable_selected": "Disable for selected",
-          "result_enabled": "Notifications enabled for {count} accounts.",
-          "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
-          "result_disabled": "Notifications disabled for {count} accounts."
-        },
+        "title": "All accounts",
+        "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
+        "select_all": "Select every connected account",
+        "state_on": "notifications on",
+        "state_off": "notifications off",
+        "enable_selected": "Enable for selected",
+        "disable_selected": "Disable for selected",
+        "result_enabled": "Notifications enabled for {count} accounts.",
+        "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
+        "result_disabled": "Notifications disabled for {count} accounts."
+      },
       "sound_selection": {
         "title": "Értesítési hang",
         "description": "Válaszd ki az értesítésekhez használt hangot",
@@ -2141,7 +2147,7 @@
       "title": "Fiók biztonság",
       "description": "Jelszó, kétfaktoros hitelesítés és biztonsági beállítások kezelése",
       "detecting": "Szerver képességek érzékelése...",
-      "not_available": "A fiók biztonsági kezelés nem érhető el ehhez a levelezőszerverhez. A szükséges engedélyek lehet, hogy le vannak tiltva. Lásd a <a href=\"https://bulwarkmail.org/docs/guides/account-security\" class=\"underline hover:opacity-80\" target=\"_blank\">dokumentációt</a> a részletekért.",
+      "not_available": "A fiók biztonsági kezelés nem érhető el ehhez a levelezőszerverhez. A szükséges engedélyek lehet, hogy le vannak tiltva. Lásd a <a href=\"https://nordible.co\" class=\"underline hover:opacity-80\" target=\"_blank\">dokumentációt</a> a részletekért.",
       "password": {
         "title": "Jelszó módosítása",
         "current": "Jelenlegi jelszó",
@@ -2523,7 +2529,7 @@
         "button": "Importálás"
       },
       "about": {
-        "title": "Bulwark Webmail",
+        "title": "EMAIL by Nordible.Co",
         "source_code": "Forráskód"
       },
       "spam_siege": {
@@ -3253,7 +3259,7 @@
     }
   },
   "setup": {
-    "title": "A Bulwark Webmail beállítása",
+    "title": "A EMAIL by Nordible.Co beállítása",
     "subtitle": "Állítsa be a webmail-példányát a böngészőből.",
     "loading": "Betöltés…",
     "back": "Vissza",
@@ -3378,7 +3384,7 @@
       "regenerate": "Újragenerálás",
       "sync": "Felhasználói beállítások szinkronizálása az eszközök között",
       "sync_hint": "A felhasználók beállításait a szerveren tárolja, a munkamenet-titokkal titkosítva.",
-      "telemetry": "Névtelen használati statisztikák küldése a Bulwark fejlesztéséhez",
+      "telemetry": "Névtelen használati statisztikák küldése a EMAIL by Nordible.Co fejlesztéséhez",
       "telemetry_hint": "Alapértelmezés szerint ki van kapcsolva. Naponta egy névtelen jelzés a verzióval, a platformmal és a bekapcsolt funkciókkal; soha nem küld e-mail-címet, gépnevet vagy IP-címet. Ezt bármikor módosíthatja az adminisztrációs beállításokban."
     },
     "logging": {
@@ -3524,8 +3530,7 @@
       "manage": "Szabályok kezelése",
       "senders_count": "{count, plural, one {# feladó} other {# feladó}}",
       "cross_account": "Egyetlen fiók üzeneteit válaszd ki",
-      "opaque_hint": "A szűrőidet kézzel szerkesztették. Nyisd meg a szűrőbeállításokat"
-,
+      "opaque_hint": "A szűrőidet kézzel szerkesztették. Nyisd meg a szűrőbeállításokat",
       "loading": "Szabályok betöltése…",
       "load_failed": "Nem sikerült betölteni a szabályokat",
       "none": "Még nincsenek szabályok",
@@ -5017,8 +5022,8 @@
     "dismiss": "Elutasítás",
     "start_tour": "Bemutató indítása"
   },
-  "demo_welcome": {EMAIL by Nordible.Co
-    "title": "Üdvözlünk a Bulwark Mail-ben",
+  "demo_welcome": {
+    "title": "Üdvözlünk a EMAIL by Nordible.Co-ben",
     "description": "Fedezz fel egy teljes funkciókkal rendelkező webmail klienst - közvetlenül a böngésződben. Az összes adat az eszközödön marad, nyugodtan tesztelj mindent.",
     "feature_email": "E-mailek olvasása és írása",
     "feature_organize": "Címkék, csillagok és mappák",
@@ -5378,7 +5383,7 @@
     "restore": "Visszaállítás",
     "restored": "{count, plural, one {# üzenet} other {# üzenet}} úton van vissza a Beérkező levelekbe.",
     "restore_partial": "{count, plural, one {# üzenetet nem sikerült visszaállítani. Kijelölve marad, így újra megpróbálhatod.} other {# üzenetet nem sikerült visszaállítani. Kijelölve maradnak, így újra megpróbálhatod.}}",
-    "restore_hint": "A visszaállított levelek olvasatlanként kerülnek vissza a Beérkező levelek közé, az eredeti dátumuk szerint rendezve, így messze lent is lehetnek a listában. A szerver a háttérben állítja vissza őket. Ha ez ott nem sikerül, az üzenet elvész, és a Bulwark ezt nem tudja észlelni.",
+    "restore_hint": "A visszaállított levelek olvasatlanként kerülnek vissza a Beérkező levelek közé, az eredeti dátumuk szerint rendezve, így messze lent is lehetnek a listában. A szerver a háttérben állítja vissza őket. Ha ez ott nem sikerül, az üzenet elvész, és a EMAIL by Nordible.Co ezt nem tudja észlelni.",
     "unknown_sender": "Ismeretlen feladó",
     "no_subject": "(nincs tárgy)",
     "deleted_on": "Törölve: {date}",

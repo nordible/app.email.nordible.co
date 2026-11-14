@@ -73,8 +73,8 @@
     "demo_tagline": "Proveu un client de correu complet. No cal cap compte.",
     "demo_no_signup": "No cal registrar-se - exploreu lliurement amb dades d'exemple",
     "mobile_handoff": {
-      "title": "Open the Bulwark mobile app?",
-      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the Bulwark link. Continue only if you started this from the Bulwark mobile app.",
+      "title": "Open the EMAIL by Nordible.Co mobile app?",
+      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the EMAIL by Nordible.Co link. Continue only if you started this from the EMAIL by Nordible.Co mobile app.",
       "confirm": "Hand over to the app",
       "cancel": "Stay in the webmail"
     },
@@ -411,11 +411,11 @@
     "too_long": "Aquest nom és massa llarg.",
     "loading": "Carregant…",
     "unsupported": "Aquest servidor de correu no pot desar etiquetes compartides, així que aquesta bústia mostra les vostres pròpies etiquetes.",
-    "unavailable": "No s'han pogut carregar les etiquetes compartides d'aquesta bústia, així que mostra les vostres pròpies etiquetes. Bulwark ho tornarà a provar més tard.",
+    "unavailable": "No s'han pogut carregar les etiquetes compartides d'aquesta bústia, així que mostra les vostres pròpies etiquetes. EMAIL by Nordible.Co ho tornarà a provar més tard.",
     "no_rights": "Podeu fer servir aquestes etiquetes, però no les podeu canviar en aquesta bústia.",
     "too_many": "Hi ha massa etiquetes compartides. Suprimiu-ne algunes abans d'afegir-ne més.",
-    "save_failed": "No s'han pogut desar les etiquetes compartides. Bulwark ho tornarà a provar quan el servidor respongui.",
-    "save_pending": "Encara no s'ha desat. Bulwark ho tornarà a provar quan el servidor respongui."
+    "save_failed": "No s'han pogut desar les etiquetes compartides. EMAIL by Nordible.Co ho tornarà a provar quan el servidor respongui.",
+    "save_pending": "Encara no s'ha desat. EMAIL by Nordible.Co ho tornarà a provar quan el servidor respongui."
   },
   "email_viewer": {
     "read_receipt": {
@@ -988,7 +988,7 @@
     "show_less": "Mostra'n menys",
     "send_failed": "No s'ha pogut enviar el correu",
     "send_timeout": "El servidor ha deixat de respondre. Comproveu la carpeta Enviats abans de tornar a enviar: el missatge pot haver sortit.",
-    "submission_quota": "El servidor té massa registres de missatges enviats per a aquest compte. Bulwark ha eliminat els que ha pogut; si torna a passar, demaneu a l'administrador que augmenti el límit d'enviaments de correu.",
+    "submission_quota": "El servidor té massa registres de missatges enviats per a aquest compte. EMAIL by Nordible.Co ha eliminat els que ha pogut; si torna a passar, demaneu a l'administrador que augmenti el límit d'enviaments de correu.",
     "submission_limit": "El servidor s'ha negat a enviar el missatge perquè s'ha arribat a un límit: {reason}",
     "recipients_refused": "No s'ha enviat: el servidor ha rebutjat {recipients}.",
     "recipients_partly_refused": "El servidor ha rebutjat {recipients}. Els altres destinataris reben el missatge.",
@@ -1032,7 +1032,17 @@
       "back": "Torna a l'edició"
     },
     "placeholder_words": {
-      "before": ["el teu", "la teva", "el vostre", "la vostra", "insereix", "inseriu", "afegeix", "afegiu", "escriviu"],
+      "before": [
+        "el teu",
+        "la teva",
+        "el vostre",
+        "la vostra",
+        "insereix",
+        "inseriu",
+        "afegeix",
+        "afegiu",
+        "escriviu"
+      ],
       "after": [],
       "unfinished": []
     },
@@ -1641,15 +1651,15 @@
       },
       "push": {
         "title": "Notificacions en segon pla",
-        "description": "Rebeu notificacions del sistema per al correu nou quan aquest lloc estigui tancat. S'entreguen mitjançant el repetidor push del Bulwark; el repetidor mai no veu el contingut del correu.",
+        "description": "Rebeu notificacions del sistema per al correu nou quan aquest lloc estigui tancat. S'entreguen mitjançant el repetidor push del EMAIL by Nordible.Co; el repetidor mai no veu el contingut del correu.",
         "relay_label": "Repetidor push",
-        "relay_desc": "Per defecte utilitza el repetidor allotjat del Bulwark. Canvieu-ho només si allotgeu el vostre propi servidor.",
+        "relay_desc": "Per defecte utilitza el repetidor allotjat del EMAIL by Nordible.Co. Canvieu-ho només si allotgeu el vostre propi servidor.",
         "relay_locked": "Establert per l'administrador",
         "relay_locked_desc": "L'URL del repetidor push l'ha establert l'administrador i no es pot canviar.",
         "status_active": "Actiu en aquest dispositiu",
         "status_inactive": "No activat en aquest dispositiu",
         "status_unsupported": "Aquest navegador no admet Web Push",
-        "status_lite": "Web Push is not available in Bulwark Lite; it needs the Bulwark server.",
+        "status_lite": "Web Push is not available in Lite; it needs the server.",
         "status_busy": "Treballant…",
         "enable": "Activa",
         "reenable": "Torna a registrar",
@@ -1679,17 +1689,17 @@
         "error_over_quota": "Aquest compte té massa registres push al servidor de correu (el límit sol ser 15). Revoqueu els dispositius que ja no feu servir a la configuració de notificacions i torneu-ho a provar."
       },
       "push_all": {
-          "title": "All accounts",
-          "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
-          "select_all": "Select every connected account",
-          "state_on": "notifications on",
-          "state_off": "notifications off",
-          "enable_selected": "Enable for selected",
-          "disable_selected": "Disable for selected",
-          "result_enabled": "Notifications enabled for {count} accounts.",
-          "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
-          "result_disabled": "Notifications disabled for {count} accounts."
-        },
+        "title": "All accounts",
+        "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
+        "select_all": "Select every connected account",
+        "state_on": "notifications on",
+        "state_off": "notifications off",
+        "enable_selected": "Enable for selected",
+        "disable_selected": "Disable for selected",
+        "result_enabled": "Notifications enabled for {count} accounts.",
+        "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
+        "result_disabled": "Notifications disabled for {count} accounts."
+      },
       "sound_selection": {
         "title": "So de notificació",
         "description": "Trieu quin so es reprodueix per a les notificacions",
@@ -2145,7 +2155,7 @@
       "title": "Seguretat del compte",
       "description": "Gestioneu la contrasenya, l'autenticació de dos factors i la configuració de seguretat",
       "detecting": "Detectant les capacitats del servidor...",
-      "not_available": "La gestió de la seguretat del compte no està disponible per a aquest servidor de correu. És possible que els permisos necessaris estiguin desactivats. Consulteu la <a href=\"https://bulwarkmail.org/docs/guides/account-security\" class=\"underline hover:opacity-80\" target=\"_blank\">documentació</a> per obtenir més detalls.",
+      "not_available": "La gestió de la seguretat del compte no està disponible per a aquest servidor de correu. És possible que els permisos necessaris estiguin desactivats. Consulteu la <a href=\"https://nordible.co\" class=\"underline hover:opacity-80\" target=\"_blank\">documentació</a> per obtenir més detalls.",
       "password": {
         "title": "Canvia la contrasenya",
         "current": "Contrasenya actual",
@@ -2527,7 +2537,7 @@
         "button": "Importa"
       },
       "about": {
-        "title": "Bulwark Webmail",
+        "title": "EMAIL by Nordible.Co",
         "source_code": "Codi font"
       },
       "spam_siege": {
@@ -3253,7 +3263,7 @@
     }
   },
   "setup": {
-    "title": "Configuració de Bulwark Webmail",
+    "title": "Configuració de EMAIL by Nordible.Co",
     "subtitle": "Configureu la vostra instància de correu web des del navegador.",
     "loading": "S’està carregant…",
     "back": "Enrere",
@@ -3378,7 +3388,7 @@
       "regenerate": "Torna a generar",
       "sync": "Sincronitza els paràmetres dels usuaris entre dispositius",
       "sync_hint": "Desa les preferències dels usuaris al servidor, xifrades amb el secret de sessió.",
-      "telemetry": "Envia estadístiques d’ús anònimes per ajudar a millorar Bulwark",
+      "telemetry": "Envia estadístiques d’ús anònimes per ajudar a millorar EMAIL by Nordible.Co",
       "telemetry_hint": "Desactivat per defecte. Un senyal anònim al dia amb la versió, la plataforma i les funcions activades; mai adreces de correu, noms d’amfitrió ni IP. Ho podeu canviar quan vulgueu als paràmetres d’administració."
     },
     "logging": {
@@ -3524,8 +3534,7 @@
       "manage": "Gestiona les regles",
       "senders_count": "{count, plural, one {# remitent} other {# remitents}}",
       "cross_account": "Selecciona missatges d'un sol compte",
-      "opaque_hint": "Els teus filtres s'han editat a mà. Obre la configuració dels filtres"
-,
+      "opaque_hint": "Els teus filtres s'han editat a mà. Obre la configuració dels filtres",
       "loading": "S'estan carregant les regles…",
       "load_failed": "No s'han pogut carregar les regles",
       "none": "Encara no hi ha regles",
@@ -5017,8 +5026,8 @@
     "dismiss": "Descarta",
     "start_tour": "Comença la visita guiada"
   },
-  "demo_welcome": {EMAIL by Nordible.Co
-    "title": "Us donem la benvinguda al Bulwark Mail",
+  "demo_welcome": {
+    "title": "Us donem la benvinguda al EMAIL by Nordible.Co",
     "description": "Exploreu un client de correu web complet, directament al navegador. Totes les dades es queden al vostre dispositiu, així que proveu-ho tot sense cap problema.",
     "feature_email": "Llegiu i redacteu correus",
     "feature_organize": "Etiquetes, estrelles i carpetes",
@@ -5378,7 +5387,7 @@
     "restore": "Restaura",
     "restored": "{count, plural, one {# missatge torna} other {# missatges tornen}} a la vostra safata d'entrada.",
     "restore_partial": "{count, plural, one {No s'ha pogut restaurar # missatge. Continua seleccionat perquè ho pugueu tornar a provar.} other {No s'han pogut restaurar # missatges. Continuen seleccionats perquè ho pugueu tornar a provar.}}",
-    "restore_hint": "El correu restaurat torna a la safata d'entrada com a no llegit, ordenat per la data original, així que pot quedar molt avall a la llista. El servidor el restaura en segon pla. Si allà falla, el missatge es perd i Bulwark no ho pot saber.",
+    "restore_hint": "El correu restaurat torna a la safata d'entrada com a no llegit, ordenat per la data original, així que pot quedar molt avall a la llista. El servidor el restaura en segon pla. Si allà falla, el missatge es perd i EMAIL by Nordible.Co no ho pot saber.",
     "unknown_sender": "Remitent desconegut",
     "no_subject": "(sense assumpte)",
     "deleted_on": "Suprimit el {date}",

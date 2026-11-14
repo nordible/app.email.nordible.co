@@ -411,11 +411,11 @@
     "too_long": "This name is too long.",
     "loading": "Loading…",
     "unsupported": "This mail server can't keep shared tags, so this mailbox shows your own tags.",
-    "unavailable": "Couldn't load the shared tags of this mailbox, so it shows your own tags. Bulwark tries again later.",
+    "unavailable": "Couldn't load the shared tags of this mailbox, so it shows your own tags. EMAIL by Nordible.Co tries again later.",
     "no_rights": "You can use these tags, but you can't change them in this mailbox.",
     "too_many": "There are too many shared tags. Delete some before adding more.",
-    "save_failed": "Couldn't save the shared tags. Bulwark tries again when the server answers.",
-    "save_pending": "Not saved yet. Bulwark tries again when the server answers."
+    "save_failed": "Couldn't save the shared tags. EMAIL by Nordible.Co tries again when the server answers.",
+    "save_pending": "Not saved yet. EMAIL by Nordible.Co tries again when the server answers."
   },
   "email_viewer": {
     "read_receipt": {
@@ -990,7 +990,7 @@
     "send_failed": "Failed to send email",
     "send_offline": "You seem to be offline. The message is still here, send it again once you are back online.",
     "send_timeout": "The server stopped responding. Check your Sent folder before sending again — the message may have gone out.",
-    "submission_quota": "The server has too many sent-message records for this account. Bulwark removed the ones it could; if this keeps happening, ask your administrator to raise the email submission limit.",
+    "submission_quota": "The server has too many sent-message records for this account. EMAIL by Nordible.Co removed the ones it could; if this keeps happening, ask your administrator to raise the email submission limit.",
     "submission_limit": "The server refused to send the message because a limit was reached: {reason}",
     "recipients_refused": "Not sent: the server refused {recipients}.",
     "recipients_partly_refused": "The server refused {recipients}. The other recipients get the message.",
@@ -1034,9 +1034,21 @@
       "back": "Back to editing"
     },
     "placeholder_words": {
-      "before": ["your", "insert", "enter", "add"],
+      "before": [
+        "your",
+        "insert",
+        "enter",
+        "add"
+      ],
       "after": [],
-      "unfinished": ["TODO", "TBD", "TBA", "TBC", "FIXME", "XXX"]
+      "unfinished": [
+        "TODO",
+        "TBD",
+        "TBA",
+        "TBC",
+        "FIXME",
+        "XXX"
+      ]
     },
     "schedule_send": "Schedule send",
     "schedule_send_description": "Choose when the server should release this message.",
@@ -1641,7 +1653,7 @@
       },
       "push": {
         "title": "Background notifications",
-        "description": "Receive system notifications for new mail when this site is closed. Delivered via the Bulwark push relay; the relay never sees mail content.",
+        "description": "Receive system notifications for new mail when this site is closed. Delivered via the Nordible push relay; the relay never sees mail content.",
         "relay_label": "Push relay",
         "relay_desc": "The server that delivers your notifications. Choose from the relays your administrator offers.",
         "relay_locked": "Set by administrator",
@@ -1649,7 +1661,7 @@
         "status_active": "Active on this device",
         "status_inactive": "Not enabled on this device",
         "status_unsupported": "This browser does not support Web Push",
-        "status_lite": "Web Push is not available in Bulwark Lite; it needs the Bulwark server.",
+        "status_lite": "Web Push is not available in Lite; it needs the server.",
         "status_busy": "Working…",
         "enable": "Enable",
         "reenable": "Re-register",
@@ -2145,7 +2157,7 @@
       "title": "Account security",
       "description": "Manage your password, two-factor authentication, and security settings",
       "detecting": "Detecting server capabilities...",
-      "not_available": "Account security management is not available for this mail server. Required permissions may be disabled. See the <a href=\"https://bulwarkmail.org/docs/guides/account-security\" class=\"underline hover:opacity-80\" target=\"_blank\">documentation</a> for details.",
+      "not_available": "Account security management is not available for this mail server. Required permissions may be disabled. See the <a href=\"https://nordible.co\" class=\"underline hover:opacity-80\" target=\"_blank\">documentation</a> for details.",
       "password": {
         "title": "Change password",
         "current": "Current password",
@@ -2527,7 +2539,7 @@
         "button": "Import"
       },
       "about": {
-        "title": "Bulwark Webmail",
+        "title": "EMAIL by Nordible.Co",
         "source_code": "Source code"
       },
       "spam_siege": {
@@ -3253,7 +3265,7 @@
     }
   },
   "setup": {
-    "title": "Bulwark Webmail setup",
+    "title": "EMAIL by Nordible.Co setup",
     "subtitle": "Configure your webmail instance from the browser.",
     "loading": "Loading…",
     "back": "Back",
@@ -3378,7 +3390,7 @@
       "regenerate": "Regenerate",
       "sync": "Sync user settings across devices",
       "sync_hint": "Stores user preferences on the server, encrypted with the session secret.",
-      "telemetry": "Send anonymous usage stats to help improve Bulwark",
+      "telemetry": "Send anonymous usage stats to help improve the app",
       "telemetry_hint": "Off by default. One anonymous heartbeat per day with version, platform and which features are enabled; never email addresses, hostnames or IPs. You can change this anytime in the admin settings."
     },
     "logging": {
@@ -5377,7 +5389,7 @@
     "restore": "Restore",
     "restored": "{count, plural, one {# message is} other {# messages are}} on the way back to your Inbox.",
     "restore_partial": "{count, plural, one {# message couldn't be restored. It stays selected, so you can try again.} other {# messages couldn't be restored. They stay selected, so you can try again.}}",
-    "restore_hint": "Restored mail goes back to your Inbox as unread, sorted by its original date, so it may be far down the list. The server restores it in the background. If that fails there, the message is lost and Bulwark can't tell.",
+    "restore_hint": "Restored mail goes back to your Inbox as unread, sorted by its original date, so it may be far down the list. The server restores it in the background. If that fails there, the message is lost and EMAIL by Nordible.Co can't tell.",
     "unknown_sender": "Unknown sender",
     "no_subject": "(no subject)",
     "deleted_on": "Deleted {date}",

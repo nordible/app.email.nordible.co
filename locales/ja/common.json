@@ -73,8 +73,8 @@
     "demo_tagline": "フル機能のメールクライアントを体験。アカウント不要。",
     "demo_no_signup": "登録不要 - サンプルデータで自由に探索",
     "mobile_handoff": {
-      "title": "Open the Bulwark mobile app?",
-      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the Bulwark link. Continue only if you started this from the Bulwark mobile app.",
+      "title": "Open the EMAIL by Nordible.Co mobile app?",
+      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the EMAIL by Nordible.Co link. Continue only if you started this from the EMAIL by Nordible.Co mobile app.",
       "confirm": "Hand over to the app",
       "cancel": "Stay in the webmail"
     },
@@ -411,11 +411,11 @@
     "too_long": "名前が長すぎます。",
     "loading": "読み込み中…",
     "unsupported": "このメールサーバーは共有タグを保存できないため、このメールボックスには自分のタグが表示されます。",
-    "unavailable": "このメールボックスの共有タグを読み込めなかったため、自分のタグを表示しています。Bulwark が後でもう一度試します。",
+    "unavailable": "このメールボックスの共有タグを読み込めなかったため、自分のタグを表示しています。EMAIL by Nordible.Co が後でもう一度試します。",
     "no_rights": "これらのタグは使えますが、このメールボックスでは変更できません。",
     "too_many": "共有タグが多すぎます。追加する前にいくつか削除してください。",
-    "save_failed": "共有タグを保存できませんでした。サーバーが応答したら Bulwark がもう一度試します。",
-    "save_pending": "まだ保存されていません。サーバーが応答したら Bulwark がもう一度試します。"
+    "save_failed": "共有タグを保存できませんでした。サーバーが応答したら EMAIL by Nordible.Co がもう一度試します。",
+    "save_pending": "まだ保存されていません。サーバーが応答したら EMAIL by Nordible.Co がもう一度試します。"
   },
   "email_viewer": {
     "read_receipt": {
@@ -992,7 +992,7 @@
     "smime_unlock_button": "ロック解除",
     "smime_passphrase_placeholder": "S/MIME パスフレーズ",
     "send_timeout": "サーバーが応答しなくなりました。再送信する前に送信済みフォルダーを確認してください。メッセージはすでに送信されている可能性があります。",
-    "submission_quota": "このアカウントの送信済みメッセージの記録がサーバー上に多すぎます。Bulwark は削除できる記録を削除しました。この状態が続く場合は、メール送信数の上限を引き上げるよう管理者に依頼してください。",
+    "submission_quota": "このアカウントの送信済みメッセージの記録がサーバー上に多すぎます。EMAIL by Nordible.Co は削除できる記録を削除しました。この状態が続く場合は、メール送信数の上限を引き上げるよう管理者に依頼してください。",
     "submission_limit": "上限に達したため、サーバーがメッセージの送信を拒否しました: {reason}",
     "recipients_refused": "送信されませんでした: サーバーが {recipients} を拒否しました。",
     "recipients_partly_refused": "サーバーが {recipients} を拒否しました。他の宛先にはメッセージが届きます。",
@@ -1029,8 +1029,18 @@
       "back": "編集に戻る"
     },
     "placeholder_words": {
-      "before": ["あなたの-", "貴社の-", "御社の-"],
-      "after": ["-を入力", "-を記入", "-を挿入", "-を追加", "-を入れる"],
+      "before": [
+        "あなたの-",
+        "貴社の-",
+        "御社の-"
+      ],
+      "after": [
+        "-を入力",
+        "-を記入",
+        "-を挿入",
+        "-を追加",
+        "-を入れる"
+      ],
       "unfinished": []
     },
     "add_link": "リンクを追加",
@@ -1637,17 +1647,17 @@
         "relax": "リラックス"
       },
       "push_all": {
-          "title": "All accounts",
-          "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
-          "select_all": "Select every connected account",
-          "state_on": "notifications on",
-          "state_off": "notifications off",
-          "enable_selected": "Enable for selected",
-          "disable_selected": "Disable for selected",
-          "result_enabled": "Notifications enabled for {count} accounts.",
-          "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
-          "result_disabled": "Notifications disabled for {count} accounts."
-        },
+        "title": "All accounts",
+        "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
+        "select_all": "Select every connected account",
+        "state_on": "notifications on",
+        "state_off": "notifications off",
+        "enable_selected": "Enable for selected",
+        "disable_selected": "Disable for selected",
+        "result_enabled": "Notifications enabled for {count} accounts.",
+        "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
+        "result_disabled": "Notifications disabled for {count} accounts."
+      },
       "sound_selection": {
         "title": "通知音",
         "description": "通知に使用する音を選択",
@@ -1675,13 +1685,13 @@
       "push": {
         "confirm_disable_message": "このデバイスは、サイトが閉じているときに通知を受信しなくなります。",
         "confirm_disable_title": "バックグラウンド通知を無効にしますか？",
-        "description": "このサイトが閉じているときに新着メールのシステム通知を受信します。Bulwark プッシュリレー経由で配信され、リレーがメール内容を見ることはありません。",
+        "description": "このサイトが閉じているときに新着メールのシステム通知を受信します。EMAIL by Nordible.Co プッシュリレー経由で配信され、リレーがメール内容を見ることはありません。",
         "disable": "無効化",
         "enable": "有効化",
         "dismiss_aria": "通知プロンプトを閉じる",
         "ios_hint": "iOS では、最初にサイトをホーム画面にインストールしてください。Safari はインストールされた PWA にのみ Web Push を配信します。",
         "reenable": "再登録",
-        "relay_desc": "デフォルトはホストされた Bulwark リレーです。セルフホストする場合のみ変更してください。",
+        "relay_desc": "デフォルトはホストされた EMAIL by Nordible.Co リレーです。セルフホストする場合のみ変更してください。",
         "relay_label": "プッシュリレー",
         "relay_locked": "管理者が設定",
         "relay_locked_desc": "プッシュリレーの URL は管理者によって設定されており、変更できません。",
@@ -1689,7 +1699,7 @@
         "status_busy": "処理中…",
         "status_inactive": "このデバイスでは有効になっていません",
         "status_unsupported": "このブラウザは Web Push をサポートしていません",
-        "status_lite": "Web Push is not available in Bulwark Lite; it needs the Bulwark server.",
+        "status_lite": "Web Push is not available in Lite; it needs the server.",
         "title": "バックグラウンド通知",
         "devices_title": "登録済みのデバイス",
         "devices_desc": "このアカウントのバックグラウンド通知を受け取るよう登録されているデバイスの一覧です。取り消すと、そのデバイスはすぐに受信を停止します。",
@@ -2138,7 +2148,7 @@
       "title": "アカウントセキュリティ",
       "description": "パスワード、二要素認証、セキュリティ設定を管理します",
       "detecting": "サーバー機能を検出中...",
-      "not_available": "このメールサーバーではアカウントセキュリティ管理は利用できません。必要な権限が無効になっている可能性があります。詳細は<a href=\"https://bulwarkmail.org/docs/guides/account-security\" class=\"underline hover:opacity-80\" target=\"_blank\">ドキュメント</a>を参照してください。",
+      "not_available": "このメールサーバーではアカウントセキュリティ管理は利用できません。必要な権限が無効になっている可能性があります。詳細は<a href=\"https://nordible.co\" class=\"underline hover:opacity-80\" target=\"_blank\">ドキュメント</a>を参照してください。",
       "password": {
         "title": "パスワードの変更",
         "current": "現在のパスワード",
@@ -2520,7 +2530,7 @@
         "button": "インポート"
       },
       "about": {
-        "title": "Bulwark Webmail",
+        "title": "EMAIL by Nordible.Co",
         "source_code": "ソースコード"
       },
       "spam_siege": {
@@ -3253,7 +3263,7 @@
     }
   },
   "setup": {
-    "title": "Bulwark Webmail のセットアップ",
+    "title": "EMAIL by Nordible.Co のセットアップ",
     "subtitle": "ブラウザーから Web メールのインスタンスを設定します。",
     "loading": "読み込み中…",
     "back": "戻る",
@@ -3378,7 +3388,7 @@
       "regenerate": "再生成",
       "sync": "ユーザー設定をデバイス間で同期する",
       "sync_hint": "ユーザーの設定をサーバーに保存し、セッションシークレットで暗号化します。",
-      "telemetry": "Bulwark の改善のために匿名の使用統計を送信する",
+      "telemetry": "EMAIL by Nordible.Co の改善のために匿名の使用統計を送信する",
       "telemetry_hint": "既定ではオフです。バージョン、プラットフォーム、有効な機能を含む匿名の信号を 1 日 1 回送信します。メールアドレス、ホスト名、IP アドレスは送信しません。管理設定でいつでも変更できます。"
     },
     "logging": {
@@ -3524,8 +3534,7 @@
       "manage": "ルールを管理",
       "senders_count": "{count, plural, other {送信者 # 人}}",
       "cross_account": "1 つのアカウントのメールを選択してください",
-      "opaque_hint": "フィルターは手動で編集されています。フィルター設定を開いてください"
-,
+      "opaque_hint": "フィルターは手動で編集されています。フィルター設定を開いてください",
       "loading": "ルールを読み込み中…",
       "load_failed": "ルールを読み込めませんでした",
       "none": "ルールはまだありません",
@@ -4887,8 +4896,8 @@
     "dismiss": "閉じる",
     "start_tour": "ツアーを開始"
   },
-  "demo_welcomEMAIL by Nordible.Co
-    "title": "Bulwark Mail へようこそ",
+  "demo_welcome": {
+    "title": "EMAIL by Nordible.Co へようこそ",
     "description": "フル機能のウェブメールクライアントをブラウザで体験できます。すべてのデータはお使いのデバイスに保存されるので、自由にお試しください。",
     "feature_email": "メールの読み書き",
     "feature_organize": "タグ・スター・フォルダ",
@@ -5248,7 +5257,7 @@
     "restore": "復元",
     "restored": "{count, plural, other {#件のメッセージ}}を受信トレイに戻しています。",
     "restore_partial": "{count, plural, other {#件のメッセージを復元できませんでした。もう一度試せるよう、選択されたままになっています。}}",
-    "restore_hint": "復元したメールは未読として受信トレイに戻り、元の日付順に並ぶため、一覧のかなり下にある場合があります。復元はサーバーがバックグラウンドで行います。そこで失敗した場合、メッセージは失われ、Bulwark はそれを検知できません。",
+    "restore_hint": "復元したメールは未読として受信トレイに戻り、元の日付順に並ぶため、一覧のかなり下にある場合があります。復元はサーバーがバックグラウンドで行います。そこで失敗した場合、メッセージは失われ、EMAIL by Nordible.Co はそれを検知できません。",
     "unknown_sender": "不明な差出人",
     "no_subject": "（件名なし）",
     "deleted_on": "{date} に削除",

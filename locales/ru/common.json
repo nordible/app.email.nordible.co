@@ -73,8 +73,8 @@
     "demo_tagline": "Попробуйте полнофункциональный почтовый клиент. Аккаунт не нужен.",
     "demo_no_signup": "Регистрация не требуется - исследуйте свободно с примерными данными",
     "mobile_handoff": {
-      "title": "Open the Bulwark mobile app?",
-      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the Bulwark link. Continue only if you started this from the Bulwark mobile app.",
+      "title": "Open the EMAIL by Nordible.Co mobile app?",
+      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the EMAIL by Nordible.Co link. Continue only if you started this from the EMAIL by Nordible.Co mobile app.",
       "confirm": "Hand over to the app",
       "cancel": "Stay in the webmail"
     },
@@ -411,11 +411,11 @@
     "too_long": "Слишком длинное название.",
     "loading": "Загрузка…",
     "unsupported": "Этот почтовый сервер не может хранить общие теги, поэтому в этом ящике показаны ваши собственные теги.",
-    "unavailable": "Не удалось загрузить общие теги этого ящика, поэтому в нём показаны ваши собственные теги. Bulwark попробует ещё раз позже.",
+    "unavailable": "Не удалось загрузить общие теги этого ящика, поэтому в нём показаны ваши собственные теги. EMAIL by Nordible.Co попробует ещё раз позже.",
     "no_rights": "Вы можете использовать эти теги, но не можете изменять их в этом ящике.",
     "too_many": "Слишком много общих тегов. Удалите часть, прежде чем добавлять новые.",
-    "save_failed": "Не удалось сохранить общие теги. Bulwark попробует ещё раз, когда сервер ответит.",
-    "save_pending": "Ещё не сохранено. Bulwark попробует ещё раз, когда сервер ответит."
+    "save_failed": "Не удалось сохранить общие теги. EMAIL by Nordible.Co попробует ещё раз, когда сервер ответит.",
+    "save_pending": "Ещё не сохранено. EMAIL by Nordible.Co попробует ещё раз, когда сервер ответит."
   },
   "email_viewer": {
     "read_receipt": {
@@ -985,7 +985,7 @@
     "show_less": "Свернуть",
     "send_failed": "Не удалось отправить письмо",
     "send_timeout": "Сервер перестал отвечать. Прежде чем отправлять снова, проверьте папку «Отправленные» — письмо могло уже уйти.",
-    "submission_quota": "На сервере слишком много записей об отправленных письмах для этой учётной записи. Bulwark удалил те, что мог; если это повторяется, попросите администратора увеличить лимит отправки писем.",
+    "submission_quota": "На сервере слишком много записей об отправленных письмах для этой учётной записи. EMAIL by Nordible.Co удалил те, что мог; если это повторяется, попросите администратора увеличить лимит отправки писем.",
     "submission_limit": "Сервер отказался отправить письмо, так как достигнут лимит: {reason}",
     "recipients_refused": "Не отправлено: сервер отклонил {recipients}.",
     "recipients_partly_refused": "Сервер отклонил {recipients}. Остальные получатели получат письмо.",
@@ -1029,7 +1029,20 @@
       "back": "Вернуться к редактированию"
     },
     "placeholder_words": {
-      "before": ["ваше", "ваш", "ваша", "ваши", "твоё", "твое", "твой", "твоя", "вставьте", "укажите", "введите", "добавьте"],
+      "before": [
+        "ваше",
+        "ваш",
+        "ваша",
+        "ваши",
+        "твоё",
+        "твое",
+        "твой",
+        "твоя",
+        "вставьте",
+        "укажите",
+        "введите",
+        "добавьте"
+      ],
       "after": [],
       "unfinished": []
     },
@@ -1637,17 +1650,17 @@
         "relax": "Релакс"
       },
       "push_all": {
-          "title": "All accounts",
-          "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
-          "select_all": "Select every connected account",
-          "state_on": "notifications on",
-          "state_off": "notifications off",
-          "enable_selected": "Enable for selected",
-          "disable_selected": "Disable for selected",
-          "result_enabled": "Notifications enabled for {count} accounts.",
-          "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
-          "result_disabled": "Notifications disabled for {count} accounts."
-        },
+        "title": "All accounts",
+        "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
+        "select_all": "Select every connected account",
+        "state_on": "notifications on",
+        "state_off": "notifications off",
+        "enable_selected": "Enable for selected",
+        "disable_selected": "Disable for selected",
+        "result_enabled": "Notifications enabled for {count} accounts.",
+        "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
+        "result_disabled": "Notifications disabled for {count} accounts."
+      },
       "sound_selection": {
         "title": "Звук уведомления",
         "description": "Выберите звук для уведомлений",
@@ -1675,13 +1688,13 @@
       "push": {
         "confirm_disable_message": "Это устройство перестанет получать оповещения, когда сайт закрыт.",
         "confirm_disable_title": "Отключить фоновые уведомления?",
-        "description": "Получайте системные уведомления о новых письмах, когда этот сайт закрыт. Доставляется через push-релей Bulwark; релей никогда не видит содержимое писем.",
+        "description": "Получайте системные уведомления о новых письмах, когда этот сайт закрыт. Доставляется через push-релей EMAIL by Nordible.Co; релей никогда не видит содержимое писем.",
         "disable": "Отключить",
         "enable": "Включить",
         "dismiss_aria": "Закрыть запрос на уведомления",
         "ios_hint": "В iOS сначала установите сайт на главный экран – Safari доставляет Web Push только установленным PWA.",
         "reenable": "Перерегистрировать",
-        "relay_desc": "По умолчанию используется размещённый релей Bulwark. Меняйте только если хостите самостоятельно.",
+        "relay_desc": "По умолчанию используется размещённый релей EMAIL by Nordible.Co. Меняйте только если хостите самостоятельно.",
         "relay_label": "Push-релей",
         "relay_locked": "Установлено администратором",
         "relay_locked_desc": "URL push-релея установлен вашим администратором и не может быть изменён.",
@@ -1689,7 +1702,7 @@
         "status_busy": "Выполняется…",
         "status_inactive": "Не включено на этом устройстве",
         "status_unsupported": "Этот браузер не поддерживает Web Push",
-        "status_lite": "Web Push is not available in Bulwark Lite; it needs the Bulwark server.",
+        "status_lite": "Web Push is not available in Lite; it needs the server.",
         "title": "Фоновые уведомления",
         "devices_title": "Зарегистрированные устройства",
         "devices_desc": "Все устройства, зарегистрированные для получения фоновых уведомлений этой учётной записи. После отзыва устройство сразу перестаёт их получать.",
@@ -2138,7 +2151,7 @@
       "title": "Безопасность аккаунта",
       "description": "Управляйте паролем, двухфакторной аутентификацией и настройками безопасности",
       "detecting": "Определение возможностей сервера...",
-      "not_available": "Управление безопасностью аккаунта недоступно для этого почтового сервера. Требуемые разрешения могут быть отключены. Подробнее см. в <a href=\"https://bulwarkmail.org/docs/guides/account-security\" class=\"underline hover:opacity-80\" target=\"_blank\">документации</a>.",
+      "not_available": "Управление безопасностью аккаунта недоступно для этого почтового сервера. Требуемые разрешения могут быть отключены. Подробнее см. в <a href=\"https://nordible.co\" class=\"underline hover:opacity-80\" target=\"_blank\">документации</a>.",
       "password": {
         "title": "Изменить пароль",
         "current": "Текущий пароль",
@@ -2520,7 +2533,7 @@
         "button": "Импортировать"
       },
       "about": {
-        "title": "Bulwark Webmail",
+        "title": "EMAIL by Nordible.Co",
         "source_code": "Исходный код"
       },
       "spam_siege": {
@@ -3253,7 +3266,7 @@
     }
   },
   "setup": {
-    "title": "Настройка Bulwark Webmail",
+    "title": "Настройка EMAIL by Nordible.Co",
     "subtitle": "Настройте свой экземпляр веб-почты в браузере.",
     "loading": "Загрузка…",
     "back": "Назад",
@@ -3378,7 +3391,7 @@
       "regenerate": "Создать заново",
       "sync": "Синхронизировать настройки пользователей между устройствами",
       "sync_hint": "Хранит настройки пользователей на сервере в зашифрованном секретом сеанса виде.",
-      "telemetry": "Отправлять анонимную статистику использования, чтобы улучшить Bulwark",
+      "telemetry": "Отправлять анонимную статистику использования, чтобы улучшить EMAIL by Nordible.Co",
       "telemetry_hint": "По умолчанию выключено. Один анонимный сигнал в день с версией, платформой и списком включённых функций; никогда не передаются адреса почты, имена хостов или IP-адреса. Это можно изменить в любой момент в настройках администратора."
     },
     "logging": {
@@ -3524,8 +3537,7 @@
       "manage": "Управление правилами",
       "senders_count": "{count, plural, one {# отправителя} few {# отправителей} many {# отправителей} other {# отправителя}}",
       "cross_account": "Выберите письма из одной учётной записи",
-      "opaque_hint": "Ваши фильтры отредактированы вручную. Откройте настройки фильтров"
-,
+      "opaque_hint": "Ваши фильтры отредактированы вручную. Откройте настройки фильтров",
       "loading": "Загрузка правил…",
       "load_failed": "Не удалось загрузить правила",
       "none": "Правил пока нет",
@@ -4887,8 +4899,8 @@
     "dismiss": "Закрыть",
     "start_tour": "Начать тур"
   },
-  "demo_welcome": {EMAIL by Nordible.Co
-    "title": "Добро пожаловать в Bulwark Mail",
+  "demo_welcome": {
+    "title": "Добро пожаловать в EMAIL by Nordible.Co",
     "description": "Откройте для себя полнофункциональный веб-клиент электронной почты - прямо в браузере. Все данные хранятся на вашем устройстве, поэтому вы можете смело всё проверить.",
     "feature_email": "Чтение и написание писем",
     "feature_organize": "Метки, звёздочки и папки",
@@ -5248,7 +5260,7 @@
     "restore": "Восстановить",
     "restored": "{count, plural, one {# письмо возвращается} few {# письма возвращаются} many {# писем возвращаются} other {# письма возвращаются}} во «Входящие».",
     "restore_partial": "{count, plural, one {Не удалось восстановить # письмо. Оно остаётся выбранным, чтобы вы могли попробовать снова.} few {Не удалось восстановить # письма. Они остаются выбранными, чтобы вы могли попробовать снова.} many {Не удалось восстановить # писем. Они остаются выбранными, чтобы вы могли попробовать снова.} other {Не удалось восстановить # письма. Они остаются выбранными, чтобы вы могли попробовать снова.}}",
-    "restore_hint": "Восстановленные письма возвращаются во «Входящие» непрочитанными и сортируются по исходной дате, поэтому могут оказаться далеко внизу списка. Сервер восстанавливает их в фоновом режиме. Если там что-то пойдёт не так, письмо будет потеряно, и Bulwark об этом не узнает.",
+    "restore_hint": "Восстановленные письма возвращаются во «Входящие» непрочитанными и сортируются по исходной дате, поэтому могут оказаться далеко внизу списка. Сервер восстанавливает их в фоновом режиме. Если там что-то пойдёт не так, письмо будет потеряно, и EMAIL by Nordible.Co об этом не узнает.",
     "unknown_sender": "Неизвестный отправитель",
     "no_subject": "(без темы)",
     "deleted_on": "Удалено {date}",

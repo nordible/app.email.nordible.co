@@ -204,7 +204,7 @@ const TAB_COMPONENTS: Partial<Record<Tab, React.ComponentType<any>>> = {
 // current version and build are still shown under "About". Account opens
 // from the card above the list.
 const AVAILABLE_TABS: TabDef[] = TABS.filter(
-  (t) => !t.hidden && t.id !== 'account' && (t.id !== 'updates' || supportsSideloadUpdates),
+  (t) => !t.hidden && t.id !== 'account' && t.id !== 'files' && (t.id !== 'updates' || supportsSideloadUpdates),
 );
 
 function groupTabs(only: ReadonlySet<Tab> | null, hidden: ReadonlySet<Tab>) {
@@ -347,7 +347,7 @@ export default function SettingsScreen({ onLogout, onBack, onTabSelect }: Settin
     return buildSettingsSearchIndex(getDictionary('en'), t, {
       themes: [
         {
-          label: t('settings.themes.default_name', 'Bulwark'),
+          label: t('settings.themes.default_name', 'Nordible'),
           description: t('settings.themes.default_description', 'The default light and dark palettes.'),
         },
         ...BUILTIN_THEMES.map((theme) => ({ label: theme.name, description: theme.description })),

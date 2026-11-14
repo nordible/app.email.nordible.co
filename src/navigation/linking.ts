@@ -21,11 +21,11 @@ import { setPendingSignInLink, usePendingSignInLinkStore } from './pending-sign-
 import { insecurePairingLinkError, parseQrLoginPayload, type QrLoginPayload } from '../lib/oauth';
 import { MAX_ACCOUNTS } from '../lib/account-utils';
 
-export const APP_SCHEME = 'bulwarkmobile';
-// The webmail's "Link Mobile App" links (`bulwarkmail://pair?server=…&code=…`)
-// and server-bootstrap links (`bulwarkmail://connect?server=…`). They sign in
+export const APP_SCHEME = 'nordiblemobile';
+// The webmail's "Link Mobile App" links (`nordiblemail://pair?server=…&code=…`)
+// and server-bootstrap links (`nordiblemail://connect?server=…`). They sign in
 // rather than navigate, so they never become a DeepLink.
-export const SIGN_IN_SCHEME = 'bulwarkmail';
+export const SIGN_IN_SCHEME = 'nordiblemail';
 
 const UNIFIED_ROLES = ['inbox', 'sent', 'drafts', 'junk', 'archive', 'trash'] as const;
 const UNIFIED_VIEWS = ['all', 'unread', 'starred'] as const;
@@ -231,7 +231,8 @@ export function parseDeepLink(url: string): DeepLink | null {
 }
 
 function isSignInSchemeUrl(url: string): boolean {
-  return url.trim().toLowerCase().startsWith(`${SIGN_IN_SCHEME}:`);
+  const scheme = url.trim().toLowerCase().split(':')[0];
+  return scheme === 'nordiblemail' || scheme === 'bulwarkmail';
 }
 
 /** A `bulwarkmail://pair|connect?…` link, parsed; null for any other URL. */

@@ -43,7 +43,7 @@ const LOOKAHEAD_MS = 7 * DAY_MS;
 // iOS keeps at most 64 pending local notifications per app; leave room for
 // the rest of the app.
 const MAX_SCHEDULED = 48;
-const DATA_TAG = 'bulwark-calendar-alert';
+const DATA_TAG = 'nordible-calendar-alert';
 
 let permissionGranted = false;
 let permissionRequested = false;

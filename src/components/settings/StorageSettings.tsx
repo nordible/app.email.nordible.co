@@ -105,7 +105,7 @@ export function StorageSettings({ onOpenTroubleshooting }: StorageSettingsProps)
   const handleExport = async () => {
     try {
       const json = exportSettings();
-      const file = new File(Paths.cache, `bulwark-settings-${new Date().toISOString().slice(0, 10)}.json`);
+      const file = new File(Paths.cache, `nordible-settings-${new Date().toISOString().slice(0, 10)}.json`);
       file.write(json);
       if (await Sharing.isAvailableAsync()) {
         await Sharing.shareAsync(file.uri, {

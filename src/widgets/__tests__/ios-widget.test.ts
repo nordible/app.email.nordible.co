@@ -50,8 +50,8 @@ describe('the snapshot the iOS widget draws', () => {
     expect(out.messages.length).toBe(Math.min(6, s.mail.inbox.length));
     expect(out.messages[0].id).toBe(s.mail.inbox[0].id);
     expect(out.messages[0].url).toBe(links.message(s.mail.inbox[0]));
-    expect(out.messages[0].url.startsWith('bulwarkmobile://mail/message/')).toBe(true);
-    expect(out.inboxUrl).toBe('bulwarkmobile://mail/folder/inbox');
+    expect(out.messages[0].url.startsWith('nordiblemobile://mail/message/')).toBe(true);
+    expect(out.inboxUrl).toBe('nordiblemobile://mail/folder/inbox');
     expect(out.strings.inbox).toBe('Inbox');
   });
 

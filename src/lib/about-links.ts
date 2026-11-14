@@ -2,7 +2,7 @@
 // app, and a prefilled GitHub issue. Kept free of React Native so it can be
 // unit-tested; the screen passes in the platform details.
 
-export const NATIVE_REPO_URL = 'https://github.com/bulwarkmail/native';
+export const NATIVE_REPO_URL = 'https://github.com/nordible/app.email.nordible.co';
 
 /** Public TestFlight link (README). There is no App Store listing yet. */
 export const IOS_TESTFLIGHT_URL = 'https://testflight.apple.com/join/rumcjNSp';

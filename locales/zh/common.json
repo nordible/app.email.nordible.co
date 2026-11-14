@@ -73,8 +73,8 @@
     "demo_tagline": "体验功能完整的邮件客户端，无需账号。",
     "demo_no_signup": "无需注册，直接使用示例数据体验",
     "mobile_handoff": {
-      "title": "Open the Bulwark mobile app?",
-      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the Bulwark link. Continue only if you started this from the Bulwark mobile app.",
+      "title": "Open the EMAIL by Nordible.Co mobile app?",
+      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the EMAIL by Nordible.Co link. Continue only if you started this from the EMAIL by Nordible.Co mobile app.",
       "confirm": "Hand over to the app",
       "cancel": "Stay in the webmail"
     },
@@ -411,11 +411,11 @@
     "too_long": "名称太长。",
     "loading": "加载中…",
     "unsupported": "此邮件服务器无法保存共享标签，因此此邮箱显示的是您自己的标签。",
-    "unavailable": "无法加载此邮箱的共享标签，因此显示的是您自己的标签。Bulwark 稍后会重试。",
+    "unavailable": "无法加载此邮箱的共享标签，因此显示的是您自己的标签。EMAIL by Nordible.Co 稍后会重试。",
     "no_rights": "您可以使用这些标签，但不能在此邮箱中更改它们。",
     "too_many": "共享标签太多。请先删除一些再添加。",
-    "save_failed": "无法保存共享标签。服务器响应后 Bulwark 会重试。",
-    "save_pending": "尚未保存。服务器响应后 Bulwark 会重试。"
+    "save_failed": "无法保存共享标签。服务器响应后 EMAIL by Nordible.Co 会重试。",
+    "save_pending": "尚未保存。服务器响应后 EMAIL by Nordible.Co 会重试。"
   },
   "email_viewer": {
     "read_receipt": {
@@ -985,7 +985,7 @@
     "show_less": "收起",
     "send_failed": "发送邮件失败",
     "send_timeout": "服务器已停止响应。再次发送前请检查“已发送”文件夹——邮件可能已经发出。",
-    "submission_quota": "服务器上此账户的已发送邮件记录过多。Bulwark 已删除了能删除的记录；如果问题仍然出现，请让管理员提高邮件提交数量上限。",
+    "submission_quota": "服务器上此账户的已发送邮件记录过多。EMAIL by Nordible.Co 已删除了能删除的记录；如果问题仍然出现，请让管理员提高邮件提交数量上限。",
     "submission_limit": "由于达到上限，服务器拒绝发送此邮件：{reason}",
     "recipients_refused": "未发送：服务器拒绝了 {recipients}。",
     "recipients_partly_refused": "服务器拒绝了 {recipients}。其他收件人会收到此邮件。",
@@ -1029,7 +1029,16 @@
       "back": "返回编辑"
     },
     "placeholder_words": {
-      "before": ["您的-", "你的-", "贵公司-", "插入-", "输入-", "填写-", "添加-", "在此-"],
+      "before": [
+        "您的-",
+        "你的-",
+        "贵公司-",
+        "插入-",
+        "输入-",
+        "填写-",
+        "添加-",
+        "在此-"
+      ],
       "after": [],
       "unfinished": []
     },
@@ -1637,17 +1646,17 @@
         "relax": "放松"
       },
       "push_all": {
-          "title": "All accounts",
-          "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
-          "select_all": "Select every connected account",
-          "state_on": "notifications on",
-          "state_off": "notifications off",
-          "enable_selected": "Enable for selected",
-          "disable_selected": "Disable for selected",
-          "result_enabled": "Notifications enabled for {count} accounts.",
-          "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
-          "result_disabled": "Notifications disabled for {count} accounts."
-        },
+        "title": "All accounts",
+        "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
+        "select_all": "Select every connected account",
+        "state_on": "notifications on",
+        "state_off": "notifications off",
+        "enable_selected": "Enable for selected",
+        "disable_selected": "Disable for selected",
+        "result_enabled": "Notifications enabled for {count} accounts.",
+        "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
+        "result_disabled": "Notifications disabled for {count} accounts."
+      },
       "sound_selection": {
         "title": "通知声音",
         "description": "选择通知时播放的声音",
@@ -1675,13 +1684,13 @@
       "push": {
         "confirm_disable_message": "当网站关闭时，此设备将停止接收提醒。",
         "confirm_disable_title": "禁用后台通知？",
-        "description": "在此网站关闭时接收新邮件的系统通知。通过 Bulwark 推送中继传送；中继永远不会看到邮件内容。",
+        "description": "在此网站关闭时接收新邮件的系统通知。通过 EMAIL by Nordible.Co 推送中继传送；中继永远不会看到邮件内容。",
         "disable": "禁用",
         "enable": "启用",
         "dismiss_aria": "关闭通知提示",
         "ios_hint": "在 iOS 上，请先将网站安装到主屏幕 – Safari 仅向已安装的 PWA 发送 Web Push。",
         "reenable": "重新注册",
-        "relay_desc": "默认使用托管的 Bulwark 中继。仅当您自托管时才更改。",
+        "relay_desc": "默认使用托管的 EMAIL by Nordible.Co 中继。仅当您自托管时才更改。",
         "relay_label": "推送中继",
         "relay_locked": "由管理员设置",
         "relay_locked_desc": "推送中继 URL 已由您的管理员设置，无法更改。",
@@ -1689,7 +1698,7 @@
         "status_busy": "工作中…",
         "status_inactive": "在此设备上未启用",
         "status_unsupported": "此浏览器不支持 Web Push",
-        "status_lite": "Web Push is not available in Bulwark Lite; it needs the Bulwark server.",
+        "status_lite": "Web Push is not available in Lite; it needs the server.",
         "title": "后台通知",
         "devices_title": "已注册的设备",
         "devices_desc": "已注册接收此账户后台通知的所有设备。撤销后，该设备会立即停止接收。",
@@ -2138,7 +2147,7 @@
       "title": "账户安全",
       "description": "管理您的密码、双因素身份验证和安全设置",
       "detecting": "正在检测服务器功能...",
-      "not_available": "此邮件服务器不支持账号安全管理。可能未启用所需权限。详情请参阅<a href=\"https://bulwarkmail.org/docs/guides/account-security\" class=\"underline hover:opacity-80\" target=\"_blank\">文档</a>。",
+      "not_available": "此邮件服务器不支持账号安全管理。可能未启用所需权限。详情请参阅<a href=\"https://nordible.co\" class=\"underline hover:opacity-80\" target=\"_blank\">文档</a>。",
       "password": {
         "title": "更改密码",
         "current": "当前密码",
@@ -2520,7 +2529,7 @@
         "button": "导入"
       },
       "about": {
-        "title": "Bulwark 网页邮箱",
+        "title": "EMAIL by Nordible.Co 网页邮箱",
         "source_code": "源代码"
       },
       "spam_siege": {
@@ -3253,7 +3262,7 @@
     }
   },
   "setup": {
-    "title": "Bulwark Webmail 设置",
+    "title": "EMAIL by Nordible.Co 设置",
     "subtitle": "在浏览器中配置你的网页邮箱实例。",
     "loading": "正在加载…",
     "back": "返回",
@@ -3378,7 +3387,7 @@
       "regenerate": "重新生成",
       "sync": "在设备之间同步用户设置",
       "sync_hint": "将用户偏好保存在服务器上，并用会话密钥加密。",
-      "telemetry": "发送匿名使用统计以帮助改进 Bulwark",
+      "telemetry": "发送匿名使用统计以帮助改进 EMAIL by Nordible.Co",
       "telemetry_hint": "默认关闭。每天发送一次匿名心跳，包含版本、平台和已启用的功能；绝不包含邮箱地址、主机名或 IP。你可以随时在管理设置中更改。"
     },
     "logging": {
@@ -3524,8 +3533,7 @@
       "manage": "管理规则",
       "senders_count": "{count, plural, other {# 个发件人}}",
       "cross_account": "请选择同一账户中的邮件",
-      "opaque_hint": "你的过滤器已被手动编辑。请打开过滤器设置"
-,
+      "opaque_hint": "你的过滤器已被手动编辑。请打开过滤器设置",
       "loading": "正在加载规则…",
       "load_failed": "无法加载规则",
       "none": "暂无规则",
@@ -4887,8 +4895,8 @@
     "dismiss": "关闭",
     "start_tour": "开始导览"
   },
-  "demo_welcome": {EMAIL by Nordible.Co
-    "title": "欢迎使用 Bulwark Mail",
+  "demo_welcome": {
+    "title": "欢迎使用 EMAIL by Nordible.Co",
     "description": "探索功能齐全的网页邮件客户端--就在您的浏览器中。所有数据都保留在您的设备上，请随意体验所有功能。",
     "feature_email": "阅读和撰写邮件",
     "feature_organize": "标签、星标和文件夹",
@@ -5248,7 +5256,7 @@
     "restore": "还原",
     "restored": "{count, plural, other {# 封邮件}}正在返回您的收件箱。",
     "restore_partial": "{count, plural, other {# 封邮件无法还原。它们仍保持选中，您可以重试。}}",
-    "restore_hint": "还原的邮件会以未读状态返回收件箱，并按原始日期排序，因此可能位于列表很靠下的位置。服务器会在后台进行还原。如果服务器端还原失败，邮件将会丢失，而 Bulwark 无法得知。",
+    "restore_hint": "还原的邮件会以未读状态返回收件箱，并按原始日期排序，因此可能位于列表很靠下的位置。服务器会在后台进行还原。如果服务器端还原失败，邮件将会丢失，而 EMAIL by Nordible.Co 无法得知。",
     "unknown_sender": "未知发件人",
     "no_subject": "（无主题）",
     "deleted_on": "删除于 {date}",

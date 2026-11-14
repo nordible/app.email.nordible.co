@@ -29,7 +29,7 @@ export interface MdnOptions {
   originalRecipient?: string;
   /** true => automatic-action (setting "always"); false => manual-action (user tapped send). */
   automatic?: boolean;
-  /** Reporting-UA value, e.g. "mail.example; Bulwark Mobile". */
+  /** Reporting-UA value, e.g. "mail.example; EMAIL by Nordible.Co". */
   reportingUa?: string;
   /** Localized full Subject line. Defaults to "Read: <originalSubject>". */
   subject?: string;
@@ -154,7 +154,7 @@ export function buildMdnMessage(opts: MdnOptions): string {
     ? 'automatic-action/MDN-sent-automatically; displayed'
     : 'manual-action/MDN-sent-manually; displayed';
 
-  const reportingUa = stripHeaderControls(opts.reportingUa || '') || `${domain}; Bulwark Mobile`;
+  const reportingUa = stripHeaderControls(opts.reportingUa || '') || `${domain}; EMAIL by Nordible.Co`;
 
   const humanText = opts.humanText ?? [
     `This is a return receipt for the message you sent to ${finalRecipient}.`,

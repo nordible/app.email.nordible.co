@@ -73,8 +73,8 @@
     "demo_tagline": "體驗功能完整的電子郵件用戶端，不需要帳號。",
     "demo_no_signup": "不需要註冊，使用範例資料自由探索",
     "mobile_handoff": {
-      "title": "Open the Bulwark mobile app?",
-      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the Bulwark link. Continue only if you started this from the Bulwark mobile app.",
+      "title": "Open the EMAIL by Nordible.Co mobile app?",
+      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the EMAIL by Nordible.Co link. Continue only if you started this from the EMAIL by Nordible.Co mobile app.",
       "confirm": "Hand over to the app",
       "cancel": "Stay in the webmail"
     },
@@ -411,11 +411,11 @@
     "too_long": "名稱太長。",
     "loading": "載入中…",
     "unsupported": "此郵件伺服器無法保存共用標籤，因此此信箱顯示的是您自己的標籤。",
-    "unavailable": "無法載入此信箱的共用標籤，因此顯示的是您自己的標籤。Bulwark 稍後會再試一次。",
+    "unavailable": "無法載入此信箱的共用標籤，因此顯示的是您自己的標籤。EMAIL by Nordible.Co 稍後會再試一次。",
     "no_rights": "您可以使用這些標籤，但無法在此信箱中變更。",
     "too_many": "共用標籤太多。請先刪除一些再新增。",
-    "save_failed": "無法儲存共用標籤。伺服器回應後 Bulwark 會再試一次。",
-    "save_pending": "尚未儲存。伺服器回應後 Bulwark 會再試一次。"
+    "save_failed": "無法儲存共用標籤。伺服器回應後 EMAIL by Nordible.Co 會再試一次。",
+    "save_pending": "尚未儲存。伺服器回應後 EMAIL by Nordible.Co 會再試一次。"
   },
   "email_viewer": {
     "read_receipt": {
@@ -988,7 +988,7 @@
     "show_less": "顯示較少",
     "send_failed": "傳送郵件失敗",
     "send_timeout": "伺服器停止回應。再次傳送前，請先檢查「寄件備份」信件匣，因為郵件可能已經寄出。",
-    "submission_quota": "伺服器上此帳戶的已寄出郵件記錄過多。Bulwark 已移除可以移除的記錄；如果問題持續發生，請要求管理員提高郵件提交數量上限。",
+    "submission_quota": "伺服器上此帳戶的已寄出郵件記錄過多。EMAIL by Nordible.Co 已移除可以移除的記錄；如果問題持續發生，請要求管理員提高郵件提交數量上限。",
     "submission_limit": "由於達到上限，伺服器拒絕傳送此郵件：{reason}",
     "recipients_refused": "未傳送：伺服器拒絕了 {recipients}。",
     "recipients_partly_refused": "伺服器拒絕了 {recipients}。其他收件者會收到此郵件。",
@@ -1032,7 +1032,16 @@
       "back": "繼續編輯"
     },
     "placeholder_words": {
-      "before": ["您的-", "你的-", "貴公司-", "插入-", "輸入-", "填寫-", "新增-", "在此-"],
+      "before": [
+        "您的-",
+        "你的-",
+        "貴公司-",
+        "插入-",
+        "輸入-",
+        "填寫-",
+        "新增-",
+        "在此-"
+      ],
       "after": [],
       "unfinished": []
     },
@@ -1641,7 +1650,7 @@
       },
       "push": {
         "title": "背景通知",
-        "description": "網站關閉時仍可接收新郵件的系統通知。通知會透過 Bulwark 推送中繼傳送；中繼不會看到郵件內容。",
+        "description": "網站關閉時仍可接收新郵件的系統通知。通知會透過 EMAIL by Nordible.Co 推送中繼傳送；中繼不會看到郵件內容。",
         "relay_label": "推送中繼",
         "relay_desc": "用來傳送通知的伺服器。請從管理員提供的中繼中選擇。",
         "relay_locked": "由管理員設定",
@@ -1649,7 +1658,7 @@
         "status_active": "已在此裝置上啟用",
         "status_inactive": "在此裝置上未啟用",
         "status_unsupported": "此瀏覽器不支援 Web Push",
-        "status_lite": "Web Push is not available in Bulwark Lite; it needs the Bulwark server.",
+        "status_lite": "Web Push is not available in Lite; it needs the server.",
         "status_busy": "工作中…",
         "enable": "啟用",
         "reenable": "重新註冊",
@@ -1679,17 +1688,17 @@
         "error_over_quota": "此帳號在郵件伺服器上的推送註冊過多（上限通常為 15 個）。請在通知設定中撤銷不再使用的裝置，然後再試一次。"
       },
       "push_all": {
-          "title": "All accounts",
-          "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
-          "select_all": "Select every connected account",
-          "state_on": "notifications on",
-          "state_off": "notifications off",
-          "enable_selected": "Enable for selected",
-          "disable_selected": "Disable for selected",
-          "result_enabled": "Notifications enabled for {count} accounts.",
-          "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
-          "result_disabled": "Notifications disabled for {count} accounts."
-        },
+        "title": "All accounts",
+        "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
+        "select_all": "Select every connected account",
+        "state_on": "notifications on",
+        "state_off": "notifications off",
+        "enable_selected": "Enable for selected",
+        "disable_selected": "Disable for selected",
+        "result_enabled": "Notifications enabled for {count} accounts.",
+        "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
+        "result_disabled": "Notifications disabled for {count} accounts."
+      },
       "sound_selection": {
         "title": "通知聲音",
         "description": "選擇通知時播放的聲音",
@@ -2145,7 +2154,7 @@
       "title": "帳號安全",
       "description": "管理您的密碼、雙因素驗證與安全設定",
       "detecting": "正在偵測伺服器功能…",
-      "not_available": "此郵件伺服器無法管理帳號安全性。可能已停用必要權限。如需詳細資料，請參閱<a href=\"https://bulwarkmail.org/docs/guides/account-security\" class=\"underline hover:opacity-80\" target=\"_blank\">說明文件</a>。",
+      "not_available": "此郵件伺服器無法管理帳號安全性。可能已停用必要權限。如需詳細資料，請參閱<a href=\"https://nordible.co\" class=\"underline hover:opacity-80\" target=\"_blank\">說明文件</a>。",
       "password": {
         "title": "變更密碼",
         "current": "目前密碼",
@@ -2527,7 +2536,7 @@
         "button": "匯入"
       },
       "about": {
-        "title": "Bulwark 網頁郵件",
+        "title": "EMAIL by Nordible.Co 網頁郵件",
         "source_code": "原始碼"
       },
       "spam_siege": {
@@ -3253,7 +3262,7 @@
     }
   },
   "setup": {
-    "title": "Bulwark Webmail 設定",
+    "title": "EMAIL by Nordible.Co 設定",
     "subtitle": "在瀏覽器中設定你的網頁郵件執行個體。",
     "loading": "載入中…",
     "back": "返回",
@@ -3378,7 +3387,7 @@
       "regenerate": "重新產生",
       "sync": "在裝置之間同步使用者設定",
       "sync_hint": "將使用者偏好設定儲存在伺服器上，並以工作階段密鑰加密。",
-      "telemetry": "傳送匿名使用統計資料以協助改善 Bulwark",
+      "telemetry": "傳送匿名使用統計資料以協助改善 EMAIL by Nordible.Co",
       "telemetry_hint": "預設關閉。每天傳送一次匿名訊號，包含版本、平台和已啟用的功能；絕不包含電子郵件地址、主機名稱或 IP。你可以隨時在管理設定中變更。"
     },
     "logging": {
@@ -3524,8 +3533,7 @@
       "manage": "管理規則",
       "senders_count": "{count, plural, other {# 位寄件者}}",
       "cross_account": "請選取同一個帳號中的郵件",
-      "opaque_hint": "你的篩選規則曾被手動編輯。請開啟篩選規則設定"
-,
+      "opaque_hint": "你的篩選規則曾被手動編輯。請開啟篩選規則設定",
       "loading": "正在載入規則…",
       "load_failed": "無法載入規則",
       "none": "尚無規則",
@@ -5017,8 +5025,8 @@
     "dismiss": "關閉",
     "start_tour": "開始功能導覽"
   },
-  "demo_welcome": {EMAIL by Nordible.Co
-    "title": "歡迎使用 Bulwark Mail",
+  "demo_welcome": {
+    "title": "歡迎使用 EMAIL by Nordible.Co",
     "description": "直接在瀏覽器中探索功能完整的網頁郵件用戶端。所有資料都保留在您的裝置上，請自由測試各項功能。",
     "feature_email": "閱讀與撰寫郵件",
     "feature_organize": "標籤、星號與信件匣",
@@ -5378,7 +5386,7 @@
     "restore": "還原",
     "restored": "{count, plural, other {# 封郵件}}正在回到您的收件匣。",
     "restore_partial": "{count, plural, other {# 封郵件無法還原。它們仍保持選取，您可以再試一次。}}",
-    "restore_hint": "還原的郵件會以未讀狀態回到收件匣，並依原始日期排序，因此可能位於清單很下方。伺服器會在背景中進行還原。如果伺服器端還原失敗，郵件將會遺失，而 Bulwark 無法得知。",
+    "restore_hint": "還原的郵件會以未讀狀態回到收件匣，並依原始日期排序，因此可能位於清單很下方。伺服器會在背景中進行還原。如果伺服器端還原失敗，郵件將會遺失，而 EMAIL by Nordible.Co 無法得知。",
     "unknown_sender": "未知寄件者",
     "no_subject": "（無主旨）",
     "deleted_on": "刪除於 {date}",

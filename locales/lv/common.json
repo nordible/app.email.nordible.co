@@ -73,8 +73,8 @@
     "demo_tagline": "Izmēģiniet pilnvērtīgu e-pasta klientu bez konta izveides.",
     "demo_no_signup": "Reģistrācija nav nepieciešama - brīvi pētiet paraugdatus",
     "mobile_handoff": {
-      "title": "Open the Bulwark mobile app?",
-      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the Bulwark link. Continue only if you started this from the Bulwark mobile app.",
+      "title": "Open the EMAIL by Nordible.Co mobile app?",
+      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the EMAIL by Nordible.Co link. Continue only if you started this from the EMAIL by Nordible.Co mobile app.",
       "confirm": "Hand over to the app",
       "cancel": "Stay in the webmail"
     },
@@ -411,11 +411,11 @@
     "too_long": "Šis nosaukums ir pārāk garš.",
     "loading": "Ielādē…",
     "unsupported": "Šis pasta serveris nevar glabāt kopīgotus tagus, tāpēc šī pastkaste rāda jūsu pašu tagus.",
-    "unavailable": "Neizdevās ielādēt šīs pastkastes kopīgotos tagus, tāpēc tā rāda jūsu pašu tagus. Bulwark mēģinās vēlreiz vēlāk.",
+    "unavailable": "Neizdevās ielādēt šīs pastkastes kopīgotos tagus, tāpēc tā rāda jūsu pašu tagus. EMAIL by Nordible.Co mēģinās vēlreiz vēlāk.",
     "no_rights": "Jūs varat izmantot šos tagus, bet šajā pastkastē tos mainīt nevarat.",
     "too_many": "Kopīgoto tagu ir par daudz. Pirms pievienojat jaunus, izdzēsiet dažus.",
-    "save_failed": "Neizdevās saglabāt kopīgotos tagus. Bulwark mēģinās vēlreiz, kad serveris atbildēs.",
-    "save_pending": "Vēl nav saglabāts. Bulwark mēģinās vēlreiz, kad serveris atbildēs."
+    "save_failed": "Neizdevās saglabāt kopīgotos tagus. EMAIL by Nordible.Co mēģinās vēlreiz, kad serveris atbildēs.",
+    "save_pending": "Vēl nav saglabāts. EMAIL by Nordible.Co mēģinās vēlreiz, kad serveris atbildēs."
   },
   "email_viewer": {
     "read_receipt": {
@@ -985,7 +985,7 @@
     "show_less": "Rādīt mazāk",
     "send_failed": "Neizdevās nosūtīt vēstuli",
     "send_timeout": "Serveris pārstāja atbildēt. Pirms sūtīt vēlreiz, pārbaudiet mapi Nosūtītie — ziņojums, iespējams, jau ir aizsūtīts.",
-    "submission_quota": "Serverī šim kontam ir pārāk daudz nosūtīto ziņojumu ierakstu. Bulwark noņēma tos, ko varēja; ja tas atkārtojas, lūdziet administratoram palielināt e-pasta sūtījumu ierobežojumu.",
+    "submission_quota": "Serverī šim kontam ir pārāk daudz nosūtīto ziņojumu ierakstu. EMAIL by Nordible.Co noņēma tos, ko varēja; ja tas atkārtojas, lūdziet administratoram palielināt e-pasta sūtījumu ierobežojumu.",
     "submission_limit": "Serveris atteicās nosūtīt ziņojumu, jo ir sasniegts ierobežojums: {reason}",
     "recipients_refused": "Nav nosūtīts: serveris noraidīja {recipients}.",
     "recipients_partly_refused": "Serveris noraidīja {recipients}. Pārējie adresāti saņem ziņojumu.",
@@ -1029,7 +1029,16 @@
       "back": "Atpakaļ pie rediģēšanas"
     },
     "placeholder_words": {
-      "before": ["jūsu", "tavs", "tava", "ievadiet", "ierakstiet", "ievietojiet", "pievienojiet", "norādiet"],
+      "before": [
+        "jūsu",
+        "tavs",
+        "tava",
+        "ievadiet",
+        "ierakstiet",
+        "ievietojiet",
+        "pievienojiet",
+        "norādiet"
+      ],
       "after": [],
       "unfinished": []
     },
@@ -1637,17 +1646,17 @@
         "relax": "Relaksējošs"
       },
       "push_all": {
-          "title": "All accounts",
-          "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
-          "select_all": "Select every connected account",
-          "state_on": "notifications on",
-          "state_off": "notifications off",
-          "enable_selected": "Enable for selected",
-          "disable_selected": "Disable for selected",
-          "result_enabled": "Notifications enabled for {count} accounts.",
-          "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
-          "result_disabled": "Notifications disabled for {count} accounts."
-        },
+        "title": "All accounts",
+        "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
+        "select_all": "Select every connected account",
+        "state_on": "notifications on",
+        "state_off": "notifications off",
+        "enable_selected": "Enable for selected",
+        "disable_selected": "Disable for selected",
+        "result_enabled": "Notifications enabled for {count} accounts.",
+        "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
+        "result_disabled": "Notifications disabled for {count} accounts."
+      },
       "sound_selection": {
         "title": "Paziņojuma skaņa",
         "description": "Izvēlieties skaņu paziņojumiem",
@@ -1675,13 +1684,13 @@
       "push": {
         "confirm_disable_message": "Šī ierīce vairs nesaņems brīdinājumus, kad vietne būs aizvērta.",
         "confirm_disable_title": "Atspējot fona paziņojumus?",
-        "description": "Saņem sistēmas paziņojumus par jaunu pastu, kad šī vietne ir aizvērta. Piegādāts caur Bulwark push releju; relejs nekad neredz pasta saturu.",
+        "description": "Saņem sistēmas paziņojumus par jaunu pastu, kad šī vietne ir aizvērta. Piegādāts caur EMAIL by Nordible.Co push releju; relejs nekad neredz pasta saturu.",
         "disable": "Atspējot",
         "enable": "Iespējot",
         "dismiss_aria": "Aizvērt paziņojumu uzaicinājumu",
         "ios_hint": "Operētājsistēmā iOS vispirms instalējiet vietni sākuma ekrānā – Safari piegādā Web Push tikai instalētajām PWA.",
         "reenable": "Reģistrēt vēlreiz",
-        "relay_desc": "Pēc noklusējuma izmanto izmitināto Bulwark releju. Mainiet tikai tad, ja izmitināt pats.",
+        "relay_desc": "Pēc noklusējuma izmanto izmitināto EMAIL by Nordible.Co releju. Mainiet tikai tad, ja izmitināt pats.",
         "relay_label": "Push relejs",
         "relay_locked": "Iestatījis administrators",
         "relay_locked_desc": "Push releja URL ir iestatījis administrators, un to nevar mainīt.",
@@ -1689,7 +1698,7 @@
         "status_busy": "Notiek darbs…",
         "status_inactive": "Nav iespējots šajā ierīcē",
         "status_unsupported": "Šī pārlūkprogramma neatbalsta Web Push",
-        "status_lite": "Web Push is not available in Bulwark Lite; it needs the Bulwark server.",
+        "status_lite": "Web Push is not available in Lite; it needs the server.",
         "title": "Fona paziņojumi",
         "devices_title": "Reģistrētās ierīces",
         "devices_desc": "Visas ierīces, kas reģistrētas šī konta fona paziņojumu saņemšanai. Atsaucot ierīci, tā nekavējoties pārstāj tās saņemt.",
@@ -2520,7 +2529,7 @@
         "contacts_description": "Kontaktu sinhronizācija, adrešu grāmatu darbības un uzticamie sūtītāji"
       },
       "about": {
-        "title": "Bulwark Webmail",
+        "title": "EMAIL by Nordible.Co",
         "source_code": "Pirmkods"
       },
       "spam_siege": {
@@ -3253,7 +3262,7 @@
     }
   },
   "setup": {
-    "title": "Bulwark Webmail iestatīšana",
+    "title": "EMAIL by Nordible.Co iestatīšana",
     "subtitle": "Iestatiet savu tīmekļa pasta instanci pārlūkā.",
     "loading": "Ielādē…",
     "back": "Atpakaļ",
@@ -3378,7 +3387,7 @@
       "regenerate": "Izveidot no jauna",
       "sync": "Sinhronizēt lietotāju iestatījumus starp ierīcēm",
       "sync_hint": "Saglabā lietotāju preferences serverī, šifrētas ar sesijas noslēpumu.",
-      "telemetry": "Sūtīt anonīmu lietojuma statistiku, lai uzlabotu Bulwark",
+      "telemetry": "Sūtīt anonīmu lietojuma statistiku, lai uzlabotu EMAIL by Nordible.Co",
       "telemetry_hint": "Pēc noklusējuma izslēgts. Viens anonīms signāls dienā ar versiju, platformu un ieslēgtajām funkcijām; nekad e-pasta adreses, resursdatoru nosaukumi vai IP adreses. To var jebkurā laikā mainīt administrēšanas iestatījumos."
     },
     "logging": {
@@ -3524,8 +3533,7 @@
       "manage": "Pārvaldīt noteikumus",
       "senders_count": "{count, plural, zero {# sūtītājiem} one {# sūtītāja} other {# sūtītājiem}}",
       "cross_account": "Izvēlieties vēstules no viena konta",
-      "opaque_hint": "Jūsu filtri ir rediģēti manuāli. Atveriet filtru iestatījumus"
-,
+      "opaque_hint": "Jūsu filtri ir rediģēti manuāli. Atveriet filtru iestatījumus",
       "loading": "Ielādē kārtulas…",
       "load_failed": "Neizdevās ielādēt kārtulas",
       "none": "Vēl nav kārtulu",
@@ -4887,8 +4895,8 @@
     "dismiss": "Aizvērt",
     "start_tour": "Sākt ekskursiju"
   },
-  "demo_welcome": {EMAIL by Nordible.Co
-    "title": "Laipni lūdzam Bulwark Mail",
+  "demo_welcome": {
+    "title": "Laipni lūdzam EMAIL by Nordible.Co",
     "description": "Atklājiet pilnvērtīgu tīmekļa e-pasta klientu tieši pārlūkā. Visi dati tiek glabāti jūsu ierīcē.",
     "feature_email": "Vēstuļu lasīšana un rakstīšana",
     "feature_organize": "Etiķetes, zvaigznītes un mapes",
@@ -5248,7 +5256,7 @@
     "restore": "Atjaunot",
     "restored": "{count, plural, zero {# vēstules atgriežas} one {# vēstule atgriežas} other {# vēstules atgriežas}} jūsu Iesūtnē.",
     "restore_partial": "{count, plural, zero {# vēstules neizdevās atjaunot. Tās paliek atlasītas, lai varat mēģināt vēlreiz.} one {# vēstuli neizdevās atjaunot. Tā paliek atlasīta, lai varat mēģināt vēlreiz.} other {# vēstules neizdevās atjaunot. Tās paliek atlasītas, lai varat mēģināt vēlreiz.}}",
-    "restore_hint": "Atjaunotās vēstules atgriežas Iesūtnē kā nelasītas un sakārtotas pēc sākotnējā datuma, tāpēc tās var būt tālu lejā sarakstā. Serveris tās atjauno fonā. Ja tur tas neizdodas, vēstule tiek zaudēta, un Bulwark to nevar uzzināt.",
+    "restore_hint": "Atjaunotās vēstules atgriežas Iesūtnē kā nelasītas un sakārtotas pēc sākotnējā datuma, tāpēc tās var būt tālu lejā sarakstā. Serveris tās atjauno fonā. Ja tur tas neizdodas, vēstule tiek zaudēta, un EMAIL by Nordible.Co to nevar uzzināt.",
     "unknown_sender": "Nezināms sūtītājs",
     "no_subject": "(bez temata)",
     "deleted_on": "Dzēsts {date}",

@@ -42,7 +42,7 @@ const TRANSLATED_FILES: Record<string, string[]> = {
   'components/IdentitySheet.tsx': [],
   'components/QrScanModal.tsx': [],
   // The input's placeholder is the link's own format.
-  'components/PasteSignInLinkModal.tsx': ['bulwarkmail://pair?server=…&code=…'],
+  'components/PasteSignInLinkModal.tsx': ['nordiblemail://pair?server=…&code=…'],
   'components/email/ActionSheet.tsx': [],
   'components/email/AddressActionSheet.tsx': [],
   'components/email/CalendarInvitationBanner.tsx': [],

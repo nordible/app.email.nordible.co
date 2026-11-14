@@ -129,7 +129,7 @@ export function eventToICS(event: CalendarEvent): string {
   const now = formatNow();
   const lines: string[] = [
     'BEGIN:VCALENDAR',
-    'PRODID:-//Bulwark Mobile//EN',
+    'PRODID:-//EMAIL by Nordible.Co//EN',
     'VERSION:2.0',
     'CALSCALE:GREGORIAN',
     'METHOD:PUBLISH',

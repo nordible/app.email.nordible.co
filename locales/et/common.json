@@ -73,8 +73,8 @@
     "demo_tagline": "Proovi täisfunktsionaalset e-posti klienti. Kontot pole vaja.",
     "demo_no_signup": "Registreerimist pole vaja - tutvu vabalt näidisandmetega",
     "mobile_handoff": {
-      "title": "Open the Bulwark mobile app?",
-      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the Bulwark link. Continue only if you started this from the Bulwark mobile app.",
+      "title": "Open the EMAIL by Nordible.Co mobile app?",
+      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the EMAIL by Nordible.Co link. Continue only if you started this from the EMAIL by Nordible.Co mobile app.",
       "confirm": "Hand over to the app",
       "cancel": "Stay in the webmail"
     },
@@ -411,11 +411,11 @@
     "too_long": "See nimi on liiga pikk.",
     "loading": "Laadimine…",
     "unsupported": "See meiliserver ei saa jagatud silte hoida, seega näitab see postkast sinu enda silte.",
-    "unavailable": "Selle postkasti jagatud silte ei õnnestunud laadida, seega näitab see sinu enda silte. Bulwark proovib hiljem uuesti.",
+    "unavailable": "Selle postkasti jagatud silte ei õnnestunud laadida, seega näitab see sinu enda silte. EMAIL by Nordible.Co proovib hiljem uuesti.",
     "no_rights": "Saad neid silte kasutada, kuid ei saa neid selles postkastis muuta.",
     "too_many": "Jagatud silte on liiga palju. Kustuta mõni enne uute lisamist.",
-    "save_failed": "Jagatud silte ei õnnestunud salvestada. Bulwark proovib uuesti, kui server vastab.",
-    "save_pending": "Pole veel salvestatud. Bulwark proovib uuesti, kui server vastab."
+    "save_failed": "Jagatud silte ei õnnestunud salvestada. EMAIL by Nordible.Co proovib uuesti, kui server vastab.",
+    "save_pending": "Pole veel salvestatud. EMAIL by Nordible.Co proovib uuesti, kui server vastab."
   },
   "email_viewer": {
     "read_receipt": {
@@ -990,7 +990,7 @@
     "send_failed": "Kirja saatmine ebaõnnestus",
     "send_offline": "Paistab, et oled võrgust väljas. Kiri on alles, saada see uuesti, kui oled taas ühenduses.",
     "send_timeout": "Server lakkas vastamast. Enne uuesti saatmist kontrolli oma saadetud kirjade kausta — sõnum võis siiski välja minna.",
-    "submission_quota": "Serveris on selle konto kohta liiga palju saadetud kirjade kirjeid. Bulwark eemaldas need, mida sai; kui see kordub, palu administraatoril e-kirjade saatmise piirangut tõsta.",
+    "submission_quota": "Serveris on selle konto kohta liiga palju saadetud kirjade kirjeid. EMAIL by Nordible.Co eemaldas need, mida sai; kui see kordub, palu administraatoril e-kirjade saatmise piirangut tõsta.",
     "submission_limit": "Server keeldus kirja saatmast, sest piirang on täis: {reason}",
     "recipients_refused": "Ei saadetud: server lükkas tagasi {recipients}.",
     "recipients_partly_refused": "Server lükkas tagasi {recipients}. Teised adressaadid saavad kirja kätte.",
@@ -1032,7 +1032,14 @@
       "back": "Tagasi muutmise juurde"
     },
     "placeholder_words": {
-      "before": ["teie", "sinu", "sisesta", "sisestage", "lisa", "lisage"],
+      "before": [
+        "teie",
+        "sinu",
+        "sisesta",
+        "sisestage",
+        "lisa",
+        "lisage"
+      ],
       "after": [],
       "unfinished": []
     },
@@ -1641,7 +1648,7 @@
       },
       "push": {
         "title": "Taustateavitused",
-        "description": "Saa süsteemseid teavitusi uutest kirjadest ka siis, kui see sait on suletud. Edastatakse Bulwarki push-releele; relee ei näe kirjade sisu kunagi.",
+        "description": "Saa süsteemseid teavitusi uutest kirjadest ka siis, kui see sait on suletud. Edastatakse EMAIL by Nordible.Coi push-releele; relee ei näe kirjade sisu kunagi.",
         "relay_label": "Push-relee",
         "relay_desc": "Server, mis edastab su teavitusi. Vali administraatori pakutavate releede hulgast.",
         "relay_locked": "Määratud administraatori poolt",
@@ -1649,7 +1656,7 @@
         "status_active": "Aktiivne selles seadmes",
         "status_inactive": "Selles seadmes pole lubatud",
         "status_unsupported": "See brauser ei toeta Web Pushi",
-        "status_lite": "Veebi-tõukemärguanded pole Bulwark Lite'is saadaval; need vajavad Bulwarki serverit.",
+        "status_lite": "Veebi-tõukemärguanded pole Lite'is saadaval; need vajavad EMAIL by Nordible.Coi serverit.",
         "status_busy": "Töötleb…",
         "enable": "Luba",
         "reenable": "Registreeri uuesti",
@@ -2145,7 +2152,7 @@
       "title": "Konto turvalisus",
       "description": "Halda oma parooli, kaheastmelist autentimist ja turvasätteid",
       "detecting": "Serveri võimekuste tuvastamine...",
-      "not_available": "Konto turvahaldus ei ole selle meiliserveri jaoks saadaval. Vajalikud õigused võivad olla keelatud. Üksikasjade jaoks vaata <a href=\"https://bulwarkmail.org/docs/guides/account-security\" class=\"underline hover:opacity-80\" target=\"_blank\">dokumentatsiooni</a>.",
+      "not_available": "Konto turvahaldus ei ole selle meiliserveri jaoks saadaval. Vajalikud õigused võivad olla keelatud. Üksikasjade jaoks vaata <a href=\"https://nordible.co\" class=\"underline hover:opacity-80\" target=\"_blank\">dokumentatsiooni</a>.",
       "password": {
         "title": "Muuda parooli",
         "current": "Praegune parool",
@@ -2527,7 +2534,7 @@
         "button": "Impordi"
       },
       "about": {
-        "title": "Bulwark Webmail",
+        "title": "EMAIL by Nordible.Co",
         "source_code": "Lähtekood"
       },
       "spam_siege": {
@@ -3253,7 +3260,7 @@
     }
   },
   "setup": {
-    "title": "Bulwark Webmaili seadistamine",
+    "title": "EMAIL by Nordible.Coi seadistamine",
     "subtitle": "Seadista oma veebipostiteenus brauseris.",
     "loading": "Laadimine…",
     "back": "Tagasi",
@@ -3378,7 +3385,7 @@
       "regenerate": "Loo uus",
       "sync": "Sünkrooni kasutajate seaded seadmete vahel",
       "sync_hint": "Salvestab kasutajate eelistused serverisse, krüpteerituna seansi saladusega.",
-      "telemetry": "Saada Bulwarki parandamiseks anonüümset kasutusstatistikat",
+      "telemetry": "Saada EMAIL by Nordible.Coi parandamiseks anonüümset kasutusstatistikat",
       "telemetry_hint": "Vaikimisi väljas. Üks anonüümne signaal päevas versiooni, platvormi ja sisse lülitatud funktsioonidega; mitte kunagi e-posti aadresse, hostinimesid ega IP-aadresse. Saad seda igal ajal muuta haldusseadetes."
     },
     "logging": {
@@ -4367,7 +4374,7 @@
       "you_attendee": "Sina oled osaleja",
       "no_participants": "Osalejaid pole",
       "limit_warning": "Rohkem kui {max, plural, one {# osaleja} other {# osalejat}}, korraldaja kaasa arvatud: server võib keelduda seda sündmust salvestamast. Administraator saab piirangut tõsta.",
-      "count":"{count, plural, one {# osaleja} other {# osalejat}}"
+      "count": "{count, plural, one {# osaleja} other {# osalejat}}"
     },
     "recurrence": {
       "title": "Kordumine",
@@ -5377,7 +5384,7 @@
     "restore": "Taasta",
     "restored": "{count, plural, one {# kiri liigub} other {# kirja liiguvad}} tagasi sinu saabunud kirjade kausta.",
     "restore_partial": "{count, plural, one {# kirja ei õnnestunud taastada. See jääb valituks, et saaksid uuesti proovida.} other {# kirja ei õnnestunud taastada. Need jäävad valituks, et saaksid uuesti proovida.}}",
-    "restore_hint": "Taastatud kirjad tulevad tagasi saabunud kirjade kausta lugemata kujul ja algse kuupäeva järgi sorteerituna, seega võivad need olla loendis kaugel all. Server taastab need taustal. Kui see seal ebaõnnestub, läheb kiri kaotsi ja Bulwark ei saa sellest teada.",
+    "restore_hint": "Taastatud kirjad tulevad tagasi saabunud kirjade kausta lugemata kujul ja algse kuupäeva järgi sorteerituna, seega võivad need olla loendis kaugel all. Server taastab need taustal. Kui see seal ebaõnnestub, läheb kiri kaotsi ja EMAIL by Nordible.Co ei saa sellest teada.",
     "unknown_sender": "Tundmatu saatja",
     "no_subject": "(teema puudub)",
     "deleted_on": "Kustutatud {date}",

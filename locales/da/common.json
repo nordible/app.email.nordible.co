@@ -73,8 +73,8 @@
     "demo_tagline": "Oplev en fuldt udstyret e-mailklient. Ingen konto påkrævet.",
     "demo_no_signup": "Ingen tilmelding nødvendig - udforsk frit med eksempeldata",
     "mobile_handoff": {
-      "title": "Open the Bulwark mobile app?",
-      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the Bulwark link. Continue only if you started this from the Bulwark mobile app.",
+      "title": "Open the EMAIL by Nordible.Co mobile app?",
+      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the EMAIL by Nordible.Co link. Continue only if you started this from the EMAIL by Nordible.Co mobile app.",
       "confirm": "Hand over to the app",
       "cancel": "Stay in the webmail"
     },
@@ -411,11 +411,11 @@
     "too_long": "Navnet er for langt.",
     "loading": "Indlæser…",
     "unsupported": "Denne mailserver kan ikke gemme delte tags, så denne postkasse viser dine egne tags.",
-    "unavailable": "De delte tags i denne postkasse kunne ikke indlæses, så den viser dine egne tags. Bulwark prøver igen senere.",
+    "unavailable": "De delte tags i denne postkasse kunne ikke indlæses, så den viser dine egne tags. EMAIL by Nordible.Co prøver igen senere.",
     "no_rights": "Du kan bruge disse tags, men du kan ikke ændre dem i denne postkasse.",
     "too_many": "Der er for mange delte tags. Slet nogle, før du tilføjer flere.",
-    "save_failed": "De delte tags kunne ikke gemmes. Bulwark prøver igen, når serveren svarer.",
-    "save_pending": "Ikke gemt endnu. Bulwark prøver igen, når serveren svarer."
+    "save_failed": "De delte tags kunne ikke gemmes. EMAIL by Nordible.Co prøver igen, når serveren svarer.",
+    "save_pending": "Ikke gemt endnu. EMAIL by Nordible.Co prøver igen, når serveren svarer."
   },
   "email_viewer": {
     "read_receipt": {
@@ -987,7 +987,7 @@
     "show_less": "Vis mindre",
     "send_failed": "Kunne ikke sende e-mail",
     "send_timeout": "Serveren holdt op med at svare. Tjek mappen Sendt, før du sender igen — beskeden er måske allerede afsendt.",
-    "submission_quota": "Serveren har for mange registreringer af sendte beskeder for denne konto. Bulwark har fjernet dem, den kunne; hvis det bliver ved med at ske, så bed din administrator om at hæve grænsen for afsendelse af e-mails.",
+    "submission_quota": "Serveren har for mange registreringer af sendte beskeder for denne konto. EMAIL by Nordible.Co har fjernet dem, den kunne; hvis det bliver ved med at ske, så bed din administrator om at hæve grænsen for afsendelse af e-mails.",
     "submission_limit": "Serveren afviste at sende beskeden, fordi en grænse er nået: {reason}",
     "recipients_refused": "Ikke sendt: serveren afviste {recipients}.",
     "recipients_partly_refused": "Serveren afviste {recipients}. De øvrige modtagere får beskeden.",
@@ -1031,7 +1031,14 @@
       "back": "Tilbage til redigering"
     },
     "placeholder_words": {
-      "before": ["din", "dit", "dine", "indsæt", "tilføj", "skriv"],
+      "before": [
+        "din",
+        "dit",
+        "dine",
+        "indsæt",
+        "tilføj",
+        "skriv"
+      ],
       "after": [],
       "unfinished": []
     },
@@ -1641,15 +1648,15 @@
       },
       "push": {
         "title": "Baggrundsnotifikationer",
-        "description": "Modtag systemnotifikationer for ny mail, når dette site er lukket. Leveres via Bulwark push-relæet; relæet ser aldrig mail-indhold.",
+        "description": "Modtag systemnotifikationer for ny mail, når dette site er lukket. Leveres via EMAIL by Nordible.Co push-relæet; relæet ser aldrig mail-indhold.",
         "relay_label": "Push-relæ",
-        "relay_desc": "Som standard det hosted Bulwark-relæ. Ændr kun, hvis du selv-host'er.",
+        "relay_desc": "Som standard det hosted EMAIL by Nordible.Co-relæ. Ændr kun, hvis du selv-host'er.",
         "relay_locked": "Indstillet af administrator",
         "relay_locked_desc": "Push-relæ-URL'en er indstillet af din administrator og kan ikke ændres.",
         "status_active": "Aktiv på denne enhed",
         "status_inactive": "Ikke aktiveret på denne enhed",
         "status_unsupported": "Denne browser understøtter ikke Web Push",
-        "status_lite": "Web Push is not available in Bulwark Lite; it needs the Bulwark server.",
+        "status_lite": "Web Push is not available in Lite; it needs the server.",
         "status_busy": "Arbejder…",
         "enable": "Aktivér",
         "reenable": "Genregistrér",
@@ -1679,17 +1686,17 @@
         "error_over_quota": "Denne konto har for mange push-registreringer på mailserveren (grænsen er normalt 15). Tilbagekald enheder, du ikke længere bruger, i notifikationsindstillingerne, og prøv igen."
       },
       "push_all": {
-          "title": "All accounts",
-          "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
-          "select_all": "Select every connected account",
-          "state_on": "notifications on",
-          "state_off": "notifications off",
-          "enable_selected": "Enable for selected",
-          "disable_selected": "Disable for selected",
-          "result_enabled": "Notifications enabled for {count} accounts.",
-          "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
-          "result_disabled": "Notifications disabled for {count} accounts."
-        },
+        "title": "All accounts",
+        "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
+        "select_all": "Select every connected account",
+        "state_on": "notifications on",
+        "state_off": "notifications off",
+        "enable_selected": "Enable for selected",
+        "disable_selected": "Disable for selected",
+        "result_enabled": "Notifications enabled for {count} accounts.",
+        "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
+        "result_disabled": "Notifications disabled for {count} accounts."
+      },
       "sound_selection": {
         "title": "Notifikationslyd",
         "description": "Vælg hvilken lyd der skal afspilles for notifikationer",
@@ -2141,7 +2148,7 @@
       "title": "Kontosikkerhed",
       "description": "Administrér din adgangskode, to-faktor-godkendelse og sikkerhedsindstillinger",
       "detecting": "Registrerer serverfunktioner...",
-      "not_available": "Kontosikkerhedsstyring er ikke tilgængelig for denne mailserver. Nødvendige tilladelser er muligvis deaktiveret. Se <a href=\"https://bulwarkmail.org/docs/guides/account-security\" class=\"underline hover:opacity-80\" target=\"_blank\">dokumentationen</a> for detaljer.",
+      "not_available": "Kontosikkerhedsstyring er ikke tilgængelig for denne mailserver. Nødvendige tilladelser er muligvis deaktiveret. Se <a href=\"https://nordible.co\" class=\"underline hover:opacity-80\" target=\"_blank\">dokumentationen</a> for detaljer.",
       "password": {
         "title": "Skift adgangskode",
         "current": "Nuværende adgangskode",
@@ -2523,7 +2530,7 @@
         "button": "Importér"
       },
       "about": {
-        "title": "Bulwark Webmail",
+        "title": "EMAIL by Nordible.Co",
         "source_code": "Kildekode"
       },
       "spam_siege": {
@@ -3253,7 +3260,7 @@
     }
   },
   "setup": {
-    "title": "Opsætning af Bulwark Webmail",
+    "title": "Opsætning af EMAIL by Nordible.Co",
     "subtitle": "Opsæt din webmailinstans i browseren.",
     "loading": "Indlæser…",
     "back": "Tilbage",
@@ -3378,7 +3385,7 @@
       "regenerate": "Opret ny",
       "sync": "Synkroniser brugerindstillinger på tværs af enheder",
       "sync_hint": "Gemmer brugernes præferencer på serveren, krypteret med sessionshemmeligheden.",
-      "telemetry": "Send anonyme brugsstatistikker for at forbedre Bulwark",
+      "telemetry": "Send anonyme brugsstatistikker for at forbedre EMAIL by Nordible.Co",
       "telemetry_hint": "Fra som standard. Ét anonymt signal om dagen med version, platform og hvilke funktioner der er slået til; aldrig mailadresser, værtsnavne eller IP-adresser. Du kan altid ændre det i administrationsindstillingerne."
     },
     "logging": {
@@ -3524,8 +3531,7 @@
       "manage": "Administrer regler",
       "senders_count": "{count, plural, one {# afsender} other {# afsendere}}",
       "cross_account": "Vælg beskeder fra én konto",
-      "opaque_hint": "Dine filtre er redigeret manuelt. Åbn filterindstillingerne"
-,
+      "opaque_hint": "Dine filtre er redigeret manuelt. Åbn filterindstillingerne",
       "loading": "Indlæser regler…",
       "load_failed": "Reglerne kunne ikke indlæses",
       "none": "Ingen regler endnu",
@@ -5017,8 +5023,8 @@
     "dismiss": "Afvis",
     "start_tour": "Start rundvisning"
   },
-  "demo_welcome": {EMAIL by Nordible.Co
-    "title": "Velkommen til Bulwark Mail",
+  "demo_welcome": {
+    "title": "Velkommen til EMAIL by Nordible.Co",
     "description": "Udforsk en fuldt udstyret webmailklient - direkte i din browser. Alle data forbliver på din enhed, så du kan teste alt frit.",
     "feature_email": "Læs & skriv e-mail",
     "feature_organize": "Tags, stjerner & mapper",
@@ -5378,7 +5384,7 @@
     "restore": "Gendan",
     "restored": "{count, plural, one {# besked er} other {# beskeder er}} på vej tilbage til din indbakke.",
     "restore_partial": "{count, plural, one {# besked kunne ikke gendannes. Den forbliver valgt, så du kan prøve igen.} other {# beskeder kunne ikke gendannes. De forbliver valgt, så du kan prøve igen.}}",
-    "restore_hint": "Gendannet mail kommer tilbage i din indbakke som ulæst og sorteret efter den oprindelige dato, så den kan ligge langt nede på listen. Serveren gendanner den i baggrunden. Hvis det mislykkes der, er beskeden tabt, og Bulwark kan ikke se det.",
+    "restore_hint": "Gendannet mail kommer tilbage i din indbakke som ulæst og sorteret efter den oprindelige dato, så den kan ligge langt nede på listen. Serveren gendanner den i baggrunden. Hvis det mislykkes der, er beskeden tabt, og EMAIL by Nordible.Co kan ikke se det.",
     "unknown_sender": "Ukendt afsender",
     "no_subject": "(intet emne)",
     "deleted_on": "Slettet {date}",

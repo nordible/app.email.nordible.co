@@ -73,8 +73,8 @@
     "demo_tagline": "Vyzkoušejte plně funkční e-mailový klient. Účet není vyžadován.",
     "demo_no_signup": "Bez registrace - volně prozkoumejte s ukázkovými daty",
     "mobile_handoff": {
-      "title": "Open the Bulwark mobile app?",
-      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the Bulwark link. Continue only if you started this from the Bulwark mobile app.",
+      "title": "Open the EMAIL by Nordible.Co mobile app?",
+      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the EMAIL by Nordible.Co link. Continue only if you started this from the EMAIL by Nordible.Co mobile app.",
       "confirm": "Hand over to the app",
       "cancel": "Stay in the webmail"
     },
@@ -411,11 +411,11 @@
     "too_long": "Tento název je příliš dlouhý.",
     "loading": "Načítání…",
     "unsupported": "Tento poštovní server neumí ukládat sdílené štítky, proto tato schránka zobrazuje vaše vlastní štítky.",
-    "unavailable": "Sdílené štítky této schránky se nepodařilo načíst, proto zobrazuje vaše vlastní štítky. Bulwark to zkusí později znovu.",
+    "unavailable": "Sdílené štítky této schránky se nepodařilo načíst, proto zobrazuje vaše vlastní štítky. EMAIL by Nordible.Co to zkusí později znovu.",
     "no_rights": "Tyto štítky můžete používat, ale v této schránce je nemůžete měnit.",
     "too_many": "Sdílených štítků je příliš mnoho. Než přidáte další, některé odstraňte.",
-    "save_failed": "Sdílené štítky se nepodařilo uložit. Bulwark to zkusí znovu, až server odpoví.",
-    "save_pending": "Zatím neuloženo. Bulwark to zkusí znovu, až server odpoví."
+    "save_failed": "Sdílené štítky se nepodařilo uložit. EMAIL by Nordible.Co to zkusí znovu, až server odpoví.",
+    "save_pending": "Zatím neuloženo. EMAIL by Nordible.Co to zkusí znovu, až server odpoví."
   },
   "email_viewer": {
     "read_receipt": {
@@ -985,7 +985,7 @@
     "show_less": "Zobrazit méně",
     "send_failed": "Odeslání zprávy selhalo",
     "send_timeout": "Server přestal odpovídat. Než odešlete znovu, zkontrolujte složku Odeslané – zpráva už mohla odejít.",
-    "submission_quota": "Server má pro tento účet příliš mnoho záznamů o odeslaných zprávách. Bulwark odstranil ty, které mohl; pokud se to bude opakovat, požádejte správce o zvýšení limitu odesílání e-mailů.",
+    "submission_quota": "Server má pro tento účet příliš mnoho záznamů o odeslaných zprávách. EMAIL by Nordible.Co odstranil ty, které mohl; pokud se to bude opakovat, požádejte správce o zvýšení limitu odesílání e-mailů.",
     "submission_limit": "Server odmítl zprávu odeslat, protože byl dosažen limit: {reason}",
     "recipients_refused": "Neodesláno: server odmítl {recipients}.",
     "recipients_partly_refused": "Server odmítl {recipients}. Ostatní příjemci zprávu dostanou.",
@@ -1029,7 +1029,17 @@
       "back": "Zpět k úpravám"
     },
     "placeholder_words": {
-      "before": ["vaše", "váš", "vaši", "tvoje", "tvůj", "vložte", "doplňte", "zadejte", "uveďte"],
+      "before": [
+        "vaše",
+        "váš",
+        "vaši",
+        "tvoje",
+        "tvůj",
+        "vložte",
+        "doplňte",
+        "zadejte",
+        "uveďte"
+      ],
       "after": [],
       "unfinished": []
     },
@@ -1637,17 +1647,17 @@
         "relax": "Relaxační"
       },
       "push_all": {
-          "title": "All accounts",
-          "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
-          "select_all": "Select every connected account",
-          "state_on": "notifications on",
-          "state_off": "notifications off",
-          "enable_selected": "Enable for selected",
-          "disable_selected": "Disable for selected",
-          "result_enabled": "Notifications enabled for {count} accounts.",
-          "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
-          "result_disabled": "Notifications disabled for {count} accounts."
-        },
+        "title": "All accounts",
+        "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
+        "select_all": "Select every connected account",
+        "state_on": "notifications on",
+        "state_off": "notifications off",
+        "enable_selected": "Enable for selected",
+        "disable_selected": "Disable for selected",
+        "result_enabled": "Notifications enabled for {count} accounts.",
+        "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
+        "result_disabled": "Notifications disabled for {count} accounts."
+      },
       "sound_selection": {
         "title": "Zvuk oznámení",
         "description": "Vyberte zvuk, který se přehraje při oznámení",
@@ -1675,13 +1685,13 @@
       "push": {
         "confirm_disable_message": "Toto zařízení přestane přijímat upozornění, když je web zavřený.",
         "confirm_disable_title": "Zakázat oznámení na pozadí?",
-        "description": "Přijímat systémová oznámení o nové poště, když je tento web zavřený. Doručováno přes push relay Bulwark; relay nikdy nevidí obsah pošty.",
+        "description": "Přijímat systémová oznámení o nové poště, když je tento web zavřený. Doručováno přes push relay EMAIL by Nordible.Co; relay nikdy nevidí obsah pošty.",
         "disable": "Zakázat",
         "enable": "Povolit",
         "dismiss_aria": "Zavřít výzvu k oznámením",
         "ios_hint": "Na iOS nejprve nainstalujte web na domovskou obrazovku – Safari doručuje Web Push pouze nainstalovaným PWA.",
         "reenable": "Znovu zaregistrovat",
-        "relay_desc": "Výchozí je hostovaný relay Bulwark. Změňte pouze pokud používáte vlastní hosting.",
+        "relay_desc": "Výchozí je hostovaný relay EMAIL by Nordible.Co. Změňte pouze pokud používáte vlastní hosting.",
         "relay_label": "Push relay",
         "relay_locked": "Nastaveno administrátorem",
         "relay_locked_desc": "URL push relay byla nastavena administrátorem a nelze ji změnit.",
@@ -1689,7 +1699,7 @@
         "status_busy": "Pracuji…",
         "status_inactive": "Není povoleno na tomto zařízení",
         "status_unsupported": "Tento prohlížeč nepodporuje Web Push",
-        "status_lite": "Web Push není v Bulwark Lite k dispozici; vyžaduje server Bulwark.",
+        "status_lite": "Web Push není v Lite k dispozici; vyžaduje server EMAIL by Nordible.Co.",
         "title": "Oznámení na pozadí",
         "devices_title": "Registrovaná zařízení",
         "devices_desc": "Všechna zařízení registrovaná pro příjem oznamení na pozadí u tohoto účtu. Odvolání okamžitě zastaví jejich příjem.",
@@ -2138,7 +2148,7 @@
       "title": "Zabezpečení účtu",
       "description": "Správa hesla, dvoufázového ověření a nastavení zabezpečení",
       "detecting": "Zjišťování možností serveru...",
-      "not_available": "Správa zabezpečení účtu není pro tento poštovní server k dispozici. Požadovaná oprávnění mohou být vypnuta. Podrobnosti naleznete v <a href=\"https://bulwarkmail.org/docs/guides/account-security\" class=\"underline hover:opacity-80\" target=\"_blank\">dokumentaci</a>.",
+      "not_available": "Správa zabezpečení účtu není pro tento poštovní server k dispozici. Požadovaná oprávnění mohou být vypnuta. Podrobnosti naleznete v <a href=\"https://nordible.co\" class=\"underline hover:opacity-80\" target=\"_blank\">dokumentaci</a>.",
       "password": {
         "title": "Změnit heslo",
         "current": "Aktuální heslo",
@@ -2520,7 +2530,7 @@
         "button": "Importovat"
       },
       "about": {
-        "title": "Bulwark Webmail",
+        "title": "EMAIL by Nordible.Co",
         "source_code": "Zdrojový kód"
       },
       "spam_siege": {
@@ -3253,7 +3263,7 @@
     }
   },
   "setup": {
-    "title": "Nastavení Bulwark Webmail",
+    "title": "Nastavení EMAIL by Nordible.Co",
     "subtitle": "Nastavte svou instanci webmailu v prohlížeči.",
     "loading": "Načítání…",
     "back": "Zpět",
@@ -3378,7 +3388,7 @@
       "regenerate": "Vygenerovat znovu",
       "sync": "Synchronizovat nastavení uživatelů mezi zařízeními",
       "sync_hint": "Ukládá předvolby uživatelů na server, šifrované tajným klíčem relace.",
-      "telemetry": "Odesílat anonymní statistiky používání pro zlepšení Bulwarku",
+      "telemetry": "Odesílat anonymní statistiky používání pro zlepšení EMAIL by Nordible.Cou",
       "telemetry_hint": "Ve výchozím stavu vypnuto. Jeden anonymní signál denně s verzí, platformou a zapnutými funkcemi; nikdy e-mailové adresy, názvy hostitelů ani IP adresy. Kdykoli to můžete změnit v nastavení administrace."
     },
     "logging": {
@@ -3524,8 +3534,7 @@
       "manage": "Spravovat pravidla",
       "senders_count": "{count, plural, one {# odesílatele} few {# odesílatelů} many {# odesílatele} other {# odesílatelů}}",
       "cross_account": "Vyberte zprávy z jednoho účtu",
-      "opaque_hint": "Vaše filtry byly upraveny ručně. Otevřete nastavení filtrů"
-,
+      "opaque_hint": "Vaše filtry byly upraveny ručně. Otevřete nastavení filtrů",
       "loading": "Načítání pravidel…",
       "load_failed": "Pravidla se nepodařilo načíst",
       "none": "Zatím žádná pravidla",
@@ -4887,8 +4896,8 @@
     "dismiss": "Zavřít",
     "start_tour": "Spustit průvodce"
   },
-  "demo_welcome": {EMAIL by Nordible.Co
-    "title": "Vítejte v Bulwark Mail",
+  "demo_welcome": {
+    "title": "Vítejte v EMAIL by Nordible.Co",
     "description": "Prozkoumejte plně funkčního webového e-mailového klienta - přímo v prohlížeči. Všechna data zůstávají na vašem zařízení, takže můžete bez obav vše otestovat.",
     "feature_email": "Čtěte a pište e-maily",
     "feature_organize": "Štítky, hvězdičky a složky",
@@ -5248,7 +5257,7 @@
     "restore": "Obnovit",
     "restored": "{count, plural, one {# zpráva se vrací} few {# zprávy se vracejí} many {# zprávy se vrací} other {# zpráv se vrací}} do složky Doručené.",
     "restore_partial": "{count, plural, one {# zprávu se nepodařilo obnovit. Zůstává vybraná, abyste to mohli zkusit znovu.} few {# zprávy se nepodařilo obnovit. Zůstávají vybrané, abyste to mohli zkusit znovu.} many {# zprávy se nepodařilo obnovit. Zůstávají vybrané, abyste to mohli zkusit znovu.} other {# zpráv se nepodařilo obnovit. Zůstávají vybrané, abyste to mohli zkusit znovu.}}",
-    "restore_hint": "Obnovená pošta se vrací do složky Doručené jako nepřečtená a řadí se podle původního data, takže může být daleko dole v seznamu. Server ji obnovuje na pozadí. Pokud se to tam nepodaří, zpráva je ztracena a Bulwark to nepozná.",
+    "restore_hint": "Obnovená pošta se vrací do složky Doručené jako nepřečtená a řadí se podle původního data, takže může být daleko dole v seznamu. Server ji obnovuje na pozadí. Pokud se to tam nepodaří, zpráva je ztracena a EMAIL by Nordible.Co to nepozná.",
     "unknown_sender": "Neznámý odesílatel",
     "no_subject": "(bez předmětu)",
     "deleted_on": "Smazáno {date}",

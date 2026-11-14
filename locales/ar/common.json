@@ -73,8 +73,8 @@
     "demo_tagline": "جرّب عميل بريد إلكتروني متكامل الميزات. لا حاجة إلى حساب.",
     "demo_no_signup": "لا حاجة للتسجيل - استكشف بحرية باستخدام بيانات نموذجية",
     "mobile_handoff": {
-      "title": "Open the Bulwark mobile app?",
-      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the Bulwark link. Continue only if you started this from the Bulwark mobile app.",
+      "title": "Open the EMAIL by Nordible.Co mobile app?",
+      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the EMAIL by Nordible.Co link. Continue only if you started this from the EMAIL by Nordible.Co mobile app.",
       "confirm": "Hand over to the app",
       "cancel": "Stay in the webmail"
     },
@@ -411,11 +411,11 @@
     "too_long": "هذا الاسم طويل جدًا.",
     "loading": "جارٍ التحميل…",
     "unsupported": "لا يستطيع خادم البريد هذا حفظ الوسوم المشتركة، لذا يعرض صندوق البريد هذا وسومك الخاصة.",
-    "unavailable": "تعذّر تحميل الوسوم المشتركة لصندوق البريد هذا، لذا يعرض وسومك الخاصة. سيحاول Bulwark مرة أخرى لاحقًا.",
+    "unavailable": "تعذّر تحميل الوسوم المشتركة لصندوق البريد هذا، لذا يعرض وسومك الخاصة. سيحاول EMAIL by Nordible.Co مرة أخرى لاحقًا.",
     "no_rights": "يمكنك استخدام هذه الوسوم، لكن لا يمكنك تغييرها في صندوق البريد هذا.",
     "too_many": "هناك عدد كبير جدًا من الوسوم المشتركة. احذف بعضها قبل إضافة المزيد.",
-    "save_failed": "تعذّر حفظ الوسوم المشتركة. سيحاول Bulwark مرة أخرى عندما يستجيب الخادم.",
-    "save_pending": "لم يُحفظ بعد. سيحاول Bulwark مرة أخرى عندما يستجيب الخادم."
+    "save_failed": "تعذّر حفظ الوسوم المشتركة. سيحاول EMAIL by Nordible.Co مرة أخرى عندما يستجيب الخادم.",
+    "save_pending": "لم يُحفظ بعد. سيحاول EMAIL by Nordible.Co مرة أخرى عندما يستجيب الخادم."
   },
   "email_viewer": {
     "read_receipt": {
@@ -988,7 +988,7 @@
     "show_less": "إظهار أقل",
     "send_failed": "فشل إرسال الرسالة",
     "send_timeout": "توقف الخادم عن الاستجابة. تحقق من مجلد المُرسَل قبل إعادة الإرسال — فقد تكون الرسالة قد أُرسلت بالفعل.",
-    "submission_quota": "يحتفظ الخادم بعدد كبير جدًا من سجلات الرسائل المرسلة لهذا الحساب. أزال Bulwark ما استطاع منها؛ وإذا تكرر ذلك، فاطلب من المسؤول رفع حد عمليات إرسال البريد.",
+    "submission_quota": "يحتفظ الخادم بعدد كبير جدًا من سجلات الرسائل المرسلة لهذا الحساب. أزال EMAIL by Nordible.Co ما استطاع منها؛ وإذا تكرر ذلك، فاطلب من المسؤول رفع حد عمليات إرسال البريد.",
     "submission_limit": "رفض الخادم إرسال الرسالة لبلوغ أحد الحدود: {reason}",
     "recipients_refused": "لم تُرسل الرسالة: رفض الخادم {recipients}.",
     "recipients_partly_refused": "رفض الخادم {recipients}. سيتلقى باقي المستلمين الرسالة.",
@@ -1032,7 +1032,12 @@
       "back": "العودة إلى التعديل"
     },
     "placeholder_words": {
-      "before": ["أدخل", "ادخل", "أضف", "اكتب"],
+      "before": [
+        "أدخل",
+        "ادخل",
+        "أضف",
+        "اكتب"
+      ],
       "after": [],
       "unfinished": []
     },
@@ -1641,15 +1646,15 @@
       },
       "push": {
         "title": "الإشعارات في الخلفية",
-        "description": "تلقّي إشعارات النظام للبريد الجديد عند إغلاق هذا الموقع. تُسلَّم عبر خادم ترحيل Bulwark؛ ولا يطّلع الترحيل على محتوى البريد أبدًا.",
+        "description": "تلقّي إشعارات النظام للبريد الجديد عند إغلاق هذا الموقع. تُسلَّم عبر خادم ترحيل EMAIL by Nordible.Co؛ ولا يطّلع الترحيل على محتوى البريد أبدًا.",
         "relay_label": "خادم ترحيل الإشعارات",
-        "relay_desc": "يستخدم افتراضيًا خادم ترحيل Bulwark المستضاف. غيّره فقط إذا كنت تستضيف بنفسك.",
+        "relay_desc": "يستخدم افتراضيًا خادم ترحيل EMAIL by Nordible.Co المستضاف. غيّره فقط إذا كنت تستضيف بنفسك.",
         "relay_locked": "تم تعيينه بواسطة المسؤول",
         "relay_locked_desc": "تم تعيين رابط خادم الترحيل بواسطة المسؤول ولا يمكن تغييره.",
         "status_active": "نشط على هذا الجهاز",
         "status_inactive": "غير مفعّل على هذا الجهاز",
         "status_unsupported": "هذا المتصفح لا يدعم Web Push",
-        "status_lite": "Web Push is not available in Bulwark Lite; it needs the Bulwark server.",
+        "status_lite": "Web Push is not available in Lite; it needs the server.",
         "status_busy": "جارٍ العمل…",
         "enable": "تفعيل",
         "reenable": "إعادة التسجيل",
@@ -1679,17 +1684,17 @@
         "error_over_quota": "لدى هذا الحساب عدد كبير جدًا من تسجيلات الإشعارات الفورية على خادم البريد (الحد عادةً 15). ألغِ تسجيل الأجهزة التي لم تعد تستخدمها من إعدادات الإشعارات، ثم حاول مرة أخرى."
       },
       "push_all": {
-          "title": "All accounts",
-          "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
-          "select_all": "Select every connected account",
-          "state_on": "notifications on",
-          "state_off": "notifications off",
-          "enable_selected": "Enable for selected",
-          "disable_selected": "Disable for selected",
-          "result_enabled": "Notifications enabled for {count} accounts.",
-          "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
-          "result_disabled": "Notifications disabled for {count} accounts."
-        },
+        "title": "All accounts",
+        "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
+        "select_all": "Select every connected account",
+        "state_on": "notifications on",
+        "state_off": "notifications off",
+        "enable_selected": "Enable for selected",
+        "disable_selected": "Disable for selected",
+        "result_enabled": "Notifications enabled for {count} accounts.",
+        "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
+        "result_disabled": "Notifications disabled for {count} accounts."
+      },
       "sound_selection": {
         "title": "صوت الإشعار",
         "description": "اختر الصوت الذي يُشغَّل للإشعارات",
@@ -2145,7 +2150,7 @@
       "title": "أمان الحساب",
       "description": "إدارة كلمة المرور والمصادقة الثنائية وإعدادات الأمان",
       "detecting": "جارٍ اكتشاف قدرات الخادم...",
-      "not_available": "إدارة أمان الحساب غير متاحة لخادم البريد هذا. قد تكون الأذونات المطلوبة معطّلة. راجع <a href=\"https://bulwarkmail.org/docs/guides/account-security\" class=\"underline hover:opacity-80\" target=\"_blank\">الوثائق</a> للتفاصيل.",
+      "not_available": "إدارة أمان الحساب غير متاحة لخادم البريد هذا. قد تكون الأذونات المطلوبة معطّلة. راجع <a href=\"https://nordible.co\" class=\"underline hover:opacity-80\" target=\"_blank\">الوثائق</a> للتفاصيل.",
       "password": {
         "title": "تغيير كلمة المرور",
         "current": "كلمة المرور الحالية",
@@ -2527,7 +2532,7 @@
         "button": "استيراد"
       },
       "about": {
-        "title": "بريد Bulwark الإلكتروني",
+        "title": "بريد EMAIL by Nordible.Co الإلكتروني",
         "source_code": "الشيفرة المصدرية"
       },
       "spam_siege": {
@@ -3253,7 +3258,7 @@
     }
   },
   "setup": {
-    "title": "إعداد Bulwark Webmail",
+    "title": "إعداد EMAIL by Nordible.Co",
     "subtitle": "اضبط نسخة البريد الإلكتروني على الويب من المتصفح.",
     "loading": "جارٍ التحميل…",
     "back": "رجوع",
@@ -3378,7 +3383,7 @@
       "regenerate": "إنشاء من جديد",
       "sync": "مزامنة إعدادات المستخدمين بين الأجهزة",
       "sync_hint": "يخزّن تفضيلات المستخدمين على الخادم مشفرة بسر الجلسة.",
-      "telemetry": "إرسال إحصاءات استخدام مجهولة للمساعدة في تحسين Bulwark",
+      "telemetry": "إرسال إحصاءات استخدام مجهولة للمساعدة في تحسين EMAIL by Nordible.Co",
       "telemetry_hint": "متوقف افتراضيًا. إشارة مجهولة واحدة يوميًا تتضمن الإصدار والمنصة والميزات المفعّلة؛ ولا تتضمن أبدًا عناوين البريد أو أسماء المضيفين أو عناوين IP. يمكنك تغيير ذلك في أي وقت من إعدادات الإدارة."
     },
     "logging": {
@@ -3524,8 +3529,7 @@
       "manage": "إدارة القواعد",
       "senders_count": "{count, plural, one {مرسل واحد} two {مرسلَين} few {# مرسلين} many {# مرسلًا} other {# مرسل}}",
       "cross_account": "حدد رسائل من حساب واحد",
-      "opaque_hint": "تم تعديل مرشحاتك يدويًا. افتح إعدادات المرشحات"
-,
+      "opaque_hint": "تم تعديل مرشحاتك يدويًا. افتح إعدادات المرشحات",
       "loading": "جارٍ تحميل القواعد…",
       "load_failed": "تعذّر تحميل القواعد",
       "none": "لا توجد قواعد بعد",
@@ -5018,7 +5022,7 @@
     "start_tour": "بدء الجولة"
   },
   "demo_welcome": {
-    "title": "مرحبًا بك في بريد Bulwark",
+    "title": "مرحبًا بك في بريد EMAIL by Nordible.Co",
     "description": "استكشف عميل بريد ويب متكامل الميزات - مباشرة في متصفحك. تبقى جميع البيانات على جهازك، فلا تتردد في تجربة كل شيء.",
     "feature_email": "قراءة الرسائل وكتابتها",
     "feature_organize": "الوسوم والنجوم والمجلدات",
@@ -5378,7 +5382,7 @@
     "restore": "استعادة",
     "restored": "{count, plural, zero {# رسالة في طريقها} one {رسالة واحدة في طريقها} two {رسالتان في طريقهما} few {# رسائل في طريقها} many {# رسالة في طريقها} other {# رسالة في طريقها}} إلى بريدك الوارد.",
     "restore_partial": "{count, plural, zero {تعذّرت استعادة # رسالة. تبقى محددة لتتمكن من المحاولة مرة أخرى.} one {تعذّرت استعادة رسالة واحدة. تبقى محددة لتتمكن من المحاولة مرة أخرى.} two {تعذّرت استعادة رسالتين. تبقيان محددتين لتتمكن من المحاولة مرة أخرى.} few {تعذّرت استعادة # رسائل. تبقى محددة لتتمكن من المحاولة مرة أخرى.} many {تعذّرت استعادة # رسالة. تبقى محددة لتتمكن من المحاولة مرة أخرى.} other {تعذّرت استعادة # رسالة. تبقى محددة لتتمكن من المحاولة مرة أخرى.}}",
-    "restore_hint": "يعود البريد المستعاد إلى بريدك الوارد غير مقروء، مرتبًا حسب تاريخه الأصلي، لذا قد يكون بعيدًا في أسفل القائمة. يستعيده الخادم في الخلفية. إذا فشل ذلك هناك، تُفقد الرسالة ولا يستطيع Bulwark معرفة ذلك.",
+    "restore_hint": "يعود البريد المستعاد إلى بريدك الوارد غير مقروء، مرتبًا حسب تاريخه الأصلي، لذا قد يكون بعيدًا في أسفل القائمة. يستعيده الخادم في الخلفية. إذا فشل ذلك هناك، تُفقد الرسالة ولا يستطيع EMAIL by Nordible.Co معرفة ذلك.",
     "unknown_sender": "مرسل غير معروف",
     "no_subject": "(بلا موضوع)",
     "deleted_on": "حُذفت في {date}",

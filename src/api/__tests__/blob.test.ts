@@ -190,7 +190,7 @@ describe('isStaleUploadCopy', () => {
 
   it('ignores other cache files', () => {
     expect(isStaleUploadCopy('upload-notes.txt')).toBe(false);
-    expect(isStaleUploadCopy('bulwark-exports')).toBe(false);
+    expect(isStaleUploadCopy('nordible-exports')).toBe(false);
     expect(isStaleUploadCopy('x-upload-1700000000000-3')).toBe(false);
   });
 });

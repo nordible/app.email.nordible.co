@@ -73,8 +73,8 @@
     "demo_tagline": "Бүрэн боломжтой имэйлийн клиентийг туршиж үзээрэй. Бүртгэл шаардлагагүй.",
     "demo_no_signup": "Бүртгүүлэх шаардлагагүй - жишээ өгөгдлөөр чөлөөтэй үзэж сонирхоно уу",
     "mobile_handoff": {
-      "title": "Open the Bulwark mobile app?",
-      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the Bulwark link. Continue only if you started this from the Bulwark mobile app.",
+      "title": "Open the EMAIL by Nordible.Co mobile app?",
+      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the EMAIL by Nordible.Co link. Continue only if you started this from the EMAIL by Nordible.Co mobile app.",
       "confirm": "Hand over to the app",
       "cancel": "Stay in the webmail"
     },
@@ -411,11 +411,11 @@
     "too_long": "Энэ нэр хэтэрхий урт байна.",
     "loading": "Ачаалж байна…",
     "unsupported": "Энэ шуудангийн сервер хуваалцсан таг хадгалж чаддаггүй тул энэ шуудангийн хайрцаг таны өөрийн тагуудыг харуулж байна.",
-    "unavailable": "Энэ шуудангийн хайрцгийн хуваалцсан тагуудыг ачаалж чадсангүй, тиймээс таны өөрийн тагуудыг харуулж байна. Bulwark дараа дахин оролдоно.",
+    "unavailable": "Энэ шуудангийн хайрцгийн хуваалцсан тагуудыг ачаалж чадсангүй, тиймээс таны өөрийн тагуудыг харуулж байна. EMAIL by Nordible.Co дараа дахин оролдоно.",
     "no_rights": "Та эдгээр тагийг ашиглаж болно, гэхдээ энэ шуудангийн хайрцагт өөрчилж чадахгүй.",
     "too_many": "Хуваалцсан таг хэт олон байна. Шинээр нэмэхээсээ өмнө заримыг нь устгана уу.",
-    "save_failed": "Хуваалцсан тагуудыг хадгалж чадсангүй. Сервер хариу өгөхөд Bulwark дахин оролдоно.",
-    "save_pending": "Хараахан хадгалагдаагүй. Сервер хариу өгөхөд Bulwark дахин оролдоно."
+    "save_failed": "Хуваалцсан тагуудыг хадгалж чадсангүй. Сервер хариу өгөхөд EMAIL by Nordible.Co дахин оролдоно.",
+    "save_pending": "Хараахан хадгалагдаагүй. Сервер хариу өгөхөд EMAIL by Nordible.Co дахин оролдоно."
   },
   "email_viewer": {
     "read_receipt": {
@@ -988,7 +988,7 @@
     "show_less": "Бага харуулах",
     "send_failed": "Имэйл илгээж чадсангүй",
     "send_timeout": "Сервер хариу өгөхөө больсон. Дахин илгээхийн өмнө \"Илгээсэн\" фолдероо шалгана уу — мессеж унтарсан байж магадгүй.",
-    "submission_quota": "Сервер дээр энэ бүртгэлийн илгээсэн мессежийн бичлэг хэт олон байна. Bulwark боломжтойг нь устгасан; дахин давтагдвал админаасаа имэйл илгээх хязгаарыг нэмэгдүүлэхийг хүснэ үү.",
+    "submission_quota": "Сервер дээр энэ бүртгэлийн илгээсэн мессежийн бичлэг хэт олон байна. EMAIL by Nordible.Co боломжтойг нь устгасан; дахин давтагдвал админаасаа имэйл илгээх хязгаарыг нэмэгдүүлэхийг хүснэ үү.",
     "submission_limit": "Хязгаарт хүрсэн тул сервер мессежийг илгээхээс татгалзлаа: {reason}",
     "recipients_refused": "Илгээгдсэнгүй: сервер дараах хүлээн авагчдыг татгалзлаа: {recipients}.",
     "recipients_partly_refused": "Сервер дараах хүлээн авагчдыг татгалзлаа: {recipients}. Бусад хүлээн авагчид мессежийг хүлээн авна.",
@@ -1032,8 +1032,13 @@
       "back": "Засварлах руу буцах"
     },
     "placeholder_words": {
-      "before": ["таны", "чиний"],
-      "after": ["оруулна уу"],
+      "before": [
+        "таны",
+        "чиний"
+      ],
+      "after": [
+        "оруулна уу"
+      ],
       "unfinished": []
     },
     "schedule_send": "Хуваарь илгээх",
@@ -1641,15 +1646,15 @@
       },
       "push": {
         "title": "Арын мэдэгдлүүд",
-        "description": "Энэ сайт хаагдсан үед шинэ имэйлийн системийн мэдэгдлийг хүлээн авах. Bulwark түлхэх буухиагаар дамжуулан хүргэгдсэн; реле хэзээ ч захидлын агуулгыг хардаггүй.",
+        "description": "Энэ сайт хаагдсан үед шинэ имэйлийн системийн мэдэгдлийг хүлээн авах. EMAIL by Nordible.Co түлхэх буухиагаар дамжуулан хүргэгдсэн; реле хэзээ ч захидлын агуулгыг хардаггүй.",
         "relay_label": "Түлхэх реле",
-        "relay_desc": "Байршуулсан Bulwark буухиа өгөгдмөл. Зөвхөн өөрөө зохион байгуулж байгаа тохиолдолд л өөрчилнө үү.",
+        "relay_desc": "Байршуулсан EMAIL by Nordible.Co буухиа өгөгдмөл. Зөвхөн өөрөө зохион байгуулж байгаа тохиолдолд л өөрчилнө үү.",
         "relay_locked": "Админ тохируулсан",
         "relay_locked_desc": "Түлхэх реле URL-г таны админ тохируулсан бөгөөд өөрчлөх боломжгүй.",
         "status_active": "Энэ төхөөрөмжид идэвхтэй байна",
         "status_inactive": "Энэ төхөөрөмж дээр идэвхжээгүй",
         "status_unsupported": "Энэ хөтөч Web Push-ийг дэмждэггүй",
-        "status_lite": "Web Push is not available in Bulwark Lite; it needs the Bulwark server.",
+        "status_lite": "Web Push is not available in Lite; it needs the server.",
         "status_busy": "Ажиллаж байна…",
         "enable": "Идэвхжүүлэх",
         "reenable": "Дахин бүртгүүлэх",
@@ -1679,17 +1684,17 @@
         "error_over_quota": "Энэ бүртгэл шуудангийн сервер дээр хэт олон push бүртгэлтэй байна (хязгаар нь ихэвчлэн 15). Мэдэгдлийн тохиргооноос ашиглахаа больсон төхөөрөмжүүдээ цуцлаад дахин оролдоно уу."
       },
       "push_all": {
-          "title": "All accounts",
-          "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
-          "select_all": "Select every connected account",
-          "state_on": "notifications on",
-          "state_off": "notifications off",
-          "enable_selected": "Enable for selected",
-          "disable_selected": "Disable for selected",
-          "result_enabled": "Notifications enabled for {count} accounts.",
-          "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
-          "result_disabled": "Notifications disabled for {count} accounts."
-        },
+        "title": "All accounts",
+        "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
+        "select_all": "Select every connected account",
+        "state_on": "notifications on",
+        "state_off": "notifications off",
+        "enable_selected": "Enable for selected",
+        "disable_selected": "Disable for selected",
+        "result_enabled": "Notifications enabled for {count} accounts.",
+        "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
+        "result_disabled": "Notifications disabled for {count} accounts."
+      },
       "sound_selection": {
         "title": "Мэдэгдэлийн дуу",
         "description": "Мэдэгдэл авахын тулд ямар дууг тоглуулахаа сонгоно уу",
@@ -2145,7 +2150,7 @@
       "title": "Дансны аюулгүй байдал",
       "description": "Нууц үг, хоёр хүчин зүйлийн баталгаажуулалт, аюулгүй байдлын тохиргоогоо удирдах",
       "detecting": "Серверийн чадварыг илрүүлж байна...",
-      "not_available": "Энэ имэйл сервер дээр бүртгэлийн аюулгүй байдлын удирдлага ашиглах боломжгүй. Шаардлагатай зөвшөөрлүүд идэвхгүй байж болно. Дэлгэрэнгүйг <a href=\"https://bulwarkmail.org/docs/guides/account-security\" class=\"underline hover:opacity-80\" target=\"_blank\">баримт бичгээс</a> үзнэ үү.",
+      "not_available": "Энэ имэйл сервер дээр бүртгэлийн аюулгүй байдлын удирдлага ашиглах боломжгүй. Шаардлагатай зөвшөөрлүүд идэвхгүй байж болно. Дэлгэрэнгүйг <a href=\"https://nordible.co\" class=\"underline hover:opacity-80\" target=\"_blank\">баримт бичгээс</a> үзнэ үү.",
       "password": {
         "title": "Нууц үг солих",
         "current": "Одоогийн нууц үг",
@@ -3253,7 +3258,7 @@
     }
   },
   "setup": {
-    "title": "Bulwark Webmail-ийн тохиргоо",
+    "title": "EMAIL by Nordible.Co-ийн тохиргоо",
     "subtitle": "Вэб шуудангийн инстансаа хөтчөөс тохируулна уу.",
     "loading": "Ачаалж байна…",
     "back": "Буцах",
@@ -3378,7 +3383,7 @@
       "regenerate": "Дахин үүсгэх",
       "sync": "Хэрэглэгчийн тохиргоог төхөөрөмж хооронд синк хийх",
       "sync_hint": "Хэрэглэгчдийн тохиргоог сешний нууцаар шифрлэн сервер дээр хадгална.",
-      "telemetry": "Bulwark-ийг сайжруулахад туслах нэргүй хэрэглээний статистик илгээх",
+      "telemetry": "EMAIL by Nordible.Co-ийг сайжруулахад туслах нэргүй хэрэглээний статистик илгээх",
       "telemetry_hint": "Анхдагчаар унтраалттай. Өдөрт нэг удаа хувилбар, платформ, идэвхтэй боломжуудыг агуулсан нэргүй дохио илгээнэ; имэйл хаяг, хостын нэр, IP хэзээ ч илгээхгүй. Үүнийг админ тохиргоонд хүссэн үедээ өөрчилж болно."
     },
     "logging": {
@@ -3524,8 +3529,7 @@
       "manage": "Дүрмүүдийг удирдах",
       "senders_count": "{count, plural, one {# илгээгч} other {# илгээгч}}",
       "cross_account": "Нэг бүртгэлийн захиануудыг сонгоно уу",
-      "opaque_hint": "Таны шүүлтүүрийг гараар засварласан байна. Шүүлтүүрийн тохиргоог нээнэ үү"
-,
+      "opaque_hint": "Таны шүүлтүүрийг гараар засварласан байна. Шүүлтүүрийн тохиргоог нээнэ үү",
       "loading": "Дүрмүүдийг ачаалж байна…",
       "load_failed": "Дүрмүүдийг ачаалж чадсангүй",
       "none": "Одоогоор дүрэм алга",
@@ -5017,8 +5021,8 @@
     "dismiss": "Хаах",
     "start_tour": "Аялал эхлэх"
   },
-  "demo_welcomEMAIL by Nordible.Co
-    "title": "Bulwark Mail",
+  "demo_welcome": {
+    "title": "EMAIL by Nordible.Co",
     "description": "Бүрэн боломжит вэбмэйл клиентийг шууд хөтөч дээрээ судлаарай. Бүх өгөгдөл таны төхөөрөмж дээр үлдэх тул бүх зүйлийг туршиж үзээрэй.",
     "feature_email": "Унших, имэйл бичих",
     "feature_organize": "Таг, од, хавтас",
@@ -5378,7 +5382,7 @@
     "restore": "Сэргээх",
     "restored": "{count, plural, one {# захидал} other {# захидал}} таны Ирсэн имэйл рүү буцаж байна.",
     "restore_partial": "{count, plural, one {# захидлыг сэргээж чадсангүй. Дахин оролдох боломжтой байхаар сонгогдсон хэвээр үлдэнэ.} other {# захидлыг сэргээж чадсангүй. Дахин оролдох боломжтой байхаар сонгогдсон хэвээр үлдэнэ.}}",
-    "restore_hint": "Сэргээсэн имэйлүүд уншаагүй төлөвтэйгөөр, анхны огноогоороо эрэмбэлэгдэн Ирсэн имэйл рүү буцдаг тул жагсаалтын нэлээд доор байж болно. Сервер тэдгээрийг ар талд сэргээдэг. Хэрэв тэнд амжилтгүй болбол захидал алга болох бөгөөд Bulwark үүнийг мэдэж чадахгүй.",
+    "restore_hint": "Сэргээсэн имэйлүүд уншаагүй төлөвтэйгөөр, анхны огноогоороо эрэмбэлэгдэн Ирсэн имэйл рүү буцдаг тул жагсаалтын нэлээд доор байж болно. Сервер тэдгээрийг ар талд сэргээдэг. Хэрэв тэнд амжилтгүй болбол захидал алга болох бөгөөд EMAIL by Nordible.Co үүнийг мэдэж чадахгүй.",
     "unknown_sender": "Үл мэдэгдэх илгээгч",
     "no_subject": "(сэдэв байхгүй)",
     "deleted_on": "{date}-нд устгасан",

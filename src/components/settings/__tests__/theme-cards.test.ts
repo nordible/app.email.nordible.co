@@ -3,7 +3,7 @@ import { visibleThemeCards } from '../theme-cards';
 import { sanitizePolicy } from '../../../lib/org-policy';
 
 const CARDS = [
-  { id: null, name: 'Bulwark' },
+  { id: null, name: 'Nordible' },
   { id: 'nord', name: 'Nord' },
   { id: 'solarized', name: 'Solarized' },
 ];

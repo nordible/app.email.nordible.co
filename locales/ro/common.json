@@ -73,8 +73,8 @@
     "demo_tagline": "Descoperiți un client de e-mail cu funcționalități complete. Nu este necesar un cont.",
     "demo_no_signup": "Nu este necesară înregistrarea – explorați liber cu date de exemplu",
     "mobile_handoff": {
-      "title": "Open the Bulwark mobile app?",
-      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the Bulwark link. Continue only if you started this from the Bulwark mobile app.",
+      "title": "Open the EMAIL by Nordible.Co mobile app?",
+      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the EMAIL by Nordible.Co link. Continue only if you started this from the EMAIL by Nordible.Co mobile app.",
       "confirm": "Hand over to the app",
       "cancel": "Stay in the webmail"
     },
@@ -411,11 +411,11 @@
     "too_long": "Acest nume este prea lung.",
     "loading": "Se încarcă…",
     "unsupported": "Acest server de e-mail nu poate păstra etichete partajate, așa că această căsuță afișează etichetele dvs. proprii.",
-    "unavailable": "Etichetele partajate ale acestei căsuțe nu au putut fi încărcate, așa că afișează etichetele dvs. proprii. Bulwark va încerca din nou mai târziu.",
+    "unavailable": "Etichetele partajate ale acestei căsuțe nu au putut fi încărcate, așa că afișează etichetele dvs. proprii. EMAIL by Nordible.Co va încerca din nou mai târziu.",
     "no_rights": "Puteți folosi aceste etichete, dar nu le puteți modifica în această căsuță.",
     "too_many": "Există prea multe etichete partajate. Ștergeți câteva înainte de a adăuga altele.",
-    "save_failed": "Etichetele partajate nu au putut fi salvate. Bulwark va încerca din nou când serverul răspunde.",
-    "save_pending": "Încă nesalvat. Bulwark va încerca din nou când serverul răspunde."
+    "save_failed": "Etichetele partajate nu au putut fi salvate. EMAIL by Nordible.Co va încerca din nou când serverul răspunde.",
+    "save_pending": "Încă nesalvat. EMAIL by Nordible.Co va încerca din nou când serverul răspunde."
   },
   "email_viewer": {
     "read_receipt": {
@@ -988,7 +988,7 @@
     "show_less": "Afișați mai puțin",
     "send_failed": "Nu s-a putut trimite e-mailul",
     "send_timeout": "Serverul a încetat să răspundă. Verificați folderul Trimise înainte de a trimite din nou — mesajul poate să fi plecat deja.",
-    "submission_quota": "Serverul păstrează prea multe înregistrări de mesaje trimise pentru acest cont. Bulwark le-a eliminat pe cele pe care a putut; dacă problema persistă, cereți administratorului să mărească limita de trimiteri de e-mail.",
+    "submission_quota": "Serverul păstrează prea multe înregistrări de mesaje trimise pentru acest cont. EMAIL by Nordible.Co le-a eliminat pe cele pe care a putut; dacă problema persistă, cereți administratorului să mărească limita de trimiteri de e-mail.",
     "submission_limit": "Serverul a refuzat să trimită mesajul deoarece s-a atins o limită: {reason}",
     "recipients_refused": "Netrimis: serverul a respins {recipients}.",
     "recipients_partly_refused": "Serverul a respins {recipients}. Ceilalți destinatari primesc mesajul.",
@@ -1032,8 +1032,18 @@
       "back": "Înapoi la editare"
     },
     "placeholder_words": {
-      "before": ["introduceți", "inserați", "adăugați", "completați"],
-      "after": ["tău", "ta", "dvs.", "dumneavoastră"],
+      "before": [
+        "introduceți",
+        "inserați",
+        "adăugați",
+        "completați"
+      ],
+      "after": [
+        "tău",
+        "ta",
+        "dvs.",
+        "dumneavoastră"
+      ],
       "unfinished": []
     },
     "schedule_send": "Programează trimiterea",
@@ -1641,15 +1651,15 @@
       },
       "push": {
         "title": "Notificări în fundal",
-        "description": "Primiți notificări de sistem pentru e-mailuri noi chiar și atunci când acest site este închis. Notificările sunt transmise prin intermediul serverului de push Bulwark; serverul nu vede niciodată conținutul e-mailurilor.",
+        "description": "Primiți notificări de sistem pentru e-mailuri noi chiar și atunci când acest site este închis. Notificările sunt transmise prin intermediul serverului de push EMAIL by Nordible.Co; serverul nu vede niciodată conținutul e-mailurilor.",
         "relay_label": "Relay push",
-        "relay_desc": "Implicit este setat serverul de retransmitere găzduit Bulwark. Modificați această setare numai dacă utilizați un server propriu.",
+        "relay_desc": "Implicit este setat serverul de retransmitere găzduit EMAIL by Nordible.Co. Modificați această setare numai dacă utilizați un server propriu.",
         "relay_locked": "Configurat de administrator",
         "relay_locked_desc": "Relay-ul push URL a fost configurat de administratorul dvs. și nu poate fi modificat.",
         "status_active": "Activ pe acest dispozitiv",
         "status_inactive": "Nu este activat pe acest dispozitiv",
         "status_unsupported": "Acest browser nu acceptă Web Push",
-        "status_lite": "Web Push is not available in Bulwark Lite; it needs the Bulwark server.",
+        "status_lite": "Web Push is not available in Lite; it needs the server.",
         "status_busy": "Se lucrează…",
         "enable": "Activați",
         "reenable": "Reînregistrează-te",
@@ -1679,17 +1689,17 @@
         "error_over_quota": "Acest cont are prea multe înregistrări push pe serverul de e-mail (limita este de obicei 15). Revocați din setările de notificări dispozitivele pe care nu le mai folosiți, apoi încercați din nou."
       },
       "push_all": {
-          "title": "All accounts",
-          "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
-          "select_all": "Select every connected account",
-          "state_on": "notifications on",
-          "state_off": "notifications off",
-          "enable_selected": "Enable for selected",
-          "disable_selected": "Disable for selected",
-          "result_enabled": "Notifications enabled for {count} accounts.",
-          "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
-          "result_disabled": "Notifications disabled for {count} accounts."
-        },
+        "title": "All accounts",
+        "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
+        "select_all": "Select every connected account",
+        "state_on": "notifications on",
+        "state_off": "notifications off",
+        "enable_selected": "Enable for selected",
+        "disable_selected": "Disable for selected",
+        "result_enabled": "Notifications enabled for {count} accounts.",
+        "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
+        "result_disabled": "Notifications disabled for {count} accounts."
+      },
       "sound_selection": {
         "title": "Sunet de notificare",
         "description": "Alegeți ce sunet să se redea pentru notificări",
@@ -2145,7 +2155,7 @@
       "title": "Securitatea contului",
       "description": "Gestionați-vă parola, autentificarea în doi pași și setările de securitate",
       "detecting": "Se detectează capacitățile serverului...",
-      "not_available": "Gestionarea securității contului nu este disponibilă pentru acest server de e-mail. Este posibil ca permisiunile necesare să fie dezactivate. Consultați <a href=\"https://bulwarkmail.org/docs/guides/account-security\" class=\"underline hover:opacity-80\" target=\"_blank\">documentația</a> pentru detalii.",
+      "not_available": "Gestionarea securității contului nu este disponibilă pentru acest server de e-mail. Este posibil ca permisiunile necesare să fie dezactivate. Consultați <a href=\"https://nordible.co\" class=\"underline hover:opacity-80\" target=\"_blank\">documentația</a> pentru detalii.",
       "password": {
         "title": "Schimbă parola",
         "current": "Parola curentă",
@@ -2527,7 +2537,7 @@
         "button": "Import"
       },
       "about": {
-        "title": "Bulwark Webmail",
+        "title": "EMAIL by Nordible.Co",
         "source_code": "Cod sursă"
       },
       "spam_siege": {
@@ -3253,7 +3263,7 @@
     }
   },
   "setup": {
-    "title": "Configurarea Bulwark Webmail",
+    "title": "Configurarea EMAIL by Nordible.Co",
     "subtitle": "Configurați instanța de webmail din browser.",
     "loading": "Se încarcă…",
     "back": "Înapoi",
@@ -3378,7 +3388,7 @@
       "regenerate": "Generează din nou",
       "sync": "Sincronizează setările utilizatorilor între dispozitive",
       "sync_hint": "Stochează preferințele utilizatorilor pe server, criptate cu secretul de sesiune.",
-      "telemetry": "Trimite statistici anonime de utilizare pentru a îmbunătăți Bulwark",
+      "telemetry": "Trimite statistici anonime de utilizare pentru a îmbunătăți EMAIL by Nordible.Co",
       "telemetry_hint": "Dezactivat implicit. Un semnal anonim pe zi cu versiunea, platforma și funcțiile activate; niciodată adrese de e-mail, nume de gazdă sau IP-uri. Puteți schimba oricând în setările de administrare."
     },
     "logging": {
@@ -3524,8 +3534,7 @@
       "manage": "Gestionați regulile",
       "senders_count": "{count, plural, one {# expeditor} few {# expeditori} other {# de expeditori}}",
       "cross_account": "Selectați mesaje dintr-un singur cont",
-      "opaque_hint": "Filtrele dvs. au fost editate manual. Deschideți setările filtrelor"
-,
+      "opaque_hint": "Filtrele dvs. au fost editate manual. Deschideți setările filtrelor",
       "loading": "Se încarcă regulile…",
       "load_failed": "Regulile nu au putut fi încărcate",
       "none": "Nicio regulă încă",
@@ -5017,8 +5026,8 @@
     "dismiss": "Ignoră",
     "start_tour": "Începe turul"
   },
-  "demo_welcome": {EMAIL by Nordible.Co
-    "title": "Bine ați venit la Bulwark Mail",
+  "demo_welcome": {
+    "title": "Bine ați venit la EMAIL by Nordible.Co",
     "description": "Explorați un client de e-mail web cu funcționalități complete – direct în browserul dvs. Toate datele rămân pe dispozitivul dvs., așa că nu ezitați să testați totul.",
     "feature_email": "Citiți și redactați e-mailuri",
     "feature_organize": "Etichete, stele și dosare",
@@ -5378,7 +5387,7 @@
     "restore": "Restabilește",
     "restored": "{count, plural, one {# mesaj revine} few {# mesaje revin} other {# de mesaje revin}} în dosarul Primite.",
     "restore_partial": "{count, plural, one {# mesaj nu a putut fi restabilit. Rămâne selectat, ca să puteți încerca din nou.} few {# mesaje nu au putut fi restabilite. Rămân selectate, ca să puteți încerca din nou.} other {# de mesaje nu au putut fi restabilite. Rămân selectate, ca să puteți încerca din nou.}}",
-    "restore_hint": "E-mailurile restabilite revin în Primite ca necitite, ordonate după data inițială, deci pot fi mult mai jos în listă. Serverul le restabilește în fundal. Dacă acolo nu reușește, mesajul se pierde și Bulwark nu are cum să afle.",
+    "restore_hint": "E-mailurile restabilite revin în Primite ca necitite, ordonate după data inițială, deci pot fi mult mai jos în listă. Serverul le restabilește în fundal. Dacă acolo nu reușește, mesajul se pierde și EMAIL by Nordible.Co nu are cum să afle.",
     "unknown_sender": "Expeditor necunoscut",
     "no_subject": "(fără subiect)",
     "deleted_on": "Șters pe {date}",

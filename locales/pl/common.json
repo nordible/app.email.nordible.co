@@ -73,8 +73,8 @@
     "demo_tagline": "Wypróbuj w pełni funkcjonalnego klienta poczty. Konto nie jest wymagane.",
     "demo_no_signup": "Bez rejestracji - eksploruj swobodnie z przykładowymi danymi",
     "mobile_handoff": {
-      "title": "Open the Bulwark mobile app?",
-      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the Bulwark link. Continue only if you started this from the Bulwark mobile app.",
+      "title": "Open the EMAIL by Nordible.Co mobile app?",
+      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the EMAIL by Nordible.Co link. Continue only if you started this from the EMAIL by Nordible.Co mobile app.",
       "confirm": "Hand over to the app",
       "cancel": "Stay in the webmail"
     },
@@ -411,11 +411,11 @@
     "too_long": "Ta nazwa jest za długa.",
     "loading": "Ładowanie…",
     "unsupported": "Ten serwer poczty nie może przechowywać wspólnych etykiet, dlatego ta skrzynka pokazuje Twoje własne etykiety.",
-    "unavailable": "Nie udało się wczytać wspólnych etykiet tej skrzynki, dlatego pokazuje ona Twoje własne etykiety. Bulwark spróbuje ponownie później.",
+    "unavailable": "Nie udało się wczytać wspólnych etykiet tej skrzynki, dlatego pokazuje ona Twoje własne etykiety. EMAIL by Nordible.Co spróbuje ponownie później.",
     "no_rights": "Możesz używać tych etykiet, ale nie możesz ich zmieniać w tej skrzynce.",
     "too_many": "Jest za dużo wspólnych etykiet. Usuń kilka, zanim dodasz kolejne.",
-    "save_failed": "Nie udało się zapisać wspólnych etykiet. Bulwark spróbuje ponownie, gdy serwer odpowie.",
-    "save_pending": "Jeszcze nie zapisano. Bulwark spróbuje ponownie, gdy serwer odpowie."
+    "save_failed": "Nie udało się zapisać wspólnych etykiet. EMAIL by Nordible.Co spróbuje ponownie, gdy serwer odpowie.",
+    "save_pending": "Jeszcze nie zapisano. EMAIL by Nordible.Co spróbuje ponownie, gdy serwer odpowie."
   },
   "email_viewer": {
     "read_receipt": {
@@ -985,7 +985,7 @@
     "show_less": "Pokaż mniej",
     "send_failed": "Nie udało się wysłać wiadomości",
     "send_timeout": "Serwer przestał odpowiadać. Przed ponownym wysłaniem sprawdź folder Wysłane — wiadomość mogła już zostać wysłana.",
-    "submission_quota": "Serwer przechowuje zbyt wiele rekordów wysłanych wiadomości dla tego konta. Bulwark usunął te, które mógł; jeśli to się powtarza, poproś administratora o podniesienie limitu wysyłek e-mail.",
+    "submission_quota": "Serwer przechowuje zbyt wiele rekordów wysłanych wiadomości dla tego konta. EMAIL by Nordible.Co usunął te, które mógł; jeśli to się powtarza, poproś administratora o podniesienie limitu wysyłek e-mail.",
     "submission_limit": "Serwer odmówił wysłania wiadomości, ponieważ osiągnięto limit: {reason}",
     "recipients_refused": "Nie wysłano: serwer odrzucił {recipients}.",
     "recipients_partly_refused": "Serwer odrzucił {recipients}. Pozostali odbiorcy otrzymają wiadomość.",
@@ -1029,7 +1029,17 @@
       "back": "Wróć do edycji"
     },
     "placeholder_words": {
-      "before": ["twoje", "twój", "twoja", "pana", "pani", "wstaw", "wpisz", "dodaj", "podaj"],
+      "before": [
+        "twoje",
+        "twój",
+        "twoja",
+        "pana",
+        "pani",
+        "wstaw",
+        "wpisz",
+        "dodaj",
+        "podaj"
+      ],
       "after": [],
       "unfinished": []
     },
@@ -1637,17 +1647,17 @@
         "relax": "Relaks"
       },
       "push_all": {
-          "title": "All accounts",
-          "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
-          "select_all": "Select every connected account",
-          "state_on": "notifications on",
-          "state_off": "notifications off",
-          "enable_selected": "Enable for selected",
-          "disable_selected": "Disable for selected",
-          "result_enabled": "Notifications enabled for {count} accounts.",
-          "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
-          "result_disabled": "Notifications disabled for {count} accounts."
-        },
+        "title": "All accounts",
+        "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
+        "select_all": "Select every connected account",
+        "state_on": "notifications on",
+        "state_off": "notifications off",
+        "enable_selected": "Enable for selected",
+        "disable_selected": "Disable for selected",
+        "result_enabled": "Notifications enabled for {count} accounts.",
+        "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
+        "result_disabled": "Notifications disabled for {count} accounts."
+      },
       "sound_selection": {
         "title": "Dźwięk powiadomienia",
         "description": "Wybierz dźwięk odtwarzany dla powiadomień",
@@ -1675,13 +1685,13 @@
       "push": {
         "confirm_disable_message": "To urządzenie przestanie otrzymywać powiadomienia, gdy strona jest zamknięta.",
         "confirm_disable_title": "Wyłączyć powiadomienia w tle?",
-        "description": "Otrzymuj powiadomienia systemowe o nowych wiadomościach, gdy ta strona jest zamknięta. Dostarczane przez przekaźnik push Bulwark; przekaźnik nigdy nie widzi treści wiadomości.",
+        "description": "Otrzymuj powiadomienia systemowe o nowych wiadomościach, gdy ta strona jest zamknięta. Dostarczane przez przekaźnik push EMAIL by Nordible.Co; przekaźnik nigdy nie widzi treści wiadomości.",
         "disable": "Wyłącz",
         "enable": "Włącz",
         "dismiss_aria": "Zamknij monit powiadomień",
         "ios_hint": "W systemie iOS najpierw zainstaluj stronę na ekranie głównym – Safari dostarcza Web Push tylko zainstalowanym PWA.",
         "reenable": "Zarejestruj ponownie",
-        "relay_desc": "Domyślnie używa hostowanego przekaźnika Bulwark. Zmień tylko jeśli hostujesz samodzielnie.",
+        "relay_desc": "Domyślnie używa hostowanego przekaźnika EMAIL by Nordible.Co. Zmień tylko jeśli hostujesz samodzielnie.",
         "relay_label": "Przekaźnik push",
         "relay_locked": "Ustawione przez administratora",
         "relay_locked_desc": "Adres URL przekaźnika push został ustawiony przez administratora i nie można go zmienić.",
@@ -1689,7 +1699,7 @@
         "status_busy": "Przetwarzanie…",
         "status_inactive": "Niewłączone na tym urządzeniu",
         "status_unsupported": "Ta przeglądarka nie obsługuje Web Push",
-        "status_lite": "Web Push is not available in Bulwark Lite; it needs the Bulwark server.",
+        "status_lite": "Web Push is not available in Lite; it needs the server.",
         "title": "Powiadomienia w tle",
         "devices_title": "Zarejestrowane urządzenia",
         "devices_desc": "Wszystkie urządzenia zarejestrowane do odbioru powiadomień w tle dla tego konta. Unieważnienie natychmiast wstrzymuje ich odbiór.",
@@ -2138,7 +2148,7 @@
       "title": "Bezpieczeństwo konta",
       "description": "Zarządzaj hasłem, uwierzytelnianiem dwuskładnikowym i ustawieniami bezpieczeństwa",
       "detecting": "Wykrywanie możliwości serwera...",
-      "not_available": "Zarządzanie bezpieczeństwem konta nie jest dostępne dla tego serwera pocztowego. Wymagane uprawnienia mogą być wyłączone. Szczegóły znajdziesz w <a href=\"https://bulwarkmail.org/docs/guides/account-security\" class=\"underline hover:opacity-80\" target=\"_blank\">dokumentacji</a>.",
+      "not_available": "Zarządzanie bezpieczeństwem konta nie jest dostępne dla tego serwera pocztowego. Wymagane uprawnienia mogą być wyłączone. Szczegóły znajdziesz w <a href=\"https://nordible.co\" class=\"underline hover:opacity-80\" target=\"_blank\">dokumentacji</a>.",
       "password": {
         "title": "Zmień hasło",
         "current": "Aktualne hasło",
@@ -2520,7 +2530,7 @@
         "button": "Importuj"
       },
       "about": {
-        "title": "Bulwark Webmail",
+        "title": "EMAIL by Nordible.Co",
         "source_code": "Kod źródłowy"
       },
       "spam_siege": {
@@ -3253,7 +3263,7 @@
     }
   },
   "setup": {
-    "title": "Konfiguracja Bulwark Webmail",
+    "title": "Konfiguracja EMAIL by Nordible.Co",
     "subtitle": "Skonfiguruj swoją instancję poczty w przeglądarce.",
     "loading": "Wczytywanie…",
     "back": "Wstecz",
@@ -3378,7 +3388,7 @@
       "regenerate": "Wygeneruj ponownie",
       "sync": "Synchronizuj ustawienia użytkowników między urządzeniami",
       "sync_hint": "Przechowuje preferencje użytkowników na serwerze, zaszyfrowane sekretem sesji.",
-      "telemetry": "Wysyłaj anonimowe statystyki użycia, aby pomóc ulepszać Bulwark",
+      "telemetry": "Wysyłaj anonimowe statystyki użycia, aby pomóc ulepszać EMAIL by Nordible.Co",
       "telemetry_hint": "Domyślnie wyłączone. Jeden anonimowy sygnał dziennie z wersją, platformą i listą włączonych funkcji; nigdy adresy e-mail, nazwy hostów ani adresy IP. Możesz to zmienić w każdej chwili w ustawieniach administracyjnych."
     },
     "logging": {
@@ -3524,8 +3534,7 @@
       "manage": "Zarządzaj regułami",
       "senders_count": "{count, plural, one {# nadawcy} few {# nadawców} many {# nadawców} other {# nadawcy}}",
       "cross_account": "Wybierz wiadomości z jednego konta",
-      "opaque_hint": "Twoje filtry zostały edytowane ręcznie. Otwórz ustawienia filtrów"
-,
+      "opaque_hint": "Twoje filtry zostały edytowane ręcznie. Otwórz ustawienia filtrów",
       "loading": "Wczytywanie reguł…",
       "load_failed": "Nie udało się wczytać reguł",
       "none": "Brak reguł",
@@ -4887,8 +4896,8 @@
     "dismiss": "Zamknij",
     "start_tour": "Rozpocznij przewodnik"
   },
-  "demo_welcome": {EMAIL by Nordible.Co
-    "title": "Witaj w Bulwark Mail",
+  "demo_welcome": {
+    "title": "Witaj w EMAIL by Nordible.Co",
     "description": "Poznaj w pełni funkcjonalnego klienta poczty webowej - bezpośrednio w przeglądarce. Wszystkie dane pozostają na Twoim urządzeniu, więc możesz śmiało wszystko przetestować.",
     "feature_email": "Czytaj i pisz wiadomości e-mail",
     "feature_organize": "Etykiety, gwiazdki i foldery",
@@ -5248,7 +5257,7 @@
     "restore": "Przywróć",
     "restored": "{count, plural, one {# wiadomość wraca} few {# wiadomości wracają} many {# wiadomości wraca} other {# wiadomości wraca}} do folderu Odebrane.",
     "restore_partial": "{count, plural, one {Nie udało się przywrócić # wiadomości. Pozostaje zaznaczona, więc możesz spróbować ponownie.} few {Nie udało się przywrócić # wiadomości. Pozostają zaznaczone, więc możesz spróbować ponownie.} many {Nie udało się przywrócić # wiadomości. Pozostają zaznaczone, więc możesz spróbować ponownie.} other {Nie udało się przywrócić # wiadomości. Pozostają zaznaczone, więc możesz spróbować ponownie.}}",
-    "restore_hint": "Przywrócone wiadomości wracają do folderu Odebrane jako nieprzeczytane, posortowane według pierwotnej daty, więc mogą być daleko na liście. Serwer przywraca je w tle. Jeśli tam się to nie uda, wiadomość przepada, a Bulwark nie może tego wykryć.",
+    "restore_hint": "Przywrócone wiadomości wracają do folderu Odebrane jako nieprzeczytane, posortowane według pierwotnej daty, więc mogą być daleko na liście. Serwer przywraca je w tle. Jeśli tam się to nie uda, wiadomość przepada, a EMAIL by Nordible.Co nie może tego wykryć.",
     "unknown_sender": "Nieznany nadawca",
     "no_subject": "(brak tematu)",
     "deleted_on": "Usunięto {date}",

@@ -66,7 +66,7 @@ export const TEARDOWN_TIMEOUT_MS = 30_000;
 export const FORCED_TEARDOWN_TIMEOUT_MS = 5_000;
 
 /** Where the "sign in again" notification of a suspended account leads: the accounts pane. */
-export const SIGN_IN_AGAIN_URI = 'bulwarkmobile://settings/account';
+export const SIGN_IN_AGAIN_URI = 'nordiblemobile://settings/account';
 
 const REGISTRY_HYDRATION_TIMEOUT_MS = 5000;
 

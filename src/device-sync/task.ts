@@ -37,7 +37,7 @@ import type { Authority, RunPayload, RunReport } from './types';
 const LOCALE_STORAGE_KEY = 'webmail:locale:v1';
 const SUBSCRIPTIONS_STORAGE_KEY = 'calendar-subscriptions';
 /** Where "sign in again" leads (the accounts pane), as for a registry eviction. */
-const SIGN_IN_URI = 'bulwarkmobile://settings/account';
+const SIGN_IN_URI = 'nordiblemobile://settings/account';
 
 /** Random numbers from the platform CSPRNG, buffered (uids and map keys of device-made items). */
 function secureRandom(): RandomSource {

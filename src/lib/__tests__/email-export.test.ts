@@ -142,7 +142,7 @@ describe('shareAttachment (preview)', () => {
     await shareAttachment('blob-2', 'weird.xyz', 'application/x-weird');
 
     // file:// — expo-sharing rejects content:// URLs outright.
-    expect(Sharing.shareAsync).toHaveBeenCalledWith('file:///cache/bulwark-exports/weird.xyz', {
+    expect(Sharing.shareAsync).toHaveBeenCalledWith('file:///cache/nordible-exports/weird.xyz', {
       mimeType: 'application/x-weird',
       dialogTitle: 'weird.xyz',
     });
@@ -188,7 +188,7 @@ describe('shareAttachment (preview)', () => {
     await shareAttachment('blob-4', 'photo.jpg', 'image/jpeg');
 
     expect(IntentLauncher.startActivityAsync).not.toHaveBeenCalled();
-    expect(Sharing.shareAsync).toHaveBeenCalledWith('file:///cache/bulwark-exports/photo.jpg', {
+    expect(Sharing.shareAsync).toHaveBeenCalledWith('file:///cache/nordible-exports/photo.jpg', {
       mimeType: 'image/jpeg',
       dialogTitle: 'photo.jpg',
     });
@@ -224,7 +224,7 @@ describe('cachePreviewFile (in-app preview)', () => {
     const file = await cachePreviewFile('blob-p', 'report.pdf', 'application/pdf', 'acct-2');
 
     expect(getDownloadUrl).toHaveBeenCalledWith('blob-p', 'report.pdf', 'application/pdf', 'acct-2');
-    expect(file.uri).toMatch(/^file:\/\/\/cache\/bulwark-exports\/preview-[^/]+\/report\.pdf$/);
+    expect(file.uri).toMatch(/^file:\/\/\/cache\/nordible-exports\/preview-[^/]+\/report\.pdf$/);
     expect(File.downloadFileAsync).toHaveBeenCalledWith(
       'https://mail.example.com/blob-p/report.pdf',
       file,
@@ -257,7 +257,7 @@ describe('cachePreviewFile (in-app preview)', () => {
 
     await expect(cachePreviewFile('blob-x', 'gone.txt', 'text/plain')).rejects.toThrow('404');
     expect(fsState.deleted).toHaveLength(1);
-    expect(fsState.deleted[0]).toMatch(/\/bulwark-exports\/preview-[^/]+\/$/);
+    expect(fsState.deleted[0]).toMatch(/\/nordible-exports\/preview-[^/]+\/$/);
   });
 });
 
@@ -268,7 +268,7 @@ describe('writePreviewFile (parts unpacked on the device)', () => {
     const b = writePreviewFile(bytes, 'image001.png', 'image/png');
 
     expect(a.name).toBe('image001.png');
-    expect(a.uri).toMatch(/^file:\/\/\/cache\/bulwark-exports\/preview-[^/]+\/image001\.png$/);
+    expect(a.uri).toMatch(/^file:\/\/\/cache\/nordible-exports\/preview-[^/]+\/image001\.png$/);
     expect(a.uri).not.toBe(b.uri);
   });
 
@@ -294,11 +294,11 @@ describe('discardPreviewFile', () => {
   });
 
   it('only deletes the file itself outside a preview folder', () => {
-    const exports = new Directory({ uri: 'file:///cache/' } as never, 'bulwark-exports');
+    const exports = new Directory({ uri: 'file:///cache/' } as never, 'nordible-exports');
     const file = new File(exports as never, 'shared.zip');
     discardPreviewFile(file);
 
-    expect(fsState.deleted).toEqual(['file:///cache/bulwark-exports/shared.zip']);
+    expect(fsState.deleted).toEqual(['file:///cache/nordible-exports/shared.zip']);
   });
 });
 
@@ -335,7 +335,7 @@ describe('shareLocalFile', () => {
   });
 
   it('removes the file after sharing by default', async () => {
-    const file = new File({ uri: 'file:///cache/bulwark-exports/' } as never, 'bundle.zip');
+    const file = new File({ uri: 'file:///cache/nordible-exports/' } as never, 'bundle.zip');
     await shareLocalFile(file, 'application/zip');
 
     expect(Sharing.shareAsync).toHaveBeenCalledTimes(1);
@@ -343,7 +343,7 @@ describe('shareLocalFile', () => {
   });
 
   it('keeps the file an open preview still shows', async () => {
-    const file = new File({ uri: 'file:///cache/bulwark-exports/preview-1/' } as never, 'photo.jpg');
+    const file = new File({ uri: 'file:///cache/nordible-exports/preview-1/' } as never, 'photo.jpg');
     await shareLocalFile(file, 'image/jpeg', 'photo.jpg', { forceSheet: true, keep: true });
 
     expect(Sharing.shareAsync).toHaveBeenCalledTimes(1);
@@ -362,7 +362,7 @@ describe('sweepStaleExportFiles', () => {
 
     const now = Date.now();
     const day = 24 * 60 * 60 * 1000;
-    const root = new fsMod.Directory({ uri: 'file:///cache/' } as never, 'bulwark-exports');
+    const root = new fsMod.Directory({ uri: 'file:///cache/' } as never, 'nordible-exports');
     const aged = (dir: { uri: string }, name: string, age: number) => {
       const f = new fsMod.File(dir as never, name);
       (f as unknown as { modificationTime: number }).modificationTime = now - age;

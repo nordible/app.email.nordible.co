@@ -73,8 +73,8 @@
     "demo_tagline": "تجربه یک سرویس ایمیل کامل. بدون نیاز به حساب کاربری.",
     "demo_no_signup": "نیازی به ثبت‌نام نیست - آزادانه با داده‌های نمونه کاوش کنید",
     "mobile_handoff": {
-      "title": "Open the Bulwark mobile app?",
-      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the Bulwark link. Continue only if you started this from the Bulwark mobile app.",
+      "title": "Open the EMAIL by Nordible.Co mobile app?",
+      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the EMAIL by Nordible.Co link. Continue only if you started this from the EMAIL by Nordible.Co mobile app.",
       "confirm": "Hand over to the app",
       "cancel": "Stay in the webmail"
     },
@@ -411,11 +411,11 @@
     "too_long": "این نام خیلی طولانی است.",
     "loading": "در حال بارگذاری…",
     "unsupported": "این سرور ایمیل نمی‌تواند برچسب‌های مشترک را نگه دارد، بنابراین این صندوق برچسب‌های خود شما را نشان می‌دهد.",
-    "unavailable": "برچسب‌های مشترک این صندوق بارگذاری نشد، بنابراین برچسب‌های خود شما را نشان می‌دهد. Bulwark بعداً دوباره تلاش می‌کند.",
+    "unavailable": "برچسب‌های مشترک این صندوق بارگذاری نشد، بنابراین برچسب‌های خود شما را نشان می‌دهد. EMAIL by Nordible.Co بعداً دوباره تلاش می‌کند.",
     "no_rights": "می‌توانید از این برچسب‌ها استفاده کنید، اما نمی‌توانید آن‌ها را در این صندوق تغییر دهید.",
     "too_many": "برچسب‌های مشترک خیلی زیاد است. پیش از افزودن برچسب جدید، چندتا را حذف کنید.",
-    "save_failed": "برچسب‌های مشترک ذخیره نشد. Bulwark وقتی سرور پاسخ دهد دوباره تلاش می‌کند.",
-    "save_pending": "هنوز ذخیره نشده است. Bulwark وقتی سرور پاسخ دهد دوباره تلاش می‌کند."
+    "save_failed": "برچسب‌های مشترک ذخیره نشد. EMAIL by Nordible.Co وقتی سرور پاسخ دهد دوباره تلاش می‌کند.",
+    "save_pending": "هنوز ذخیره نشده است. EMAIL by Nordible.Co وقتی سرور پاسخ دهد دوباره تلاش می‌کند."
   },
   "email_viewer": {
     "read_receipt": {
@@ -988,7 +988,7 @@
     "show_less": "نمایش کمتر",
     "send_failed": "ارسال ایمیل ناموفق بود",
     "send_timeout": "سرور دیگر پاسخ نمی‌دهد. پیش از ارسال دوباره، پوشهٔ ارسال‌شده‌ها را بررسی کنید — ممکن است پیام ارسال شده باشد.",
-    "submission_quota": "سرور برای این حساب سوابق بیش از حدی از پیام‌های ارسال‌شده دارد. Bulwark هر کدام را که می‌توانست حذف کرد؛ اگر این وضعیت ادامه یافت، از مدیر سیستم بخواهید سقف ارسال ایمیل را افزایش دهد.",
+    "submission_quota": "سرور برای این حساب سوابق بیش از حدی از پیام‌های ارسال‌شده دارد. EMAIL by Nordible.Co هر کدام را که می‌توانست حذف کرد؛ اگر این وضعیت ادامه یافت، از مدیر سیستم بخواهید سقف ارسال ایمیل را افزایش دهد.",
     "submission_limit": "سرور از ارسال پیام خودداری کرد، زیرا به یک محدودیت رسیده است: {reason}",
     "recipients_refused": "ارسال نشد: سرور {recipients} را رد کرد.",
     "recipients_partly_refused": "سرور {recipients} را رد کرد. سایر گیرندگان پیام را دریافت می‌کنند.",
@@ -1033,7 +1033,11 @@
     },
     "placeholder_words": {
       "before": [],
-      "after": ["شما", "وارد کنید", "اضافه کنید"],
+      "after": [
+        "شما",
+        "وارد کنید",
+        "اضافه کنید"
+      ],
       "unfinished": []
     },
     "schedule_send": "زمان‌بندی ارسال",
@@ -1643,13 +1647,13 @@
         "title": "اعلان‌های پس‌زمینه",
         "description": "دریافت اعلان‌های سیستم برای ایمیل جدید",
         "relay_label": "رله push",
-        "relay_desc": "پیش‌فرض رله میزبانی شده Bulwark",
+        "relay_desc": "پیش‌فرض رله میزبانی شده EMAIL by Nordible.Co",
         "relay_locked": "تنظیم شده توسط مدیر",
         "relay_locked_desc": "قابل تغییر نیست",
         "status_active": "فعال روی این دستگاه",
         "status_inactive": "فعال نشده",
         "status_unsupported": "مرورگر پشتیبانی نمی‌کند",
-        "status_lite": "Web Push is not available in Bulwark Lite; it needs the Bulwark server.",
+        "status_lite": "Web Push is not available in Lite; it needs the server.",
         "status_busy": "در حال کار…",
         "enable": "فعال کردن",
         "reenable": "ثبت مجدد",
@@ -1679,17 +1683,17 @@
         "error_over_quota": "این حساب روی سرور ایمیل ثبت‌های پوش بیش از حد دارد (سقف معمولاً 15 است). دستگاه‌هایی را که دیگر استفاده نمی‌کنید در تنظیمات اعلان‌ها لغو کنید و دوباره امتحان کنید."
       },
       "push_all": {
-          "title": "All accounts",
-          "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
-          "select_all": "Select every connected account",
-          "state_on": "notifications on",
-          "state_off": "notifications off",
-          "enable_selected": "Enable for selected",
-          "disable_selected": "Disable for selected",
-          "result_enabled": "Notifications enabled for {count} accounts.",
-          "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
-          "result_disabled": "Notifications disabled for {count} accounts."
-        },
+        "title": "All accounts",
+        "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
+        "select_all": "Select every connected account",
+        "state_on": "notifications on",
+        "state_off": "notifications off",
+        "enable_selected": "Enable for selected",
+        "disable_selected": "Disable for selected",
+        "result_enabled": "Notifications enabled for {count} accounts.",
+        "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
+        "result_disabled": "Notifications disabled for {count} accounts."
+      },
       "sound_selection": {
         "title": "صدای اعلان",
         "description": "صدای پخش شده برای اعلان‌ها",
@@ -2527,7 +2531,7 @@
         "button": "وارد کردن"
       },
       "about": {
-        "title": "Bulwark Webmail",
+        "title": "EMAIL by Nordible.Co",
         "source_code": "کد منبع"
       },
       "spam_siege": {
@@ -3253,7 +3257,7 @@
     }
   },
   "setup": {
-    "title": "راه‌اندازی Bulwark Webmail",
+    "title": "راه‌اندازی EMAIL by Nordible.Co",
     "subtitle": "نمونهٔ وب‌میل خود را از مرورگر پیکربندی کنید.",
     "loading": "در حال بارگذاری…",
     "back": "بازگشت",
@@ -3378,7 +3382,7 @@
       "regenerate": "ساخت دوباره",
       "sync": "همگام‌سازی تنظیمات کاربران بین دستگاه‌ها",
       "sync_hint": "ترجیحات کاربران را روی سرور ذخیره می‌کند، رمزنگاری‌شده با رمز نشست.",
-      "telemetry": "ارسال آمار استفادهٔ ناشناس برای بهبود Bulwark",
+      "telemetry": "ارسال آمار استفادهٔ ناشناس برای بهبود EMAIL by Nordible.Co",
       "telemetry_hint": "به‌طور پیش‌فرض خاموش است. روزی یک سیگنال ناشناس با نسخه، سکو و قابلیت‌های فعال؛ هرگز نشانی رایانامه، نام میزبان یا IP. هر زمان بخواهید می‌توانید این را در تنظیمات مدیریت تغییر دهید."
     },
     "logging": {
@@ -3524,8 +3528,7 @@
       "manage": "مدیریت قانون‌ها",
       "senders_count": "{count, plural, one {# فرستنده} other {# فرستنده}}",
       "cross_account": "پیام‌هایی از یک حساب انتخاب کنید",
-      "opaque_hint": "فیلترهای شما دستی ویرایش شده‌اند. تنظیمات فیلترها را باز کنید"
-,
+      "opaque_hint": "فیلترهای شما دستی ویرایش شده‌اند. تنظیمات فیلترها را باز کنید",
       "loading": "در حال بارگذاری قوانین…",
       "load_failed": "بارگذاری قوانین ممکن نشد",
       "none": "هنوز قانونی وجود ندارد",
@@ -5017,8 +5020,8 @@
     "dismiss": "رد کردن",
     "start_tour": "شروع تور"
   },
-  "demo_welcome":EMAIL by Nordible.Co
-    "title": "به Bulwark Mail خوش آمدید",
+  "demo_welcome": {
+    "title": "به EMAIL by Nordible.Co خوش آمدید",
     "description": "یک سرویس ایمیل کامل را در مرورگر خود کاوش کنید.",
     "feature_email": "خواندن و نوشتن ایمیل",
     "feature_organize": "برچسب‌ها، ستاره‌ها و پوشه‌ها",
@@ -5378,7 +5381,7 @@
     "restore": "بازگردانی",
     "restored": "{count, plural, one {# پیام} other {# پیام}} در راه بازگشت به صندوق ورودی شماست.",
     "restore_partial": "{count, plural, one {# پیام بازگردانی نشد. انتخاب‌شده می‌ماند تا بتوانید دوباره تلاش کنید.} other {# پیام بازگردانی نشد. انتخاب‌شده می‌مانند تا بتوانید دوباره تلاش کنید.}}",
-    "restore_hint": "ایمیل‌های بازگردانی‌شده به‌صورت خوانده‌نشده به صندوق ورودی برمی‌گردند و بر اساس تاریخ اصلی مرتب می‌شوند، بنابراین ممکن است خیلی پایین فهرست باشند. سرور آن‌ها را در پس‌زمینه بازمی‌گرداند. اگر آنجا ناموفق باشد، پیام از دست می‌رود و Bulwark نمی‌تواند متوجه شود.",
+    "restore_hint": "ایمیل‌های بازگردانی‌شده به‌صورت خوانده‌نشده به صندوق ورودی برمی‌گردند و بر اساس تاریخ اصلی مرتب می‌شوند، بنابراین ممکن است خیلی پایین فهرست باشند. سرور آن‌ها را در پس‌زمینه بازمی‌گرداند. اگر آنجا ناموفق باشد، پیام از دست می‌رود و EMAIL by Nordible.Co نمی‌تواند متوجه شود.",
     "unknown_sender": "فرستنده ناشناس",
     "no_subject": "(بدون موضوع)",
     "deleted_on": "حذف‌شده در {date}",

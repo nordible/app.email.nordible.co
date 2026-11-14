@@ -460,7 +460,7 @@ describe('reconcile', () => {
     expect(h.find('carol')?.sync[CONTACTS_AUTHORITY].automatic).toBe(false);
     expect(h.find('carol')).toBeDefined();
     expect(native.showSyncProblem).toHaveBeenCalledTimes(1);
-    expect(vi.mocked(native.showSyncProblem).mock.calls[0][3]).toBe('bulwarkmobile://settings/account');
+    expect(vi.mocked(native.showSyncProblem).mock.calls[0][3]).toBe('nordiblemobile://settings/account');
     const carol = accountDeviceSync('carol@mail.example.org');
     expect(carol.suspended).toBe(true);
     expect(carol.enabled).toEqual({ [CONTACTS_AUTHORITY]: true });

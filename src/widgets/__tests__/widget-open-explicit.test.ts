@@ -23,7 +23,7 @@ const UPSTREAM_OPEN_URI = [
 
 describe('a tap that opens the app from a widget', () => {
   it('goes through the library’s OPEN_URI, which the patch makes explicit', () => {
-    expect(open(links.inbox())).toEqual({ clickAction: 'OPEN_URI', clickActionData: { uri: 'bulwarkmobile://mail/folder/inbox' } });
+    expect(open(links.inbox())).toEqual({ clickAction: 'OPEN_URI', clickActionData: { uri: 'nordiblemobile://mail/folder/inbox' } });
   });
 
   it('is sent to this app’s own package, so no chooser offers another build', async () => {

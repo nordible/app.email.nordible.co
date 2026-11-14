@@ -73,8 +73,8 @@
     "demo_tagline": "Experimente um cliente de e-mail completo. Sem necessidade de conta.",
     "demo_no_signup": "Sem registo - explore livremente com dados de exemplo",
     "mobile_handoff": {
-      "title": "Open the Bulwark mobile app?",
-      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the Bulwark link. Continue only if you started this from the Bulwark mobile app.",
+      "title": "Open the EMAIL by Nordible.Co mobile app?",
+      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the EMAIL by Nordible.Co link. Continue only if you started this from the EMAIL by Nordible.Co mobile app.",
       "confirm": "Hand over to the app",
       "cancel": "Stay in the webmail"
     },
@@ -411,11 +411,11 @@
     "too_long": "Este nome é longo demais.",
     "loading": "Carregando…",
     "unsupported": "Este servidor de e-mail não consegue guardar etiquetas compartilhadas, então esta caixa mostra as suas próprias etiquetas.",
-    "unavailable": "Não foi possível carregar as etiquetas compartilhadas desta caixa, então ela mostra as suas próprias etiquetas. O Bulwark tentará de novo mais tarde.",
+    "unavailable": "Não foi possível carregar as etiquetas compartilhadas desta caixa, então ela mostra as suas próprias etiquetas. O EMAIL by Nordible.Co tentará de novo mais tarde.",
     "no_rights": "Você pode usar estas etiquetas, mas não pode alterá-las nesta caixa.",
     "too_many": "Há etiquetas compartilhadas demais. Exclua algumas antes de adicionar outras.",
-    "save_failed": "Não foi possível salvar as etiquetas compartilhadas. O Bulwark tentará de novo quando o servidor responder.",
-    "save_pending": "Ainda não salvo. O Bulwark tentará de novo quando o servidor responder."
+    "save_failed": "Não foi possível salvar as etiquetas compartilhadas. O EMAIL by Nordible.Co tentará de novo quando o servidor responder.",
+    "save_pending": "Ainda não salvo. O EMAIL by Nordible.Co tentará de novo quando o servidor responder."
   },
   "email_viewer": {
     "read_receipt": {
@@ -992,7 +992,7 @@
     "smime_unlock_button": "Desbloquear",
     "smime_passphrase_placeholder": "Frase secreta S/MIME",
     "send_timeout": "O servidor deixou de responder. Verifique a pasta Enviados antes de enviar novamente — a mensagem pode já ter saído.",
-    "submission_quota": "O servidor tem registros de mensagens enviadas demais para esta conta. O Bulwark removeu os que pôde; se isso continuar acontecendo, peça ao seu administrador para aumentar o limite de envios de e-mail.",
+    "submission_quota": "O servidor tem registros de mensagens enviadas demais para esta conta. O EMAIL by Nordible.Co removeu os que pôde; se isso continuar acontecendo, peça ao seu administrador para aumentar o limite de envios de e-mail.",
     "submission_limit": "O servidor se recusou a enviar a mensagem porque um limite foi atingido: {reason}",
     "recipients_refused": "Não enviado: o servidor recusou {recipients}.",
     "recipients_partly_refused": "O servidor recusou {recipients}. Os demais destinatários recebem a mensagem.",
@@ -1029,7 +1029,20 @@
       "back": "Voltar à edição"
     },
     "placeholder_words": {
-      "before": ["seu", "sua", "seus", "suas", "teu", "tua", "inserir", "insira", "adicionar", "adicione", "digite", "informe"],
+      "before": [
+        "seu",
+        "sua",
+        "seus",
+        "suas",
+        "teu",
+        "tua",
+        "inserir",
+        "insira",
+        "adicionar",
+        "adicione",
+        "digite",
+        "informe"
+      ],
       "after": [],
       "unfinished": []
     },
@@ -1637,17 +1650,17 @@
         "relax": "Relaxante"
       },
       "push_all": {
-          "title": "All accounts",
-          "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
-          "select_all": "Select every connected account",
-          "state_on": "notifications on",
-          "state_off": "notifications off",
-          "enable_selected": "Enable for selected",
-          "disable_selected": "Disable for selected",
-          "result_enabled": "Notifications enabled for {count} accounts.",
-          "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
-          "result_disabled": "Notifications disabled for {count} accounts."
-        },
+        "title": "All accounts",
+        "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
+        "select_all": "Select every connected account",
+        "state_on": "notifications on",
+        "state_off": "notifications off",
+        "enable_selected": "Enable for selected",
+        "disable_selected": "Disable for selected",
+        "result_enabled": "Notifications enabled for {count} accounts.",
+        "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
+        "result_disabled": "Notifications disabled for {count} accounts."
+      },
       "sound_selection": {
         "title": "Som de notificação",
         "description": "Escolha qual som reproduzir para notificações",
@@ -1675,13 +1688,13 @@
       "push": {
         "confirm_disable_message": "Este dispositivo deixará de receber alertas quando o site estiver fechado.",
         "confirm_disable_title": "Desativar notificações em segundo plano?",
-        "description": "Receba notificações do sistema para novas mensagens quando este site estiver fechado. Entregue através do relay push do Bulwark; o relay nunca vê o conteúdo da mensagem.",
+        "description": "Receba notificações do sistema para novas mensagens quando este site estiver fechado. Entregue através do relay push do EMAIL by Nordible.Co; o relay nunca vê o conteúdo da mensagem.",
         "disable": "Desativar",
         "enable": "Ativar",
         "dismiss_aria": "Dispensar aviso de notificações",
         "ios_hint": "No iOS, instale o site primeiro na tela inicial – o Safari só entrega Web Push para PWAs instalados.",
         "reenable": "Registrar novamente",
-        "relay_desc": "Usa o relay Bulwark hospedado por padrão. Altere apenas se você hospedar.",
+        "relay_desc": "Usa o relay EMAIL by Nordible.Co hospedado por padrão. Altere apenas se você hospedar.",
         "relay_label": "Relay push",
         "relay_locked": "Definido pelo administrador",
         "relay_locked_desc": "A URL do relay push foi definida pelo seu administrador e não pode ser alterada.",
@@ -1689,7 +1702,7 @@
         "status_busy": "Processando…",
         "status_inactive": "Não ativado neste dispositivo",
         "status_unsupported": "Este navegador não oferece suporte a Web Push",
-        "status_lite": "O Web Push não está disponível no Bulwark Lite; ele requer o servidor do Bulwark.",
+        "status_lite": "O Web Push não está disponível no Lite; ele requer o servidor do EMAIL by Nordible.Co.",
         "title": "Notificações em segundo plano",
         "devices_title": "Dispositivos registrados",
         "devices_desc": "Todos os dispositivos registrados para receber notificações em segundo plano desta conta. Revogar um deles interrompe o recebimento imediatamente.",
@@ -2138,7 +2151,7 @@
       "title": "Segurança da conta",
       "description": "Gerencie sua senha, autenticação de dois fatores e configurações de segurança",
       "detecting": "Detectando recursos do servidor...",
-      "not_available": "O gerenciamento de segurança da conta não está disponível para este servidor de e-mail. As permissões necessárias podem estar desabilitadas. Consulte a <a href=\"https://bulwarkmail.org/docs/guides/account-security\" class=\"underline hover:opacity-80\" target=\"_blank\">documentação</a> para obter detalhes.",
+      "not_available": "O gerenciamento de segurança da conta não está disponível para este servidor de e-mail. As permissões necessárias podem estar desabilitadas. Consulte a <a href=\"https://nordible.co\" class=\"underline hover:opacity-80\" target=\"_blank\">documentação</a> para obter detalhes.",
       "password": {
         "title": "Alterar senha",
         "current": "Senha atual",
@@ -2520,7 +2533,7 @@
         "button": "Importar"
       },
       "about": {
-        "title": "Bulwark Webmail",
+        "title": "EMAIL by Nordible.Co",
         "source_code": "Código-fonte"
       },
       "spam_siege": {
@@ -3253,7 +3266,7 @@
     }
   },
   "setup": {
-    "title": "Configuração do Bulwark Webmail",
+    "title": "Configuração do EMAIL by Nordible.Co",
     "subtitle": "Configure a sua instância de webmail a partir do navegador.",
     "loading": "A carregar…",
     "back": "Voltar",
@@ -3378,7 +3391,7 @@
       "regenerate": "Gerar novo",
       "sync": "Sincronizar as definições dos utilizadores entre dispositivos",
       "sync_hint": "Guarda as preferências dos utilizadores no servidor, encriptadas com o segredo de sessão.",
-      "telemetry": "Enviar estatísticas de utilização anónimas para melhorar o Bulwark",
+      "telemetry": "Enviar estatísticas de utilização anónimas para melhorar o EMAIL by Nordible.Co",
       "telemetry_hint": "Desligado por predefinição. Um sinal anónimo por dia com a versão, a plataforma e as funcionalidades ativas; nunca endereços de email, nomes de anfitrião ou IPs. Pode alterar isto a qualquer momento nas definições de administração."
     },
     "logging": {
@@ -3524,8 +3537,7 @@
       "manage": "Gerenciar regras",
       "senders_count": "{count, plural, one {# remetente} other {# remetentes}}",
       "cross_account": "Selecione mensagens de uma única conta",
-      "opaque_hint": "Seus filtros foram editados manualmente. Abra as configurações de filtros"
-,
+      "opaque_hint": "Seus filtros foram editados manualmente. Abra as configurações de filtros",
       "loading": "A carregar regras…",
       "load_failed": "Não foi possível carregar as regras",
       "none": "Ainda não há regras",
@@ -4887,8 +4899,8 @@
     "dismiss": "Fechar",
     "start_tour": "Iniciar tour"
   },
-  "demo_welcome": {EMAIL by Nordible.Co
-    "title": "Bem-vindo ao Bulwark Mail",
+  "demo_welcome": {
+    "title": "Bem-vindo ao EMAIL by Nordible.Co",
     "description": "Explore um cliente de webmail completo - diretamente no seu navegador. Todos os dados ficam no seu dispositivo, então teste tudo.",
     "feature_email": "Ler e escrever e-mails",
     "feature_organize": "Tags, estrelas e pastas",
@@ -5248,7 +5260,7 @@
     "restore": "Restaurar",
     "restored": "{count, plural, one {# mensagem está voltando} other {# mensagens estão voltando}} para a sua Caixa de Entrada.",
     "restore_partial": "{count, plural, one {Não foi possível restaurar # mensagem. Ela continua selecionada para você tentar de novo.} other {Não foi possível restaurar # mensagens. Elas continuam selecionadas para você tentar de novo.}}",
-    "restore_hint": "Os e-mails restaurados voltam para a Caixa de Entrada como não lidos, ordenados pela data original, então podem ficar bem abaixo na lista. O servidor os restaura em segundo plano. Se isso falhar lá, a mensagem se perde e o Bulwark não tem como saber.",
+    "restore_hint": "Os e-mails restaurados voltam para a Caixa de Entrada como não lidos, ordenados pela data original, então podem ficar bem abaixo na lista. O servidor os restaura em segundo plano. Se isso falhar lá, a mensagem se perde e o EMAIL by Nordible.Co não tem como saber.",
     "unknown_sender": "Remetente desconhecido",
     "no_subject": "(sem assunto)",
     "deleted_on": "Excluído em {date}",

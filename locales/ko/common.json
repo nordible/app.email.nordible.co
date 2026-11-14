@@ -73,8 +73,8 @@
     "demo_tagline": "모든 기능을 갖춘 이메일 클라이언트를 경험해 보세요. 계정이 없어도 괜찮아요.",
     "demo_no_signup": "가입할 필요 없이 샘플 데이터로 자유롭게 둘러보세요",
     "mobile_handoff": {
-      "title": "Open the Bulwark mobile app?",
-      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the Bulwark link. Continue only if you started this from the Bulwark mobile app.",
+      "title": "Open the EMAIL by Nordible.Co mobile app?",
+      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the EMAIL by Nordible.Co link. Continue only if you started this from the EMAIL by Nordible.Co mobile app.",
       "confirm": "Hand over to the app",
       "cancel": "Stay in the webmail"
     },
@@ -411,11 +411,11 @@
     "too_long": "이름이 너무 길어요.",
     "loading": "불러오는 중…",
     "unsupported": "이 메일 서버는 공유 태그를 저장할 수 없어서, 이 사서함에는 내 태그가 표시돼요.",
-    "unavailable": "이 사서함의 공유 태그를 불러오지 못해 내 태그를 표시하고 있어요. Bulwark가 나중에 다시 시도해요.",
+    "unavailable": "이 사서함의 공유 태그를 불러오지 못해 내 태그를 표시하고 있어요. EMAIL by Nordible.Co가 나중에 다시 시도해요.",
     "no_rights": "이 태그를 사용할 수는 있지만 이 사서함에서 변경할 수는 없어요.",
     "too_many": "공유 태그가 너무 많아요. 더 추가하기 전에 몇 개를 삭제하세요.",
-    "save_failed": "공유 태그를 저장하지 못했어요. 서버가 응답하면 Bulwark가 다시 시도해요.",
-    "save_pending": "아직 저장되지 않았어요. 서버가 응답하면 Bulwark가 다시 시도해요."
+    "save_failed": "공유 태그를 저장하지 못했어요. 서버가 응답하면 EMAIL by Nordible.Co가 다시 시도해요.",
+    "save_pending": "아직 저장되지 않았어요. 서버가 응답하면 EMAIL by Nordible.Co가 다시 시도해요."
   },
   "email_viewer": {
     "read_receipt": {
@@ -985,7 +985,7 @@
     "show_less": "간략히 보기",
     "send_failed": "메일 전송에 실패했어요",
     "send_timeout": "서버가 응답을 멈췄습니다. 다시 보내기 전에 보낸 편지함을 확인하세요. 메시지가 이미 발송되었을 수 있습니다.",
-    "submission_quota": "서버에 이 계정의 보낸 메시지 기록이 너무 많습니다. Bulwark가 삭제할 수 있는 기록은 삭제했습니다. 이 문제가 계속되면 관리자에게 메일 발송 한도를 늘려 달라고 요청하세요.",
+    "submission_quota": "서버에 이 계정의 보낸 메시지 기록이 너무 많습니다. EMAIL by Nordible.Co가 삭제할 수 있는 기록은 삭제했습니다. 이 문제가 계속되면 관리자에게 메일 발송 한도를 늘려 달라고 요청하세요.",
     "submission_limit": "한도에 도달하여 서버가 메시지 전송을 거부했습니다: {reason}",
     "recipients_refused": "보내지 못했습니다: 서버가 {recipients}을(를) 거부했습니다.",
     "recipients_partly_refused": "서버가 {recipients}을(를) 거부했습니다. 다른 받는 사람에게는 메시지가 전달됩니다.",
@@ -1029,8 +1029,16 @@
       "back": "편집으로 돌아가기"
     },
     "placeholder_words": {
-      "before": ["귀하의", "당신의", "고객님의"],
-      "after": ["입력", "삽입", "추가"],
+      "before": [
+        "귀하의",
+        "당신의",
+        "고객님의"
+      ],
+      "after": [
+        "입력",
+        "삽입",
+        "추가"
+      ],
       "unfinished": []
     },
     "add_link": "링크 추가",
@@ -1637,17 +1645,17 @@
         "relax": "차분하게"
       },
       "push_all": {
-          "title": "All accounts",
-          "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
-          "select_all": "Select every connected account",
-          "state_on": "notifications on",
-          "state_off": "notifications off",
-          "enable_selected": "Enable for selected",
-          "disable_selected": "Disable for selected",
-          "result_enabled": "Notifications enabled for {count} accounts.",
-          "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
-          "result_disabled": "Notifications disabled for {count} accounts."
-        },
+        "title": "All accounts",
+        "description": "Turn push on or off for several accounts at once. One browser subscription serves them all.",
+        "select_all": "Select every connected account",
+        "state_on": "notifications on",
+        "state_off": "notifications off",
+        "enable_selected": "Enable for selected",
+        "disable_selected": "Disable for selected",
+        "result_enabled": "Notifications enabled for {count} accounts.",
+        "result_partial": "Enabled for {enabled} accounts; {failed} could not be enabled.",
+        "result_disabled": "Notifications disabled for {count} accounts."
+      },
       "sound_selection": {
         "title": "알림음",
         "description": "알림이 올 때 재생할 소리를 선택해 주세요",
@@ -1675,13 +1683,13 @@
       "push": {
         "confirm_disable_message": "이 사이트가 닫혀 있을 때 이 기기는 알림을 더 이상 받지 않습니다.",
         "confirm_disable_title": "백그라운드 알림을 비활성화하시겠습니까?",
-        "description": "이 사이트가 닫혀 있을 때 새 메일에 대한 시스템 알림을 받습니다. Bulwark 푸시 릴레이를 통해 전달되며, 릴레이는 메일 내용을 절대 보지 않습니다.",
+        "description": "이 사이트가 닫혀 있을 때 새 메일에 대한 시스템 알림을 받습니다. EMAIL by Nordible.Co 푸시 릴레이를 통해 전달되며, 릴레이는 메일 내용을 절대 보지 않습니다.",
         "disable": "비활성화",
         "enable": "활성화",
         "dismiss_aria": "알림 프롬프트 닫기",
         "ios_hint": "iOS에서는 먼저 사이트를 홈 화면에 설치하세요. Safari는 설치된 PWA에만 Web Push를 전달합니다.",
         "reenable": "다시 등록",
-        "relay_desc": "기본값은 호스팅된 Bulwark 릴레이입니다. 셀프 호스팅 시에만 변경하세요.",
+        "relay_desc": "기본값은 호스팅된 EMAIL by Nordible.Co 릴레이입니다. 셀프 호스팅 시에만 변경하세요.",
         "relay_label": "푸시 릴레이",
         "relay_locked": "관리자에 의해 설정됨",
         "relay_locked_desc": "푸시 릴레이 URL은 관리자가 설정했으며 변경할 수 없어요.",
@@ -1689,7 +1697,7 @@
         "status_busy": "처리 중…",
         "status_inactive": "이 기기에서 활성화되지 않음",
         "status_unsupported": "이 브라우저는 Web Push를 지원하지 않습니다",
-        "status_lite": "Web Push is not available in Bulwark Lite; it needs the Bulwark server.",
+        "status_lite": "Web Push is not available in Lite; it needs the server.",
         "title": "백그라운드 알림",
         "devices_title": "등록된 기기",
         "devices_desc": "이 계정의 백그라운드 알림을 받도록 등록된 모든 기기입니다. 해지하면 해당 기기는 즉시 수신을 멈추니다.",
@@ -2138,7 +2146,7 @@
       "title": "계정 보안",
       "description": "비밀번호, 2단계 인증 및 보안 설정을 관리해요",
       "detecting": "서버 기능을 확인하는 중...",
-      "not_available": "이 메일 서버에서는 계정 보안 관리를 사용할 수 없어요. 필요한 권한이 비활성화되어 있을 수 있어요. 자세한 내용은 <a href=\"https://bulwarkmail.org/docs/guides/account-security\" class=\"underline hover:opacity-80\" target=\"_blank\">문서</a>를 참고해 주세요.",
+      "not_available": "이 메일 서버에서는 계정 보안 관리를 사용할 수 없어요. 필요한 권한이 비활성화되어 있을 수 있어요. 자세한 내용은 <a href=\"https://nordible.co\" class=\"underline hover:opacity-80\" target=\"_blank\">문서</a>를 참고해 주세요.",
       "password": {
         "title": "비밀번호 변경",
         "current": "현재 비밀번호",
@@ -2520,7 +2528,7 @@
         "button": "가져오기"
       },
       "about": {
-        "title": "Bulwark Webmail 정보",
+        "title": "EMAIL by Nordible.Co 정보",
         "source_code": "소스 코드"
       },
       "spam_siege": {
@@ -3253,7 +3261,7 @@
     }
   },
   "setup": {
-    "title": "Bulwark Webmail 설정",
+    "title": "EMAIL by Nordible.Co 설정",
     "subtitle": "브라우저에서 웹메일 인스턴스를 설정하세요.",
     "loading": "불러오는 중…",
     "back": "뒤로",
@@ -3378,7 +3386,7 @@
       "regenerate": "다시 생성",
       "sync": "기기 간에 사용자 설정 동기화",
       "sync_hint": "사용자 설정을 세션 시크릿으로 암호화해 서버에 저장해요.",
-      "telemetry": "Bulwark 개선을 위해 익명 사용 통계 보내기",
+      "telemetry": "EMAIL by Nordible.Co 개선을 위해 익명 사용 통계 보내기",
       "telemetry_hint": "기본값은 꺼짐이에요. 하루에 한 번 버전, 플랫폼, 켜진 기능이 담긴 익명 신호를 보내요. 메일 주소, 호스트 이름, IP는 절대 보내지 않아요. 관리 설정에서 언제든 바꿀 수 있어요."
     },
     "logging": {
@@ -3524,8 +3532,7 @@
       "manage": "규칙 관리",
       "senders_count": "{count, plural, other {보낸 사람 #명}}",
       "cross_account": "한 계정의 메일만 선택하세요",
-      "opaque_hint": "필터가 직접 편집되었어요. 필터 설정을 여세요"
-,
+      "opaque_hint": "필터가 직접 편집되었어요. 필터 설정을 여세요",
       "loading": "규칙을 불러오는 중…",
       "load_failed": "규칙을 불러올 수 없습니다",
       "none": "아직 규칙이 없습니다",
@@ -4887,8 +4894,8 @@
     "dismiss": "닫기",
     "start_tour": "둘러보기 시작"
   },
-  "demo_welcomEMAIL by Nordible.Co
-    "title": "Bulwark Mail에 오신 것을 환영해요",
+  "demo_welcome": {
+    "title": "EMAIL by Nordible.Co에 오신 것을 환영해요",
     "description": "브라우저에서 바로 완전한 기능을 갖춘 웹메일 클라이언트를 경험해 보세요. 모든 데이터는 내 기기에만 저장되니 안심하고 테스트해 보셔도 좋아요.",
     "feature_email": "메일 읽기 및 쓰기",
     "feature_organize": "태그, 별표, 폴더 관리",
@@ -5248,7 +5255,7 @@
     "restore": "복원",
     "restored": "{count, plural, other {메시지 #개}}를 받은편지함으로 되돌리는 중이에요.",
     "restore_partial": "{count, plural, other {메시지 #개를 복원하지 못했어요. 다시 시도할 수 있도록 선택된 상태로 남겨 둘게요.}}",
-    "restore_hint": "복원된 메일은 읽지 않은 상태로 받은편지함에 돌아가며 원래 날짜순으로 정렬되므로 목록의 한참 아래에 있을 수 있어요. 복원은 서버가 백그라운드에서 해요. 서버에서 실패하면 메시지가 사라지며 Bulwark는 이를 알 수 없어요.",
+    "restore_hint": "복원된 메일은 읽지 않은 상태로 받은편지함에 돌아가며 원래 날짜순으로 정렬되므로 목록의 한참 아래에 있을 수 있어요. 복원은 서버가 백그라운드에서 해요. 서버에서 실패하면 메시지가 사라지며 EMAIL by Nordible.Co는 이를 알 수 없어요.",
     "unknown_sender": "알 수 없는 보낸 사람",
     "no_subject": "(제목 없음)",
     "deleted_on": "{date}에 삭제됨",
