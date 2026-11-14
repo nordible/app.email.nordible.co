@@ -90,7 +90,7 @@ export default function LoginShell({
 
         {showFooter ? (
           <View style={styles.footer}>
-            <Text style={styles.footerText}>Nordible Business Email v{APP_VERSION}</Text>
+            <Text style={styles.footerText}>Email by Nordible.Co v{APP_VERSION}</Text>
           </View>
         ) : null}
       </KeyboardAvoidingView>

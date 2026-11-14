@@ -68,7 +68,7 @@ export default function PasswordStep({
           style={styles.logo}
           resizeMode="contain"
         />
-        <Text style={styles.brandTitle}>Nordible Business Email</Text>
+        <Text style={styles.brandTitle}>Email by Nordible.Co</Text>
       </View>
 
       <View style={styles.heading}>
