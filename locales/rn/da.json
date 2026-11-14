@@ -636,7 +636,7 @@
       "add_title": "Tilføj en anden konto",
       "camera_allow": "Tillad kameraadgang",
       "camera_disabled": "Kameraadgang er slået fra. Slå det til i Indstillinger for at scanne en QR-loginkode.",
-      "camera_needed": "Bulwark Mail skal have adgang til kameraet for at scanne en QR-loginkode.",
+      "camera_needed": "EMAIL by Nordible.Co skal have adgang til kameraet for at scanne en QR-loginkode.",
       "choose_subtitle": "Vælg, hvordan du vil logge ind.",
       "confirm_check": "Tjek, at det ser rigtigt ud",
       "confirm_found": "Din mailserver er fundet",

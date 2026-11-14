@@ -639,7 +639,7 @@
       "add_title": "Afegeix un altre compte",
       "camera_allow": "Permet l'accés a la càmera",
       "camera_disabled": "L'accés a la càmera està desactivat. Activeu-lo a Configuració per escanejar un codi QR d'inici de sessió.",
-      "camera_needed": "El Bulwark Mail necessita accés a la càmera per escanejar un codi QR d'inici de sessió.",
+      "camera_needed": "El EMAIL by Nordible.Co necessita accés a la càmera per escanejar un codi QR d'inici de sessió.",
       "choose_subtitle": "Trieu com voleu iniciar la sessió.",
       "confirm_check": "Comproveu que sigui correcte",
       "confirm_found": "Hem trobat el vostre servidor de correu",

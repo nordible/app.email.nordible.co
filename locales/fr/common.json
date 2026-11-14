@@ -2251,10 +2251,10 @@
       },
       "link_device": {
         "title": "Associer l'application mobile",
-        "description": "Connectez-vous à l'application Bulwark Mail sur votre téléphone sans y saisir votre mot de passe. Votre téléphone dispose de sa propre connexion : vous déconnecter ici ne le déconnecte pas.",
+        "description": "Connectez-vous à l'application EMAIL by Nordible.Co sur votre téléphone sans y saisir votre mot de passe. Votre téléphone dispose de sa propre connexion : vous déconnecter ici ne le déconnecte pas.",
         "generate": "Afficher le QR code",
         "regenerate": "Afficher un nouveau code",
-        "instructions": "Ouvrez l'application Bulwark Mail et appuyez sur \"Scan a sign-in code\" sur l'écran de connexion (ou sur \"Add account\" → \"Scan a sign-in code\" si vous êtes déjà connecté), puis pointez la caméra ici.",
+        "instructions": "Ouvrez l'application EMAIL by Nordible.Co et appuyez sur \"Scan a sign-in code\" sur l'écran de connexion (ou sur \"Add account\" → \"Scan a sign-in code\" si vous êtes déjà connecté), puis pointez la caméra ici.",
         "expires_in": "Ce code expire dans {seconds} secondes. Il ne peut être utilisé qu'une seule fois.",
         "expired": "Ce code a expiré.",
         "error": "Impossible de créer un code d'association. Veuillez réessayer.",
@@ -3524,7 +3524,8 @@
       "manage": "Gérer les règles",
       "senders_count": "{count, plural, one {# expéditeur} other {# expéditeurs}}",
       "cross_account": "Sélectionnez des messages d'un seul compte",
-      "opaque_hint": "Vos filtres ont été modifiés à la main. Ouvrez les réglages des filtres",
+      "opaque_hint": "Vos filtres ont été modifiés à la main. Ouvrez les réglages des filtres"
+,
       "loading": "Chargement des règles…",
       "load_failed": "Impossible de charger les règles",
       "none": "Aucune règle pour l'instant",
@@ -4886,7 +4887,7 @@
     "dismiss": "Fermer",
     "start_tour": "Démarrer la visite"
   },
-  "demo_welcome": {
+  "demo_welcome": {EMAIL by Nordible.Co
     "title": "Bienvenue sur Bulwark Mail",
     "description": "Explorez un client webmail complet - directement dans votre navigateur. Toutes les données restent sur votre appareil, alors testez tout.",
     "feature_email": "Lire et rédiger des e-mails",

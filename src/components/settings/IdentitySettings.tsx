@@ -392,7 +392,7 @@ export function IdentitySettings() {
               <TextInput accessibilityLabel={t('identities.form.text_signature_label', "Text Signature")}
                 value={editing?.textSignature ?? ''}
                 onChangeText={(textSignature) => setEditing((d) => (d ? { ...d, textSignature } : d))}
-                placeholder="--&#10;Jane Doe&#10;Bulwark Mail"
+                placeholder="--&#10;Jane Doe&#10;EMAIL by Nordible.Co"
                 placeholderTextColor={c.textMuted}
                 multiline
                 style={[styles.input, styles.bodyInput]}
@@ -404,7 +404,7 @@ export function IdentitySettings() {
               <TextInput accessibilityLabel={t('identities.form.html_signature_label', "HTML Signature")}
                 value={editing?.htmlSignature ?? ''}
                 onChangeText={(htmlSignature) => setEditing((d) => (d ? { ...d, htmlSignature } : d))}
-                placeholder="<p><b>Jane Doe</b><br>Bulwark Mail</p>"
+                placeholder="<p><b>Jane Doe</b><br>EMAIL by Nordible.Co</p>"
                 placeholderTextColor={c.textMuted}
                 multiline
                 autoCapitalize="none"

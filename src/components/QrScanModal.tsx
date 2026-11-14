@@ -67,7 +67,7 @@ export function QrScanModal({ visible, onClose, onScanned }: QrScanModalProps) {
             </View>
             <View style={[styles.scrim, styles.scrimBottom]}>
               <View style={styles.hintWrap}>
-                <Text style={styles.hintTitle}>{t('login.mobile.qr_hint_title', 'Open Bulwark on your computer')}</Text>
+                <Text style={styles.hintTitle}>{t('login.mobile.qr_hint_title', 'Open EMAIL by Nordible.Co on your computer')}</Text>
                 <Text style={styles.hint}>
                   {t('login.mobile.qr_hint', 'Settings → Security → Link Mobile App shows a code. Point the camera at it.')}
                 </Text>

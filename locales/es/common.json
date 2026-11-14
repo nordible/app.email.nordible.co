@@ -2251,10 +2251,10 @@
       },
       "link_device": {
         "title": "Vincular aplicación móvil",
-        "description": "Inicie sesión en la aplicación Bulwark Mail de su teléfono sin escribir allí su contraseña. Su teléfono obtiene su propio inicio de sesión, así que cerrar sesión aquí no la cierra en él.",
+        "description": "Inicie sesión en la aplicación EMAIL by Nordible.Co de su teléfono sin escribir allí su contraseña. Su teléfono obtiene su propio inicio de sesión, así que cerrar sesión aquí no la cierra en él.",
         "generate": "Mostrar código QR",
         "regenerate": "Mostrar un código nuevo",
-        "instructions": "Abra la aplicación Bulwark Mail y toque \"Scan a sign-in code\" en la pantalla de inicio de sesión (o \"Add account\" → \"Scan a sign-in code\" si ya ha iniciado sesión) y, a continuación, apunte la cámara aquí.",
+        "instructions": "Abra la aplicación EMAIL by Nordible.Co y toque \"Scan a sign-in code\" en la pantalla de inicio de sesión (o \"Add account\" → \"Scan a sign-in code\" si ya ha iniciado sesión) y, a continuación, apunte la cámara aquí.",
         "expires_in": "Este código caduca en {seconds} segundos. Solo se puede usar una vez.",
         "expired": "Este código ha caducado.",
         "error": "No se pudo crear un código de vinculación. Inténtelo de nuevo.",
@@ -3524,7 +3524,8 @@
       "manage": "Administrar reglas",
       "senders_count": "{count, plural, one {# remitente} other {# remitentes}}",
       "cross_account": "Selecciona mensajes de una sola cuenta",
-      "opaque_hint": "Tus filtros se editaron a mano. Abre la configuración de filtros",
+      "opaque_hint": "Tus filtros se editaron a mano. Abre la configuración de filtros"
+,
       "loading": "Cargando reglas…",
       "load_failed": "No se pudieron cargar las reglas",
       "none": "Aún no hay reglas",
@@ -4886,7 +4887,7 @@
     "dismiss": "Cerrar",
     "start_tour": "Iniciar tour"
   },
-  "demo_welcome": {
+  "demo_welcome": {EMAIL by Nordible.Co
     "title": "Bienvenido a Bulwark Mail",
     "description": "Explora un cliente de correo web completo - directamente en tu navegador. Todos los datos quedan en tu dispositivo, así que prueba todo.",
     "feature_email": "Leer y redactar correos",

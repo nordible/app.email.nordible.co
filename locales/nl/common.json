@@ -2251,10 +2251,10 @@
       },
       "link_device": {
         "title": "Mobiele app koppelen",
-        "description": "Log in bij de Bulwark Mail-app op uw telefoon zonder daar uw wachtwoord te typen. Uw telefoon krijgt een eigen aanmelding, dus als u hier uitlogt, blijft de telefoon ingelogd.",
+        "description": "Log in bij de EMAIL by Nordible.Co-app op uw telefoon zonder daar uw wachtwoord te typen. Uw telefoon krijgt een eigen aanmelding, dus als u hier uitlogt, blijft de telefoon ingelogd.",
         "generate": "QR-code tonen",
         "regenerate": "Nieuwe code tonen",
-        "instructions": "Open de Bulwark Mail-app en tik op het inlogscherm op \"Scan a sign-in code\" (of op \"Add account\" → \"Scan a sign-in code\" als u al bent ingelogd) en richt de camera hierop.",
+        "instructions": "Open de EMAIL by Nordible.Co-app en tik op het inlogscherm op \"Scan a sign-in code\" (of op \"Add account\" → \"Scan a sign-in code\" als u al bent ingelogd) en richt de camera hierop.",
         "expires_in": "Deze code verloopt over {seconds} seconden. Hij kan maar één keer worden gebruikt.",
         "expired": "Deze code is verlopen.",
         "error": "Kon geen koppelingscode aanmaken. Probeer het opnieuw.",
@@ -3524,7 +3524,8 @@
       "manage": "Regels beheren",
       "senders_count": "{count, plural, one {# afzender} other {# afzenders}}",
       "cross_account": "Selecteer berichten uit één account",
-      "opaque_hint": "Je filters zijn met de hand bewerkt. Open de filterinstellingen",
+      "opaque_hint": "Je filters zijn met de hand bewerkt. Open de filterinstellingen"
+,
       "loading": "Regels laden…",
       "load_failed": "De regels konden niet worden geladen",
       "none": "Nog geen regels",
@@ -4886,7 +4887,7 @@
     "dismiss": "Sluiten",
     "start_tour": "Tour starten"
   },
-  "demo_welcome": {
+  "demo_welcome": {EMAIL by Nordible.Co
     "title": "Welkom bij Bulwark Mail",
     "description": "Ontdek een volwaardige webmail-client - rechtstreeks in je browser. Alle gegevens blijven op je apparaat, dus test gerust alles.",
     "feature_email": "E-mails lezen en schrijven",

@@ -2254,10 +2254,10 @@
       },
       "link_device": {
         "title": "Mobilalkalmazás összekapcsolása",
-        "description": "Jelentkezz be a telefonodon a Bulwark Mail alkalmazásba anélkül, hogy ott beírnád a jelszavad. A telefonod saját bejelentkezést kap, így ha itt kijelentkezel, a telefon bejelentkezve marad.",
+        "description": "Jelentkezz be a telefonodon a EMAIL by Nordible.Co alkalmazásba anélkül, hogy ott beírnád a jelszavad. A telefonod saját bejelentkezést kap, így ha itt kijelentkezel, a telefon bejelentkezve marad.",
         "generate": "QR-kód megjelenítése",
         "regenerate": "Új kód megjelenítése",
-        "instructions": "Nyisd meg a Bulwark Mail alkalmazást, és a bejelentkezési képernyőn koppints a \"Scan a sign-in code\" lehetőségre (vagy az \"Add account\" → \"Scan a sign-in code\" lehetőségre, ha már be vagy jelentkezve), majd irányítsd ide a kamerát.",
+        "instructions": "Nyisd meg a EMAIL by Nordible.Co alkalmazást, és a bejelentkezési képernyőn koppints a \"Scan a sign-in code\" lehetőségre (vagy az \"Add account\" → \"Scan a sign-in code\" lehetőségre, ha már be vagy jelentkezve), majd irányítsd ide a kamerát.",
         "expires_in": "Ez a kód {seconds} másodperc múlva lejár. Csak egyszer használható.",
         "expired": "Ez a kód lejárt.",
         "error": "Nem sikerült párosítási kódot létrehozni. Próbáld újra.",
@@ -3524,7 +3524,8 @@
       "manage": "Szabályok kezelése",
       "senders_count": "{count, plural, one {# feladó} other {# feladó}}",
       "cross_account": "Egyetlen fiók üzeneteit válaszd ki",
-      "opaque_hint": "A szűrőidet kézzel szerkesztették. Nyisd meg a szűrőbeállításokat",
+      "opaque_hint": "A szűrőidet kézzel szerkesztették. Nyisd meg a szűrőbeállításokat"
+,
       "loading": "Szabályok betöltése…",
       "load_failed": "Nem sikerült betölteni a szabályokat",
       "none": "Még nincsenek szabályok",
@@ -5016,7 +5017,7 @@
     "dismiss": "Elutasítás",
     "start_tour": "Bemutató indítása"
   },
-  "demo_welcome": {
+  "demo_welcome": {EMAIL by Nordible.Co
     "title": "Üdvözlünk a Bulwark Mail-ben",
     "description": "Fedezz fel egy teljes funkciókkal rendelkező webmail klienst - közvetlenül a böngésződben. Az összes adat az eszközödön marad, nyugodtan tesztelj mindent.",
     "feature_email": "E-mailek olvasása és írása",

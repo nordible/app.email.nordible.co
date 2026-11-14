@@ -233,7 +233,7 @@ export function DeviceSyncCollectionsSheet({ visible, onClose, registryId, autho
               )
               : t(
                 'settings.device_sync.calendars_hint',
-                'Your own calendars sync unless you turn them off; shared ones only when you turn them on. Task lists stay in Bulwark.',
+                'Your own calendars sync unless you turn them off; shared ones only when you turn them on. Task lists stay in EMAIL by Nordible.Co.',
               )}
           </Text>
         </ScrollView>

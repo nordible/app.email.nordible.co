@@ -41,7 +41,7 @@ On macOS or Linux, call `$ANDROID_HOME/build-tools/36.0.0/apksigner` instead.
 read -rsp 'Keystore password: ' BULWARK_KS_PASS; echo; export BULWARK_KS_PASS
 keytool -genkeypair -v -storetype PKCS12 -keystore bulwark-release.p12 \
   -alias bulwark -keyalg RSA -keysize 4096 -validity 10000 \
-  -dname "CN=Bulwark Mail, O=Bulwark Mail" \
+  -dname "CN=EMAIL by Nordible.Co, O=EMAIL by Nordible.Co" \
   -storepass:env BULWARK_KS_PASS -keypass:env BULWARK_KS_PASS
 ```
 

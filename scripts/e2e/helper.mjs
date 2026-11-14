@@ -389,7 +389,7 @@ const routes = {
     // The same payload the relay sends (relay/src/apns.ts apnsPayload).
     const payload = {
       aps: {
-        alert: { title: 'Bulwark Mail', body: 'New message' },
+        alert: { title: 'EMAIL by Nordible.Co', body: 'New message' },
         sound: 'default',
         'mutable-content': 1,
         'thread-id': found.accountId,

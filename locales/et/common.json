@@ -2274,10 +2274,10 @@
       },
       "link_device": {
         "title": "Ühenda mobiilirakendus",
-        "description": "Logi Bulwark Mail mobiilirakendusse sisse ilma midagi sisestamata. Genereeri siin QR-kood ja skaneeri see rakenduse sisselogimisekraanilt.",
+        "description": "Logi EMAIL by Nordible.Co mobiilirakendusse sisse ilma midagi sisestamata. Genereeri siin QR-kood ja skaneeri see rakenduse sisselogimisekraanilt.",
         "generate": "Kuva QR-kood",
         "regenerate": "Kuva uus kood",
-        "instructions": "Ava Bulwark Mail rakendus, puuduta sisselogimisekraanil „Skaneeri QR-kood“ ja suuna kaamera siia.",
+        "instructions": "Ava EMAIL by Nordible.Co rakendus, puuduta sisselogimisekraanil „Skaneeri QR-kood“ ja suuna kaamera siia.",
         "expires_in": "See kood aegub {seconds} sekundi pärast. Seda saab kasutada ainult üks kord.",
         "expired": "See kood on aegunud.",
         "error": "Sidumiskoodi loomine ebaõnnestus. Palun proovi uuesti.",
@@ -5017,7 +5017,7 @@
     "start_tour": "Alusta tutvustust"
   },
   "demo_welcome": {
-    "title": "Tere tulemast Bulwark Maili juurde",
+    "title": "Tere tulemast EMAIL by Nordible.Coi juurde",
     "description": "Tutvu täisfunktsionaalse veebipostiga - otse oma brauseris. Kõik andmed jäävad sinu seadmesse, seega võid vabalt kõike proovida.",
     "feature_email": "Loe ja kirjuta e-kirju",
     "feature_organize": "Märgid, tähed ja kaustad",

@@ -73,7 +73,7 @@ function infoPlist({ version, buildNumber }) {
   <key>CFBundleDevelopmentRegion</key>
   <string>$(DEVELOPMENT_LANGUAGE)</string>
   <key>CFBundleDisplayName</key>
-  <string>Bulwark Mail notifications</string>
+  <string>EMAIL by Nordible.Co notifications</string>
   <key>CFBundleExecutable</key>
   <string>$(EXECUTABLE_NAME)</string>
   <key>CFBundleIdentifier</key>

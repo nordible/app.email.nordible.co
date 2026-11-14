@@ -299,7 +299,7 @@ export function RecoverDeletedSettings() {
                 })}
               </View>
               <Text style={styles.small}>
-                {t('recover_deleted.restore_hint', "Restored mail goes back to your Inbox as unread, sorted by its original date, so it may be far down the list. The server restores it in the background. If that fails there, the message is lost and Bulwark can't tell.")}
+                {t('recover_deleted.restore_hint', "Restored mail goes back to your Inbox as unread, sorted by its original date, so it may be far down the list. The server restores it in the background. If that fails there, the message is lost and EMAIL by Nordible.Co can't tell.")}
               </Text>
             </>
           )}

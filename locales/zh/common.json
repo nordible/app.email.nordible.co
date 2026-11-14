@@ -2251,10 +2251,10 @@
       },
       "link_device": {
         "title": "关联移动应用",
-        "description": "无需在手机上输入密码即可登录手机上的 Bulwark Mail 应用。手机会获得独立的登录状态，因此在此处退出登录不会让手机退出。",
+        "description": "无需在手机上输入密码即可登录手机上的 EMAIL by Nordible.Co 应用。手机会获得独立的登录状态，因此在此处退出登录不会让手机退出。",
         "generate": "显示二维码",
         "regenerate": "显示新的二维码",
-        "instructions": "打开 Bulwark Mail 应用，在登录界面点按“Scan a sign-in code”（如果已登录，则点按“Add account”→“Scan a sign-in code”），然后将相机对准此处。",
+        "instructions": "打开 EMAIL by Nordible.Co 应用，在登录界面点按“Scan a sign-in code”（如果已登录，则点按“Add account”→“Scan a sign-in code”），然后将相机对准此处。",
         "expires_in": "此二维码将在 {seconds} 秒后过期，且只能使用一次。",
         "expired": "此二维码已过期。",
         "error": "无法创建配对码。请重试。",
@@ -3524,7 +3524,8 @@
       "manage": "管理规则",
       "senders_count": "{count, plural, other {# 个发件人}}",
       "cross_account": "请选择同一账户中的邮件",
-      "opaque_hint": "你的过滤器已被手动编辑。请打开过滤器设置",
+      "opaque_hint": "你的过滤器已被手动编辑。请打开过滤器设置"
+,
       "loading": "正在加载规则…",
       "load_failed": "无法加载规则",
       "none": "暂无规则",
@@ -4886,7 +4887,7 @@
     "dismiss": "关闭",
     "start_tour": "开始导览"
   },
-  "demo_welcome": {
+  "demo_welcome": {EMAIL by Nordible.Co
     "title": "欢迎使用 Bulwark Mail",
     "description": "探索功能齐全的网页邮件客户端--就在您的浏览器中。所有数据都保留在您的设备上，请随意体验所有功能。",
     "feature_email": "阅读和撰写邮件",

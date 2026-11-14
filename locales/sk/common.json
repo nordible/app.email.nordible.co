@@ -2258,10 +2258,10 @@
       },
       "link_device": {
         "title": "Prepojiť mobilnú aplikáciu",
-        "description": "Prihláste sa do aplikácie Bulwark Mail v telefóne bez toho, aby ste tam zadávali heslo. Telefón dostane vlastné prihlásenie, takže odhlásenie tu ho neodhlási.",
+        "description": "Prihláste sa do aplikácie EMAIL by Nordible.Co v telefóne bez toho, aby ste tam zadávali heslo. Telefón dostane vlastné prihlásenie, takže odhlásenie tu ho neodhlási.",
         "generate": "Zobraziť QR kód",
         "regenerate": "Zobraziť nový kód",
-        "instructions": "Otvorte aplikáciu Bulwark Mail a na prihlasovacej obrazovke klepnite na \"Scan a sign-in code\" (alebo na \"Add account\" → \"Scan a sign-in code\", ak ste už prihlásení) a potom namierte fotoaparát sem.",
+        "instructions": "Otvorte aplikáciu EMAIL by Nordible.Co a na prihlasovacej obrazovke klepnite na \"Scan a sign-in code\" (alebo na \"Add account\" → \"Scan a sign-in code\", ak ste už prihlásení) a potom namierte fotoaparát sem.",
         "expires_in": "Tento kód vyprší za {seconds} sekúnd. Dá sa použiť iba raz.",
         "expired": "Platnosť tohto kódu vypršala.",
         "error": "Nepodarilo sa vytvoriť párovací kód. Skúste to znova.",
@@ -3524,7 +3524,8 @@
       "manage": "Spravovať pravidlá",
       "senders_count": "{count, plural, one {# odosielateľa} few {# odosielateľov} many {# odosielateľa} other {# odosielateľov}}",
       "cross_account": "Vyberte správy z jedného účtu",
-      "opaque_hint": "Vaše filtre boli upravené ručne. Otvorte nastavenia filtrov",
+      "opaque_hint": "Vaše filtre boli upravené ručne. Otvorte nastavenia filtrov"
+,
       "loading": "Načítavajú sa pravidlá…",
       "load_failed": "Pravidlá sa nepodarilo načítať",
       "none": "Zatiaľ žiadne pravidlá",
@@ -5016,7 +5017,7 @@
     "dismiss": "Zavrieť",
     "start_tour": "Spustiť sprievodcu"
   },
-  "demo_welcome": {
+  "demo_welcome": {EMAIL by Nordible.Co
     "title": "Vitajte v Bulwark Mail",
     "description": "Preskúmajte plnohodnotného webového e-mailového klienta – priamo v prehliadači. Všetky dáta zostávajú na vašom zariadení.",
     "feature_email": "Čítajte a píšte e-maily",

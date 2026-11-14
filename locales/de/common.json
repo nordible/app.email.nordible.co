@@ -73,8 +73,8 @@
     "demo_tagline": "Erleben Sie einen voll ausgestatteten E-Mail-Client. Kein Konto erforderlich.",
     "demo_no_signup": "Keine Registrierung nötig - erkunden Sie frei mit Beispieldaten",
     "mobile_handoff": {
-      "title": "Bulwark Mail App öffnen?",
-      "description": "Diese Anmeldeseite wurde von einer App auf diesem Gerät geöffnet. Ihre Anmeldung für {username} wird an die App übergeben, die den Bulwark-Link registriert hat. Fahren Sie nur fort, wenn Sie die Anmeldung in der Bulwark Mail App gestartet haben.",
+      "title": "EMAIL by Nordible.Co App öffnen?",
+      "description": "Diese Anmeldeseite wurde von einer App auf diesem Gerät geöffnet. Ihre Anmeldung für {username} wird an die App übergeben, die den Link registriert hat. Fahren Sie nur fort, wenn Sie die Anmeldung in der EMAIL by Nordible.Co App gestartet haben.",
       "confirm": "An die App übergeben",
       "cancel": "Im Webmail bleiben"
     },
@@ -2251,10 +2251,10 @@
       },
       "link_device": {
         "title": "Mobile App verknüpfen",
-        "description": "Melden Sie sich in der Bulwark Mail App auf Ihrem Smartphone an, ohne dort Ihr Passwort einzugeben. Ihr Smartphone erhält eine eigene Anmeldung – wenn Sie sich hier abmelden, bleibt es angemeldet.",
+        "description": "Melden Sie sich in der EMAIL by Nordible.Co App auf Ihrem Smartphone an, ohne dort Ihr Passwort einzugeben. Ihr Smartphone erhält eine eigene Anmeldung – wenn Sie sich hier abmelden, bleibt es angemeldet.",
         "generate": "QR-Code anzeigen",
         "regenerate": "Neuen Code anzeigen",
-        "instructions": "Öffnen Sie die Bulwark Mail App und tippen Sie auf dem Anmeldebildschirm auf \"Scan a sign-in code\" (oder auf \"Add account\" → \"Scan a sign-in code\", wenn Sie bereits angemeldet sind). Richten Sie dann die Kamera hierauf.",
+        "instructions": "Öffnen Sie die EMAIL by Nordible.Co App und tippen Sie auf dem Anmeldebildschirm auf \"Scan a sign-in code\" (oder auf \"Add account\" → \"Scan a sign-in code\", wenn Sie bereits angemeldet sind). Richten Sie dann die Kamera hierauf.",
         "expires_in": "Dieser Code läuft in {seconds} Sekunden ab. Er kann nur einmal verwendet werden.",
         "expired": "Dieser Code ist abgelaufen.",
         "error": "Kopplungscode konnte nicht erstellt werden. Bitte versuchen Sie es erneut.",
@@ -4887,7 +4887,7 @@
     "start_tour": "Tour starten"
   },
   "demo_welcome": {
-    "title": "Willkommen bei Bulwark Mail",
+    "title": "Willkommen bei EMAIL by Nordible.Co",
     "description": "Entdecken Sie einen voll ausgestatteten Webmail-Client - direkt in Ihrem Browser. Alle Daten bleiben auf Ihrem Gerät, also testen Sie alles.",
     "feature_email": "E-Mails lesen & verfassen",
     "feature_organize": "Tags, Sterne & Ordner",

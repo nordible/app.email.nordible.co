@@ -72,7 +72,7 @@ export default function ChooseStep({
             style={styles.logo}
             resizeMode="contain"
           />
-          <Text style={styles.title}>Email by Nordible.Co</Text>
+          <Text style={styles.title}>EMAIL by Nordible.Co</Text>
           <Text style={styles.subtitle}>{t('login.mobile.choose_subtitle', 'Sign in to your account.')}</Text>
         </View>
       )}

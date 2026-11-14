@@ -11,7 +11,7 @@ tags:
       CAMERA: deny
 - tapOn: "Scan a sign-in code.*"
 # Denied for good: "Camera access is disabled..."; not asked yet (the
-# simulator doesn't always apply the denial up front): "Bulwark Mail needs
+# simulator doesn't always apply the denial up front): "EMAIL by Nordible.Co needs
 # camera access..." (English catalog) or the built-in fallback wording.
 - extendedWaitUntil:
     visible: "Camera access is.*|.*needs camera access.*|Scanning a sign-in QR code uses the camera.*"

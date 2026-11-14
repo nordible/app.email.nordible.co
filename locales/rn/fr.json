@@ -643,7 +643,7 @@
       "add_title": "Ajouter un autre compte",
       "camera_allow": "Autoriser l'accès à l'appareil photo",
       "camera_disabled": "L'accès à l'appareil photo est désactivé. Activez-le dans les Paramètres pour scanner un QR code de connexion.",
-      "camera_needed": "Bulwark Mail a besoin d'accéder à l'appareil photo pour scanner un QR code de connexion.",
+      "camera_needed": "EMAIL by Nordible.Co a besoin d'accéder à l'appareil photo pour scanner un QR code de connexion.",
       "choose_subtitle": "Choisissez comment vous souhaitez vous connecter.",
       "confirm_check": "Vérifiez que tout est correct",
       "confirm_found": "Serveur de messagerie trouvé",

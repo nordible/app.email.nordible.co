@@ -486,7 +486,7 @@
         "password_instructions": "In your mail app, use the user name above and an app password. You can create an app password further down on this page."
       },
       "link_device": {
-        "description": "Sign in to the Bulwark Mail app on your phone without typing your password. Your phone gets its own sign-in. If you sign out here, your phone stays signed in.",
+        "description": "Sign in to the EMAIL by Nordible.Co app on your phone without typing your password. Your phone gets its own sign-in. If you sign out here, your phone stays signed in.",
         "error": "The code could not be created. Try again.",
         "password_prompt": "Type your password to show it's you. Your password is not sent to the phone.",
         "error_not_signed_in": "You were signed out. Sign in again, then link your phone.",

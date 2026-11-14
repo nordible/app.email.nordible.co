@@ -215,7 +215,7 @@ struct InboxWidgetView: View {
       }
     } else {
       VStack(alignment: .leading, spacing: 6) {
-        Text("Bulwark Mail")
+        Text("EMAIL by Nordible.Co")
           .font(.system(size: 15, weight: .semibold))
           .foregroundColor(palette.foreground)
         Text(entry.snapshot?.strings.signedOut ?? "Open Bulwark to load your inbox.")

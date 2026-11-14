@@ -2251,10 +2251,10 @@
       },
       "link_device": {
         "title": "Vincular aplicativo móvel",
-        "description": "Entre no aplicativo Bulwark Mail no seu celular sem digitar sua senha nele. Seu celular recebe um acesso próprio, então sair aqui não o desconecta.",
+        "description": "Entre no aplicativo EMAIL by Nordible.Co no seu celular sem digitar sua senha nele. Seu celular recebe um acesso próprio, então sair aqui não o desconecta.",
         "generate": "Mostrar código QR",
         "regenerate": "Mostrar um novo código",
-        "instructions": "Abra o aplicativo Bulwark Mail e toque em \"Scan a sign-in code\" na tela de login (ou em \"Add account\" → \"Scan a sign-in code\" se você já estiver conectado) e aponte a câmera para cá.",
+        "instructions": "Abra o aplicativo EMAIL by Nordible.Co e toque em \"Scan a sign-in code\" na tela de login (ou em \"Add account\" → \"Scan a sign-in code\" se você já estiver conectado) e aponte a câmera para cá.",
         "expires_in": "Este código expira em {seconds} segundos. Ele só pode ser usado uma vez.",
         "expired": "Este código expirou.",
         "error": "Não foi possível criar um código de pareamento. Tente novamente.",
@@ -3524,7 +3524,8 @@
       "manage": "Gerenciar regras",
       "senders_count": "{count, plural, one {# remetente} other {# remetentes}}",
       "cross_account": "Selecione mensagens de uma única conta",
-      "opaque_hint": "Seus filtros foram editados manualmente. Abra as configurações de filtros",
+      "opaque_hint": "Seus filtros foram editados manualmente. Abra as configurações de filtros"
+,
       "loading": "A carregar regras…",
       "load_failed": "Não foi possível carregar as regras",
       "none": "Ainda não há regras",
@@ -4886,7 +4887,7 @@
     "dismiss": "Fechar",
     "start_tour": "Iniciar tour"
   },
-  "demo_welcome": {
+  "demo_welcome": {EMAIL by Nordible.Co
     "title": "Bem-vindo ao Bulwark Mail",
     "description": "Explore um cliente de webmail completo - diretamente no seu navegador. Todos os dados ficam no seu dispositivo, então teste tudo.",
     "feature_email": "Ler e escrever e-mails",

@@ -2251,10 +2251,10 @@
       },
       "link_device": {
         "title": "Saistīt mobilo lietotni",
-        "description": "Pierakstieties Bulwark Mail lietotnē savā tālrunī, tur neievadot paroli. Tālrunis saņem savu pierakstīšanos, tāpēc izrakstīšanās šeit to neizraksta.",
+        "description": "Pierakstieties EMAIL by Nordible.Co lietotnē savā tālrunī, tur neievadot paroli. Tālrunis saņem savu pierakstīšanos, tāpēc izrakstīšanās šeit to neizraksta.",
         "generate": "Rādīt QR kodu",
         "regenerate": "Rādīt jaunu kodu",
-        "instructions": "Atveriet Bulwark Mail lietotni un pierakstīšanās ekrānā pieskarieties \"Scan a sign-in code\" (vai \"Add account\" → \"Scan a sign-in code\", ja jau esat pierakstījies), pēc tam pavērsiet kameru šeit.",
+        "instructions": "Atveriet EMAIL by Nordible.Co lietotni un pierakstīšanās ekrānā pieskarieties \"Scan a sign-in code\" (vai \"Add account\" → \"Scan a sign-in code\", ja jau esat pierakstījies), pēc tam pavērsiet kameru šeit.",
         "expires_in": "Šī koda derīgums beigsies pēc {seconds} sekundēm. To var izmantot tikai vienu reizi.",
         "expired": "Šī koda derīgums ir beidzies.",
         "error": "Neizdevās izveidot pārošanas kodu. Lūdzu, mēģiniet vēlreiz.",
@@ -3524,7 +3524,8 @@
       "manage": "Pārvaldīt noteikumus",
       "senders_count": "{count, plural, zero {# sūtītājiem} one {# sūtītāja} other {# sūtītājiem}}",
       "cross_account": "Izvēlieties vēstules no viena konta",
-      "opaque_hint": "Jūsu filtri ir rediģēti manuāli. Atveriet filtru iestatījumus",
+      "opaque_hint": "Jūsu filtri ir rediģēti manuāli. Atveriet filtru iestatījumus"
+,
       "loading": "Ielādē kārtulas…",
       "load_failed": "Neizdevās ielādēt kārtulas",
       "none": "Vēl nav kārtulu",
@@ -4886,7 +4887,7 @@
     "dismiss": "Aizvērt",
     "start_tour": "Sākt ekskursiju"
   },
-  "demo_welcome": {
+  "demo_welcome": {EMAIL by Nordible.Co
     "title": "Laipni lūdzam Bulwark Mail",
     "description": "Atklājiet pilnvērtīgu tīmekļa e-pasta klientu tieši pārlūkā. Visi dati tiek glabāti jūsu ierīcē.",
     "feature_email": "Vēstuļu lasīšana un rakstīšana",

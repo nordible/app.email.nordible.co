@@ -31,7 +31,7 @@ const APS_ENVIRONMENT = process.env.APS_ENVIRONMENT === 'development' ? 'develop
 
 module.exports = {
   expo: {
-    name: 'Email by Nordible.Co',
+    name: 'EMAIL by Nordible.Co',
     slug: 'nordible-email',
     // mailto: lets Android/iOS offer the app for mail links in other apps;
     // nordiblemail / bulwarkmail: webmail's sign-in link (nordiblemail://pair?...).
@@ -77,7 +77,7 @@ module.exports = {
         'expo-camera',
         {
           cameraPermission:
-            'Email by Nordible.Co uses the camera to scan sign-in QR codes shown in webmail.',
+            'EMAIL by Nordible.Co uses the camera to scan sign-in QR codes shown in webmail.',
           microphonePermission: false,
         },
       ],
@@ -85,7 +85,7 @@ module.exports = {
         'expo-image-picker',
         {
           photosPermission:
-            'Email by Nordible.Co needs access to your photos so you can attach them to emails and set contact photos.',
+            'EMAIL by Nordible.Co needs access to your photos so you can attach them to emails and set contact photos.',
           cameraPermission: false,
           microphonePermission: false,
         },

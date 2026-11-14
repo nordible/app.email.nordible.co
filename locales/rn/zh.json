@@ -638,7 +638,7 @@
       "add_title": "添加其他账户",
       "camera_allow": "允许访问相机",
       "camera_disabled": "相机访问已禁用。请在设置中启用，以扫描登录二维码。",
-      "camera_needed": "Bulwark Mail 需要访问相机才能扫描登录二维码。",
+      "camera_needed": "EMAIL by Nordible.Co 需要访问相机才能扫描登录二维码。",
       "choose_subtitle": "请选择登录方式。",
       "confirm_check": "请确认信息无误",
       "confirm_found": "已找到您的邮件服务器",

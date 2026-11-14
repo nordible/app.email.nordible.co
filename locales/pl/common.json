@@ -2251,10 +2251,10 @@
       },
       "link_device": {
         "title": "Połącz aplikację mobilną",
-        "description": "Zaloguj się do aplikacji Bulwark Mail na telefonie bez wpisywania w niej hasła. Telefon otrzymuje własne logowanie, więc wylogowanie się tutaj go nie wyloguje.",
+        "description": "Zaloguj się do aplikacji EMAIL by Nordible.Co na telefonie bez wpisywania w niej hasła. Telefon otrzymuje własne logowanie, więc wylogowanie się tutaj go nie wyloguje.",
         "generate": "Pokaż kod QR",
         "regenerate": "Pokaż nowy kod",
-        "instructions": "Otwórz aplikację Bulwark Mail i na ekranie logowania stuknij \"Scan a sign-in code\" (lub \"Add account\" → \"Scan a sign-in code\", jeśli już jesteś zalogowany), a następnie skieruj aparat tutaj.",
+        "instructions": "Otwórz aplikację EMAIL by Nordible.Co i na ekranie logowania stuknij \"Scan a sign-in code\" (lub \"Add account\" → \"Scan a sign-in code\", jeśli już jesteś zalogowany), a następnie skieruj aparat tutaj.",
         "expires_in": "Ten kod wygaśnie za {seconds} sekund. Można go użyć tylko raz.",
         "expired": "Ten kod wygasł.",
         "error": "Nie udało się utworzyć kodu parowania. Spróbuj ponownie.",
@@ -3524,7 +3524,8 @@
       "manage": "Zarządzaj regułami",
       "senders_count": "{count, plural, one {# nadawcy} few {# nadawców} many {# nadawców} other {# nadawcy}}",
       "cross_account": "Wybierz wiadomości z jednego konta",
-      "opaque_hint": "Twoje filtry zostały edytowane ręcznie. Otwórz ustawienia filtrów",
+      "opaque_hint": "Twoje filtry zostały edytowane ręcznie. Otwórz ustawienia filtrów"
+,
       "loading": "Wczytywanie reguł…",
       "load_failed": "Nie udało się wczytać reguł",
       "none": "Brak reguł",
@@ -4886,7 +4887,7 @@
     "dismiss": "Zamknij",
     "start_tour": "Rozpocznij przewodnik"
   },
-  "demo_welcome": {
+  "demo_welcome": {EMAIL by Nordible.Co
     "title": "Witaj w Bulwark Mail",
     "description": "Poznaj w pełni funkcjonalnego klienta poczty webowej - bezpośrednio w przeglądarce. Wszystkie dane pozostają na Twoim urządzeniu, więc możesz śmiało wszystko przetestować.",
     "feature_email": "Czytaj i pisz wiadomości e-mail",

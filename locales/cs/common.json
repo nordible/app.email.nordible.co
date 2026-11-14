@@ -2251,10 +2251,10 @@
       },
       "link_device": {
         "title": "Propojit mobilní aplikaci",
-        "description": "Přihlaste se do aplikace Bulwark Mail v telefonu, aniž byste tam museli zadávat heslo. Telefon dostane vlastní přihlášení, takže odhlášení zde ho neodhlásí.",
+        "description": "Přihlaste se do aplikace EMAIL by Nordible.Co v telefonu, aniž byste tam museli zadávat heslo. Telefon dostane vlastní přihlášení, takže odhlášení zde ho neodhlásí.",
         "generate": "Zobrazit QR kód",
         "regenerate": "Zobrazit nový kód",
-        "instructions": "Otevřete aplikaci Bulwark Mail a na přihlašovací obrazovce klepněte na \"Scan a sign-in code\" (nebo na \"Add account\" → \"Scan a sign-in code\", pokud jste už přihlášeni) a pak namiřte fotoaparát sem.",
+        "instructions": "Otevřete aplikaci EMAIL by Nordible.Co a na přihlašovací obrazovce klepněte na \"Scan a sign-in code\" (nebo na \"Add account\" → \"Scan a sign-in code\", pokud jste už přihlášeni) a pak namiřte fotoaparát sem.",
         "expires_in": "Tento kód vyprší za {seconds} sekund. Lze jej použít pouze jednou.",
         "expired": "Platnost tohoto kódu vypršela.",
         "error": "Párovací kód se nepodařilo vytvořit. Zkuste to prosím znovu.",
@@ -3524,7 +3524,8 @@
       "manage": "Spravovat pravidla",
       "senders_count": "{count, plural, one {# odesílatele} few {# odesílatelů} many {# odesílatele} other {# odesílatelů}}",
       "cross_account": "Vyberte zprávy z jednoho účtu",
-      "opaque_hint": "Vaše filtry byly upraveny ručně. Otevřete nastavení filtrů",
+      "opaque_hint": "Vaše filtry byly upraveny ručně. Otevřete nastavení filtrů"
+,
       "loading": "Načítání pravidel…",
       "load_failed": "Pravidla se nepodařilo načíst",
       "none": "Zatím žádná pravidla",
@@ -4886,7 +4887,7 @@
     "dismiss": "Zavřít",
     "start_tour": "Spustit průvodce"
   },
-  "demo_welcome": {
+  "demo_welcome": {EMAIL by Nordible.Co
     "title": "Vítejte v Bulwark Mail",
     "description": "Prozkoumejte plně funkčního webového e-mailového klienta - přímo v prohlížeči. Všechna data zůstávají na vašem zařízení, takže můžete bez obav vše otestovat.",
     "feature_email": "Čtěte a pište e-maily",

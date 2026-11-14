@@ -72,7 +72,7 @@ export function PasteSignInLinkModal({ visible, onClose, onSubmit }: PasteSignIn
         setError(copy.detail ?? copy.title);
         return;
       }
-      setError(t('login.mobile.paste_invalid', "That isn't a Bulwark sign-in link"));
+      setError(t('login.mobile.paste_invalid', "That isn't an EMAIL by Nordible.Co sign-in link"));
       return;
     }
     onSubmit(payload);

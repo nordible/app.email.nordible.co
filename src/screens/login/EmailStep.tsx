@@ -50,7 +50,7 @@ export default function EmailStep({
             style={styles.logo}
             resizeMode="contain"
           />
-          <Text style={styles.brandTitle}>Email by Nordible.Co</Text>
+          <Text style={styles.brandTitle}>EMAIL by Nordible.Co</Text>
         </View>
       ) : null}
 

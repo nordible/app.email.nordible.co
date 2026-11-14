@@ -2251,10 +2251,10 @@
       },
       "link_device": {
         "title": "모바일 앱 연결",
-        "description": "휴대폰의 Bulwark Mail 앱에 비밀번호를 입력하지 않고 로그인하세요. 휴대폰은 별도의 로그인을 받으므로 여기에서 로그아웃해도 휴대폰은 로그아웃되지 않습니다.",
+        "description": "휴대폰의 EMAIL by Nordible.Co 앱에 비밀번호를 입력하지 않고 로그인하세요. 휴대폰은 별도의 로그인을 받으므로 여기에서 로그아웃해도 휴대폰은 로그아웃되지 않습니다.",
         "generate": "QR 코드 표시",
         "regenerate": "새 코드 표시",
-        "instructions": "Bulwark Mail 앱을 열고 로그인 화면에서 \"Scan a sign-in code\"를 누른 다음(이미 로그인되어 있다면 \"Add account\" → \"Scan a sign-in code\") 카메라를 여기에 비추세요.",
+        "instructions": "EMAIL by Nordible.Co 앱을 열고 로그인 화면에서 \"Scan a sign-in code\"를 누른 다음(이미 로그인되어 있다면 \"Add account\" → \"Scan a sign-in code\") 카메라를 여기에 비추세요.",
         "expires_in": "이 코드는 {seconds}초 후에 만료됩니다. 한 번만 사용할 수 있습니다.",
         "expired": "이 코드는 만료되었습니다.",
         "error": "페어링 코드를 만들지 못했습니다. 다시 시도해 주세요.",
@@ -3524,7 +3524,8 @@
       "manage": "규칙 관리",
       "senders_count": "{count, plural, other {보낸 사람 #명}}",
       "cross_account": "한 계정의 메일만 선택하세요",
-      "opaque_hint": "필터가 직접 편집되었어요. 필터 설정을 여세요",
+      "opaque_hint": "필터가 직접 편집되었어요. 필터 설정을 여세요"
+,
       "loading": "규칙을 불러오는 중…",
       "load_failed": "규칙을 불러올 수 없습니다",
       "none": "아직 규칙이 없습니다",
@@ -4886,7 +4887,7 @@
     "dismiss": "닫기",
     "start_tour": "둘러보기 시작"
   },
-  "demo_welcome": {
+  "demo_welcomEMAIL by Nordible.Co
     "title": "Bulwark Mail에 오신 것을 환영해요",
     "description": "브라우저에서 바로 완전한 기능을 갖춘 웹메일 클라이언트를 경험해 보세요. 모든 데이터는 내 기기에만 저장되니 안심하고 테스트해 보셔도 좋아요.",
     "feature_email": "메일 읽기 및 쓰기",

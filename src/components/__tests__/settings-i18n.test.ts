@@ -23,8 +23,8 @@ const TRANSLATED_PANES: Record<string, string[]> = {
   'settings/FolderSettings.tsx': [],
   'settings/IdentitySettings.tsx': [
     // Example signatures in the placeholders.
-    '--&#10;Jane Doe&#10;Bulwark Mail',
-    '<p><b>Jane Doe</b><br>Bulwark Mail</p>',
+    '--&#10;Jane Doe&#10;EMAIL by Nordible.Co',
+    '<p><b>Jane Doe</b><br>EMAIL by Nordible.Co</p>',
   ],
   // The raw keyword prefix shown next to a tag id.
   'settings/KeywordSettings.tsx': ['$label:'],

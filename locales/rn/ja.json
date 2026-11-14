@@ -639,7 +639,7 @@
       "add_title": "別のアカウントを追加",
       "camera_allow": "カメラへのアクセスを許可",
       "camera_disabled": "カメラへのアクセスが無効になっています。サインイン用の QR コードをスキャンするには、設定で有効にしてください。",
-      "camera_needed": "サインイン用の QR コードをスキャンするには、Bulwark Mail にカメラへのアクセスを許可する必要があります。",
+      "camera_needed": "サインイン用の QR コードをスキャンするには、EMAIL by Nordible.Co にカメラへのアクセスを許可する必要があります。",
       "choose_subtitle": "サインイン方法を選択してください。",
       "confirm_check": "内容が正しいか確認してください",
       "confirm_found": "メールサーバーが見つかりました",

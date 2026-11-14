@@ -2254,10 +2254,10 @@
       },
       "link_device": {
         "title": "Tilknyt mobilapp",
-        "description": "Log ind i Bulwark Mail-appen på din telefon uden at skrive din adgangskode der. Din telefon får sit eget login, så den forbliver logget ind, når du logger ud her.",
+        "description": "Log ind i EMAIL by Nordible.Co-appen på din telefon uden at skrive din adgangskode der. Din telefon får sit eget login, så den forbliver logget ind, når du logger ud her.",
         "generate": "Vis QR-kode",
         "regenerate": "Vis en ny kode",
-        "instructions": "Åbn Bulwark Mail-appen, og tryk på \"Scan a sign-in code\" på loginskærmen (eller \"Add account\" → \"Scan a sign-in code\", hvis du allerede er logget ind), og ret derefter kameraet herhen.",
+        "instructions": "Åbn EMAIL by Nordible.Co-appen, og tryk på \"Scan a sign-in code\" på loginskærmen (eller \"Add account\" → \"Scan a sign-in code\", hvis du allerede er logget ind), og ret derefter kameraet herhen.",
         "expires_in": "Denne kode udløber om {seconds} sekunder. Den kan kun bruges én gang.",
         "expired": "Denne kode er udløbet.",
         "error": "Kunne ikke oprette en parringskode. Prøv igen.",
@@ -3524,7 +3524,8 @@
       "manage": "Administrer regler",
       "senders_count": "{count, plural, one {# afsender} other {# afsendere}}",
       "cross_account": "Vælg beskeder fra én konto",
-      "opaque_hint": "Dine filtre er redigeret manuelt. Åbn filterindstillingerne",
+      "opaque_hint": "Dine filtre er redigeret manuelt. Åbn filterindstillingerne"
+,
       "loading": "Indlæser regler…",
       "load_failed": "Reglerne kunne ikke indlæses",
       "none": "Ingen regler endnu",
@@ -5016,7 +5017,7 @@
     "dismiss": "Afvis",
     "start_tour": "Start rundvisning"
   },
-  "demo_welcome": {
+  "demo_welcome": {EMAIL by Nordible.Co
     "title": "Velkommen til Bulwark Mail",
     "description": "Udforsk en fuldt udstyret webmailklient - direkte i din browser. Alle data forbliver på din enhed, så du kan teste alt frit.",
     "feature_email": "Læs & skriv e-mail",

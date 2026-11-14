@@ -346,7 +346,7 @@ export function NotificationSettings() {
         title={t('settings.notifications.push.title', 'Background Notifications')}
         description={t(
           'settings.notifications.push.description_mobile',
-          'Receive system notifications for new mail when the app is closed. Delivered via the Bulwark push relay; the relay never sees mail content.',
+          'Receive system notifications for new mail when the app is closed. Delivered via the Nordible push relay; the relay never sees mail content.',
         )}
       >
         <SettingItem label={t('settings.notifications.push.enable', 'Enable')} description={statusDescription}>
@@ -439,7 +439,7 @@ export function NotificationSettings() {
           label={t('settings.notifications.push.relay_label', 'Push relay')}
           description={t(
             'settings.notifications.push.relay_desc_mobile',
-            'The server that delivers your notifications. Defaults to the hosted Bulwark relay; change only if you self-host. Must use https.',
+            'The server that delivers your notifications. Defaults to the hosted Nordible relay; change only if you self-host. Must use https.',
           )}
           noBorder
         >

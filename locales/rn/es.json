@@ -645,7 +645,7 @@
       "add_title": "Añadir otra cuenta",
       "camera_allow": "Permitir acceso a la cámara",
       "camera_disabled": "El acceso a la cámara está desactivado. Actívalo en Ajustes para escanear un código QR de inicio de sesión.",
-      "camera_needed": "Bulwark Mail necesita acceso a la cámara para escanear un código QR de inicio de sesión.",
+      "camera_needed": "EMAIL by Nordible.Co necesita acceso a la cámara para escanear un código QR de inicio de sesión.",
       "choose_subtitle": "Elige cómo quieres iniciar sesión.",
       "confirm_check": "Comprueba que todo sea correcto",
       "confirm_found": "Hemos encontrado tu servidor de correo",

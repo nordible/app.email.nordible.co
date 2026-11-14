@@ -72,7 +72,7 @@ class BulwarkFcmModule(reactContext: ReactApplicationContext)
         val groupKey = options.takeIf { it.hasKey("groupKey") }?.getString("groupKey")
             ?: accountId?.let { "bulwark-mail:$it" }
         val groupTitle = options.takeIf { it.hasKey("groupTitle") }?.getString("groupTitle")
-            ?: accountId ?: "Bulwark Mail"
+            ?: accountId ?: "EMAIL by Nordible.Co"
 
         val preview = options.takeIf { it.hasKey("preview") }?.getString("preview")
         val markReadLabel = options.takeIf { it.hasKey("markReadLabel") }?.getString("markReadLabel") ?: "Mark as read"

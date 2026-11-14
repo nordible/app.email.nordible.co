@@ -2274,10 +2274,10 @@
       },
       "link_device": {
         "title": "連結行動應用程式",
-        "description": "不需在手機上輸入密碼，即可登入手機上的 Bulwark Mail 應用程式。手機會取得獨立的登入狀態，因此在這裡登出不會讓手機登出。",
+        "description": "不需在手機上輸入密碼，即可登入手機上的 EMAIL by Nordible.Co 應用程式。手機會取得獨立的登入狀態，因此在這裡登出不會讓手機登出。",
         "generate": "顯示 QR Code",
         "regenerate": "顯示新的 QR Code",
-        "instructions": "開啟 Bulwark Mail 應用程式，在登入畫面點選「Scan a sign-in code」（如果已經登入，請點選「Add account」→「Scan a sign-in code」），再將相機對準這裡。",
+        "instructions": "開啟 EMAIL by Nordible.Co 應用程式，在登入畫面點選「Scan a sign-in code」（如果已經登入，請點選「Add account」→「Scan a sign-in code」），再將相機對準這裡。",
         "expires_in": "此 QR Code 將在 {seconds} 秒後到期，且只能使用一次。",
         "expired": "此 QR Code 已到期。",
         "error": "無法建立配對碼。請再試一次。",
@@ -3524,7 +3524,8 @@
       "manage": "管理規則",
       "senders_count": "{count, plural, other {# 位寄件者}}",
       "cross_account": "請選取同一個帳號中的郵件",
-      "opaque_hint": "你的篩選規則曾被手動編輯。請開啟篩選規則設定",
+      "opaque_hint": "你的篩選規則曾被手動編輯。請開啟篩選規則設定"
+,
       "loading": "正在載入規則…",
       "load_failed": "無法載入規則",
       "none": "尚無規則",
@@ -5016,7 +5017,7 @@
     "dismiss": "關閉",
     "start_tour": "開始功能導覽"
   },
-  "demo_welcome": {
+  "demo_welcome": {EMAIL by Nordible.Co
     "title": "歡迎使用 Bulwark Mail",
     "description": "直接在瀏覽器中探索功能完整的網頁郵件用戶端。所有資料都保留在您的裝置上，請自由測試各項功能。",
     "feature_email": "閱讀與撰寫郵件",

@@ -1026,7 +1026,7 @@ export function AccountSecuritySettings() {
           description={t('settings.security.description', 'Manage your password, two-factor authentication, and security settings')}
         >
           <Text style={styles.emptyText}>
-            {t('settings.security.restricted', "Your server lets only apps its administrator approved change the password, two-factor sign-in, app passwords and API keys. Bulwark signed in without that approval, so mail, contacts, calendars and files work, but these settings don't. Change them in your server's web interface or the Bulwark webmail.")}
+            {t('settings.security.restricted', "Your server lets only apps its administrator approved change the password, two-factor sign-in, app passwords and API keys. EMAIL by Nordible.Co signed in without that approval, so mail, contacts, calendars and files work, but these settings don't. Change them in your server's web interface or webmail.")}
           </Text>
         </SettingsSection>
       )}

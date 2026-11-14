@@ -2274,10 +2274,10 @@
       },
       "link_device": {
         "title": "Koble til mobilappen",
-        "description": "Logg på Bulwark Mail-appen på telefonen uten å skrive inn passordet der. Telefonen får sin egen pålogging, så den forblir pålogget når du logger av her.",
+        "description": "Logg på EMAIL by Nordible.Co-appen på telefonen uten å skrive inn passordet der. Telefonen får sin egen pålogging, så den forblir pålogget når du logger av her.",
         "generate": "Vis QR-kode",
         "regenerate": "Vis en ny kode",
-        "instructions": "Åpne Bulwark Mail-appen og trykk på «Scan a sign-in code» på påloggingsskjermen (eller «Add account» → «Scan a sign-in code» hvis du allerede er pålogget), og rett deretter kameraet hit.",
+        "instructions": "Åpne EMAIL by Nordible.Co-appen og trykk på «Scan a sign-in code» på påloggingsskjermen (eller «Add account» → «Scan a sign-in code» hvis du allerede er pålogget), og rett deretter kameraet hit.",
         "expires_in": "Denne koden utløper om {seconds} sekunder. Den kan bare brukes én gang.",
         "expired": "Denne koden er utløpt.",
         "error": "Kunne ikke opprette en sammenkoblingskode. Prøv igjen.",
@@ -3524,7 +3524,8 @@
       "manage": "Administrer regler",
       "senders_count": "{count, plural, one {# avsender} other {# avsendere}}",
       "cross_account": "Velg meldinger fra én konto",
-      "opaque_hint": "Filtrene dine er redigert for hånd. Åpne filterinnstillingene",
+      "opaque_hint": "Filtrene dine er redigert for hånd. Åpne filterinnstillingene"
+,
       "loading": "Laster inn regler…",
       "load_failed": "Kunne ikke laste inn reglene",
       "none": "Ingen regler ennå",
@@ -5016,7 +5017,7 @@
     "dismiss": "Lukk",
     "start_tour": "Start omvisningen"
   },
-  "demo_welcome": {
+  "demo_welcome": {EMAIL by Nordible.Co
     "title": "Velkommen til Bulwark Mail",
     "description": "Utforsk en fullverdig nettpostklient – rett i nettleseren. Alle data forblir på enheten din, så du kan gjerne prøve alt.",
     "feature_email": "Les og skriv e-post",

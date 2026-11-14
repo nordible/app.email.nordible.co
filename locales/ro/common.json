@@ -2258,10 +2258,10 @@
       },
       "link_device": {
         "title": "Aplicație mobilă",
-        "description": "Conectați-vă la aplicația Bulwark Mail de pe telefon fără să introduceți parola acolo. Telefonul primește propria conectare, așa că deconectarea de aici nu îl deconectează.",
+        "description": "Conectați-vă la aplicația EMAIL by Nordible.Co de pe telefon fără să introduceți parola acolo. Telefonul primește propria conectare, așa că deconectarea de aici nu îl deconectează.",
         "generate": "Afișați codul QR",
         "regenerate": "Afișați un cod nou",
-        "instructions": "Deschideți aplicația Bulwark Mail și atingeți „Scan a sign-in code” pe ecranul de conectare (sau „Add account” → „Scan a sign-in code” dacă sunteți deja conectat), apoi îndreptați camera spre acest ecran.",
+        "instructions": "Deschideți aplicația EMAIL by Nordible.Co și atingeți „Scan a sign-in code” pe ecranul de conectare (sau „Add account” → „Scan a sign-in code” dacă sunteți deja conectat), apoi îndreptați camera spre acest ecran.",
         "expires_in": "Acest cod expiră în {seconds} secunde. Poate fi utilizat o singură dată.",
         "expired": "Acest cod a expirat.",
         "error": "Nu s-a putut crea un cod de asociere. Vă rugăm să încercați din nou.",
@@ -3524,7 +3524,8 @@
       "manage": "Gestionați regulile",
       "senders_count": "{count, plural, one {# expeditor} few {# expeditori} other {# de expeditori}}",
       "cross_account": "Selectați mesaje dintr-un singur cont",
-      "opaque_hint": "Filtrele dvs. au fost editate manual. Deschideți setările filtrelor",
+      "opaque_hint": "Filtrele dvs. au fost editate manual. Deschideți setările filtrelor"
+,
       "loading": "Se încarcă regulile…",
       "load_failed": "Regulile nu au putut fi încărcate",
       "none": "Nicio regulă încă",
@@ -5016,7 +5017,7 @@
     "dismiss": "Ignoră",
     "start_tour": "Începe turul"
   },
-  "demo_welcome": {
+  "demo_welcome": {EMAIL by Nordible.Co
     "title": "Bine ați venit la Bulwark Mail",
     "description": "Explorați un client de e-mail web cu funcționalități complete – direct în browserul dvs. Toate datele rămân pe dispozitivul dvs., așa că nu ezitați să testați totul.",
     "feature_email": "Citiți și redactați e-mailuri",

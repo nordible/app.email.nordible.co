@@ -2258,10 +2258,10 @@
       },
       "link_device": {
         "title": "Enllaça l'aplicació mòbil",
-        "description": "Inicieu la sessió a l'aplicació Bulwark Mail del telèfon sense escriure-hi la contrasenya. El telèfon obté el seu propi inici de sessió, de manera que tancar la sessió aquí no la tanca al telèfon.",
+        "description": "Inicieu la sessió a l'aplicació EMAIL by Nordible.Co del telèfon sense escriure-hi la contrasenya. El telèfon obté el seu propi inici de sessió, de manera que tancar la sessió aquí no la tanca al telèfon.",
         "generate": "Mostra el codi QR",
         "regenerate": "Mostra un codi nou",
-        "instructions": "Obriu l'aplicació Bulwark Mail i toqueu «Scan a sign-in code» a la pantalla d'inici de sessió (o «Add account» → «Scan a sign-in code» si ja heu iniciat la sessió) i, després, apunteu la càmera aquí.",
+        "instructions": "Obriu l'aplicació EMAIL by Nordible.Co i toqueu «Scan a sign-in code» a la pantalla d'inici de sessió (o «Add account» → «Scan a sign-in code» si ja heu iniciat la sessió) i, després, apunteu la càmera aquí.",
         "expires_in": "Aquest codi caduca d'aquí a {seconds} segons. Només es pot utilitzar una vegada.",
         "expired": "Aquest codi ha caducat.",
         "error": "No s'ha pogut crear el codi d'aparellament. Torneu-ho a provar.",
@@ -3524,7 +3524,8 @@
       "manage": "Gestiona les regles",
       "senders_count": "{count, plural, one {# remitent} other {# remitents}}",
       "cross_account": "Selecciona missatges d'un sol compte",
-      "opaque_hint": "Els teus filtres s'han editat a mà. Obre la configuració dels filtres",
+      "opaque_hint": "Els teus filtres s'han editat a mà. Obre la configuració dels filtres"
+,
       "loading": "S'estan carregant les regles…",
       "load_failed": "No s'han pogut carregar les regles",
       "none": "Encara no hi ha regles",
@@ -5016,7 +5017,7 @@
     "dismiss": "Descarta",
     "start_tour": "Comença la visita guiada"
   },
-  "demo_welcome": {
+  "demo_welcome": {EMAIL by Nordible.Co
     "title": "Us donem la benvinguda al Bulwark Mail",
     "description": "Exploreu un client de correu web complet, directament al navegador. Totes les dades es queden al vostre dispositiu, així que proveu-ho tot sense cap problema.",
     "feature_email": "Llegiu i redacteu correus",

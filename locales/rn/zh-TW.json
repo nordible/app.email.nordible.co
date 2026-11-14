@@ -638,7 +638,7 @@
       "add_title": "新增其他帳號",
       "camera_allow": "允許存取相機",
       "camera_disabled": "相機存取權已停用。請在「設定」中啟用，才能掃描登入 QR Code。",
-      "camera_needed": "Bulwark Mail 需要存取相機，才能掃描登入 QR Code。",
+      "camera_needed": "EMAIL by Nordible.Co 需要存取相機，才能掃描登入 QR Code。",
       "choose_subtitle": "請選擇登入方式。",
       "confirm_check": "請確認資訊是否正確",
       "confirm_found": "已找到您的郵件伺服器",

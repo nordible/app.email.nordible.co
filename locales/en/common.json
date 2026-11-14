@@ -73,8 +73,8 @@
     "demo_tagline": "Experience a full-featured email client. No account required.",
     "demo_no_signup": "No signup needed - explore freely with sample data",
     "mobile_handoff": {
-      "title": "Open the Bulwark mobile app?",
-      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the Bulwark link. Continue only if you started this from the Bulwark mobile app.",
+      "title": "Open the EMAIL by Nordible.Co app?",
+      "description": "This sign-in page was opened by an app on this device. Your sign-in for {username} will be handed to the app that registered the link. Continue only if you started this from the EMAIL by Nordible.Co app.",
       "confirm": "Hand over to the app",
       "cancel": "Stay in the webmail"
     },
@@ -2274,10 +2274,10 @@
       },
       "link_device": {
         "title": "Link the mobile app",
-        "description": "Sign in to the Bulwark Mail app on your phone without typing your password there. Your phone gets its own sign-in, so signing out here doesn't sign it out.",
+        "description": "Sign in to the EMAIL by Nordible.Co app on your phone without typing your password there. Your phone gets its own sign-in, so signing out here doesn't sign it out.",
         "generate": "Show QR code",
         "regenerate": "Show a new code",
-        "instructions": "Open the Bulwark Mail app and tap \"Scan a sign-in code\" on the sign-in screen (or \"Add account\" → \"Scan a sign-in code\" if you're already signed in), then point the camera here.",
+        "instructions": "Open the EMAIL by Nordible.Co app and tap \"Scan a sign-in code\" on the sign-in screen (or \"Add account\" → \"Scan a sign-in code\" if you're already signed in), then point the camera here.",
         "expires_in": "This code expires in {seconds} seconds. It can only be used once.",
         "expired": "This code has expired.",
         "error": "Couldn't create a pairing code. Please try again.",
@@ -5017,7 +5017,7 @@
     "start_tour": "Start Tour"
   },
   "demo_welcome": {
-    "title": "Welcome to Bulwark Mail",
+    "title": "Welcome to EMAIL by Nordible.Co",
     "description": "Explore a fully-featured webmail client - right in your browser. All data stays on your device, so feel free to test everything.",
     "feature_email": "Read & compose email",
     "feature_organize": "Tags, stars & folders",

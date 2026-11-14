@@ -521,8 +521,8 @@ export default function LoginScreen({ onLogin, isAddMode = false, onCancel }: Lo
           return;
         }
         setNotice({
-          title: t('login.mobile.notice_bad_qr', "That code isn't a Bulwark sign-in code"),
-          detail: t('login.mobile.notice_bad_qr_detail', 'Open Bulwark on the web, then Settings → Security → Link Mobile App to show one.'),
+          title: t('login.mobile.notice_bad_qr', "That code isn't an EMAIL by Nordible.Co sign-in code"),
+          detail: t('login.mobile.notice_bad_qr_detail', 'Open EMAIL by Nordible.Co on the web, then Settings → Security → Link Mobile App to show one.'),
         });
         return;
       }

@@ -19,7 +19,7 @@ const LOGO_WHITE = require('../../../assets/logos/Bulwark Logo White.png');
 const LOGO_COLOR = require('../../../assets/logos/Bulwark Logo Color.png');
 
 const extra = (Constants.expoConfig?.extra ?? {}) as { commit?: string; sourceCodeUrl?: string };
-export const APP_NAME = Constants.expoConfig?.name ?? 'Bulwark';
+export const APP_NAME = Constants.expoConfig?.name ?? 'EMAIL by Nordible.Co';
 export const APP_VERSION = Constants.expoConfig?.version ?? '0.0.0';
 export const GIT_COMMIT = extra.commit ?? 'dev';
 const SOURCE_URL = sourceCodeUrl(extra.sourceCodeUrl);

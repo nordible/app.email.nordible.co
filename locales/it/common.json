@@ -2251,10 +2251,10 @@
       },
       "link_device": {
         "title": "Collega l'app mobile",
-        "description": "Accedi all'app Bulwark Mail sul telefono senza digitarvi la password. Il telefono ottiene un proprio accesso, quindi disconnetterti qui non lo disconnette.",
+        "description": "Accedi all'app EMAIL by Nordible.Co sul telefono senza digitarvi la password. Il telefono ottiene un proprio accesso, quindi disconnetterti qui non lo disconnette.",
         "generate": "Mostra codice QR",
         "regenerate": "Mostra un nuovo codice",
-        "instructions": "Apri l'app Bulwark Mail e tocca \"Scan a sign-in code\" nella schermata di accesso (oppure \"Add account\" → \"Scan a sign-in code\" se hai già effettuato l'accesso), poi inquadra qui con la fotocamera.",
+        "instructions": "Apri l'app EMAIL by Nordible.Co e tocca \"Scan a sign-in code\" nella schermata di accesso (oppure \"Add account\" → \"Scan a sign-in code\" se hai già effettuato l'accesso), poi inquadra qui con la fotocamera.",
         "expires_in": "Questo codice scade tra {seconds} secondi. Può essere usato una sola volta.",
         "expired": "Questo codice è scaduto.",
         "error": "Impossibile creare un codice di associazione. Riprova.",
@@ -3524,7 +3524,8 @@
       "manage": "Gestisci regole",
       "senders_count": "{count, plural, one {# mittente} other {# mittenti}}",
       "cross_account": "Seleziona messaggi di un solo account",
-      "opaque_hint": "I tuoi filtri sono stati modificati a mano. Apri le impostazioni dei filtri",
+      "opaque_hint": "I tuoi filtri sono stati modificati a mano. Apri le impostazioni dei filtri"
+,
       "loading": "Caricamento delle regole…",
       "load_failed": "Impossibile caricare le regole",
       "none": "Nessuna regola",
@@ -4886,7 +4887,7 @@
     "dismiss": "Chiudi",
     "start_tour": "Inizia il tour"
   },
-  "demo_welcome": {
+  "demo_welcome": {EMAIL by Nordible.Co
     "title": "Benvenuto su Bulwark Mail",
     "description": "Esplora un client webmail completo - direttamente nel tuo browser. Tutti i dati restano sul tuo dispositivo, quindi prova tutto.",
     "feature_email": "Leggere e scrivere email",

@@ -30,7 +30,7 @@ is the usual way to make one, but OpenSSL works and does not need a Mac:
 ```bash
 openssl genrsa -out dist.key 2048
 openssl req -new -key dist.key -out dist.csr \
-  -subj "/emailAddress=you@bulwarkmail.org/CN=Bulwark Mail/C=DE"
+  -subj "/emailAddress=you@bulwarkmail.org/CN=EMAIL by Nordible.Co/C=DE"
 ```
 
 Upload `dist.csr` at developer.apple.com → Certificates → **+** → **Apple
