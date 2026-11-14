@@ -137,7 +137,16 @@ if (build.attributes.usesNonExemptEncryption == null) {
 const add = await api('POST', `/v1/betaGroups/${group.id}/relationships/builds`, {
   data: [{ type: 'builds', id: build.id }],
 });
-if (!add.ok) fail(`Adding the build to "${groupName}"`, add);
+if (!add.ok) {
+  const e = add.json?.errors?.[0];
+  if (e?.code === 'ENTITY_UNPROCESSABLE') {
+    console.log(
+      `::notice::Build ${version} (${buildNumber}) is processed and ready in TestFlight for internal testing. Adding to external group "${groupName}" will activate once TestFlight Review Information (contact details) is filled in App Store Connect.`,
+    );
+    process.exit(0);
+  }
+  fail(`Adding the build to "${groupName}"`, add);
+}
 console.log(`Added to the "${groupName}" group.`);
 
 // ── "What to Test" ─────────────────────────────────────────────
@@ -169,7 +178,16 @@ if (external === 'READY_FOR_BETA_SUBMISSION') {
   const submit = await api('POST', '/v1/betaAppReviewSubmissions', {
     data: { type: 'betaAppReviewSubmissions', relationships: { build: { data: { type: 'builds', id: build.id } } } },
   });
-  if (!submit.ok) fail('Submitting for beta review', submit);
+  if (!submit.ok) {
+    const e = submit.json?.errors?.[0];
+    if (e?.code === 'ENTITY_UNPROCESSABLE') {
+      console.log(
+        `::notice::Build ${version} (${buildNumber}) is attached to "${groupName}". Beta review submission is pending Test Information in App Store Connect.`,
+      );
+      process.exit(0);
+    }
+    fail('Submitting for beta review', submit);
+  }
   console.log('Submitted for beta review.');
 } else {
   console.log(`Not submitted again: the build is ${external}.`);
