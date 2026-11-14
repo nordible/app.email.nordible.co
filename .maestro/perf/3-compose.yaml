@@ -1,5 +1,5 @@
 # Perf: open the composer and close it untouched, five times.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 name: Perf compose open
 ---
 - tapOn:

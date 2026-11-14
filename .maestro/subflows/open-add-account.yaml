@@ -1,7 +1,7 @@
 # Signed in: Settings → account card → Account page → Add account, up to the
 # add-mode choices. (On the iPad split layout the Account page is already
 # open; tapping the card again is harmless.)
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 ---
 - tapOn:
     id: tab-settings

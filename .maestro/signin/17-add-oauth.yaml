@@ -1,6 +1,6 @@
 # Second account by OAuth. Adding uses an ephemeral auth session, so the
 # first account's Stalwart sign-in must not be reused.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 name: Add account, OAuth
 tags:
   - signin

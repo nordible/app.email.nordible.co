@@ -6,7 +6,7 @@
 # The avatar's "Select <sender>: <subject>" checkbox mentions the subject
 # too, and a tap on it selects the row instead of opening it (#91): match
 # the row itself by its id.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 ---
 - runFlow:
     when:

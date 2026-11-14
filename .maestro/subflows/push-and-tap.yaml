@@ -2,7 +2,7 @@
 # where it appears, at once (it shows for a few seconds, about as long as
 # Maestro takes to find it). If the tap came too early or too late, push
 # again: up to three tries until the message is open.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 ---
 - repeat:
     while:

@@ -1,5 +1,5 @@
 # Leave the message view: Back on a phone; the split layout keeps the list.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 ---
 - runFlow:
     when:

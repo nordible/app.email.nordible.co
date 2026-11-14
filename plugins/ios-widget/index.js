@@ -21,7 +21,7 @@ const { addTargetFiles, hasTarget } = require('../ios-target-files');
 
 const TARGET = 'BulwarkWidget';
 const DEPLOYMENT_TARGET = '15.1';
-const SHARED_GROUP_SUFFIX = 'org.bulwarkmail.shared';
+const SHARED_GROUP_SUFFIX = 'co.nordible.shared';
 // The widget's own sources, and the ones it borrows from plugins/ios-push.
 const WIDGET_FILES = ['BulwarkWidget.swift'];
 const BORROWED_FILES = ['SharedKeychain.swift'];

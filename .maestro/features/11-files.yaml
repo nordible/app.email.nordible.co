@@ -1,6 +1,6 @@
 # Files: open a folder, preview a text and a PDF file, create and delete a
 # folder.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 name: Files
 tags:
   - features

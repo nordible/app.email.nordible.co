@@ -1,6 +1,6 @@
 # A code that was already used: sign in with it, sign out, open the same link
 # again (same app process, then after a restart, which asks the server).
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 name: Used sign-in code
 tags:
   - signin

@@ -1,5 +1,5 @@
 # Contacts: the list, a contact's detail, create one and delete it again.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 name: Contacts
 tags:
   - features

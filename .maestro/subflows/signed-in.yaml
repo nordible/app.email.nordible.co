@@ -1,6 +1,6 @@
 # Feature flows start here: the app signed in to ACCOUNT, on the inbox.
 # Keeps the app's data between flows; signs in only when needed.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 ---
 - launchApp:
     permissions:

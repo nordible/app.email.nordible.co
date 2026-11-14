@@ -6,7 +6,7 @@
 # the field re-renders. So: no tap for a field that focuses itself (TAP=no;
 # Maestro can't see a React Native field's focus), type the first character,
 # wait until it shows, then type the rest. Retyped up to twice.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 ---
 - evalScript: ${output.typeHead = TEXT.slice(0, 1); output.typeTail = TEXT.slice(1)}
 - runFlow:

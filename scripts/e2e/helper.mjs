@@ -404,7 +404,7 @@ const routes = {
     };
     const file = path.join(os.tmpdir(), `push-${Date.now()}.json`);
     fs.writeFileSync(file, JSON.stringify(payload));
-    await simctl(['push', UDID, 'org.bulwarkmail.mobile', file]);
+    await simctl(['push', UDID, 'co.nordible.mail', file]);
     log(`simpush: ${to} "${subject}"`);
     return { ok: true, emailId: found.id };
   },

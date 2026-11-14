@@ -7,7 +7,7 @@
 # doesn't reach. So search for the page (Q, a word of its title): the row
 # then sits right under the search box. The account card (no Q) is always
 # at the top.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 ---
 - runFlow:
     when:

@@ -1,6 +1,6 @@
 # OAuth with Stalwart's own authorization server: the confirm step's
 # Continue opens an ASWebAuthenticationSession on Stalwart's sign-in page.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 name: OAuth (Stalwart)
 tags:
   - signin

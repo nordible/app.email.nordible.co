@@ -85,13 +85,13 @@ function draw(
   const openApp = { clickAction: 'OPEN_APP' };
   const layout = LAYOUTS[name];
   if (!layout) {
-    return <Surface p={p}><Placeholder p={p} iconName="mail" title="Bulwark" click={openApp} /></Surface>;
+    return <Surface p={p}><Placeholder p={p} iconName="mail" title="Email by Nordible.Co" click={openApp} /></Surface>;
   }
   if (!STATIC.has(name)) {
     if (!s.signedIn && s.generatedAt > 0) {
       return (
         <Surface p={p}>
-          <Placeholder p={p} iconName="lock" title={f.t('widgets.state.signed_out', 'Sign in to Bulwark')} click={openApp} />
+          <Placeholder p={p} iconName="lock" title={f.t('widgets.state.signed_out', 'Sign in to Email by Nordible.Co')} click={openApp} />
         </Surface>
       );
     }
@@ -111,7 +111,7 @@ function draw(
     if (NEEDS_APP.has(name) && !s.appDataAt) {
       return (
         <Surface p={p}>
-          <Placeholder p={p} iconName="refresh" title={f.t('widgets.state.open_to_load', 'Open Bulwark to load this')} click={openApp} />
+          <Placeholder p={p} iconName="refresh" title={f.t('widgets.state.open_to_load', 'Open Email by Nordible.Co to load this')} click={openApp} />
         </Surface>
       );
     }

@@ -249,14 +249,14 @@ jobs:
           set -euo pipefail
           VERSION=$(cat VERSION | tr -d '[:space:]')
           SRC=android/app/build/outputs/apk/github/release/app-github-release.apk
-          DEST="bulwark-mobile-${VERSION}-${GITHUB_SHA::7}.apk"
+          DEST="nordible-email-${VERSION}-${GITHUB_SHA::7}.apk"
           cp "$SRC" "$DEST"
           sha256sum "$DEST" > "$DEST.sha256"
 
           MAPPING_SRC=android/app/build/outputs/mapping/githubRelease/mapping.txt
           MAPPING=""
           if [ -f "$MAPPING_SRC" ]; then
-            MAPPING="bulwark-mobile-${VERSION}-${GITHUB_SHA::7}-mapping.txt"
+            MAPPING="nordible-email-${VERSION}-${GITHUB_SHA::7}-mapping.txt"
             cp "$MAPPING_SRC" "$MAPPING"
           elif grep -Eq '^android\.enableMinifyInReleaseBuilds=true\s*$' android/gradle.properties; then
             echo "::error title=R8 mapping missing::R8 is on but the build wrote no $MAPPING_SRC, so stack traces from this APK could not be decoded."
@@ -435,8 +435,8 @@ jobs:
         run: |
           set -euo pipefail
           VERSION=$(cat VERSION | tr -d '[:space:]')
-          AAB="bulwark-mobile-play-${VERSION}-${GITHUB_SHA::7}.aab"
-          MAPPING="bulwark-mobile-play-${VERSION}-${GITHUB_SHA::7}-mapping.txt"
+          AAB="nordible-email-play-${VERSION}-${GITHUB_SHA::7}.aab"
+          MAPPING="nordible-email-play-${VERSION}-${GITHUB_SHA::7}-mapping.txt"
           cp android/app/build/outputs/bundle/playRelease/app-play-release.aab "$AAB"
           cp android/app/build/outputs/mapping/playRelease/mapping.txt "$MAPPING"
           echo "aab=$AAB" >> "$GITHUB_OUTPUT"

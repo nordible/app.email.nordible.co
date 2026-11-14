@@ -1,6 +1,6 @@
 # Compose a new message and send it to userb; userb's mailbox (checked over
 # JMAP) must get it.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 name: Compose and send
 tags:
   - features

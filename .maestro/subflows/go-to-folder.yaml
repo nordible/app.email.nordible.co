@@ -1,5 +1,5 @@
 # Open folder FOLDER from the drawer or docked sidebar.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 ---
 - runFlow: open-drawer.yaml
 # A folder row's label joins its texts: "<name>, <unread>, /, <total>".

@@ -1,6 +1,6 @@
 # Scheduled send: schedule a message for later, find it under Scheduled,
 # cancel it.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 name: Scheduled send
 tags:
   - features

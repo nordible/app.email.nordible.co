@@ -8,7 +8,7 @@
 # puts sender and subject in, never runs that way (the log shows no
 # NotificationService process). So the banner shows the placeholder here;
 # the extension needs a real APNs push to be tested.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 name: Push notification on iOS
 tags:
   - push

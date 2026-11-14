@@ -1,5 +1,5 @@
 # Calendar: the views, create an event with a reminder, edit it, delete it.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 name: Calendar
 tags:
   - features

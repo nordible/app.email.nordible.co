@@ -1,6 +1,6 @@
 # Incoming mail while the app is open (sent by userb over JMAP), then reply
 # and forward it; userb receives both, the forward with the attachment.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 name: Incoming, reply, forward
 tags:
   - features

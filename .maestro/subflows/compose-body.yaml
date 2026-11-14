@@ -4,7 +4,7 @@
 # FROM_SUBJECT=yes: the Subject field has the focus; Return there moves it
 # to the body (an iPad in landscape shows hardly any body with the keyboard
 # up, so there is nothing to tap).
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 ---
 - runFlow:
     when:

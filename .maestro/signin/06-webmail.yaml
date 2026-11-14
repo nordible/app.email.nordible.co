@@ -1,6 +1,6 @@
 # Sign in via webmail: the confirm step on a Bulwark webmail address hands
 # off to the webmail's sign-in page in an auth session.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 name: Webmail hand-off
 tags:
   - signin

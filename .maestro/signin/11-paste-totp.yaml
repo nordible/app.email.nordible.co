@@ -1,5 +1,5 @@
 # "Paste sign-in link" for a TOTP account.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 name: Paste sign-in link, TOTP account
 tags:
   - signin

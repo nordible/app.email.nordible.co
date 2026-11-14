@@ -1,6 +1,6 @@
 # Mailbox list and folders: the drawer (or docked sidebar) lists the role
 # folders and custom ones; opening a folder shows its messages.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 name: Folders
 tags:
   - features

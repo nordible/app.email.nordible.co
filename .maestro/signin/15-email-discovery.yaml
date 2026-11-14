@@ -1,6 +1,6 @@
 # "Use my email address": example.org has no autodiscovery, so the app moves
 # on to the server step and names the domain.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 name: Email address discovery
 tags:
   - signin

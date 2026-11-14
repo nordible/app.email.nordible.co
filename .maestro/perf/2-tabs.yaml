@@ -1,5 +1,5 @@
 # Perf: switch through the tabs, three times.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 name: Perf tab switches
 ---
 - repeat:

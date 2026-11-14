@@ -1,6 +1,6 @@
 # Stalwart's own sign-in page inside the auth session. env LOGIN, TOTP (any
 # non-empty value: the account needs a one-time code).
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 ---
 - extendedWaitUntil:
     visible: "you@example.com"

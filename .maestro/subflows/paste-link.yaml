@@ -1,6 +1,6 @@
 # The helper has put a sign-in link on the simulator's clipboard: open
 # "Paste sign-in link", paste it and sign in.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 ---
 - tapOn: "Paste sign-in link.*"
 - extendedWaitUntil:

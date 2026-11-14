@@ -1,6 +1,6 @@
 # The helper checks over JMAP that AS (default userb) received SUBJECT; with
 # ATTACHMENT set, that the message carries that file.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 ---
 - runScript:
     file: ../scripts/helper.js

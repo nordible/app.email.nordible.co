@@ -73,7 +73,7 @@ jobs:
             if [ -z "$NSE_PROFILE" ]; then
               # The notification service extension (plugins/ios-push) is its
               # own App ID and needs its own App Store profile.
-              echo "::error::IOS_NSE_PROVISIONING_PROFILE_BASE64 is not set: the notification extension (org.bulwarkmail.mobile.NotificationService) can't be signed."
+              echo "::error::IOS_NSE_PROVISIONING_PROFILE_BASE64 is not set: the notification extension (co.nordible.mail.NotificationService) can't be signed."
               exit 1
             fi
             echo "signed=true" >> "$GITHUB_OUTPUT"
@@ -210,7 +210,7 @@ jobs:
             -scheme "${{ steps.xcode.outputs.scheme }}" \
             -configuration Release \
             -destination 'generic/platform=iOS' \
-            -archivePath "$RUNNER_TEMP/Bulwark.xcarchive" \
+            -archivePath "$RUNNER_TEMP/Nordible.xcarchive" \
             CODE_SIGN_STYLE=Manual \
             DEVELOPMENT_TEAM="$TEAM_ID" \
             CODE_SIGN_IDENTITY="Apple Distribution"
@@ -261,13 +261,13 @@ jobs:
           PLIST
 
           xcodebuild -exportArchive \
-            -archivePath "$RUNNER_TEMP/Bulwark.xcarchive" \
+            -archivePath "$RUNNER_TEMP/Nordible.xcarchive" \
             -exportPath "$RUNNER_TEMP/export" \
             -exportOptionsPlist "$RUNNER_TEMP/ExportOptions.plist"
 
           VERSION=$(cat VERSION | tr -d '[:space:]')
           SRC=$(ls "$RUNNER_TEMP"/export/*.ipa | head -1)
-          DEST="bulwark-mobile-${VERSION}-${GITHUB_SHA::7}.ipa"
+          DEST="nordible-email-${VERSION}-${GITHUB_SHA::7}.ipa"
           cp "$SRC" "$DEST"
           echo "path=$DEST" >> "$GITHUB_OUTPUT"
           echo "version=$VERSION" >> "$GITHUB_OUTPUT"
@@ -329,4 +329,5 @@ jobs:
         env:
           ASC_KEY_ID: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
           ASC_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
+          BUNDLE_ID: co.nordible.mail
         run: node scripts/testflight-public.mjs "${{ needs.build.outputs.version }}" "${{ github.run_number }}"

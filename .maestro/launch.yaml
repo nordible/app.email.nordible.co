@@ -2,7 +2,7 @@
 # into a field works. Needs no server, so it runs before every suite as the
 # warm-up for the XCTest driver. It types only a made-up address, so its
 # debug log is safe to print.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 name: Launch to sign-in
 tags:
   - smoke

@@ -1,7 +1,7 @@
 # Every settings page opens and shows its content, first half (13-settings-more
 # has the rest: one flow for all 24 pages ran into the 15-minute flow limit on
 # the iPad simulator).
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 name: Settings pages
 tags:
   - features

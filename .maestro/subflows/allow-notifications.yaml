@@ -2,7 +2,7 @@
 # reminders, push). The system alert covers the whole app, so XCTest sees
 # nothing else until it is answered: allow it when it is up. Taps on system
 # alerts miss in landscape, so answer it in portrait.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 ---
 - runFlow:
     when:

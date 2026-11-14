@@ -1,6 +1,6 @@
 # An expired code (codes live 2 minutes): the helper creates one now and
 # opens it after 130 s. The app says so and stays on the sign-in screen.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 name: Expired sign-in code
 tags:
   - signin

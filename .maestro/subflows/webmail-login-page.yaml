@@ -1,6 +1,6 @@
 # The Bulwark webmail's sign-in page inside the auth session (the app's
 # "Sign in via webmail" hand-off). env LOGIN, TOTP=yes for a TOTP account.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 ---
 - extendedWaitUntil:
     visible: "user@example.com"

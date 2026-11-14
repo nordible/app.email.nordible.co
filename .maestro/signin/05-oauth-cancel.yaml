@@ -1,6 +1,6 @@
 # Backing out of OAuth: Cancel on the system alert, and closing the sheet
 # halfway. Both leave the user on the confirm step without an error.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 name: OAuth cancelled
 tags:
   - signin

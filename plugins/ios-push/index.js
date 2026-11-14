@@ -42,7 +42,7 @@ const SOURCE_FILES = ['NotificationService.swift', 'SharedKeychain.swift', 'Jmap
 // background refresh task.
 const APP_SOURCE_FILES = ['SharedKeychain.swift', 'Jmap.swift', 'PushRenewal.swift', 'PushRenewalTask.swift'];
 // PushRenewalTask.identifier
-const RENEWAL_TASK_ID = 'org.bulwarkmail.mobile.push-renewal';
+const RENEWAL_TASK_ID = 'co.nordible.mail.push-renewal';
 const RENEWAL_REGISTER_CALL = 'PushRenewalTask.register()';
 // Where Expo's AppDelegate.swift hands launch to its superclass; the
 // registration has to run before that returns (Expo's Maps plugin uses the
@@ -50,7 +50,7 @@ const RENEWAL_REGISTER_CALL = 'PushRenewalTask.register()';
 const APP_DELEGATE_LAUNCH = /^([ \t]*)return super\.application\(\w+, didFinishLaunchingWithOptions: \w+\)/m;
 
 function sharedGroupSuffix() {
-  return 'org.bulwarkmail.shared';
+  return 'co.nordible.shared';
 }
 
 function withAppEntitlements(config, { apsEnvironment }) {

@@ -1,6 +1,6 @@
 # The two-factor field is showing (it focuses itself): type a fresh code from
 # the helper and sign in.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 ---
 - extendedWaitUntil:
     visible: "Authentication code"

@@ -1,6 +1,6 @@
 # Performance runs: sign in once (ACCOUNT, the bulk account with thousands of
 # messages). Later installs of other builds keep the data and the keychain.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 name: Perf sign-in
 ---
 - runFlow: ../subflows/start.yaml

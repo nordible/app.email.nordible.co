@@ -1,6 +1,6 @@
 # The QR scanner with camera access denied, then allowed (the simulator has
 # no camera, so nothing can be scanned). Neither may crash the app.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 name: Scanner without camera
 tags:
   - signin

@@ -2,7 +2,7 @@
 # hands back the password, the app finishes with a code of its own. Uses the
 # beta webmail: the stable one still has 06's session in the browser, which
 # strands the hand-off (see 20-webmail-session.yaml).
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 name: Webmail hand-off with TOTP
 tags:
   - signin

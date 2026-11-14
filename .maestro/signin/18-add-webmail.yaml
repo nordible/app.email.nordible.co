@@ -1,5 +1,5 @@
 # Second account via the webmail hand-off, on top of a password account.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 name: Add account, webmail
 tags:
   - signin

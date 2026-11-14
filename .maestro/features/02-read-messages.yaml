@@ -1,6 +1,6 @@
 # Opening messages: plain text, HTML with blocked remote content, a thread,
 # and a PDF attachment in the in-app preview.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 name: Read messages
 tags:
   - features

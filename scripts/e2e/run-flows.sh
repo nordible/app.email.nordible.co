@@ -124,17 +124,17 @@ xcrun simctl spawn "$UDID" log show --last 90m --style compact --info \
 # notification settings the simulator stored for it.
 if [ "$SUITE" = push ]; then
   xcrun simctl spawn "$UDID" log show --last 90m --style compact --info --predicate \
-    'process == "NotificationService" OR subsystem == "org.bulwarkmail.mobile.NotificationService" OR ((process == "SpringBoard" OR process CONTAINS "usernotification" OR process == "apsd") AND eventMessage CONTAINS[c] "bulwarkmail")' \
+    'process == "NotificationService" OR subsystem == "co.nordible.mail.NotificationService" OR ((process == "SpringBoard" OR process CONTAINS "usernotification" OR process == "apsd") AND eventMessage CONTAINS[c] "nordible")' \
     > "$OUT/push.log" 2>&1 || true
   SIMDATA="$HOME/Library/Developer/CoreSimulator/Devices/$UDID/data"
   {
     find "$SIMDATA/Library" \( -path '*BulletinBoard*' -o -path '*UserNotifications*' \) -maxdepth 4 2>/dev/null | head -50
     for f in $(find "$SIMDATA/Library" \( -path '*BulletinBoard*' -o -path '*UserNotifications*' \) -name '*.plist' 2>/dev/null | head -20); do
       echo "== $f"
-      plutil -p "$f" 2>/dev/null | grep -i -A12 bulwarkmail | head -60
+      plutil -p "$f" 2>/dev/null | grep -i -A12 nordible | head -60
     done
     echo "== app extension in the bundle"
-    ls "$(xcrun simctl get_app_container "$UDID" org.bulwarkmail.mobile app 2>/dev/null)/PlugIns" 2>&1
+    ls "$(xcrun simctl get_app_container "$UDID" co.nordible.mail app 2>/dev/null)/PlugIns" 2>&1
   } > "$OUT/push-settings.txt" 2>&1 || true
 fi
 

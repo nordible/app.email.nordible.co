@@ -1,6 +1,6 @@
 # From the sign-in choices: enter a server address by hand and continue to the
 # confirm step. env HOST: the address as a user types it.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 ---
 - tapOn: "Enter server details manually"
 - extendedWaitUntil:

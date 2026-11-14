@@ -1,5 +1,5 @@
 # Perf: fling through the long inbox (thousands of messages), then back up.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 name: Perf list scroll
 ---
 - tapOn:

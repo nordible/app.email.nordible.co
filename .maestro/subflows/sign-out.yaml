@@ -1,6 +1,6 @@
 # Signed in: sign out of the active account from the end of Settings.
 # On the iPad the Settings list is the left column; scroll that one.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 ---
 - tapOn:
     id: tab-settings

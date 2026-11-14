@@ -1,5 +1,5 @@
 # Back to the inbox list, from wherever in the Mail tab.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 ---
 - runFlow:
     when:

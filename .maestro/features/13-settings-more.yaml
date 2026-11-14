@@ -1,5 +1,5 @@
 # Every settings page opens and shows its content, second half (see 12-settings).
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 name: Settings pages, continued
 tags:
   - features

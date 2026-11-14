@@ -83,7 +83,7 @@ export function iosWidgetSnapshot(s: WidgetSnapshot): IosWidgetSnapshot {
       inbox: f.t('widgets.mail.inbox', 'Inbox'),
       unread: f.t('widgets.mail.unread', 'unread'),
       empty: f.t('widgets.mail.empty_inbox', 'Your inbox is empty'),
-      signedOut: f.t('widgets.state.signed_out', 'Sign in to Bulwark'),
+      signedOut: f.t('widgets.state.signed_out', 'Sign in to Email by Nordible.Co'),
       noSubject,
     },
   };

@@ -1,5 +1,5 @@
 # Second account from a sign-in link opened by another app while signed in.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 name: Add account, sign-in link
 tags:
   - signin

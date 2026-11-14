@@ -40,7 +40,7 @@ for (let i = 0; i < args.length; i++) {
   }
 }
 const UDID = process.env.UDID;
-const BUNDLE = 'org.bulwarkmail.mobile';
+const BUNDLE = 'co.nordible.mail';
 const rounds = Number(opt('rounds', 5));
 const coldRuns = Number(opt('cold', 3));
 const flows = (opt('flows', '') || '').split(',').filter(Boolean);

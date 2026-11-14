@@ -1,6 +1,6 @@
 # Show the folder list: the modal drawer, or nothing to do where the sidebar
 # is docked (iPad landscape).
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 ---
 - waitForAnimationToEnd:
     timeout: 3000

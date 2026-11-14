@@ -6,7 +6,7 @@
 # the text with a long press didn't work and appended instead. SECRET=yes
 # skips the check (a password field shows dots). TAP=no types into the
 # field that has the focus already.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 ---
 - runFlow:
     when:

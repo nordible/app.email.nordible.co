@@ -1,6 +1,6 @@
 # Signed in: the tab bar is there and the inbox shows messages. Dismisses the
 # one-time prompts on the way.
-appId: org.bulwarkmail.mobile
+appId: co.nordible.mail
 ---
 - extendedWaitUntil:
     visible:

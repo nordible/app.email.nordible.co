@@ -102,9 +102,9 @@ describe('the config plugin wires the renewal into the app', () => {
 
   it('permits the task, adds the fetch background mode and names the shared keychain group', () => {
     const plist = internals.setRenewalInfoPlist({ UIBackgroundModes: ['remote-notification'] }, { teamId: 'TEAM' });
-    expect(plist.BGTaskSchedulerPermittedIdentifiers).toEqual(['org.bulwarkmail.mobile.push-renewal']);
+    expect(plist.BGTaskSchedulerPermittedIdentifiers).toEqual(['co.nordible.mail.push-renewal']);
     expect(plist.UIBackgroundModes).toEqual(['remote-notification', 'fetch']);
-    expect(plist.BulwarkKeychainGroup).toBe('TEAM.org.bulwarkmail.shared');
+    expect(plist.BulwarkKeychainGroup).toBe('TEAM.co.nordible.shared');
   });
 
   it('compiles the renewal into the extension and the app', () => {
