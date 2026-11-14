@@ -23,15 +23,15 @@ COMMIT = COMMIT.slice(0, 7);
 const IOS_BUILD_NUMBER = process.env.IOS_BUILD_NUMBER || '1';
 
 // Apple team: prefixes the keychain groups the app shares with its
-// notification service extension (plugins/ios-push). Not a secret.
-const APPLE_TEAM_ID = process.env.APPLE_TEAM_ID || '8ZANF9LQ39';
+// notification service extension (plugins/ios-push).
+const APPLE_TEAM_ID = process.env.APPLE_TEAM_ID || '';
 // Which APNs host the device tokens belong to: TestFlight and App Store builds
 // use production, simulators and development builds the sandbox.
 const APS_ENVIRONMENT = process.env.APS_ENVIRONMENT === 'development' ? 'development' : 'production';
 
 module.exports = {
   expo: {
-    name: 'Nordible Business Email',
+    name: 'Email by Nordible.Co',
     slug: 'nordible-email',
     // mailto: lets Android/iOS offer the app for mail links in other apps;
     // nordiblemail / bulwarkmail: webmail's sign-in link (nordiblemail://pair?...).
@@ -77,7 +77,7 @@ module.exports = {
         'expo-camera',
         {
           cameraPermission:
-            'Nordible Business Email uses the camera to scan sign-in QR codes shown in webmail.',
+            'Email by Nordible.Co uses the camera to scan sign-in QR codes shown in webmail.',
           microphonePermission: false,
         },
       ],
@@ -85,7 +85,7 @@ module.exports = {
         'expo-image-picker',
         {
           photosPermission:
-            'Nordible Business Email needs access to your photos so you can attach them to emails and set contact photos.',
+            'Email by Nordible.Co needs access to your photos so you can attach them to emails and set contact photos.',
           cameraPermission: false,
           microphonePermission: false,
         },

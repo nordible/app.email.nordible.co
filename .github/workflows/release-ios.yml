@@ -33,6 +33,7 @@ jobs:
       # App Store Connect refuses a CFBundleVersion it has already seen for this
       # marketing version, so every run needs a fresh, increasing number.
       IOS_BUILD_NUMBER: ${{ github.run_number }}
+      APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
 
     steps:
       - uses: actions/checkout@v4

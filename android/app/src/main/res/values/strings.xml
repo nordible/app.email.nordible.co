@@ -1,5 +1,5 @@
 <resources>
-  <string name="app_name">Nordible Business Email</string>
+  <string name="app_name">Email by Nordible.Co</string>
   <string name="expo_splash_screen_resize_mode" translatable="false">contain</string>
   <string name="expo_splash_screen_status_bar_translucent" translatable="false">false</string>
   <!-- Account type label of device sync (#34), shown in Settings → Accounts. -->
