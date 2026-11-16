@@ -131,6 +131,7 @@ module.exports = {
       sourceCodeUrl: process.env.EXPO_PUBLIC_SOURCE_CODE_URL || process.env.SOURCE_CODE_URL || '',
       websiteUrl: process.env.EXPO_PUBLIC_WEBSITE_URL || '',
       privacyPolicyUrl: process.env.EXPO_PUBLIC_PRIVACY_POLICY_URL || '',
+      supportUrl: process.env.EXPO_PUBLIC_SUPPORT_URL || '',
       webmailUrl: process.env.EXPO_PUBLIC_WEBMAIL_URL || '',
       relayBaseUrl: process.env.EXPO_PUBLIC_RELAY_BASE_URL || '',
       defaultHost: process.env.EXPO_PUBLIC_DEFAULT_HOST || '',

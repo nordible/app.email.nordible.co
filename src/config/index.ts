@@ -3,6 +3,7 @@ interface AppConfigExtra {
   sourceCodeUrl?: string;
   websiteUrl?: string;
   privacyPolicyUrl?: string;
+  supportUrl?: string;
   relayBaseUrl?: string;
   defaultHost?: string;
   webmailUrl?: string;
@@ -41,6 +42,7 @@ export const APP_CONFIG = {
   // Core Service Endpoints & URLs from .env
   websiteUrl: process.env.EXPO_PUBLIC_WEBSITE_URL || extra.websiteUrl || 'https://email.nordible.co/',
   privacyPolicyUrl: process.env.EXPO_PUBLIC_PRIVACY_POLICY_URL || extra.privacyPolicyUrl || 'https://email.nordible.co/privacy',
+  supportUrl: process.env.EXPO_PUBLIC_SUPPORT_URL || extra.supportUrl || 'https://email.nordible.co/faq',
   webmailUrl: process.env.EXPO_PUBLIC_WEBMAIL_URL || extra.webmailUrl || 'https://mailapp1.nordible.co',
   relayBaseUrl: process.env.EXPO_PUBLIC_RELAY_BASE_URL || extra.relayBaseUrl || 'https://email-notifications.nordible.co',
   defaultHost: process.env.EXPO_PUBLIC_DEFAULT_HOST || extra.defaultHost || 'mail1.nordible.co',

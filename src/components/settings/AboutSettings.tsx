@@ -96,17 +96,8 @@ export function AboutSettings({ onOpen }: AboutSettingsProps) {
     })
     : t('settings.about.never_checked', 'Not checked yet');
 
-  const reportProblem = () => {
-    const constants = Platform.constants as { Release?: string; Model?: string };
-    void Linking.openURL(buildIssueUrl(
-      { version: APP_VERSION, commit: GIT_COMMIT },
-      {
-        os: Platform.OS,
-        osVersion: Platform.Version,
-        release: constants.Release,
-        model: constants.Model,
-      },
-    ));
+  const contactSupport = () => {
+    void Linking.openURL(APP_CONFIG.supportUrl);
   };
 
   return (
@@ -134,14 +125,6 @@ export function AboutSettings({ onOpen }: AboutSettingsProps) {
             )
           )}
         </View>
-        <Pressable
-          onPress={() => void Linking.openURL(SOURCE_URL)}
-          accessibilityRole="link"
-          style={styles.sourceLink}
-        >
-          <Text style={styles.sourceText}>{t('settings.about.source_code', 'Source code')}</Text>
-          <ExternalLink size={14} color={c.mutedForeground} />
-        </Pressable>
       </View>
 
       <SettingsSection
@@ -197,9 +180,9 @@ export function AboutSettings({ onOpen }: AboutSettingsProps) {
           />
         ))}
         <SettingItem
-          label={t('settings.about.report_problem', 'Report a problem')}
-          description={t('settings.about.report_problem_desc', 'Opens an issue on GitHub with the version filled in')}
-          onPress={reportProblem}
+          label={t('settings.about.report_problem', 'Contact support')}
+          description={t('settings.about.report_problem_desc', 'Get help from the Nordible support team')}
+          onPress={contactSupport}
           link="external"
           noBorder
         />
