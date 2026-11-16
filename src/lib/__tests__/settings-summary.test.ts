@@ -24,7 +24,7 @@ describe('settings list summaries', () => {
   it('shows the current values of a pane', () => {
     expect(settingsSummary('language', BASE, t)).toBe('English · 24-hour');
     expect(settingsSummary('language', { ...BASE, timeFormat: '12h' }, t)).toBe('English · 12-hour');
-    expect(settingsSummary('appearance', BASE, t)).toBe('Dark · Bulwark');
+    expect(settingsSummary('appearance', BASE, t)).toBe('Dark · Default');
     expect(settingsSummary('appearance', { ...BASE, theme: 'system', themeName: 'Nord' }, t)).toBe('System · Nord');
     expect(settingsSummary('notifications', BASE, t)).toBe('Mail on · events off');
     expect(settingsSummary('calendar', { ...BASE, calendarDefaultView: 'week', calendarFirstDayOfWeek: 0 }, t))

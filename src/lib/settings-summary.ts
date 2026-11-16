@@ -71,10 +71,10 @@ export function settingsSummary(tab: SettingsTabId, s: SummaryState, t: T): stri
     case 'appearance':
       return [
         t(`settings.appearance.theme.${s.theme}`, s.theme[0].toUpperCase() + s.theme.slice(1)),
-        s.themeName ?? t('settings.themes.default_name', 'Bulwark'),
+        s.themeName ?? t('settings.themes.default_name', 'Default'),
       ].join(' · ');
     case 'themes':
-      return s.themeName ?? t('settings.themes.default_name', 'Bulwark');
+      return s.themeName ?? t('settings.themes.default_name', 'Default');
     case 'calendar': {
       const [dayKey, dayFallback] = WEEKDAY[s.calendarFirstDayOfWeek] ?? WEEKDAY[1];
       const view = s.calendarDefaultView;

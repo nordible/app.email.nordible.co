@@ -12,7 +12,7 @@ import { useAccountStore } from '../../stores/account-store';
 import { useUpdatesStore } from '../../stores/updates-store';
 import { supportsSideloadUpdates } from '../../lib/platform-capabilities';
 import { APP_CONFIG } from '../../config';
-import { buildIssueUrl, updateSourceUrl } from '../../lib/about-links';
+import { updateSourceUrl } from '../../lib/about-links';
 import { helpLinks } from '../../lib/org-policy';
 import { usePolicyStore } from '../../stores/policy-store';
 
@@ -22,9 +22,6 @@ const LOGO_COLOR = require('../../../assets/logos/Bulwark Logo Color.png');
 export const APP_NAME = APP_CONFIG.appName;
 export const APP_VERSION = APP_CONFIG.appVersion;
 export const GIT_COMMIT = APP_CONFIG.commit;
-const SOURCE_URL = APP_CONFIG.sourceCodeUrl;
-const WEBSITE_URL = APP_CONFIG.websiteUrl;
-const PRIVACY_URL = APP_CONFIG.privacyPolicyUrl;
 
 function hostOf(url: string): string {
   try {
@@ -212,13 +209,5 @@ function makeStyles(c: ThemePalette) {
     updateLineOk: { color: c.success },
     updateLineNew: { color: c.textLink },
     updateLineUrgent: { color: c.error },
-    sourceLink: {
-      flexDirection: 'row',
-      alignItems: 'center',
-      gap: 4,
-      minHeight: 48,
-      paddingHorizontal: 4,
-    },
-    sourceText: { fontSize: 13, color: c.mutedForeground },
   });
 }

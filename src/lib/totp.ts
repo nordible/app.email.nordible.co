@@ -52,7 +52,7 @@ export function generateTotpEnrolment(accountLabel: string, issuerOverride?: str
   // account's mail domain identifies the service far better than the
   // server software's name.
   const at = accountLabel.lastIndexOf('@');
-  const issuer = issuerOverride || (at > 0 ? accountLabel.slice(at + 1) : 'Bulwark');
+  const issuer = issuerOverride || (at > 0 ? accountLabel.slice(at + 1) : 'Nordible');
   const label = accountLabel || 'account';
   const params = new URLSearchParams({
     secret,

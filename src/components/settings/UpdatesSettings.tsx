@@ -190,22 +190,6 @@ export function UpdatesSettings() {
           </SettingItem>
         ) : null}
 
-        {cachedLatest?.htmlUrl ? (
-          <SettingItem
-            label={t('updates.release_page', 'Release page')}
-            description={apkPending
-              ? t('updates.release_page_pending_desc', 'Watch the build progress or download the APK manually.')
-              : t('updates.release_page_desc', 'Full release notes and downloads on GitHub.')}
-          >
-            <Button
-              variant="ghost"
-              size="sm"
-              onPress={() => void Linking.openURL(cachedLatest.htmlUrl)}
-            >
-              {t('updates.open_github', 'Open on GitHub')}
-            </Button>
-          </SettingItem>
-        ) : null}
 
         {installing && installProgress ? (
           <View style={styles.progressBox}>

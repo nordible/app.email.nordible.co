@@ -2,7 +2,6 @@ import React from 'react';
 import { View, Linking } from 'react-native';
 import { SettingsSection, SettingItem } from './settings-section';
 import { useLocaleStore } from '../../stores/locale-store';
-import { NATIVE_REPO_URL } from '../../lib/about-links';
 import licences from '../../lib/licences.json';
 import { APP_NAME } from './AboutSettings';
 
@@ -22,7 +21,7 @@ export function LicencesSettings() {
         <SettingItem
           label={licences.app.license}
           description={t('settings.licences.read_licence', 'Read the full licence text')}
-          onPress={() => void Linking.openURL(`${NATIVE_REPO_URL}/blob/main/LICENSE`)}
+          onPress={() => void Linking.openURL('https://www.gnu.org/licenses/agpl-3.0.html')}
           link="external"
           noBorder
         />
