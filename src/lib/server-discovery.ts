@@ -7,6 +7,7 @@
 // back empty the caller falls through to asking for the server by hand, so a
 // slow or hostile network must never be worse than typing it in.
 
+import { APP_CONFIG } from '../config';
 import { secureFetch } from './client-cert';
 import { signalWithTimeout } from './sign-in-abort';
 import { toAsciiDomain } from './idn';
@@ -109,8 +110,8 @@ function hostOf(url: string): string {
  * tie-break order when several respond.
  */
 export function serverCandidates(domain: string): string[] {
-  const defaultHost = process.env.EXPO_PUBLIC_DEFAULT_HOST;
-  const defaultUrl = defaultHost ? normalizeServerUrl(defaultHost) : 'https://mail1.nordible.co';
+  const defaultHost = APP_CONFIG.defaultHost;
+  const defaultUrl = defaultHost ? normalizeServerUrl(defaultHost) : null;
   const list = [`https://${domain}`, `https://mail.${domain}`, `https://webmail.${domain}`];
   if (defaultUrl && !list.includes(defaultUrl)) {
     list.unshift(defaultUrl);
@@ -257,8 +258,8 @@ export async function discoverServerForEmail(
   );
   if (options.signal?.aborted) return null;
 
-  const defaultHost = process.env.EXPO_PUBLIC_DEFAULT_HOST;
-  const defaultServer = defaultHost ? normalizeServerUrl(defaultHost) : 'https://mail1.nordible.co';
+  const defaultHost = APP_CONFIG.defaultHost;
+  const defaultServer = defaultHost ? normalizeServerUrl(defaultHost) : null;
 
   // `find` keeps candidate order, so default server or a bare domain wins.
   return results.find((url): url is string => url !== null) ?? defaultServer;

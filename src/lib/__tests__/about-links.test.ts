@@ -1,7 +1,8 @@
 import { describe, it, expect } from 'vitest';
 import {
   buildIssueUrl, describePlatform, sourceCodeUrl, updateSourceUrl,
-  IOS_TESTFLIGHT_URL, NATIVE_REPO_URL,
+  websiteUrl, privacyPolicyUrl,
+  IOS_TESTFLIGHT_URL, NATIVE_REPO_URL, DEFAULT_WEBSITE_URL, DEFAULT_PRIVACY_POLICY_URL,
 } from '../about-links';
 
 function bodyOf(url: string): string {
@@ -30,6 +31,16 @@ describe('about links', () => {
     expect(sourceCodeUrl(undefined)).toBe(NATIVE_REPO_URL);
     expect(sourceCodeUrl('')).toBe(NATIVE_REPO_URL);
     expect(sourceCodeUrl('javascript:alert(1)')).toBe(NATIVE_REPO_URL);
+  });
+
+  it('links the configured website and privacy policy, falling back to defaults', () => {
+    expect(websiteUrl('https://custom.example.com/')).toBe('https://custom.example.com/');
+    expect(websiteUrl(undefined)).toBe(DEFAULT_WEBSITE_URL);
+    expect(websiteUrl('')).toBe(DEFAULT_WEBSITE_URL);
+
+    expect(privacyPolicyUrl('https://custom.example.com/privacy')).toBe('https://custom.example.com/privacy');
+    expect(privacyPolicyUrl(undefined)).toBe(DEFAULT_PRIVACY_POLICY_URL);
+    expect(privacyPolicyUrl('')).toBe(DEFAULT_PRIVACY_POLICY_URL);
   });
 
   it('sends iPhone users to TestFlight, not to the GitHub releases', () => {

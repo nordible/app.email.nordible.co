@@ -11,18 +11,20 @@ import { useAuthStore } from '../../stores/auth-store';
 import { useAccountStore } from '../../stores/account-store';
 import { useUpdatesStore } from '../../stores/updates-store';
 import { supportsSideloadUpdates } from '../../lib/platform-capabilities';
-import { buildIssueUrl, sourceCodeUrl, updateSourceUrl } from '../../lib/about-links';
+import { APP_CONFIG } from '../../config';
+import { buildIssueUrl, updateSourceUrl } from '../../lib/about-links';
 import { helpLinks } from '../../lib/org-policy';
 import { usePolicyStore } from '../../stores/policy-store';
 
 const LOGO_WHITE = require('../../../assets/logos/Bulwark Logo White.png');
 const LOGO_COLOR = require('../../../assets/logos/Bulwark Logo Color.png');
 
-const extra = (Constants.expoConfig?.extra ?? {}) as { commit?: string; sourceCodeUrl?: string };
-export const APP_NAME = Constants.expoConfig?.name ?? 'EMAIL by Nordible.Co';
-export const APP_VERSION = Constants.expoConfig?.version ?? '0.0.0';
-export const GIT_COMMIT = extra.commit ?? 'dev';
-const SOURCE_URL = sourceCodeUrl(extra.sourceCodeUrl);
+export const APP_NAME = APP_CONFIG.appName;
+export const APP_VERSION = APP_CONFIG.appVersion;
+export const GIT_COMMIT = APP_CONFIG.commit;
+const SOURCE_URL = APP_CONFIG.sourceCodeUrl;
+const WEBSITE_URL = APP_CONFIG.websiteUrl;
+const PRIVACY_URL = APP_CONFIG.privacyPolicyUrl;
 
 function hostOf(url: string): string {
   try {
@@ -169,6 +171,22 @@ export function AboutSettings({ onOpen }: AboutSettingsProps) {
           description={t('settings.about.privacy_desc', 'What stays on this device and what goes to your server')}
           onPress={() => onOpen?.('privacy')}
         />
+        {Boolean(APP_CONFIG.privacyPolicyUrl) && (
+          <SettingItem
+            label={t('privacy_policy', 'Privacy Policy')}
+            description={APP_CONFIG.privacyPolicyUrl}
+            onPress={() => void Linking.openURL(APP_CONFIG.privacyPolicyUrl)}
+            link="external"
+          />
+        )}
+        {Boolean(APP_CONFIG.websiteUrl) && (
+          <SettingItem
+            label={t('website', 'Website')}
+            description={APP_CONFIG.websiteUrl}
+            onPress={() => void Linking.openURL(APP_CONFIG.websiteUrl)}
+            link="external"
+          />
+        )}
         {/* The operator's accessibility and help links, from the account's webmail. */}
         {helpLinks(operatorLinks).map((link) => (
           <SettingItem

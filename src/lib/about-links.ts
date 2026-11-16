@@ -1,8 +1,12 @@
+import { APP_CONFIG } from '../config';
+
 // Links on Settings → About: where the source is, where iPhone users get the
 // app, and a prefilled GitHub issue. Kept free of React Native so it can be
 // unit-tested; the screen passes in the platform details.
 
-export const NATIVE_REPO_URL = 'https://github.com/nordible/app.email.nordible.co';
+export const NATIVE_REPO_URL = APP_CONFIG.sourceCodeUrl;
+export const DEFAULT_WEBSITE_URL = APP_CONFIG.websiteUrl;
+export const DEFAULT_PRIVACY_POLICY_URL = APP_CONFIG.privacyPolicyUrl;
 
 /** Public TestFlight link (README). There is no App Store listing yet. */
 export const IOS_TESTFLIGHT_URL = 'https://testflight.apple.com/join/rumcjNSp';
@@ -17,14 +21,27 @@ export interface DeviceInfo {
 }
 
 /**
- * Where "Source code" points. A build can set `extra.sourceCodeUrl` in
- * app.config.js (SOURCE_CODE_URL at build time), like the webmail's
- * sourceCodeUrl: someone who ships a modified app links their own source
- * (AGPL §13). Anything that isn't an http(s) URL falls back to upstream.
+ * Where "Source code" points. Sourced from centralized APP_CONFIG (.env).
  */
-export function sourceCodeUrl(configured: unknown): string {
+export function sourceCodeUrl(configured?: unknown): string {
   if (typeof configured === 'string' && /^https?:\/\/\S+$/i.test(configured.trim())) return configured.trim();
-  return NATIVE_REPO_URL;
+  return APP_CONFIG.sourceCodeUrl;
+}
+
+/**
+ * Where "Website" points. Sourced from centralized APP_CONFIG (.env).
+ */
+export function websiteUrl(configured?: unknown): string {
+  if (typeof configured === 'string' && /^https?:\/\/\S+$/i.test(configured.trim())) return configured.trim();
+  return APP_CONFIG.websiteUrl;
+}
+
+/**
+ * Where online "Privacy Policy" points. Sourced from centralized APP_CONFIG (.env).
+ */
+export function privacyPolicyUrl(configured?: unknown): string {
+  if (typeof configured === 'string' && /^https?:\/\/\S+$/i.test(configured.trim())) return configured.trim();
+  return APP_CONFIG.privacyPolicyUrl;
 }
 
 /** "Android 14 (API 34) · Pixel 7", "iOS 18.1 · iPhone". */

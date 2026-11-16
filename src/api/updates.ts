@@ -1,4 +1,6 @@
-export const UPDATE_REPO = 'nordible/app.email.nordible.co';
+import { APP_CONFIG } from '../config';
+
+export const UPDATE_REPO = APP_CONFIG.updateRepo;
 
 export interface ReleaseAsset {
   name: string;

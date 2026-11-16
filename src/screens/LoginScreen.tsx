@@ -1,5 +1,6 @@
 import React from 'react';
 import { Alert, BackHandler } from 'react-native';
+import { APP_CONFIG } from '../config';
 import { useAuthStore } from '../stores/auth-store';
 import { useAccountStore } from '../stores/account-store';
 import { useLocaleStore, type TranslateFn } from '../stores/locale-store';
@@ -376,9 +377,9 @@ export default function LoginScreen({ onLogin, isAddMode = false, onCancel }: Lo
     setSearching(true);
     rememberEmail(value);
     try {
-      const defaultHost = process.env.EXPO_PUBLIC_DEFAULT_HOST;
-      const defaultServer = (defaultHost ? normalizeServerUrl(defaultHost) : null) ?? 'https://mail1.nordible.co';
-      const found = (await discoverServerForEmail(value, { knownServerUrls, signal: attempt.signal })) || defaultServer;
+      const defaultHost = APP_CONFIG.defaultHost;
+      const defaultServer = (defaultHost ? normalizeServerUrl(defaultHost) : null) ?? '';
+      const found = (await discoverServerForEmail(value, { knownServerUrls, signal: attempt.signal })) || defaultServer || '';
       if (!isLive(attempt)) return;
       setServerUrl(found);
       setServerInput(found);

@@ -1033,6 +1033,7 @@
     "title": "Outbox",
     "waiting": "{count, plural, one {# message} other {# messages}} in the Outbox"
   },
+  "privacy_policy": "Privacy Policy",
   "push": {
     "ios": {
       "more_messages": "and {count} more",
@@ -1917,6 +1918,7 @@
     "title": "App updates",
     "verifying": "Verifying…"
   },
+  "website": "Website",
   "widgets": {
     "attachments": {
       "empty": "No recent attachments",

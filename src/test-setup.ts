@@ -39,6 +39,16 @@ vi.mock('@react-native-async-storage/async-storage', () => ({
   },
 }));
 
+vi.mock('expo-constants', () => ({
+  default: {
+    expoConfig: {
+      name: 'EMAIL by Nordible.Co',
+      version: '0.1.92',
+      extra: {},
+    },
+  },
+}));
+
 vi.mock('react-native', () => {
   class NativeEventEmitter {
     addListener() {
