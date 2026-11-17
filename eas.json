@@ -1,0 +1,34 @@
+{
+  "cli": {
+    "version": ">= 12.0.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal",
+      "ios": {
+        "simulator": true
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "env": {
+        "EXPO_PUBLIC_RELAY_BASE_URL": "https://email-notifications.nordible.co",
+        "EXPO_PUBLIC_DEFAULT_HOST": "mail1.nordible.co",
+        "EXPO_PUBLIC_WEBMAIL_URL": "https://mailapp1.nordible.co",
+        "EXPO_PUBLIC_SOURCE_CODE_URL": "https://github.com/nordible/app.email.nordible.co",
+        "EXPO_PUBLIC_WEBSITE_URL": "https://email.nordible.co/",
+        "EXPO_PUBLIC_PRIVACY_POLICY_URL": "https://email.nordible.co/privacy",
+        "EXPO_PUBLIC_SUPPORT_URL": "https://email.nordible.co/faq",
+        "EXPO_PUBLIC_UPDATE_REPO": "nordible/app.email.nordible.co",
+        "EXPO_PUBLIC_CALENDAR_ENABLED": "false"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
