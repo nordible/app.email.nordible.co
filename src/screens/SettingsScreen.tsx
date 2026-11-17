@@ -65,6 +65,7 @@ import {
   sharedAccountSettingsTabs, useHasCalendar, useHasContacts, useHasFiles, useHasSieve, useHasVacation,
 } from '../lib/capabilities';
 import { supportsSideloadUpdates } from '../lib/platform-capabilities';
+import { APP_CONFIG } from '../config';
 import { usePendingSettingsTab } from '../navigation/pending-settings-tab';
 import { useBackWhileFocused } from '../lib/use-back-while-focused';
 import {
@@ -204,7 +205,7 @@ const TAB_COMPONENTS: Partial<Record<Tab, React.ComponentType<any>>> = {
 // current version and build are still shown under "About". Account opens
 // from the card above the list.
 const AVAILABLE_TABS: TabDef[] = TABS.filter(
-  (t) => !t.hidden && t.id !== 'account' && t.id !== 'files' && (t.id !== 'updates' || supportsSideloadUpdates),
+  (t) => !t.hidden && t.id !== 'account' && t.id !== 'files' && (APP_CONFIG.calendarEnabled || t.id !== 'calendar') && (t.id !== 'updates' || supportsSideloadUpdates),
 );
 
 function groupTabs(only: ReadonlySet<Tab> | null, hidden: ReadonlySet<Tab>) {
@@ -249,6 +250,7 @@ export default function SettingsScreen({ onLogout, onBack, onTabSelect }: Settin
     const set = new Set<Tab>();
     if (!recoveryAvailable) set.add('recovery');
     if (!delegationAvailable) set.add('sharing');
+    if (!APP_CONFIG.calendarEnabled) set.add('calendar');
     for (const page of policyHiddenPages(policy)) set.add(page as Tab);
     return set;
   }, [recoveryAvailable, delegationAvailable, policy]);

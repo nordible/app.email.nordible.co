@@ -96,6 +96,7 @@ import { runOfflineSync } from './src/lib/offline-sync';
 import { spacing, typography, type ThemePalette } from './src/theme/tokens';
 import { perfEndAfterPaint, perfMarksEnabled, perfStart } from './src/lib/perf-marks';
 import { useColors } from './src/theme/colors';
+import { APP_CONFIG } from './src/config';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 const Tab = createBottomTabNavigator<MainTabsParamList>();
@@ -142,6 +143,7 @@ async function navigateToNotificationTap(payload: NotificationTapPayload): Promi
 // under the account it was scheduled for. The target is parked for
 // CalendarScreen, which also picks it up when it mounts after a cold start.
 async function openCalendarReminder(target: CalendarReminderTarget): Promise<void> {
+  if (!APP_CONFIG.calendarEnabled) return;
   if (!(await enterLinkAccount(navigationRef, target.appAccountId, switchToAccount))) return;
   setPendingCalendarOpen(target);
   // On a cold start the navigator mounts right after the auth gate flips.
@@ -332,10 +334,11 @@ function MainTabsNavigator({ navigation }: NativeStackScreenProps<RootStackParam
           tabBarItemStyle: hasCalendar ? undefined : disabledTabStyle,
           tabBarAccessibilityLabel: hasCalendar ? tabLabels.calendar : unavailable(tabLabels.calendar),
           ...(calendarAllowed ? null : hiddenTab),
+          ...(APP_CONFIG.calendarEnabled ? null : hiddenTab),
         }}
         listeners={{
           tabPress: (e) => {
-            if (!hasCalendar || !calendarAllowed) e.preventDefault();
+            if (!hasCalendar || !calendarAllowed || !APP_CONFIG.calendarEnabled) e.preventDefault();
           },
         }}
       />
@@ -428,7 +431,9 @@ export default function App() {
     void useLocaleStore.getState().hydrate();
     // Calendar reminders are kept scheduled from launch, not only once the
     // Calendar tab has been opened.
-    startCalendarNotificationSync();
+    if (APP_CONFIG.calendarEnabled) {
+      startCalendarNotificationSync();
+    }
     // Device sync (Android, #34): live changes, the app's own edits and the
     // foreground ask Android to sync; accounts are checked against Android's.
     startDeviceSyncTriggers();
@@ -557,7 +562,7 @@ export default function App() {
   // Calendar reminders are local expo notifications; their taps come through
   // expo-notifications, not the native tap store used for mail push above.
   React.useEffect(() => {
-    if (!isAuthenticated) return;
+    if (!isAuthenticated || !APP_CONFIG.calendarEnabled) return;
     return startCalendarReminderTapHandling((target) => {
       void openCalendarReminder(target);
     });

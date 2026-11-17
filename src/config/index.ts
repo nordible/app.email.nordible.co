@@ -11,6 +11,7 @@ interface AppConfigExtra {
   iosSharedKeychainGroup?: string;
   iosAppKeychainGroup?: string;
   apnsEnvironment?: string;
+  calendarEnabled?: boolean;
 }
 
 let extra: AppConfigExtra = {};
@@ -48,6 +49,9 @@ export const APP_CONFIG = {
   defaultHost: process.env.EXPO_PUBLIC_DEFAULT_HOST || extra.defaultHost || 'mail1.nordible.co',
   sourceCodeUrl: process.env.EXPO_PUBLIC_SOURCE_CODE_URL || process.env.SOURCE_CODE_URL || extra.sourceCodeUrl || 'https://github.com/nordible/app.email.nordible.co',
   updateRepo: process.env.EXPO_PUBLIC_UPDATE_REPO || extra.updateRepo || 'nordible/app.email.nordible.co',
+
+  // Feature Flags
+  calendarEnabled: (process.env.EXPO_PUBLIC_CALENDAR_ENABLED ?? (extra.calendarEnabled !== undefined ? String(extra.calendarEnabled) : 'false')) === 'true',
 
   // Apple & Native Signing Settings
   appleTeamId: process.env.APPLE_TEAM_ID || '63VV52LF88',

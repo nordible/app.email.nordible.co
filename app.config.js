@@ -136,6 +136,7 @@ module.exports = {
       relayBaseUrl: process.env.EXPO_PUBLIC_RELAY_BASE_URL || '',
       defaultHost: process.env.EXPO_PUBLIC_DEFAULT_HOST || '',
       updateRepo: process.env.EXPO_PUBLIC_UPDATE_REPO || 'nordible/app.email.nordible.co',
+      calendarEnabled: process.env.EXPO_PUBLIC_CALENDAR_ENABLED === 'true',
       iosSharedKeychainGroup: `${APPLE_TEAM_ID}.co.nordible.shared`,
       iosAppKeychainGroup: `${APPLE_TEAM_ID}.co.nordible.mail`,
       apnsEnvironment: APS_ENVIRONMENT === 'development' ? 'sandbox' : 'production',
