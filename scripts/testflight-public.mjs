@@ -54,15 +54,36 @@ function token() {
   return `${head}.${body}.${sig}`;
 }
 
-async function api(method, p, body) {
-  const res = await fetch(`https://api.appstoreconnect.apple.com${p}`, {
-    method,
-    headers: { Authorization: `Bearer ${token()}`, 'Content-Type': 'application/json' },
-    body: body ? JSON.stringify(body) : undefined,
-  });
-  const text = await res.text();
-  const json = text ? JSON.parse(text) : null;
-  return { status: res.status, ok: res.ok, json };
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+async function api(method, p, body, retries = 5) {
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    try {
+      const res = await fetch(`https://api.appstoreconnect.apple.com${p}`, {
+        method,
+        headers: { Authorization: `Bearer ${token()}`, 'Content-Type': 'application/json' },
+        body: body ? JSON.stringify(body) : undefined,
+      });
+      const text = await res.text();
+      let json = null;
+      try {
+        json = text ? JSON.parse(text) : null;
+      } catch {}
+      if ((res.status >= 500 || res.status === 429) && attempt < retries) {
+        console.warn(`Apple API returned ${res.status}. Retrying in ${attempt * 4}s (attempt ${attempt}/${retries})...`);
+        await sleep(attempt * 4000);
+        continue;
+      }
+      return { status: res.status, ok: res.ok, json };
+    } catch (err) {
+      if (attempt < retries) {
+        console.warn(`Network error calling Apple API (${err.message}). Retrying in ${attempt * 4}s...`);
+        await sleep(attempt * 4000);
+        continue;
+      }
+      throw err;
+    }
+  }
 }
 
 function fail(step, r) {
@@ -73,8 +94,6 @@ function fail(step, r) {
   }
   process.exit(1);
 }
-
-const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 // ── The app and the group ──────────────────────────────────────
 const apps = await api('GET', `/v1/apps?filter[bundleId]=${encodeURIComponent(bundleId)}&fields[apps]=name`);
