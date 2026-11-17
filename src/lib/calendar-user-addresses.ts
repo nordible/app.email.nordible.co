@@ -47,11 +47,18 @@ export function resetUserCalendarAddressCache(): void {
  * invitation).
  */
 export function useUserCalendarAddresses(loadAliases = true): string[] {
-  const activeEmail = useAccountStore((s) => s.getActiveAccount()?.email ?? null);
-  const identities = useSettingsStore((s) => s.identities);
+  const activeAccount = useAccountStore((s) => s.getActiveAccount?.() ?? s.getDefaultAccount?.() ?? s.accounts?.[0] ?? null);
+  const activeEmail = activeAccount?.email ?? null;
+  const identities = useSettingsStore((s) => s.identities ?? []);
+  const ensureIdentities = useSettingsStore((s) => s.ensureIdentities);
   const [, bump] = React.useReducer((n: number) => n + 1, 0);
 
   const accountId = jmapClient.isConnected ? jmapClient.accountId : null;
+
+  React.useEffect(() => {
+    if (ensureIdentities) void ensureIdentities();
+  }, [ensureIdentities]);
+
   React.useEffect(() => {
     if (!accountId || !loadAliases) return;
     if (aliasCache.has(accountId)) return;
@@ -63,8 +70,8 @@ export function useUserCalendarAddresses(loadAliases = true): string[] {
   const aliases = accountId ? aliasCache.get(accountId) ?? [] : [];
   return React.useMemo(
     () => collectUserCalendarAddresses(
-      [activeEmail],
       identities.map((i) => i.email),
+      [activeEmail],
       aliases,
     ),
     // eslint-disable-next-line react-hooks/exhaustive-deps

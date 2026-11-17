@@ -494,10 +494,13 @@ export function participantFieldsToSave(
 ): Partial<Pick<CalendarEvent, 'participants' | 'organizerCalendarAddress' | 'replyTo'>> {
   const { userEmail, resolveName } = context;
   const userEmails = [userEmail, ...(context.userEmails ?? [])].filter((address): address is string => !!address);
+  const effectiveEmail = (userEmail && userEmail.includes('@'))
+    ? userEmail
+    : userEmails.find((address) => address.includes('@')) || userEmail || userEmails[0];
   const organizes = userOrganizes(event, userEmails);
   if (event && !organizes && sameAddresses(attendees, seedAttendees(event, userEmails))) return {};
-  if (attendees.length > 0 && userEmail) {
-    const organizer = (event ? eventOrganizer(event) : null) ?? { name: '', email: userEmail };
+  if (attendees.length > 0 && effectiveEmail) {
+    const organizer = (event ? eventOrganizer(event) : null) ?? { name: '', email: effectiveEmail };
     const fields: Partial<Pick<CalendarEvent, 'participants' | 'organizerCalendarAddress'>> = {
       participants: buildParticipantMap(
         // A new event has no participants yet, so it would store an empty

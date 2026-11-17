@@ -274,6 +274,16 @@ describe('participantFieldsToSave', () => {
     expect(fields.organizerCalendarAddress).toBe('mailto:me@example.com');
   });
 
+  it('falls back to userEmails when userEmail is empty or lacks an @ domain', () => {
+    const fields = participantFieldsToSave({ title: 'Planning' }, attendees, {
+      userEmail: undefined,
+      userEmails: ['username_only', 'user@example.com'],
+    });
+
+    expect(owner(fields)?.email).toBe('user@example.com');
+    expect(fields.organizerCalendarAddress).toBe('mailto:user@example.com');
+  });
+
   it('clears the participants and the organizer when every attendee is removed', () => {
     expect(participantFieldsToSave(event, [], { userEmail: 'alice@example.com' })).toEqual({
       participants: null,

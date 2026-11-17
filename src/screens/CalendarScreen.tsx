@@ -180,6 +180,7 @@ export default function CalendarScreen() {
   const removeSharedCalendarColor = useSettingsStore((s) => s.removeSharedCalendarColor);
   const contacts = useContactsStore((s) => s.contacts);
   const calendarTimeZone = useSettingsStore((s) => s.calendarTimeZone);
+  const ensureIdentities = useSettingsStore((s) => s.ensureIdentities);
 
   // "Today" is the day on a clock in the calendar's time zone.
   const [selectedDate, setSelectedDate] = React.useState(displayNow);
@@ -428,10 +429,11 @@ export default function CalendarScreen() {
   React.useEffect(() => {
     void hydrate();
     void fetchCalendarsAction();
+    void ensureIdentities();
     // Reminders already sync from launch; opening the calendar may also ask
     // for notification permission.
     startCalendarNotificationSync({ askPermission: true });
-  }, [hydrate, fetchCalendarsAction]);
+  }, [hydrate, fetchCalendarsAction, ensureIdentities]);
 
   // Refresh iCal subscriptions whose interval elapsed: on mount and whenever
   // the app returns to the foreground (like the webmail's periodic refresh).

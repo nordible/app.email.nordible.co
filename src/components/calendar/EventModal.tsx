@@ -432,8 +432,9 @@ export function EventModal({
       const ruleChanged = !!event && !recurrenceRulesEqual(event.recurrenceRules, recurrenceRules);
       // An invitation the user received keeps its organizer; only an event
       // without one is organized by the user.
+      const effectiveUserEmail = currentUserEmails.find((e) => e.includes('@')) || currentUserEmails[0];
       Object.assign(data, participantFieldsToSave(event, attendees, {
-        userEmail: currentUserEmails[0],
+        userEmail: effectiveUserEmail,
         userEmails: currentUserEmails,
         resolveName: resolveContactName,
         rescheduled: timesMoved || (!event?.recurrenceId && ruleChanged),
@@ -448,7 +449,7 @@ export function EventModal({
       }
       // Only the organizer sends: on an invitation someone else sent, a
       // save would reach the organizer as a reply.
-      const send = organizes && attendees.length > 0 && sendInvitations;
+      const send = (organizes || !event) && attendees.length > 0 && sendInvitations;
       // A server that refuses to send the invitations refuses the whole
       // save: offer to keep the event without them.
       const saved = await saveOfferingWithoutInvitations((sendSchedulingMessages) => onSave(data, calendarId, {
