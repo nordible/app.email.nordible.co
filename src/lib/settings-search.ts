@@ -264,7 +264,6 @@ export const SETTINGS_SEARCH_PATHS: Record<SettingsTabId, string[]> = {
     'updates.check_now',
     'updates.auto_check',
     'updates.advisory',
-    'updates.release_page',
   ],
   debug: [
     'settings.advanced.refresh_cache',

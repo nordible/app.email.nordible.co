@@ -237,7 +237,7 @@ function MainTabsNavigator({ navigation }: NativeStackScreenProps<RootStackParam
   // gates); its tab goes away rather than showing as unavailable.
   const calendarAllowed = usePolicyFeature('calendarEnabled');
   const contactsAllowed = usePolicyFeature('contactsEnabled');
-  const filesAllowed = false;
+  const filesAllowed = usePolicyFeature('filesEnabled');
   const hiddenTab = { tabBarItemStyle: { display: 'none' as const }, tabBarButton: () => null };
   const t = useLocaleStore((state) => state.t);
   // The webmail's navigation names; a tab the server lacks says so.
