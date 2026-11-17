@@ -17,8 +17,6 @@ name: iOS simulator tests
 # kept out of them.
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
     inputs:
       app_run_id:
