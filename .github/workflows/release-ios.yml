@@ -5,6 +5,8 @@ name: Release iOS (TestFlight)
 # any native iOS change in app.config.js (or a config plugin), never in ios/.
 
 on:
+  push:
+    branches: [main]
   release:
     types: [published]
   workflow_dispatch:
@@ -286,7 +288,7 @@ jobs:
         # distribution channel for it.
         if: >-
           steps.creds.outputs.signed == 'true' &&
-          (github.event_name == 'release' || inputs.upload_to_testflight)
+          (github.event_name == 'release' || github.event_name == 'push' || inputs.upload_to_testflight)
         env:
           ASC_KEY_ID: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
           ASC_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}

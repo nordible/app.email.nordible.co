@@ -17,6 +17,8 @@ name: iOS simulator tests
 # kept out of them.
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
     inputs:
       app_run_id:
@@ -91,7 +93,7 @@ jobs:
 
   build:
     if: inputs.app_run_id == ''
-    runs-on: macos-latest
+    runs-on: macos-15
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
@@ -190,7 +192,7 @@ jobs:
       always() && !cancelled() &&
       (needs.build.result == 'success' || needs.build.result == 'skipped') &&
       fromJson(needs.plan.outputs.signin).include[0] != null
-    runs-on: macos-latest
+    runs-on: macos-15
     timeout-minutes: 150
     permissions:
       contents: read
@@ -227,7 +229,7 @@ jobs:
       always() && !cancelled() &&
       (needs.build.result == 'success' || needs.build.result == 'skipped') &&
       fromJson(needs.plan.outputs.features).include[0] != null
-    runs-on: macos-latest
+    runs-on: macos-15
     timeout-minutes: 120
     permissions:
       contents: read
@@ -266,7 +268,7 @@ jobs:
       always() && !cancelled() &&
       (needs.build.result == 'success' || needs.build.result == 'skipped') &&
       contains(inputs.legs, 'perf')
-    runs-on: macos-latest
+    runs-on: macos-15
     timeout-minutes: 120
     permissions:
       contents: read
