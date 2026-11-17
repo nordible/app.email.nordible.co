@@ -54,6 +54,9 @@ module.exports = {
       supportsTablet: true,
       bundleIdentifier: 'co.nordible.mail',
       buildNumber: IOS_BUILD_NUMBER,
+      infoPlist: {
+        ITSAppUsesNonExemptEncryption: false,
+      },
     },
     android: {
       adaptiveIcon: {
@@ -140,6 +143,9 @@ module.exports = {
       iosSharedKeychainGroup: `${APPLE_TEAM_ID}.co.nordible.shared`,
       iosAppKeychainGroup: `${APPLE_TEAM_ID}.co.nordible.mail`,
       apnsEnvironment: APS_ENVIRONMENT === 'development' ? 'sandbox' : 'production',
+      eas: {
+        projectId: process.env.EAS_PROJECT_ID || '463806c3-2202-452e-88ac-9b67eaa6c776',
+      },
     },
   },
 };
