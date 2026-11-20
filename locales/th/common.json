@@ -4086,7 +4086,7 @@
         "status_inactive": "ไม่ได้เปิดใช้งานบนอุปกรณ์นี้",
         "status_unsupported": "เบราว์เซอร์นี้ไม่รองรับ Web Push",
         "status_lite": "Web Push ไม่พร้อมใช้งานใน Lite จำเป็นต้องใช้ server",
-        "status_busy": "กำลังดำเนินการ…",
+        "status_busy": "การตั้งค่าการแจ้งเตือนอาจใช้เวลาหลายนาที…",
         "enable": "เปิดใช้งาน",
         "reenable": "ลงทะเบียนใหม่",
         "disable": "ปิดใช้งาน",

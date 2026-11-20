@@ -1697,7 +1697,7 @@
         "relay_locked": "Yönetici tarafından ayarlandı",
         "relay_locked_desc": "Push röle URL'si yöneticiniz tarafından ayarlandı ve değiştirilemez.",
         "status_active": "Bu cihazda etkin",
-        "status_busy": "Çalışıyor…",
+        "status_busy": "Bildirimlerin ayarlanması birkaç dakika sürebilir…",
         "status_inactive": "Bu cihazda etkinleştirilmedi",
         "status_unsupported": "Bu tarayıcı Web Push'u desteklemiyor",
         "status_lite": "Web Push is not available in Lite; it needs the server.",

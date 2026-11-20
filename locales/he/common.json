@@ -1656,7 +1656,7 @@
         "status_inactive": "לא מופעל בהתקן זה",
         "status_unsupported": "דפדפן זה אינו תומך בדחיפה ברשת",
         "status_lite": "Web Push is not available in Lite; it needs the server.",
-        "status_busy": "עובד…",
+        "status_busy": "הגדרת ההתראות עשויה להימשך מספר דקות…",
         "enable": "הפעל",
         "reenable": "רשום מחדש",
         "disable": "השבת",

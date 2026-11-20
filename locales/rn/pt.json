@@ -797,7 +797,8 @@
     "body": "Ative as notificações em segundo plano para receber novas mensagens mesmo com o app fechado.",
     "dismiss": "Agora não",
     "enable": "Ativar",
-    "title": "Seja notificado sobre novos e-mails"
+    "title": "Seja notificado sobre novos e-mails",
+    "busy": "A configuração das notificações pode levar vários minutos. Por favor, aguarde…"
   },
   "scheduled": {
     "already_sent": "Esta mensagem já foi enviada.",
@@ -1514,7 +1515,7 @@
       "phone_backup": "Nada disso vai para o backup na nuvem do Android.",
       "phone_secure": "Seus dados de login ficam no armazenamento seguro do sistema. As configurações, o cache de e-mails offline e as alterações aguardando sincronização ficam no armazenamento do próprio aplicativo.",
       "phone_title": "Neste dispositivo",
-      "push": "Quando as notificações estão ativadas, seu servidor avisa o relay push ({relay}) de que algo mudou, e o relay desperta o aplicativo por meio do {service}. O relay vê um token do dispositivo e um marcador de alteração, nunca seus e-mails. Você pode usar seu próprio relay em Notificações.",
+      "push": "Quando as notificações estão ativadas, seu servidor avisa o relay push ({relay}) de que algo mudou, e o relay desperta o aplicativo por meio do {service}. O relay vê um token do dispositivo e um marcador de alteração, nunca seus e-mails.",
       "push_title": "Notificações push",
       "server": "E-mails, calendários, contatos e arquivos são carregados do seu servidor e salvos de volta nele. Além das conexões abaixo, o aplicativo só se comunica com o seu servidor.",
       "server_title": "Seu servidor de e-mail",

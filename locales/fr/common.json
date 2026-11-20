@@ -1700,7 +1700,7 @@
         "relay_locked": "Défini par l'administrateur",
         "relay_locked_desc": "L'URL du relais push a été définie par votre administrateur et ne peut pas être modifiée.",
         "status_active": "Actif sur cet appareil",
-        "status_busy": "Traitement en cours…",
+        "status_busy": "La configuration des notifications peut prendre plusieurs minutes…",
         "status_inactive": "Non activé sur cet appareil",
         "status_unsupported": "Ce navigateur ne prend pas en charge Web Push",
         "status_lite": "Web Push is not available in Lite; it needs the server.",

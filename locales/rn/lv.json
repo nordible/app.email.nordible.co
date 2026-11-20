@@ -793,7 +793,8 @@
     "body": "Ieslēdziet fona paziņojumus, lai jaunas vēstules jūs sasniegtu arī tad, kad lietotne ir aizvērta.",
     "dismiss": "Ne tagad",
     "enable": "Iespējot",
-    "title": "Saņemiet paziņojumus par jaunu pastu"
+    "title": "Saņemiet paziņojumus par jaunu pastu",
+    "busy": "Paziņojumu iestatīšana var ilgt vairākas minūtes. Lūdzu, uzgaidiet…"
   },
   "scheduled": {
     "already_sent": "Šis ziņojums jau ir nosūtīts.",
@@ -1510,7 +1511,7 @@
       "phone_backup": "Nekas no tā netiek iekļauts Android mākoņa dublējumā.",
       "phone_secure": "Jūsu pierakstīšanās dati tiek glabāti sistēmas drošajā krātuvē. Iestatījumi, bezsaistes pasta kešatmiņa un izmaiņas, kas gaida sinhronizāciju, tiek glabāti pašas lietotnes krātuvē.",
       "phone_title": "Šajā ierīcē",
-      "push": "Kad paziņojumi ir ieslēgti, jūsu serveris paziņo push relejam ({relay}), ka kaut kas ir mainījies, un relejs pamodina lietotni ar šī pakalpojuma starpniecību: {service}. Relejs redz ierīces marķieri un izmaiņu atzīmi, bet nekad jūsu pastu. Sadaļā Paziņojumi varat izmantot savu releju.",
+      "push": "Kad paziņojumi ir ieslēgti, jūsu serveris paziņo push relejam ({relay}), ka kaut kas ir mainījies, un relejs pamodina lietotni ar šī pakalpojuma starpniecību: {service}. Relejs redz ierīces marķieri un izmaiņu atzīmi, bet nekad jūsu pastu.",
       "push_title": "Push paziņojumi",
       "server": "Pasts, kalendāri, kontakti un faili tiek ielādēti no jūsu servera un saglabāti atpakaļ tajā. Izņemot tālāk minētos savienojumus, lietotne sazinās tikai ar jūsu serveri.",
       "server_title": "Jūsu pasta serveris",

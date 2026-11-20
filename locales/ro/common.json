@@ -1660,7 +1660,7 @@
         "status_inactive": "Nu este activat pe acest dispozitiv",
         "status_unsupported": "Acest browser nu acceptă Web Push",
         "status_lite": "Web Push is not available in Lite; it needs the server.",
-        "status_busy": "Se lucrează…",
+        "status_busy": "Configurarea notificărilor poate dura câteva minute…",
         "enable": "Activați",
         "reenable": "Reînregistrează-te",
         "disable": "Dezactivare",

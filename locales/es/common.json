@@ -1702,7 +1702,7 @@
         "relay_locked": "Establecido por el administrador",
         "relay_locked_desc": "La URL del relay push ha sido establecida por tu administrador y no se puede cambiar.",
         "status_active": "Activo en este dispositivo",
-        "status_busy": "Trabajando…",
+        "status_busy": "La configuración de las notificaciones puede tardar varios minutos…",
         "status_inactive": "No habilitado en este dispositivo",
         "status_unsupported": "Este navegador no admite Web Push",
         "status_lite": "Web Push is not available in Lite; it needs the server.",

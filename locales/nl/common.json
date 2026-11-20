@@ -1696,7 +1696,7 @@
         "relay_locked": "Ingesteld door beheerder",
         "relay_locked_desc": "De push-relay-URL is ingesteld door je beheerder en kan niet worden gewijzigd.",
         "status_active": "Actief op dit apparaat",
-        "status_busy": "Bezig…",
+        "status_busy": "Het instellen van meldingen kan enkele minuten duren…",
         "status_inactive": "Niet ingeschakeld op dit apparaat",
         "status_unsupported": "Deze browser ondersteunt geen Web Push",
         "status_lite": "Web Push is not available in Lite; it needs the server.",

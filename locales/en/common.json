@@ -1662,7 +1662,7 @@
         "status_inactive": "Not enabled on this device",
         "status_unsupported": "This browser does not support Web Push",
         "status_lite": "Web Push is not available in Lite; it needs the server.",
-        "status_busy": "Working…",
+        "status_busy": "Setting up notifications may take several minutes…",
         "enable": "Enable",
         "reenable": "Re-register",
         "disable": "Disable",

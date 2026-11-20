@@ -1697,7 +1697,7 @@
         "relay_locked": "Vom Administrator festgelegt",
         "relay_locked_desc": "Die Push-Relay-URL wurde von Ihrem Administrator festgelegt und kann nicht geändert werden.",
         "status_active": "Auf diesem Gerät aktiv",
-        "status_busy": "Wird verarbeitet…",
+        "status_busy": "Das Einrichten der Benachrichtigungen kann einige Minuten dauern…",
         "status_inactive": "Auf diesem Gerät nicht aktiviert",
         "status_unsupported": "Dieser Browser unterstützt Web Push nicht",
         "status_lite": "Web Push ist in Lite nicht verfügbar; es benötigt den Server.",

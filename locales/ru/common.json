@@ -1699,7 +1699,7 @@
         "relay_locked": "Установлено администратором",
         "relay_locked_desc": "URL push-релея установлен вашим администратором и не может быть изменён.",
         "status_active": "Активно на этом устройстве",
-        "status_busy": "Выполняется…",
+        "status_busy": "Настройка уведомлений может занять несколько минут…",
         "status_inactive": "Не включено на этом устройстве",
         "status_unsupported": "Этот браузер не поддерживает Web Push",
         "status_lite": "Web Push is not available in Lite; it needs the server.",

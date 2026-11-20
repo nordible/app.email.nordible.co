@@ -1695,7 +1695,7 @@
         "relay_locked": "Iestatījis administrators",
         "relay_locked_desc": "Push releja URL ir iestatījis administrators, un to nevar mainīt.",
         "status_active": "Aktīvs šajā ierīcē",
-        "status_busy": "Notiek darbs…",
+        "status_busy": "Paziņojumu iestatīšana var ilgt vairākas minūtes…",
         "status_inactive": "Nav iespējots šajā ierīcē",
         "status_unsupported": "Šī pārlūkprogramma neatbalsta Web Push",
         "status_lite": "Web Push is not available in Lite; it needs the server.",

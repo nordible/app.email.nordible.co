@@ -5,7 +5,6 @@ import {
   Platform,
   StyleSheet,
   Text,
-  TextInput,
   View,
 } from 'react-native';
 import { CheckCircle2, RefreshCw, XCircle } from '../icons';
@@ -242,7 +241,7 @@ export function NotificationSettings() {
     }
     setPushStatus({
       kind: 'busy',
-      message: t('settings.notifications.push.status_busy', 'Working…'),
+      message: t('settings.notifications.push.status_busy', 'Setting up notifications may take several minutes…'),
     });
     // The setup stores the relay itself, and keeps the one in use when the
     // mail server refuses the new one's address: the field follows it.
@@ -284,7 +283,7 @@ export function NotificationSettings() {
     setConfirmDisable(false);
     setPushStatus({
       kind: 'busy',
-      message: t('settings.notifications.push.status_busy', 'Working…'),
+      message: t('settings.notifications.push.status_busy', 'Setting up notifications may take several minutes…'),
     });
     try {
       if (activeAccountId) {
@@ -435,45 +434,7 @@ export function NotificationSettings() {
           </>
         )}
 
-        <SettingItem
-          label={t('settings.notifications.push.relay_label', 'Push relay')}
-          description={t(
-            'settings.notifications.push.relay_desc_mobile',
-            'The server that delivers your notifications. Defaults to the hosted Nordible relay; change only if you self-host. Must use https.',
-          )}
-          noBorder
-        >
-          <View />
-        </SettingItem>
-        <TextInput
-          value={relayUrl}
-          onChangeText={setRelayUrl}
-          placeholder={DEFAULT_RELAY_BASE_URL}
-          placeholderTextColor={c.textMuted}
-          autoCapitalize="none"
-          autoCorrect={false}
-          keyboardType="url"
-          editable={supported && !busy}
-          accessibilityLabel={t('settings.notifications.push.relay_label', 'Push relay')}
-          style={[styles.urlInput, !relayValid && styles.urlInputInvalid]}
-        />
-        {!relayValid && (
-          <Text style={styles.errorText}>
-            {t('settings.notifications.push.relay_invalid', 'Enter a valid https:// URL')}
-          </Text>
-        )}
-        {pushEnabled && (
-          <View style={styles.actions}>
-            <Button
-              variant="outline"
-              size="sm"
-              onPress={() => void handleEnable(true)}
-              disabled={!supported || busy || !relayValid}
-            >
-              {t('settings.notifications.push.reenable', 'Re-register')}
-            </Button>
-          </View>
-        )}
+
         {pushStatus.kind === 'error' && (
           <View style={styles.errorRow} accessibilityRole="alert">
             <XCircle size={14} color={c.error} />
@@ -523,11 +484,6 @@ export function NotificationSettings() {
                     </Text>
                     <Text style={styles.fieldDescription}>
                       {relayStatusLabel(device.relayStatus)}
-                      {device.expires
-                        ? ` · ${t('settings.notifications.push.device_expires', 'Expires {date}', {
-                          date: new Date(device.expires).toLocaleDateString(),
-                        })}`
-                        : ''}
                     </Text>
                   </View>
                   <Button
@@ -708,18 +664,7 @@ function makeStyles(c: ThemePalette) {
       color: c.mutedForeground,
       flexShrink: 1,
     },
-    urlInput: {
-      ...typography.body,
-      color: c.text,
-      backgroundColor: c.surface,
-      borderWidth: 1,
-      borderColor: c.border,
-      borderRadius: radius.sm,
-      paddingHorizontal: spacing.md,
-      paddingVertical: 8,
-      alignSelf: 'stretch',
-    },
-    urlInputInvalid: { borderColor: c.error },
+
     distributorList: { flexDirection: 'column', alignItems: 'flex-end', gap: spacing.sm },
     errorRow: { flexDirection: 'row', alignItems: 'flex-start', gap: 6, marginTop: spacing.sm },
     errorText: { ...typography.caption, color: c.error },

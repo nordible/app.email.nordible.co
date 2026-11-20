@@ -795,7 +795,8 @@
     "body": "Uygulama kapalıyken de yeni iletilerden haberdar olmak için arka plan bildirimlerini açın.",
     "dismiss": "Şimdi değil",
     "enable": "Etkinleştir",
-    "title": "Yeni postalardan haberdar olun"
+    "title": "Yeni postalardan haberdar olun",
+    "busy": "Bildirimlerin ayarlanması birkaç dakika sürebilir. Lütfen bekleyin…"
   },
   "scheduled": {
     "already_sent": "Bu ileti zaten gönderildi.",
@@ -1512,7 +1513,7 @@
       "phone_backup": "Bunların hiçbiri Android'in bulut yedeğine gitmez.",
       "phone_secure": "Giriş bilgileriniz sistemin güvenli depolama alanında saklanır. Ayarlar, çevrimdışı posta önbelleği ve senkronizasyon bekleyen değişiklikler uygulamanın kendi depolama alanında saklanır.",
       "phone_title": "Bu cihazda",
-      "push": "Bildirimler açıkken sunucunuz push rölesine ({relay}) bir şeyin değiştiğini bildirir ve röle uygulamayı {service} aracılığıyla uyandırır. Röle bir cihaz belirteci ve bir değişiklik işareti görür, postanızı asla görmez. Bildirimler bölümünde kendi rölenizi kullanabilirsiniz.",
+      "push": "Bildirimler açıkken sunucunuz push rölesine ({relay}) bir şeyin değiştiğini bildirir ve röle uygulamayı {service} aracılığıyla uyandırır. Röle bir cihaz belirteci ve bir değişiklik işareti görür, postanızı asla görmez.",
       "push_title": "Anlık Bildirimler",
       "server": "Posta, takvimler, kişiler ve dosyalar sunucunuzdan yüklenir ve yine oraya kaydedilir. Aşağıdaki bağlantılar dışında uygulama yalnızca sunucunuzla iletişim kurar.",
       "server_title": "Posta sunucunuz",

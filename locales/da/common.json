@@ -1657,7 +1657,7 @@
         "status_inactive": "Ikke aktiveret på denne enhed",
         "status_unsupported": "Denne browser understøtter ikke Web Push",
         "status_lite": "Web Push is not available in Lite; it needs the server.",
-        "status_busy": "Arbejder…",
+        "status_busy": "Opsætning af notifikationer kan tage flere minutter…",
         "enable": "Aktivér",
         "reenable": "Genregistrér",
         "disable": "Deaktivér",

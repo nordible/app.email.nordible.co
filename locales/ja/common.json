@@ -1696,7 +1696,7 @@
         "relay_locked": "管理者が設定",
         "relay_locked_desc": "プッシュリレーの URL は管理者によって設定されており、変更できません。",
         "status_active": "このデバイスで有効",
-        "status_busy": "処理中…",
+        "status_busy": "通知の設定には数分かかる場合があります…",
         "status_inactive": "このデバイスでは有効になっていません",
         "status_unsupported": "このブラウザは Web Push をサポートしていません",
         "status_lite": "Web Push is not available in Lite; it needs the server.",

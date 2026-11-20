@@ -794,7 +794,8 @@
     "body": "Zapněte oznámení na pozadí, aby vám nové zprávy chodily, i když je aplikace zavřená.",
     "dismiss": "Teď ne",
     "enable": "Povolit",
-    "title": "Dostávejte oznámení o nové poště"
+    "title": "Dostávejte oznámení o nové poště",
+    "busy": "Nastavení oznámení může trvat několik minut. Počkejte prosím…"
   },
   "scheduled": {
     "already_sent": "Tato zpráva již byla odeslána.",
@@ -1511,7 +1512,7 @@
       "phone_backup": "Nic z toho se neukládá do cloudové zálohy Androidu.",
       "phone_secure": "Vaše přihlašovací údaje jsou uloženy v zabezpečeném úložišti systému. Nastavení, mezipaměť offline pošty a změny čekající na synchronizaci jsou uloženy ve vlastním úložišti aplikace.",
       "phone_title": "V tomto zařízení",
-      "push": "Když jsou oznámení zapnutá, váš server sdělí push relay ({relay}), že se něco změnilo, a relay probudí aplikaci přes {service}. Relay vidí token zařízení a značku změny, nikdy vaši poštu. V nastavení Oznámení můžete použít vlastní relay.",
+      "push": "Když jsou oznámení zapnutá, váš server sdělí push relay ({relay}), že se něco změnilo, a relay probudí aplikaci přes {service}. Relay vidí token zařízení a značku změny, nikdy vaši poštu.",
       "push_title": "Push oznámení",
       "server": "Pošta, kalendáře, kontakty a soubory se načítají z vašeho serveru a ukládají zpět na něj. Kromě níže uvedených připojení komunikuje aplikace jen s vaším serverem.",
       "server_title": "Váš poštovní server",

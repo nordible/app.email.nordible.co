@@ -1695,7 +1695,7 @@
         "relay_locked": "由管理员设置",
         "relay_locked_desc": "推送中继 URL 已由您的管理员设置，无法更改。",
         "status_active": "在此设备上活动",
-        "status_busy": "工作中…",
+        "status_busy": "设置通知可能需要几分钟…",
         "status_inactive": "在此设备上未启用",
         "status_unsupported": "此浏览器不支持 Web Push",
         "status_lite": "Web Push is not available in Lite; it needs the server.",

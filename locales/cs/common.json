@@ -1696,7 +1696,7 @@
         "relay_locked": "Nastaveno administrátorem",
         "relay_locked_desc": "URL push relay byla nastavena administrátorem a nelze ji změnit.",
         "status_active": "Aktivní na tomto zařízení",
-        "status_busy": "Pracuji…",
+        "status_busy": "Nastavení oznámení může trvat několik minut…",
         "status_inactive": "Není povoleno na tomto zařízení",
         "status_unsupported": "Tento prohlížeč nepodporuje Web Push",
         "status_lite": "Web Push není v Lite k dispozici; vyžaduje server EMAIL by Nordible.Co.",

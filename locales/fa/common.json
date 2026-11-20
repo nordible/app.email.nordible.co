@@ -1654,7 +1654,7 @@
         "status_inactive": "فعال نشده",
         "status_unsupported": "مرورگر پشتیبانی نمی‌کند",
         "status_lite": "Web Push is not available in Lite; it needs the server.",
-        "status_busy": "در حال کار…",
+        "status_busy": "راه‌اندازی اعلان‌ها ممکن است چند دقیقه طول بکشد…",
         "enable": "فعال کردن",
         "reenable": "ثبت مجدد",
         "disable": "غیرفعال کردن",

@@ -798,7 +798,8 @@
     "body": "Activez les notifications en arrière-plan pour recevoir les nouveaux messages même lorsque l'application est fermée.",
     "dismiss": "Pas maintenant",
     "enable": "Activer",
-    "title": "Soyez averti des nouveaux e-mails"
+    "title": "Soyez averti des nouveaux e-mails",
+    "busy": "La configuration des notifications peut prendre plusieurs minutes. Veuillez patienter…"
   },
   "scheduled": {
     "already_sent": "Ce message a déjà été envoyé.",
@@ -1515,7 +1516,7 @@
       "phone_backup": "Rien de tout cela n'est inclus dans la sauvegarde cloud d'Android.",
       "phone_secure": "Vos identifiants de connexion sont conservés dans le stockage sécurisé du système. Les paramètres, le cache des e-mails hors ligne et les modifications en attente de synchronisation sont conservés dans le stockage propre de l'application.",
       "phone_title": "Sur cet appareil",
-      "push": "Quand les notifications sont activées, votre serveur signale au relais push ({relay}) qu'un changement a eu lieu, et le relais réveille l'application via {service}. Le relais voit un jeton d'appareil et un marqueur de changement, jamais vos e-mails. Vous pouvez utiliser votre propre relais dans Notifications.",
+      "push": "Quand les notifications sont activées, votre serveur signale au relais push ({relay}) qu'un changement a eu lieu, et le relais réveille l'application via {service}. Le relais voit un jeton d'appareil et un marqueur de changement, jamais vos e-mails.",
       "push_title": "Notifications push",
       "server": "Les e-mails, calendriers, contacts et fichiers sont chargés depuis votre serveur et y sont enregistrés. En dehors des connexions ci-dessous, l'application ne communique qu'avec votre serveur.",
       "server_title": "Votre serveur de messagerie",

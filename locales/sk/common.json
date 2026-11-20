@@ -1695,7 +1695,7 @@
         "status_inactive": "Nie je povolené na tomto zariadení",
         "status_unsupported": "Tento prehliadač nepodporuje Web Push",
         "status_lite": "Web Push is not available in Lite; it needs the server.",
-        "status_busy": "Pracujem…",
+        "status_busy": "Nastavenie oznámení môže trvať niekoľko minút…",
         "enable": "Povoliť",
         "reenable": "Znovu zaregistrovať",
         "disable": "Zakázať",

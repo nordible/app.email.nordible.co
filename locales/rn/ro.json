@@ -794,7 +794,8 @@
     "body": "Activați notificările în fundal pentru a primi mesajele noi chiar și când aplicația este închisă.",
     "dismiss": "Nu acum",
     "enable": "Activați",
-    "title": "Primiți notificări pentru e-mailurile noi"
+    "title": "Primiți notificări pentru e-mailurile noi",
+    "busy": "Configurarea notificărilor poate dura câteva minute. Vă rugăm să așteptați…"
   },
   "scheduled": {
     "already_sent": "Acest mesaj a fost deja trimis.",
@@ -1511,7 +1512,7 @@
       "phone_backup": "Nimic din toate acestea nu ajunge în copia de rezervă în cloud a Android.",
       "phone_secure": "Datele dvs. de autentificare sunt păstrate în spațiul de stocare securizat al sistemului. Setările, cache-ul e-mailurilor offline și modificările care așteaptă sincronizarea sunt păstrate în spațiul de stocare propriu al aplicației.",
       "phone_title": "Pe acest dispozitiv",
-      "push": "Când notificările sunt activate, serverul dvs. îi spune releului push ({relay}) că s-a schimbat ceva, iar releul trezește aplicația prin {service}. Releul vede un token al dispozitivului și un marcaj de modificare, niciodată e-mailurile dvs. Puteți folosi propriul releu din Notificări.",
+      "push": "Când notificările sunt activate, serverul dvs. îi spune releului push ({relay}) că s-a schimbat ceva, iar releul trezește aplicația prin {service}. Releul vede un token al dispozitivului și un marcaj de modificare, niciodată e-mailurile dvs.",
       "push_title": "Notificări push",
       "server": "E-mailurile, calendarele, contactele și fișierele sunt încărcate de pe serverul dvs. și salvate înapoi pe el. În afara conexiunilor de mai jos, aplicația comunică doar cu serverul dvs.",
       "server_title": "Serverul dvs. de e-mail",

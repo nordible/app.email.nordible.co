@@ -1656,7 +1656,7 @@
         "status_inactive": "Nincs engedélyezve ezen az eszközön",
         "status_unsupported": "Ez a böngésző nem támogatja a Web Push-t",
         "status_lite": "Web Push is not available in Lite; it needs the server.",
-        "status_busy": "Munka...",
+        "status_busy": "Az értesítések beállítása eltarthat néhány percig…",
         "enable": "Engedélyezés",
         "reenable": "Újraregisztráció",
         "disable": "Letiltás",

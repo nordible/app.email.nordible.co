@@ -791,7 +791,8 @@
     "body": "Slå baggrundsnotifikationer til, så nye beskeder når frem til dig, mens appen er lukket.",
     "dismiss": "Ikke nu",
     "enable": "Aktivér",
-    "title": "Få besked om ny mail"
+    "title": "Få besked om ny mail",
+    "busy": "Opsætning af notifikationer kan tage flere minutter. Vent venligst…"
   },
   "scheduled": {
     "already_sent": "Denne besked er allerede sendt.",
@@ -1508,7 +1509,7 @@
       "phone_backup": "Intet af det kommer med i Androids sikkerhedskopi i skyen.",
       "phone_secure": "Dine loginoplysninger opbevares i systemets sikre lager. Indstillinger, offlinemail-cachen og ændringer, der venter på synkronisering, opbevares i appens eget lager.",
       "phone_title": "På denne enhed",
-      "push": "Når notifikationer er slået til, fortæller din server push-relæet ({relay}), at noget er ændret, og relæet vækker appen via {service}. Relæet ser et enhedstoken og en ændringsmarkør, aldrig din mail. Du kan bruge dit eget relæ under Notifikationer.",
+      "push": "Når notifikationer er slået til, fortæller din server push-relæet ({relay}), at noget er ændret, og relæet vækker appen via {service}. Relæet ser et enhedstoken og en ændringsmarkør, aldrig din mail.",
       "push_title": "Push-notifikationer",
       "server": "Mail, kalendere, kontakter og filer indlæses fra din server og gemmes tilbage på den. Bortset fra forbindelserne nedenfor taler appen kun med din server.",
       "server_title": "Din mailserver",

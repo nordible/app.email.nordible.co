@@ -802,6 +802,7 @@
   },
   "push_prompt": {
     "body": "Aktivieren Sie Hintergrundbenachrichtigungen, damit neue Nachrichten Sie auch bei geschlossener App erreichen.",
+    "busy": "Das Einrichten der Benachrichtigungen kann einige Minuten dauern. Bitte warten…",
     "dismiss": "Nicht jetzt",
     "enable": "Aktivieren",
     "title": "Bei neuen E-Mails benachrichtigt werden"
@@ -1466,7 +1467,7 @@
       "phone_backup": "Nichts davon landet in der Cloud-Sicherung von Android.",
       "phone_secure": "Ihre Anmeldedaten liegen im sicheren Speicher des Systems. Einstellungen, der Offline-Cache und noch nicht synchronisierte Änderungen liegen im Speicher der App.",
       "phone_title": "Auf diesem Gerät",
-      "push": "Wenn Benachrichtigungen an sind, meldet Ihr Server dem Push-Relay ({relay}), dass sich etwas geändert hat, und das Relay weckt die App über {service}. Das Relay sieht ein Gerätetoken und eine Änderungsmarke, nie Ihre Mails. Unter Benachrichtigungen können Sie ein eigenes Relay eintragen.",
+      "push": "Wenn Benachrichtigungen an sind, meldet Ihr Server dem Push-Relay ({relay}), dass sich etwas geändert hat, und das Relay weckt die App über {service}. Das Relay sieht ein Gerätetoken und eine Änderungsmarke, nie Ihre Mails.",
       "push_title": "Push-Benachrichtigungen",
       "server": "Mails, Kalender, Kontakte und Dateien werden von Ihrem Server geladen und dort gespeichert. Außer den Verbindungen unten spricht die App nur mit Ihrem Server.",
       "server_title": "Ihr Mailserver",

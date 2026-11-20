@@ -800,7 +800,8 @@
     "body": "Activa las notificaciones en segundo plano para recibir los mensajes nuevos aunque la app esté cerrada.",
     "dismiss": "Ahora no",
     "enable": "Activar",
-    "title": "Recibe avisos de correo nuevo"
+    "title": "Recibe avisos de correo nuevo",
+    "busy": "La configuración de las notificaciones puede tardar varios minutos. Por favor, espere…"
   },
   "scheduled": {
     "already_sent": "Este mensaje ya se envió.",
@@ -1517,7 +1518,7 @@
       "phone_backup": "Nada de esto va a la copia de seguridad en la nube de Android.",
       "phone_secure": "Tus datos de inicio de sesión se guardan en el almacenamiento seguro del sistema. La configuración, la caché de correo sin conexión y los cambios pendientes de sincronizar se guardan en el almacenamiento propio de la app.",
       "phone_title": "En este dispositivo",
-      "push": "Cuando las notificaciones están activadas, tu servidor avisa al relay push ({relay}) de que algo ha cambiado, y el relay despierta la app mediante {service}. El relay ve un token de dispositivo y una marca de cambio, nunca tu correo. Puedes usar tu propio relay en Notificaciones.",
+      "push": "Cuando las notificaciones están activadas, tu servidor avisa al relay push ({relay}) de que algo ha cambiado, y el relay despierta la app mediante {service}. El relay ve un token de dispositivo y una marca de cambio, nunca tu correo.",
       "push_title": "Notificaciones push",
       "server": "El correo, los calendarios, los contactos y los archivos se cargan desde tu servidor y se guardan en él. Aparte de las conexiones de abajo, la app solo se comunica con tu servidor.",
       "server_title": "Tu servidor de correo",

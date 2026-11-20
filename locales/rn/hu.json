@@ -790,7 +790,8 @@
     "body": "Kapcsold be a háttérértesítéseket, hogy az új üzenetekről akkor is értesülj, amikor az alkalmazás be van zárva.",
     "dismiss": "Később",
     "enable": "Engedélyezés",
-    "title": "Értesítések új levelekről"
+    "title": "Értesítések új levelekről",
+    "busy": "Az értesítések beállítása eltarthat néhány percig. Kérjük, várjon…"
   },
   "scheduled": {
     "already_sent": "Ez az üzenet már el lett küldve.",
@@ -1507,7 +1508,7 @@
       "phone_backup": "Ezek egyike sem kerül az Android felhőalapú biztonsági mentésébe.",
       "phone_secure": "A bejelentkezési adataid a rendszer biztonságos tárolójában vannak. A beállításokat, az offline levél-gyorsítótárat és a szinkronizálásra váró módosításokat az alkalmazás saját tárolója őrzi.",
       "phone_title": "Ezen az eszközön",
-      "push": "Ha az értesítések be vannak kapcsolva, a szervered szól a push relének ({relay}), hogy valami megváltozott, a relé pedig ezen keresztül ébreszti fel az alkalmazást: {service}. A relé egy eszköztokent és egy változásjelzőt lát, a leveleidet soha. Az Értesítések alatt saját relét is használhatsz.",
+      "push": "Ha az értesítések be vannak kapcsolva, a szervered szól a push relének ({relay}), hogy valami megváltozott, a relé pedig ezen keresztül ébreszti fel az alkalmazást: {service}. A relé egy eszköztokent és egy változásjelzőt lát, a leveleidet soha.",
       "push_title": "Push értesítések",
       "server": "A levelek, naptárak, névjegyek és fájlok a szerveredről töltődnek be, és oda mentődnek vissza. Az alábbi kapcsolatokon kívül az alkalmazás csak a szervereddel kommunikál.",
       "server_title": "A levelezőszervered",

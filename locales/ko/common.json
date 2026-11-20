@@ -1694,7 +1694,7 @@
         "relay_locked": "관리자에 의해 설정됨",
         "relay_locked_desc": "푸시 릴레이 URL은 관리자가 설정했으며 변경할 수 없어요.",
         "status_active": "이 기기에서 활성",
-        "status_busy": "처리 중…",
+        "status_busy": "알림 설정에 몇 분 정도 걸릴 수 있습니다…",
         "status_inactive": "이 기기에서 활성화되지 않음",
         "status_unsupported": "이 브라우저는 Web Push를 지원하지 않습니다",
         "status_lite": "Web Push is not available in Lite; it needs the server.",

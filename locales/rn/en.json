@@ -1042,6 +1042,7 @@
   },
   "push_prompt": {
     "body": "Turn on background notifications so new messages reach you while the app is closed.",
+    "busy": "Setting up notifications may take several minutes. Please wait…",
     "dismiss": "Not now",
     "enable": "Enable",
     "title": "Get notified about new mail"
@@ -1593,7 +1594,7 @@
       "phone_backup": "None of it goes into Android's cloud backup.",
       "phone_secure": "Your sign-in details are kept in the system's secure storage. Settings, the offline mail cache and changes waiting to sync are kept in the app's own storage.",
       "phone_title": "On this device",
-      "push": "When notifications are on, your server tells the push relay ({relay}) that something changed, and the relay wakes the app through {service}. The relay sees a device token and a change marker, never your mail. You can use your own relay under Notifications.",
+      "push": "When notifications are on, your server tells the push relay ({relay}) that something changed, and the relay wakes the app through {service}. The relay sees a device token and a change marker, never your mail.",
       "push_title": "Push notifications",
       "server": "Mail, calendars, contacts and files are loaded from your server and saved back to it. Apart from the connections below, the app talks only to your server.",
       "server_title": "Your mail server",

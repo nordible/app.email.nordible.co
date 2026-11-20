@@ -796,7 +796,8 @@
     "body": "Attiva le notifiche in background per ricevere i nuovi messaggi anche quando l'app è chiusa.",
     "dismiss": "Non ora",
     "enable": "Abilita",
-    "title": "Ricevi notifiche per la nuova posta"
+    "title": "Ricevi notifiche per la nuova posta",
+    "busy": "La configurazione delle notifiche potrebbe richiedere alcuni minuti. Attendere…"
   },
   "scheduled": {
     "already_sent": "Questo messaggio è già stato inviato.",
@@ -1513,7 +1514,7 @@
       "phone_backup": "Niente di tutto ciò finisce nel backup cloud di Android.",
       "phone_secure": "I tuoi dati di accesso sono conservati nell'archivio sicuro del sistema. Impostazioni, cache della posta offline e modifiche in attesa di sincronizzazione sono conservate nell'archivio dell'app.",
       "phone_title": "Su questo dispositivo",
-      "push": "Quando le notifiche sono attive, il tuo server comunica al relay push ({relay}) che qualcosa è cambiato, e il relay riattiva l'app tramite {service}. Il relay vede un token del dispositivo e un indicatore di modifica, mai la tua posta. Puoi usare un relay tuo in Notifiche.",
+      "push": "Quando le notifiche sono attive, il tuo server comunica al relay push ({relay}) che qualcosa è cambiato, e il relay riattiva l'app tramite {service}. Il relay vede un token del dispositivo e un indicatore di modifica, mai la tua posta.",
       "push_title": "Notifiche push",
       "server": "Posta, calendari, contatti e file vengono caricati dal tuo server e salvati di nuovo su di esso. A parte le connessioni qui sotto, l'app comunica solo con il tuo server.",
       "server_title": "Il tuo server di posta",

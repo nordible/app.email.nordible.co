@@ -794,7 +794,8 @@
     "body": "Schakel achtergrondmeldingen in zodat nieuwe berichten u bereiken terwijl de app gesloten is.",
     "dismiss": "Niet nu",
     "enable": "Inschakelen",
-    "title": "Meldingen ontvangen over nieuwe e-mail"
+    "title": "Meldingen ontvangen over nieuwe e-mail",
+    "busy": "Het instellen van meldingen kan enkele minuten duren. Even geduld…"
   },
   "scheduled": {
     "already_sent": "Dit bericht is al verzonden.",
@@ -1511,7 +1512,7 @@
       "phone_backup": "Niets daarvan gaat naar de cloudback-up van Android.",
       "phone_secure": "Je inloggegevens worden bewaard in de beveiligde opslag van het systeem. Instellingen, de offline e-mailcache en wijzigingen die nog moeten synchroniseren worden in de eigen opslag van de app bewaard.",
       "phone_title": "Op dit apparaat",
-      "push": "Als meldingen aanstaan, laat je server de push-relay ({relay}) weten dat er iets is veranderd, en de relay wekt de app via {service}. De relay ziet een apparaattoken en een wijzigingsmarkering, nooit je e-mail. Onder Meldingen kun je je eigen relay gebruiken.",
+      "push": "Als meldingen aanstaan, laat je server de push-relay ({relay}) weten dat er iets is veranderd, en de relay wekt de app via {service}. De relay ziet een apparaattoken en een wijzigingsmarkering, nooit je e-mail.",
       "push_title": "Pushmeldingen",
       "server": "E-mail, agenda's, contacten en bestanden worden van je server geladen en daar weer opgeslagen. Afgezien van de verbindingen hieronder praat de app alleen met je server.",
       "server_title": "Je mailserver",

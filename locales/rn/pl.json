@@ -794,7 +794,8 @@
     "body": "Włącz powiadomienia w tle, aby nowe wiadomości docierały do Ciebie, gdy aplikacja jest zamknięta.",
     "dismiss": "Nie teraz",
     "enable": "Włącz",
-    "title": "Otrzymuj powiadomienia o nowej poczcie"
+    "title": "Otrzymuj powiadomienia o nowej poczcie",
+    "busy": "Konfiguracja powiadomień może potrwać kilka minut. Proszę czekać…"
   },
   "scheduled": {
     "already_sent": "Ta wiadomość została już wysłana.",
@@ -1511,7 +1512,7 @@
       "phone_backup": "Nic z tego nie trafia do kopii zapasowej Androida w chmurze.",
       "phone_secure": "Twoje dane logowania są przechowywane w bezpiecznym magazynie systemu. Ustawienia, pamięć podręczna poczty offline i zmiany czekające na synchronizację są przechowywane we własnej pamięci aplikacji.",
       "phone_title": "Na tym urządzeniu",
-      "push": "Gdy powiadomienia są włączone, Twój serwer informuje przekaźnik push ({relay}), że coś się zmieniło, a przekaźnik budzi aplikację przez {service}. Przekaźnik widzi token urządzenia i znacznik zmiany, nigdy Twoją pocztę. W ustawieniach Powiadomienia możesz użyć własnego przekaźnika.",
+      "push": "Gdy powiadomienia są włączone, Twój serwer informuje przekaźnik push ({relay}), że coś się zmieniło, a przekaźnik budzi aplikację przez {service}. Przekaźnik widzi token urządzenia i znacznik zmiany, nigdy Twoją pocztę.",
       "push_title": "Powiadomienia push",
       "server": "Poczta, kalendarze, kontakty i pliki są wczytywane z Twojego serwera i na nim zapisywane. Poza połączeniami wymienionymi poniżej aplikacja komunikuje się tylko z Twoim serwerem.",
       "server_title": "Twój serwer poczty",

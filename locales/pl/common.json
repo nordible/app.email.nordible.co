@@ -1696,7 +1696,7 @@
         "relay_locked": "Ustawione przez administratora",
         "relay_locked_desc": "Adres URL przekaźnika push został ustawiony przez administratora i nie można go zmienić.",
         "status_active": "Aktywne na tym urządzeniu",
-        "status_busy": "Przetwarzanie…",
+        "status_busy": "Konfiguracja powiadomień może potrwać kilka minut…",
         "status_inactive": "Niewłączone na tym urządzeniu",
         "status_unsupported": "Ta przeglądarka nie obsługuje Web Push",
         "status_lite": "Web Push is not available in Lite; it needs the server.",

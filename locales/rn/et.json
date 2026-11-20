@@ -948,7 +948,7 @@
       "phone_backup": "Midagi sellest ei lähe Androidi pilvevarundusse.",
       "phone_secure": "Sinu sisselogimisandmeid hoitakse süsteemi turvalises hoidlas. Seadeid, võrguühenduseta kirjade vahemälu ja sünkroonimist ootavaid muudatusi hoitakse rakenduse enda hoidlas.",
       "phone_title": "Selles seadmes",
-      "push": "Kui teavitused on sees, annab su server push-releele ({relay}) teada, et midagi muutus, ja relee äratab rakenduse (teenus: {service}). Relee näeb seadmetõendit ja muudatuse märget, mitte kunagi su kirju. Oma releed saad kasutada jaotises Teavitused.",
+      "push": "Kui teavitused on sees, annab su server push-releele ({relay}) teada, et midagi muutus, ja relee äratab rakenduse (teenus: {service}). Relee näeb seadmetõendit ja muudatuse märget, mitte kunagi su kirju.",
       "push_title": "Push-teavitused",
       "server": "Kirjad, kalendrid, kontaktid ja failid laaditakse sinu serverist ja salvestatakse sinna tagasi. Peale allpool toodud ühenduste suhtleb rakendus ainult sinu serveriga.",
       "server_title": "Sinu meiliserver",
@@ -1571,7 +1571,8 @@
     "body": "Lülita sisse taustateavitused, et uued kirjad jõuaksid sinuni ka siis, kui rakendus on suletud.",
     "dismiss": "Mitte praegu",
     "enable": "Luba",
-    "title": "Saa teavitusi uutest kirjadest"
+    "title": "Saa teavitusi uutest kirjadest",
+    "busy": "Teavituste seadistamine võib võtta mitu minutit. Palun oodake…"
   },
   "scheduled": {
     "actions": "Toimingud",

@@ -140,10 +140,15 @@ export function PushOnboardingPrompt(): React.ReactElement | null {
             {t('push_prompt.title', 'Get notified about new mail')}
           </Text>
           <Text style={styles.body}>
-            {t(
-              'push_prompt.body',
-              'Turn on background notifications so new messages reach you while the app is closed.',
-            )}
+            {busy
+              ? t(
+                'push_prompt.busy',
+                'Setting up notifications may take several minutes. Please wait…',
+              )
+              : t(
+                'push_prompt.body',
+                'Turn on background notifications so new messages reach you while the app is closed.',
+              )}
           </Text>
           {error && <Text style={styles.error}>{error}</Text>}
           <View style={styles.actions}>
@@ -157,10 +162,11 @@ export function PushOnboardingPrompt(): React.ReactElement | null {
         </View>
         <Pressable
           onPress={handleDismiss}
+          disabled={busy}
           hitSlop={14}
           accessibilityRole="button"
           accessibilityLabel={t('settings.notifications.push.dismiss_aria', 'Dismiss notification prompt')}
-          style={styles.close}
+          style={[styles.close, busy && { opacity: 0.4 }]}
         >
           <X size={16} color={c.mutedForeground} />
         </Pressable>

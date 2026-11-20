@@ -1660,7 +1660,7 @@
         "status_inactive": "No activat en aquest dispositiu",
         "status_unsupported": "Aquest navegador no admet Web Push",
         "status_lite": "Web Push is not available in Lite; it needs the server.",
-        "status_busy": "Treballant…",
+        "status_busy": "La configuració de les notificacions pot trigar uns quants minuts…",
         "enable": "Activa",
         "reenable": "Torna a registrar",
         "disable": "Desactiva",

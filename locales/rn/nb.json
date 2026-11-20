@@ -791,7 +791,8 @@
     "body": "Slå på bakgrunnsvarsler, slik at nye meldinger når deg mens appen er lukket.",
     "dismiss": "Ikke nå",
     "enable": "Aktiver",
-    "title": "Få varsler om ny e-post"
+    "title": "Få varsler om ny e-post",
+    "busy": "Konfigurering av varsler kan ta flere minutter. Vennligst vent…"
   },
   "scheduled": {
     "already_sent": "Denne meldingen er allerede sendt.",

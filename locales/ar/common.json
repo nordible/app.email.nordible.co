@@ -1655,7 +1655,7 @@
         "status_inactive": "غير مفعّل على هذا الجهاز",
         "status_unsupported": "هذا المتصفح لا يدعم Web Push",
         "status_lite": "Web Push is not available in Lite; it needs the server.",
-        "status_busy": "جارٍ العمل…",
+        "status_busy": "قد يستغرق إعداد الإشعارات عدة دقائق…",
         "enable": "تفعيل",
         "reenable": "إعادة التسجيل",
         "disable": "تعطيل",

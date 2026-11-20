@@ -1699,7 +1699,7 @@
         "relay_locked": "Definido pelo administrador",
         "relay_locked_desc": "A URL do relay push foi definida pelo seu administrador e não pode ser alterada.",
         "status_active": "Ativo neste dispositivo",
-        "status_busy": "Processando…",
+        "status_busy": "A configuração das notificações pode levar vários minutos…",
         "status_inactive": "Não ativado neste dispositivo",
         "status_unsupported": "Este navegador não oferece suporte a Web Push",
         "status_lite": "O Web Push não está disponível no Lite; ele requer o servidor do EMAIL by Nordible.Co.",

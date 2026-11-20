@@ -794,7 +794,8 @@
     "body": "Activeu les notificacions en segon pla perquè els missatges nous us arribin amb l'aplicació tancada.",
     "dismiss": "Ara no",
     "enable": "Activa",
-    "title": "Rebeu avisos de correu nou"
+    "title": "Rebeu avisos de correu nou",
+    "busy": "La configuració de les notificacions pot trigar uns quants minuts. Espereu, si us plau…"
   },
   "scheduled": {
     "already_sent": "Aquest missatge ja s'ha enviat.",
@@ -1511,7 +1512,7 @@
       "phone_backup": "Res d'això va a la còpia de seguretat al núvol d'Android.",
       "phone_secure": "Les vostres dades d'inici de sessió es guarden a l'emmagatzematge segur del sistema. La configuració, la memòria cau del correu sense connexió i els canvis pendents de sincronitzar es guarden a l'emmagatzematge propi de l'aplicació.",
       "phone_title": "En aquest dispositiu",
-      "push": "Quan les notificacions estan activades, el vostre servidor avisa el repetidor push ({relay}) que alguna cosa ha canviat, i el repetidor desperta l'aplicació mitjançant {service}. El repetidor veu un testimoni del dispositiu i un marcador de canvi, mai el vostre correu. Podeu fer servir el vostre propi repetidor a Notificacions.",
+      "push": "Quan les notificacions estan activades, el vostre servidor avisa el repetidor push ({relay}) que alguna cosa ha canviat, i el repetidor desperta l'aplicació mitjançant {service}. El repetidor veu un testimoni del dispositiu i un marcador de canvi, mai el vostre correu.",
       "push_title": "Notificacions push",
       "server": "El correu, els calendaris, els contactes i els fitxers es carreguen del vostre servidor i s'hi tornen a desar. A part de les connexions següents, l'aplicació només es comunica amb el vostre servidor.",
       "server_title": "El vostre servidor de correu",
